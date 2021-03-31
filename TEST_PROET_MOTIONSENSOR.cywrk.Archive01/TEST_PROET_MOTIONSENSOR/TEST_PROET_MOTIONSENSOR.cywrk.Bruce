@@ -333,7 +333,17 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cydwr" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="776, 387" SelectedTabbedMdiWindow="63563a00-5eb2-4349-9750-38227e9fca70"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="9366cbd4-b65e-4368-947c-ed2473a56a13" /><DocumentWindow Key="C:\Users\Bruce\Documents\GBM2100Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="63563a00-5eb2-4349-9750-38227e9fca70" /><DocumentWindow Key="C:\Users\Bruce\Documents\GBM2100Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cydwr" Guid="06c58d8d-6acc-49e8-a128-8ee1fcb1abab" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
