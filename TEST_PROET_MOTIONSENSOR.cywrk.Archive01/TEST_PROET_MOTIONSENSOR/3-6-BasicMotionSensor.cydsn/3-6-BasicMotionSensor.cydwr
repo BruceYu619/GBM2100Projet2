@@ -30,6 +30,7 @@
       <Data key="b5b708ed-a905-445f-a9f4-6d6f6e8c815d/c8948441-ff15-42a0-9e51-75869d2ef747" value="CY_EINK_SPIM_miso_m" />
       <Data key="c3ebdaf0-2922-44d8-bb3e-57ebf7663a2a" value="CY_EINK_DispRst" />
       <Data key="c932a304-7fee-45e3-92f6-c51270dee3cf" value="CY_EINK_DispIoEn" />
+      <Data key="cb74eb16-0791-4528-ad31-73cb98ddd8ef" value="Bouton" />
     </Group>
   </Group>
   <Group key="M0S8Clock">
@@ -750,6 +751,11 @@
     <Group key="c932a304-7fee-45e3-92f6-c51270dee3cf">
       <Group key="0">
         <Data key="Port Format" value="0,2" />
+      </Group>
+    </Group>
+    <Group key="cb74eb16-0791-4528-ad31-73cb98ddd8ef">
+      <Group key="0">
+        <Data key="Port Format" value="0,4" />
       </Group>
     </Group>
   </Group>
