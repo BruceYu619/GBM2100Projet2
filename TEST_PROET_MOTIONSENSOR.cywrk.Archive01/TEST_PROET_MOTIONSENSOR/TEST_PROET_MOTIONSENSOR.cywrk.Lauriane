@@ -13,7 +13,11 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
+<<<<<<< HEAD
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+=======
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\TopDesign">
+>>>>>>> Prototype
 <ExpandedNodeIds>
 <v>TEST_PROET_MOTIONSENSOR</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor</v>
@@ -333,7 +337,10 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" />
+<<<<<<< HEAD
 <name v=".\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cydwr" />
+=======
+>>>>>>> Prototype
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -341,7 +348,11 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
+<<<<<<< HEAD
 --><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1171, 534" SelectedTabbedMdiWindow="b3ae2f0b-753c-4f19-a027-b5c1cd0fe2a1"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b7c41b36-9ee6-40ed-91b8-5bcc85851053" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="855874a5-71bd-4338-8517-9362fa1992c0" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cydwr" Guid="b3ae2f0b-753c-4f19-a027-b5c1cd0fe2a1" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+=======
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="917, 534" SelectedTabbedMdiWindow="b7593812-7971-4f81-a481-a70f9836a2b4"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b7c41b36-9ee6-40ed-91b8-5bcc85851053" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="b7593812-7971-4f81-a481-a70f9836a2b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+>>>>>>> Prototype
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
