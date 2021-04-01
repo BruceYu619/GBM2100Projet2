@@ -333,14 +333,17 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\3-6-BasicMotionSensor.cydsn\display_task.c" />
+<name v=".\3-6-BasicMotionSensor.cydsn\touch_task.c" />
+</OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1030, 387" SelectedTabbedMdiWindow="9366cbd4-b65e-4368-947c-ed2473a56a13"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="9366cbd4-b65e-4368-947c-ed2473a56a13" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="832, 387" SelectedTabbedMdiWindow="f83d8c29-3581-41a7-ae36-e745d4b460e9"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="9366cbd4-b65e-4368-947c-ed2473a56a13" /><DocumentWindow Key="C:\Users\Bruce\Documents\GBM2100Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\display_task.c" Guid="72ce7664-6bdb-43ba-910f-f8cb07353937" /><DocumentWindow Key="C:\Users\Bruce\Documents\GBM2100Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\touch_task.c" Guid="f83d8c29-3581-41a7-ae36-e745d4b460e9" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
