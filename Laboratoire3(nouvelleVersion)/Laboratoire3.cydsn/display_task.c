@@ -151,22 +151,22 @@ void ClearScreen(void)
 //    }
 //}
 
-//void alarmeAcc()
-//{
-//    if (currentPage==PAGE_ALARME_1)
-//    {
-//        if (flickLeft==true) // seulement si on est dans la page d'alarme
-//        {
-//            flagAlarme = false;
-//            
-//        }
-//        if (flickRight==true)
-//        {
-//            flagAlarme = true;
-//            
-//        } 
-//    }
-//}
+void alarmeAcc()
+{
+    if (currentPage==PAGE_ALARME_1)
+    {
+        if (flickLeft==true) 
+        {
+            flagAlarme = false;
+            
+        }
+        if (flickRight==true)
+        {
+            flagAlarme = true;
+            
+        } 
+    }
+}
 
 void drawSignal(int longueur, int intervalle, int32_t *pointeur)
 {
@@ -257,15 +257,16 @@ void drawPageALARME_Acc()
      GUI_SetFont(GUI_FONT_16_1);
      GUI_SetTextAlign(GUI_TA_LEFT);
      GUI_DispStringAt("Activer l'alarme : balayez a droite ", 10, 60); 
-     GUI_DispStringAt("Desactiver l'alarme : balayez a gauche ", 10, 90); 
-//    if (flagAlarme==true)
-//    {
-//        GUI_DispStringAt("Alarme activee ", 10, 120);
-//    }
-//    if (flagAlarme==false)
-//    {
-//        GUI_DispStringAt("Alarme desactivee ", 10, 120);
-//    }
+     GUI_DispStringAt("Desactiver l'alarme : balayez a gauche ", 10, 90);
+    if (flagAlarme==true)
+    {
+        GUI_DispStringAt("Alarme activee ", 50, 120);
+    }
+    if (flagAlarme==false)
+    {
+        GUI_DispStringAt("Alarme desactivee ", 50, 120);
+    }
+
 }
 
 void drawPageALARME_Rythme()
@@ -328,7 +329,7 @@ void drawPage()
                         break;
                     // option 2
                     case 2:
-                        drawPageALARME_Acc();
+                        //drawPageALARME_Acc();
                         currentPage = PAGE_ALARME_1;
                         break; 
                     // option 3 
@@ -364,18 +365,18 @@ void analyseCapsense()
     if (currentPage==PAGE_MENU)
     {
     
-    if (flickLeft==true)
-    {
-        y-=30;
-    }
-    if (flickRight==true)
-    {
-        y+=30;
-    } 
-    if (y<40)
-        y=130;
-    if (y>130)
-        y=40;
+        if (flickLeft==true)
+        {
+            y-=30;
+        }
+        if (flickRight==true)
+        {
+            y+=30;
+        } 
+        if (y<40)
+            y=130;
+        if (y>130)
+            y=40;
     }
 }
 
@@ -447,7 +448,7 @@ void Task_Display(void *pvParameters)
      NVIC_EnableIRQ(Bouton_isr_cfg.intrSrc); 
     initialiserGUI();
     
-    drawMenu(y); // éventuellement changer l'écran d'acceuil pour courbe des résultats
+    drawMenu(y); 
     UpdateDisplay(CY_EINK_FULL_4STAGE, true);
     
 //    //boucle pour tester la position du carré - fonctionne
@@ -471,10 +472,9 @@ void Task_Display(void *pvParameters)
                 UpdateDisplay(CY_EINK_FULL_4STAGE, true);
                 vTaskDelay(pdMS_TO_TICKS(1000));
             }
-            //currentPage = PAGE_AFFICHAGE;
         }
         
-        // pour entrer dans le menu 
+        
         // passer à travers les options du menu 
         if ((flickLeft || flickRight)&& currentPage==PAGE_MENU)
         {
@@ -504,11 +504,20 @@ void Task_Display(void *pvParameters)
             bouton0Touched = false;
         }
         
-//        if (currentPage==PAGE_ALARME_1)
-//        {
-//            alarmeAcc();
-//            UpdateDisplay(CY_EINK_FULL_4STAGE, true);
-//        }
+        if (currentPage==PAGE_ALARME_1)
+        {
+            while(bouton0Touched==false)
+            {
+                GUI_Clear();
+                alarmeAcc(); // problème : le flag ne revient pas à false
+                drawPageALARME_Acc();
+                UpdateDisplay(CY_EINK_FULL_4STAGE, true);
+                flickLeft = false;
+                flickRight = false;
+                vTaskDelay(pdMS_TO_TICKS(1000));
+            }
+            
+        }
         
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
