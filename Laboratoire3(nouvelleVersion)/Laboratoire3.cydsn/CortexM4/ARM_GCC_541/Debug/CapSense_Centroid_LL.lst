@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
   27:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
   28:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
   29:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * Cypress reserves the right to make changes without further notice to the
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 2
 
 
   30:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * materials described herein. Cypress does not assume any liability arising out
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
   84:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     static uint8 localMax[CapSense_NUM_CENTROIDS];
   85:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     static CapSense_THRESHOLD_TYPE localDiffArray[CapSense_NUM_CENTROIDS][3u];
   86:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     static uint8 localMaxIndex;
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 3
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 3
 
 
   87:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** #endif
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  141:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   localDiffArray[][3u], localMaxIndex.
  142:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
  143:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \details
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 4
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 4
 
 
  144:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   The localMax[] is used to store the index of the maximum/maxima.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  198:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         else
  199:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         {
  200:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             slope0 = (int32)localPtrSns[i + 1u].diff - (int32)localPtrSns[i].diff;
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 5
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 5
 
 
  201:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  255:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   position calculations.
  256:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
  257:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \param *ptrSns
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 6
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 6
 
 
  258:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   A pointer to sensor RAM structure of a found local maximum.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  312:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   This API is used in conjunction with CapSense_DpCalcLinearCentroid or
  313:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   CapSense__DpCalcRadialCentroid, because they use shared static data: localMax[],
  314:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   localDiffArray[][3u], localMaxIndex.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 7
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 7
 
 
  315:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
   53              	.LVL3:
   54              	.L4:
  343:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 8
 
 
  344:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             if ((localPtrSns->diff > fingerThreshold) && (localPtrSns->diff > temp))
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  366:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         #if (CapSense_NUM_CENTROIDS == 0x02u)
  367:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             if (localMaxIndex < CapSense_NUM_CENTROIDS)
  368:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 9
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 9
 
 
  369:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         #endif /* (CapSense_NUM_CENTROIDS == 0x02u) */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  400:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 localDiffArray[i][CapSense_CENTROID_POS_PREV] = ptrSns[snsCount - 1u].diff;
  107              		.loc 1 400 0
  108 0054 01EB8105 		add	r5, r1, r1, lsl #2
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 10
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 10
 
 
  109 0058 6C00     		lsls	r4, r5, #1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  153 00a6 1544     		add	r5, r5, r2
  154 00a8 6C00     		lsls	r4, r5, #1
  155 00aa 0A4D     		ldr	r5, .L13
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 11
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 11
 
 
  156 00ac 2C44     		add	r4, r4, r5
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  201              	.LFB133:
  418:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** #endif /* (CapSense_ENABLE == CapSense_4PTS_LOCAL_MAX_EN) */
  419:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** #endif /* ((CapSense_ENABLE == CapSense_CENTROID_3X3_CSD_EN) || \
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 12
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 12
 
 
  420:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****           (CapSense_ENABLE  == CapSense_SLIDER_WIDGET_EN)) */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  474:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         {
  475:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             if (curSize > biggestSize)
  476:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 13
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 13
 
 
  477:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 biggestSize = curSize;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  531:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     return (uint32)(localMaxIndex);
  532:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** }
  533:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** #endif /* #if CapSense_TOTAL_DIPLEXED_SLIDERS */
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 14
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 14
 
 
  534:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  216              		.loc 1 573 0
  217 0004 0025     		movs	r5, #0
  218 0006 33E0     		b	.L16
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 15
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 15
 
 
  219              	.LVL18:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  253 003e B6F80C80 		ldrh	r8, [r6, #12]
  594:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                     (int32) localDiffArray[i][CapSense_CENTROID_POS_PREV];
  254              		.loc 1 594 0 discriminator 2
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 16
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 16
 
 
  255 0042 B6F808E0 		ldrh	lr, [r6, #8]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  290 0078 2046     		mov	r0, r4
  291              	.LVL26:
  292 007a BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 17
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 17
 
 
  293              	.LVL27:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  647:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         denominator = (int32) localDiffArray[i][CapSense_CENTROID_POS_PREV] +
  648:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                       (int32) localDiffArray[i][CapSense_CENTROID_POS] +
  649:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                       (int32) localDiffArray[i][CapSense_CENTROID_POS_NEXT];
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 18
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 18
 
 
  650:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  704:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         for (tx = 0u; tx <= lastTx; tx++)
  705:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         {
  706:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             proceed = 0u;
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 19
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 19
 
 
  707:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  761:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
  762:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 if (0u == proceed)
  763:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 20
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 20
 
 
  764:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                     /* Sensor(i+1, j) */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  818:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** }
  819:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
  820:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 21
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 21
 
 
  821:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** /*******************************************************************************
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  875:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                      * The second condition could be valid only when local max on the last column o
  876:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                      * Then corresponding column (zero or the last) of 3x3 array is initialized to 
  877:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                     if (((((int32)ptrNewTouches->touch[number].y - 1) + (int32)j) < 0) ||
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 22
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 22
 
 
  878:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         ((((int32)ptrNewTouches->touch[number].y - 1) + (int32)j) > (int32)lastTx))
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  932:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         #endif
  933:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
  934:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         /* The Y position is rounded to the nearest integer value and normalized to the resolution 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 23
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 23
 
 
  935:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         ptrNewTouches->touch[number].y = CY_LO16(((uint32)weightedSumY + CapSense_CENTROID_ROUND_VA
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  989:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         (uint32)~CapSense_CSX_TOUCHPAD_PADDING);
  990:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
  991:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         if (0u < newTouchNum)
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 24
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 24
 
 
  992:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1046:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         /* Search new fingers. */
 1047:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         for (i = 0u; i < newTouchNum; i++)
 1048:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 25
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 25
 
 
 1049:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                             /* New finger found. */
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1103:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         ptrOldTouches->touchNum = ptrNewTouches->touchNum;
 1104:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
 1105:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         /* Save ID allocation masks for usage in the next iteration. */
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 26
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 26
 
 
 1106:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         oldActiveIDs = newActiveIDs;
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1160:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
 1161:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \param newIndex The touch index of touch array in the new touches structure.
 1162:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \param onDebounce Counter value for touch down procedure.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 27
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 27
 
 
 1163:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \param fingerOnThreshold The finger ON threshold (finger threshold + hysteresis)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1217:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     idMask >>= CapSense_CSX_TOUCHPAD_TOUCH_MIN_ID;
 1218:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
 1219:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     for (idx = CapSense_CSX_TOUCHPAD_TOUCH_MIN_ID; idx <= CapSense_CSX_TOUCHPAD_TOUCH_MAX_ID; idx++
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 28
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 28
 
 
 1220:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     {
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1274:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** }
 1275:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
 1276:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 29
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 29
 
 
 1277:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** #if (0u != CapSense_OFF_DEBOUNCE_EN)
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1331:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                     {
 1332:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         /* Check whether debounce counter is reached zero if there is a lift off ma
 1333:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                        if ((ptrOldTouches->touch[i].debounce & CapSense_CSX_TOUCHPAD_DEBOUNCE_MASK)
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 30
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 30
 
 
 1334:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                        {
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1388:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * Function Name: CapSense_FillDistanceMap
 1389:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** ****************************************************************************//**
 1390:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 31
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 31
 
 
 1391:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \brief
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1445:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   This function uses the Hungarian method described in specification 001-63362.
 1446:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   There is no bounds checking on the parameters. It is the calling function's
 1447:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   responsibility to ensure parameter validity.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 32
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 32
 
 
 1448:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1502:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
 1503:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     /* Go through all columns */
 1504:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     for (i = (int32)colCount; i-- > 0;)
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 33
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 33
 
 
 1505:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1559:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
 1560:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             col[i] +=  delta;
 1561:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 34
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 34
 
 
 1562:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             visited[j] = 1;
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1616:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 /* Check the touch records from the last to the current.
 1617:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                  * If the touch record is valid then replace the current touch record
 1618:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                  */
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 35
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 35
 
 
 1619:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 if (ptrNewTouches->touch[j].id <= CapSense_CSX_TOUCHPAD_TOUCH_MAX_ID)
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1673:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *   Copies content from the source touch structure to the destination touch structure.
 1674:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** *
 1675:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \param *destination The pointer to the destination touch structure.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 36
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 36
 
 
 1676:Generated_Source\PSoC6/CapSense_Centroid_LL.c **** * \param *source      The pointer to the source touch structure.
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1730:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         {
 1731:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             oldIdMask |= 0x01Lu << ptrWidgetRam->touch[i].id;
 1732:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 37
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 37
 
 
 1733:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     #endif /* (0u != CapSense_POSITION_FILTER_EN) */
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
 1787:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                             ptrWidgetRam->touch[i].id = ptrNewTouches->touch[i].id;
 1788:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                         }
 1789:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                     }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 38
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 38
 
 
 1790:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****                 }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  316 0000 00B1     		cbz	r0, .L23
 1837:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****     {
 1838:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****         #if (0u != CapSense_POS_MEDIAN_FILTER_EN)
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 39
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 39
 
 
 1839:Generated_Source\PSoC6/CapSense_Centroid_LL.c ****             ptrHistory->posMedianZ1 = value;
@@ -2335,13 +2335,13 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  353 0006 00000000 		.4byte	.Ldebug_abbrev0
  354 000a 04       		.byte	0x4
  355 000b 01       		.uleb128 0x1
- 356 000c 22000000 		.4byte	.LASF54
+ 356 000c C1020000 		.4byte	.LASF54
  357 0010 0C       		.byte	0xc
- 358 0011 B1020000 		.4byte	.LASF55
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 40
+ 358 0011 64020000 		.4byte	.LASF55
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 40
 
 
- 359 0015 0E030000 		.4byte	.LASF56
+ 359 0015 22000000 		.4byte	.LASF56
  360 0019 00000000 		.4byte	.Ldebug_ranges0+0
  361 001d 00000000 		.4byte	0
  362 0021 00000000 		.4byte	.Ldebug_line0
@@ -2352,19 +2352,19 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  367 002c 03       		.uleb128 0x3
  368 002d 04       		.byte	0x4
  369 002e 07       		.byte	0x7
- 370 002f EF010000 		.4byte	.LASF0
+ 370 002f A2010000 		.4byte	.LASF0
  371 0033 03       		.uleb128 0x3
  372 0034 08       		.byte	0x8
  373 0035 05       		.byte	0x5
- 374 0036 7B020000 		.4byte	.LASF1
+ 374 0036 2E020000 		.4byte	.LASF1
  375 003a 03       		.uleb128 0x3
  376 003b 08       		.byte	0x8
  377 003c 04       		.byte	0x4
- 378 003d AD030000 		.4byte	.LASF2
+ 378 003d A0030000 		.4byte	.LASF2
  379 0041 03       		.uleb128 0x3
  380 0042 01       		.byte	0x1
  381 0043 06       		.byte	0x6
- 382 0044 46010000 		.4byte	.LASF3
+ 382 0044 F9000000 		.4byte	.LASF3
  383 0048 04       		.uleb128 0x4
  384 0049 18000000 		.4byte	.LASF6
  385 004d 02       		.byte	0x2
@@ -2373,32 +2373,32 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  388 0053 03       		.uleb128 0x3
  389 0054 01       		.byte	0x1
  390 0055 08       		.byte	0x8
- 391 0056 52010000 		.4byte	.LASF4
+ 391 0056 05010000 		.4byte	.LASF4
  392 005a 03       		.uleb128 0x3
  393 005b 02       		.byte	0x2
  394 005c 05       		.byte	0x5
- 395 005d FB020000 		.4byte	.LASF5
+ 395 005d AE020000 		.4byte	.LASF5
  396 0061 04       		.uleb128 0x4
- 397 0062 95010000 		.4byte	.LASF7
+ 397 0062 48010000 		.4byte	.LASF7
  398 0066 02       		.byte	0x2
  399 0067 2B       		.byte	0x2b
  400 0068 6C000000 		.4byte	0x6c
  401 006c 03       		.uleb128 0x3
  402 006d 02       		.byte	0x2
  403 006e 07       		.byte	0x7
- 404 006f F9000000 		.4byte	.LASF8
+ 404 006f AC000000 		.4byte	.LASF8
  405 0073 04       		.uleb128 0x4
- 406 0074 E6000000 		.4byte	.LASF9
+ 406 0074 99000000 		.4byte	.LASF9
  407 0078 02       		.byte	0x2
  408 0079 3F       		.byte	0x3f
  409 007a 7E000000 		.4byte	0x7e
  410 007e 03       		.uleb128 0x3
  411 007f 04       		.byte	0x4
  412 0080 05       		.byte	0x5
- 413 0081 94030000 		.4byte	.LASF10
+ 413 0081 87030000 		.4byte	.LASF10
  414 0085 04       		.uleb128 0x4
- 415 0086 AF010000 		.4byte	.LASF11
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 41
+ 415 0086 62010000 		.4byte	.LASF11
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 41
 
 
  416 008a 02       		.byte	0x2
@@ -2407,67 +2407,67 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  419 0090 03       		.uleb128 0x3
  420 0091 04       		.byte	0x4
  421 0092 07       		.byte	0x7
- 422 0093 60010000 		.4byte	.LASF12
+ 422 0093 13010000 		.4byte	.LASF12
  423 0097 03       		.uleb128 0x3
  424 0098 08       		.byte	0x8
  425 0099 07       		.byte	0x7
- 426 009a 08020000 		.4byte	.LASF13
+ 426 009a BB010000 		.4byte	.LASF13
  427 009e 03       		.uleb128 0x3
  428 009f 04       		.byte	0x4
  429 00a0 07       		.byte	0x7
- 430 00a1 6D020000 		.4byte	.LASF14
+ 430 00a1 20020000 		.4byte	.LASF14
  431 00a5 03       		.uleb128 0x3
  432 00a6 01       		.byte	0x1
  433 00a7 08       		.byte	0x8
- 434 00a8 9D030000 		.4byte	.LASF15
+ 434 00a8 90030000 		.4byte	.LASF15
  435 00ac 04       		.uleb128 0x4
- 436 00ad 1F020000 		.4byte	.LASF16
+ 436 00ad D2010000 		.4byte	.LASF16
  437 00b1 03       		.byte	0x3
  438 00b2 18       		.byte	0x18
  439 00b3 48000000 		.4byte	0x48
  440 00b7 04       		.uleb128 0x4
- 441 00b8 05030000 		.4byte	.LASF17
+ 441 00b8 B8020000 		.4byte	.LASF17
  442 00bc 03       		.byte	0x3
  443 00bd 24       		.byte	0x24
  444 00be 61000000 		.4byte	0x61
  445 00c2 04       		.uleb128 0x4
- 446 00c3 2F010000 		.4byte	.LASF18
+ 446 00c3 E2000000 		.4byte	.LASF18
  447 00c7 03       		.byte	0x3
  448 00c8 2C       		.byte	0x2c
  449 00c9 73000000 		.4byte	0x73
  450 00cd 04       		.uleb128 0x4
- 451 00ce 8B030000 		.4byte	.LASF19
+ 451 00ce 7E030000 		.4byte	.LASF19
  452 00d2 03       		.byte	0x3
  453 00d3 30       		.byte	0x30
  454 00d4 85000000 		.4byte	0x85
  455 00d8 03       		.uleb128 0x3
  456 00d9 04       		.byte	0x4
  457 00da 04       		.byte	0x4
- 458 00db 40010000 		.4byte	.LASF20
+ 458 00db F3000000 		.4byte	.LASF20
  459 00df 03       		.uleb128 0x3
  460 00e0 08       		.byte	0x8
  461 00e1 04       		.byte	0x4
- 462 00e2 A0010000 		.4byte	.LASF21
+ 462 00e2 53010000 		.4byte	.LASF21
  463 00e6 05       		.uleb128 0x5
- 464 00e7 77010000 		.4byte	.LASF22
+ 464 00e7 2A010000 		.4byte	.LASF22
  465 00eb 04       		.byte	0x4
  466 00ec EA03     		.2byte	0x3ea
  467 00ee AC000000 		.4byte	0xac
  468 00f2 05       		.uleb128 0x5
- 469 00f3 BA010000 		.4byte	.LASF23
+ 469 00f3 6D010000 		.4byte	.LASF23
  470 00f7 04       		.byte	0x4
  471 00f8 EB03     		.2byte	0x3eb
  472 00fa B7000000 		.4byte	0xb7
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 42
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 42
 
 
  473 00fe 05       		.uleb128 0x5
- 474 00ff E8010000 		.4byte	.LASF24
+ 474 00ff 9B010000 		.4byte	.LASF24
  475 0103 04       		.byte	0x4
  476 0104 EC03     		.2byte	0x3ec
  477 0106 CD000000 		.4byte	0xcd
  478 010a 05       		.uleb128 0x5
- 479 010b 67020000 		.4byte	.LASF25
+ 479 010b 1A020000 		.4byte	.LASF25
  480 010f 04       		.byte	0x4
  481 0110 EF03     		.2byte	0x3ef
  482 0112 C2000000 		.4byte	0xc2
@@ -2477,7 +2477,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  486 011c F2       		.byte	0xf2
  487 011d F2000000 		.4byte	0xf2
  488 0121 04       		.uleb128 0x4
- 489 0122 E1030000 		.4byte	.LASF27
+ 489 0122 D4030000 		.4byte	.LASF27
  490 0126 05       		.byte	0x5
  491 0127 F6       		.byte	0xf6
  492 0128 E6000000 		.4byte	0xe6
@@ -2510,34 +2510,34 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  519 0163 42010000 		.4byte	0x142
  520 0167 00       		.byte	0
  521 0168 0B       		.uleb128 0xb
- 522 0169 DC030000 		.4byte	.LASF28
+ 522 0169 CF030000 		.4byte	.LASF28
  523 016d 06       		.byte	0x6
  524 016e AB01     		.2byte	0x1ab
  525 0170 42010000 		.4byte	0x142
  526 0174 02       		.byte	0x2
  527 0175 0B       		.uleb128 0xb
- 528 0176 A7010000 		.4byte	.LASF29
+ 528 0176 5A010000 		.4byte	.LASF29
  529 017a 06       		.byte	0x6
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 43
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 43
 
 
  530 017b B101     		.2byte	0x1b1
  531 017d 32010000 		.4byte	0x132
  532 0181 04       		.byte	0x4
  533 0182 0B       		.uleb128 0xb
- 534 0183 76020000 		.4byte	.LASF30
+ 534 0183 29020000 		.4byte	.LASF30
  535 0187 06       		.byte	0x6
  536 0188 B601     		.2byte	0x1b6
  537 018a 16010000 		.4byte	0x116
  538 018e 06       		.byte	0x6
  539 018f 0B       		.uleb128 0xb
- 540 0190 59020000 		.4byte	.LASF31
+ 540 0190 0C020000 		.4byte	.LASF31
  541 0194 06       		.byte	0x6
  542 0195 BB01     		.2byte	0x1bb
  543 0197 AA010000 		.4byte	0x1aa
  544 019b 08       		.byte	0x8
  545 019c 0B       		.uleb128 0xb
- 546 019d F0000000 		.4byte	.LASF32
+ 546 019d A3000000 		.4byte	.LASF32
  547 01a1 06       		.byte	0x6
  548 01a2 C101     		.2byte	0x1c1
  549 01a4 32010000 		.4byte	0x132
@@ -2551,7 +2551,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  557 01b8 00       		.byte	0
  558 01b9 00       		.byte	0
  559 01ba 05       		.uleb128 0x5
- 560 01bb 89020000 		.4byte	.LASF33
+ 560 01bb 3C020000 		.4byte	.LASF33
  561 01bf 06       		.byte	0x6
  562 01c0 C201     		.2byte	0x1c2
  563 01c2 52010000 		.4byte	0x152
@@ -2564,21 +2564,21 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  570 01cf 7503     		.2byte	0x375
  571 01d1 E3010000 		.4byte	0x1e3
  572 01d5 0B       		.uleb128 0xb
- 573 01d6 A2030000 		.4byte	.LASF34
+ 573 01d6 95030000 		.4byte	.LASF34
  574 01da 06       		.byte	0x6
  575 01db 8503     		.2byte	0x385
  576 01dd F2000000 		.4byte	0xf2
  577 01e1 00       		.byte	0
  578 01e2 00       		.byte	0
  579 01e3 05       		.uleb128 0x5
- 580 01e4 0C010000 		.4byte	.LASF35
+ 580 01e4 BF000000 		.4byte	.LASF35
  581 01e8 06       		.byte	0x6
  582 01e9 8F03     		.2byte	0x38f
  583 01eb CC010000 		.4byte	0x1cc
  584 01ef 0C       		.uleb128 0xc
- 585 01f0 C2030000 		.4byte	.LASF42
+ 585 01f0 B5030000 		.4byte	.LASF42
  586 01f4 01       		.byte	0x1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 44
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 44
 
 
  587 01f5 4801     		.2byte	0x148
@@ -2589,20 +2589,20 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  592 0204 9C       		.byte	0x9c
  593 0205 76020000 		.4byte	0x276
  594 0209 0D       		.uleb128 0xd
- 595 020a DF020000 		.4byte	.LASF36
+ 595 020a 92020000 		.4byte	.LASF36
  596 020e 01       		.byte	0x1
  597 020f 4801     		.2byte	0x148
  598 0211 C6010000 		.4byte	0x1c6
  599 0215 00000000 		.4byte	.LLST0
  600 0219 0E       		.uleb128 0xe
- 601 021a 37010000 		.4byte	.LASF37
+ 601 021a EA000000 		.4byte	.LASF37
  602 021e 01       		.byte	0x1
  603 021f 4801     		.2byte	0x148
  604 0221 FE000000 		.4byte	0xfe
  605 0225 01       		.uleb128 0x1
  606 0226 51       		.byte	0x51
  607 0227 0D       		.uleb128 0xd
- 608 0228 A1020000 		.4byte	.LASF38
+ 608 0228 54020000 		.4byte	.LASF38
  609 022c 01       		.byte	0x1
  610 022d 4901     		.2byte	0x149
  611 022f FE000000 		.4byte	0xfe
@@ -2614,31 +2614,31 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  617 023d FE000000 		.4byte	0xfe
  618 0241 5B000000 		.4byte	.LLST2
  619 0245 10       		.uleb128 0x10
- 620 0246 B9030000 		.4byte	.LASF39
+ 620 0246 AC030000 		.4byte	.LASF39
  621 024a 01       		.byte	0x1
  622 024b 4C01     		.2byte	0x14c
  623 024d FE000000 		.4byte	0xfe
  624 0251 79000000 		.4byte	.LLST3
  625 0255 10       		.uleb128 0x10
- 626 0256 FC010000 		.4byte	.LASF40
+ 626 0256 AF010000 		.4byte	.LASF40
  627 025a 01       		.byte	0x1
  628 025b 4F01     		.2byte	0x14f
  629 025d C6010000 		.4byte	0x1c6
  630 0261 98000000 		.4byte	.LLST4
  631 0265 10       		.uleb128 0x10
- 632 0266 72010000 		.4byte	.LASF41
+ 632 0266 25010000 		.4byte	.LASF41
  633 026a 01       		.byte	0x1
  634 026b 5001     		.2byte	0x150
  635 026d 16010000 		.4byte	0x116
  636 0271 C1000000 		.4byte	.LLST5
  637 0275 00       		.byte	0
  638 0276 0C       		.uleb128 0xc
- 639 0277 CA010000 		.4byte	.LASF43
+ 639 0277 7D010000 		.4byte	.LASF43
  640 027b 01       		.byte	0x1
  641 027c 3702     		.2byte	0x237
  642 027e FE000000 		.4byte	0xfe
  643 0282 00000000 		.4byte	.LFB133
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 45
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 45
 
 
  644 0286 84000000 		.4byte	.LFE133-.LFB133
@@ -2646,40 +2646,40 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  646 028b 9C       		.byte	0x9c
  647 028c F9020000 		.4byte	0x2f9
  648 0290 0D       		.uleb128 0xd
- 649 0291 C1010000 		.4byte	.LASF44
+ 649 0291 74010000 		.4byte	.LASF44
  650 0295 01       		.byte	0x1
  651 0296 3702     		.2byte	0x237
  652 0298 2C010000 		.4byte	0x12c
  653 029c 01010000 		.4byte	.LLST6
  654 02a0 0E       		.uleb128 0xe
- 655 02a1 8A010000 		.4byte	.LASF45
+ 655 02a1 3D010000 		.4byte	.LASF45
  656 02a5 01       		.byte	0x1
  657 02a6 3702     		.2byte	0x237
  658 02a8 FE000000 		.4byte	0xfe
  659 02ac 01       		.uleb128 0x1
  660 02ad 51       		.byte	0x51
  661 02ae 0E       		.uleb128 0xe
- 662 02af 37010000 		.4byte	.LASF37
+ 662 02af EA000000 		.4byte	.LASF37
  663 02b3 01       		.byte	0x1
  664 02b4 3702     		.2byte	0x237
  665 02b6 FE000000 		.4byte	0xfe
  666 02ba 01       		.uleb128 0x1
  667 02bb 52       		.byte	0x52
  668 02bc 0E       		.uleb128 0xe
- 669 02bd E6020000 		.4byte	.LASF46
+ 669 02bd 99020000 		.4byte	.LASF46
  670 02c1 01       		.byte	0x1
  671 02c2 3702     		.2byte	0x237
  672 02c4 FE000000 		.4byte	0xfe
  673 02c8 01       		.uleb128 0x1
  674 02c9 53       		.byte	0x53
  675 02ca 10       		.uleb128 0x10
- 676 02cb 81030000 		.4byte	.LASF47
+ 676 02cb 74030000 		.4byte	.LASF47
  677 02cf 01       		.byte	0x1
  678 02d0 3902     		.2byte	0x239
  679 02d2 0A010000 		.4byte	0x10a
  680 02d6 22010000 		.4byte	.LLST7
  681 02da 10       		.uleb128 0x10
- 682 02db FC030000 		.4byte	.LASF48
+ 682 02db EF030000 		.4byte	.LASF48
  683 02df 01       		.byte	0x1
  684 02e0 3A02     		.2byte	0x23a
  685 02e2 0A010000 		.4byte	0x10a
@@ -2692,26 +2692,26 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  692 02f4 82010000 		.4byte	.LLST9
  693 02f8 00       		.byte	0
  694 02f9 11       		.uleb128 0x11
- 695 02fa 36020000 		.4byte	.LASF57
+ 695 02fa E9010000 		.4byte	.LASF57
  696 02fe 01       		.byte	0x1
  697 02ff 2A07     		.2byte	0x72a
  698 0301 00000000 		.4byte	.LFB134
  699 0305 06000000 		.4byte	.LFE134-.LFB134
  700 0309 01       		.uleb128 0x1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 46
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 46
 
 
  701 030a 9C       		.byte	0x9c
  702 030b 2C030000 		.4byte	0x32c
  703 030f 0E       		.uleb128 0xe
- 704 0310 D5000000 		.4byte	.LASF49
+ 704 0310 88000000 		.4byte	.LASF49
  705 0314 01       		.byte	0x1
  706 0315 2A07     		.2byte	0x72a
  707 0317 2C030000 		.4byte	0x32c
  708 031b 01       		.uleb128 0x1
  709 031c 50       		.byte	0x50
  710 031d 0E       		.uleb128 0xe
- 711 031e E0000000 		.4byte	.LASF50
+ 711 031e 93000000 		.4byte	.LASF50
  712 0322 01       		.byte	0x1
  713 0323 2A07     		.2byte	0x72a
  714 0325 F2000000 		.4byte	0xf2
@@ -2722,7 +2722,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  719 032d 04       		.byte	0x4
  720 032e E3010000 		.4byte	0x1e3
  721 0332 12       		.uleb128 0x12
- 722 0333 50020000 		.4byte	.LASF51
+ 722 0333 03020000 		.4byte	.LASF51
  723 0337 01       		.byte	0x1
  724 0338 54       		.byte	0x54
  725 0339 32010000 		.4byte	0x132
@@ -2740,7 +2740,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  737 0357 02       		.byte	0x2
  738 0358 00       		.byte	0
  739 0359 12       		.uleb128 0x12
- 740 035a 27020000 		.4byte	.LASF52
+ 740 035a DA010000 		.4byte	.LASF52
  741 035e 01       		.byte	0x1
  742 035f 55       		.byte	0x55
  743 0360 43030000 		.4byte	0x343
@@ -2748,7 +2748,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  745 0365 03       		.byte	0x3
  746 0366 08000000 		.4byte	localDiffArray
  747 036a 12       		.uleb128 0x12
- 748 036b ED020000 		.4byte	.LASF53
+ 748 036b A0020000 		.4byte	.LASF53
  749 036f 01       		.byte	0x1
  750 0370 56       		.byte	0x56
  751 0371 E6000000 		.4byte	0xe6
@@ -2756,9 +2756,9 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  753 0376 03       		.byte	0x3
  754 0377 00000000 		.4byte	localMaxIndex
  755 037b 13       		.uleb128 0x13
- 756 037c 7D010000 		.4byte	.LASF58
+ 756 037c 30010000 		.4byte	.LASF58
  757 0380 07       		.byte	0x7
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 47
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 47
 
 
  758 0381 F907     		.2byte	0x7f9
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  812 002f 0B       		.uleb128 0xb
  813 0030 3B       		.uleb128 0x3b
  814 0031 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 48
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 48
 
 
  815 0032 49       		.uleb128 0x49
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  869 0068 13       		.uleb128 0x13
  870 0069 00       		.byte	0
  871 006a 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 49
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 49
 
 
  872 006b 0A       		.uleb128 0xa
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  926 00a2 13       		.uleb128 0x13
  927 00a3 00       		.byte	0
  928 00a4 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 50
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 50
 
 
  929 00a5 0D       		.uleb128 0xd
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  983 00db 49       		.uleb128 0x49
  984 00dc 13       		.uleb128 0x13
  985 00dd 02       		.uleb128 0x2
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 51
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 51
 
 
  986 00de 17       		.uleb128 0x17
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  1040 0115 3F       		.uleb128 0x3f
  1041 0116 19       		.uleb128 0x19
  1042 0117 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 52
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 52
 
 
  1043 0118 19       		.uleb128 0x19
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  1097 005f C2000000 		.4byte	.LVL12
  1098 0063 0100     		.2byte	0x1
  1099 0065 52       		.byte	0x52
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 53
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 53
 
 
  1100 0066 C4000000 		.4byte	.LVL13
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  1154 00f8 56       		.byte	0x56
  1155 00f9 00000000 		.4byte	0
  1156 00fd 00000000 		.4byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 54
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 54
 
 
  1157              	.LLST6:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  1211 0175 22       		.byte	0x22
  1212 0176 76       		.byte	0x76
  1213 0177 00       		.sleb128 0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 55
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 55
 
 
  1214 0178 22       		.byte	0x22
@@ -3298,290 +3298,287 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 1
  1260      4C445F54 
  1261              	.LASF6:
  1262 0018 5F5F7569 		.ascii	"__uint8_t\000"
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 56
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 56
 
 
  1262      6E74385F 
  1262      7400
- 1263              	.LASF54:
- 1264 0022 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1264      43313120 
- 1264      352E342E 
- 1264      31203230 
- 1264      31363036 
- 1265 0055 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
- 1265      20726576 
- 1265      6973696F 
- 1265      6E203233 
- 1265      37373135 
- 1266 0088 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
- 1266      70202D6D 
- 1266      6670753D 
- 1266      66707634 
- 1266      2D73702D 
- 1267 00bb 65637469 		.ascii	"ections -ffat-lto-objects\000"
- 1267      6F6E7320 
- 1267      2D666661 
- 1267      742D6C74 
- 1267      6F2D6F62 
- 1268              	.LASF49:
- 1269 00d5 70747248 		.ascii	"ptrHistory\000"
- 1269      6973746F 
- 1269      727900
- 1270              	.LASF50:
- 1271 00e0 76616C75 		.ascii	"value\000"
- 1271      6500
- 1272              	.LASF9:
- 1273 00e6 5F5F696E 		.ascii	"__int32_t\000"
- 1273      7433325F 
- 1273      7400
- 1274              	.LASF32:
- 1275 00f0 69646163 		.ascii	"idacComp\000"
- 1275      436F6D70 
- 1275      00
- 1276              	.LASF8:
- 1277 00f9 73686F72 		.ascii	"short unsigned int\000"
- 1277      7420756E 
- 1277      7369676E 
- 1277      65642069 
- 1277      6E7400
- 1278              	.LASF35:
- 1279 010c 43617053 		.ascii	"CapSense_SLIDER_POS_HISTORY_STRUCT\000"
- 1279      656E7365 
- 1279      5F534C49 
- 1279      4445525F 
- 1279      504F535F 
- 1280              	.LASF18:
- 1281 012f 696E7433 		.ascii	"int32_t\000"
- 1281      325F7400 
- 1282              	.LASF37:
- 1283 0137 736E7343 		.ascii	"snsCount\000"
- 1283      6F756E74 
- 1283      00
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 57
+ 1263              	.LASF56:
+ 1264 0022 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Desktop\\Poly\\H2021\\GBM2100\\"
+ 1264      73657273 
+ 1264      5C4C6175 
+ 1264      7269616E 
+ 1264      655C4465 
+ 1265 004f 50726F6A 		.ascii	"Projet2\\Laboratoire3(nouvelleVersion)\\Laboratoire"
+ 1265      6574325C 
+ 1265      4C61626F 
+ 1265      7261746F 
+ 1265      69726533 
+ 1266 0080 332E6379 		.ascii	"3.cydsn\000"
+ 1266      64736E00 
+ 1267              	.LASF49:
+ 1268 0088 70747248 		.ascii	"ptrHistory\000"
+ 1268      6973746F 
+ 1268      727900
+ 1269              	.LASF50:
+ 1270 0093 76616C75 		.ascii	"value\000"
+ 1270      6500
+ 1271              	.LASF9:
+ 1272 0099 5F5F696E 		.ascii	"__int32_t\000"
+ 1272      7433325F 
+ 1272      7400
+ 1273              	.LASF32:
+ 1274 00a3 69646163 		.ascii	"idacComp\000"
+ 1274      436F6D70 
+ 1274      00
+ 1275              	.LASF8:
+ 1276 00ac 73686F72 		.ascii	"short unsigned int\000"
+ 1276      7420756E 
+ 1276      7369676E 
+ 1276      65642069 
+ 1276      6E7400
+ 1277              	.LASF35:
+ 1278 00bf 43617053 		.ascii	"CapSense_SLIDER_POS_HISTORY_STRUCT\000"
+ 1278      656E7365 
+ 1278      5F534C49 
+ 1278      4445525F 
+ 1278      504F535F 
+ 1279              	.LASF18:
+ 1280 00e2 696E7433 		.ascii	"int32_t\000"
+ 1280      325F7400 
+ 1281              	.LASF37:
+ 1282 00ea 736E7343 		.ascii	"snsCount\000"
+ 1282      6F756E74 
+ 1282      00
+ 1283              	.LASF20:
+ 1284 00f3 666C6F61 		.ascii	"float\000"
+ 1284      7400
+ 1285              	.LASF3:
+ 1286 00f9 7369676E 		.ascii	"signed char\000"
+ 1286      65642063 
+ 1286      68617200 
+ 1287              	.LASF4:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 57
 
 
- 1284              	.LASF20:
- 1285 0140 666C6F61 		.ascii	"float\000"
- 1285      7400
- 1286              	.LASF3:
- 1287 0146 7369676E 		.ascii	"signed char\000"
- 1287      65642063 
- 1287      68617200 
- 1288              	.LASF4:
- 1289 0152 756E7369 		.ascii	"unsigned char\000"
- 1289      676E6564 
- 1289      20636861 
- 1289      7200
- 1290              	.LASF12:
- 1291 0160 6C6F6E67 		.ascii	"long unsigned int\000"
- 1291      20756E73 
- 1291      69676E65 
- 1291      6420696E 
- 1291      7400
- 1292              	.LASF41:
- 1293 0172 74656D70 		.ascii	"temp\000"
- 1293      00
- 1294              	.LASF22:
- 1295 0177 75696E74 		.ascii	"uint8\000"
- 1295      3800
- 1296              	.LASF58:
- 1297 017d 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1297      52784275 
- 1297      66666572 
- 1297      00
- 1298              	.LASF45:
- 1299 018a 6D756C74 		.ascii	"multiplier\000"
- 1299      69706C69 
- 1299      657200
- 1300              	.LASF7:
- 1301 0195 5F5F7569 		.ascii	"__uint16_t\000"
- 1301      6E743136 
- 1301      5F7400
- 1302              	.LASF21:
- 1303 01a0 646F7562 		.ascii	"double\000"
- 1303      6C6500
- 1304              	.LASF29:
- 1305 01a7 62736C6E 		.ascii	"bslnExt\000"
- 1305      45787400 
- 1306              	.LASF11:
- 1307 01af 5F5F7569 		.ascii	"__uint32_t\000"
- 1307      6E743332 
- 1307      5F7400
- 1308              	.LASF23:
- 1309 01ba 75696E74 		.ascii	"uint16\000"
- 1309      313600
- 1310              	.LASF44:
- 1311 01c1 706F7369 		.ascii	"position\000"
- 1311      74696F6E 
- 1311      00
- 1312              	.LASF43:
- 1313 01ca 43617053 		.ascii	"CapSense_DpCalcLinearCentroid\000"
- 1313      656E7365 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 58
+ 1288 0105 756E7369 		.ascii	"unsigned char\000"
+ 1288      676E6564 
+ 1288      20636861 
+ 1288      7200
+ 1289              	.LASF12:
+ 1290 0113 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1290      20756E73 
+ 1290      69676E65 
+ 1290      6420696E 
+ 1290      7400
+ 1291              	.LASF41:
+ 1292 0125 74656D70 		.ascii	"temp\000"
+ 1292      00
+ 1293              	.LASF22:
+ 1294 012a 75696E74 		.ascii	"uint8\000"
+ 1294      3800
+ 1295              	.LASF58:
+ 1296 0130 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1296      52784275 
+ 1296      66666572 
+ 1296      00
+ 1297              	.LASF45:
+ 1298 013d 6D756C74 		.ascii	"multiplier\000"
+ 1298      69706C69 
+ 1298      657200
+ 1299              	.LASF7:
+ 1300 0148 5F5F7569 		.ascii	"__uint16_t\000"
+ 1300      6E743136 
+ 1300      5F7400
+ 1301              	.LASF21:
+ 1302 0153 646F7562 		.ascii	"double\000"
+ 1302      6C6500
+ 1303              	.LASF29:
+ 1304 015a 62736C6E 		.ascii	"bslnExt\000"
+ 1304      45787400 
+ 1305              	.LASF11:
+ 1306 0162 5F5F7569 		.ascii	"__uint32_t\000"
+ 1306      6E743332 
+ 1306      5F7400
+ 1307              	.LASF23:
+ 1308 016d 75696E74 		.ascii	"uint16\000"
+ 1308      313600
+ 1309              	.LASF44:
+ 1310 0174 706F7369 		.ascii	"position\000"
+ 1310      74696F6E 
+ 1310      00
+ 1311              	.LASF43:
+ 1312 017d 43617053 		.ascii	"CapSense_DpCalcLinearCentroid\000"
+ 1312      656E7365 
+ 1312      5F447043 
+ 1312      616C634C 
+ 1312      696E6561 
+ 1313              	.LASF24:
+ 1314 019b 75696E74 		.ascii	"uint32\000"
+ 1314      333200
+ 1315              	.LASF0:
+ 1316 01a2 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 58
 
 
- 1313      5F447043 
- 1313      616C634C 
- 1313      696E6561 
- 1314              	.LASF24:
- 1315 01e8 75696E74 		.ascii	"uint32\000"
- 1315      333200
- 1316              	.LASF0:
- 1317 01ef 756E7369 		.ascii	"unsigned int\000"
- 1317      676E6564 
- 1317      20696E74 
- 1317      00
- 1318              	.LASF40:
- 1319 01fc 6C6F6361 		.ascii	"localPtrSns\000"
- 1319      6C507472 
- 1319      536E7300 
- 1320              	.LASF13:
- 1321 0208 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1321      206C6F6E 
- 1321      6720756E 
- 1321      7369676E 
- 1321      65642069 
- 1322              	.LASF16:
- 1323 021f 75696E74 		.ascii	"uint8_t\000"
- 1323      385F7400 
- 1324              	.LASF52:
- 1325 0227 6C6F6361 		.ascii	"localDiffArray\000"
- 1325      6C446966 
- 1325      66417272 
- 1325      617900
- 1326              	.LASF57:
- 1327 0236 43617053 		.ascii	"CapSense_InitPosFiltersSd\000"
- 1327      656E7365 
- 1327      5F496E69 
- 1327      74506F73 
- 1327      46696C74 
- 1328              	.LASF51:
- 1329 0250 6C6F6361 		.ascii	"localMax\000"
- 1329      6C4D6178 
- 1329      00
- 1330              	.LASF31:
- 1331 0259 6E656742 		.ascii	"negBslnRstCnt\000"
- 1331      736C6E52 
- 1331      7374436E 
- 1331      7400
- 1332              	.LASF25:
- 1333 0267 696E7433 		.ascii	"int32\000"
- 1333      3200
- 1334              	.LASF14:
- 1335 026d 73697A65 		.ascii	"sizetype\000"
- 1335      74797065 
- 1335      00
- 1336              	.LASF30:
- 1337 0276 64696666 		.ascii	"diff\000"
- 1337      00
- 1338              	.LASF1:
- 1339 027b 6C6F6E67 		.ascii	"long long int\000"
- 1339      206C6F6E 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 59
+ 1316      676E6564 
+ 1316      20696E74 
+ 1316      00
+ 1317              	.LASF40:
+ 1318 01af 6C6F6361 		.ascii	"localPtrSns\000"
+ 1318      6C507472 
+ 1318      536E7300 
+ 1319              	.LASF13:
+ 1320 01bb 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1320      206C6F6E 
+ 1320      6720756E 
+ 1320      7369676E 
+ 1320      65642069 
+ 1321              	.LASF16:
+ 1322 01d2 75696E74 		.ascii	"uint8_t\000"
+ 1322      385F7400 
+ 1323              	.LASF52:
+ 1324 01da 6C6F6361 		.ascii	"localDiffArray\000"
+ 1324      6C446966 
+ 1324      66417272 
+ 1324      617900
+ 1325              	.LASF57:
+ 1326 01e9 43617053 		.ascii	"CapSense_InitPosFiltersSd\000"
+ 1326      656E7365 
+ 1326      5F496E69 
+ 1326      74506F73 
+ 1326      46696C74 
+ 1327              	.LASF51:
+ 1328 0203 6C6F6361 		.ascii	"localMax\000"
+ 1328      6C4D6178 
+ 1328      00
+ 1329              	.LASF31:
+ 1330 020c 6E656742 		.ascii	"negBslnRstCnt\000"
+ 1330      736C6E52 
+ 1330      7374436E 
+ 1330      7400
+ 1331              	.LASF25:
+ 1332 021a 696E7433 		.ascii	"int32\000"
+ 1332      3200
+ 1333              	.LASF14:
+ 1334 0220 73697A65 		.ascii	"sizetype\000"
+ 1334      74797065 
+ 1334      00
+ 1335              	.LASF30:
+ 1336 0229 64696666 		.ascii	"diff\000"
+ 1336      00
+ 1337              	.LASF1:
+ 1338 022e 6C6F6E67 		.ascii	"long long int\000"
+ 1338      206C6F6E 
+ 1338      6720696E 
+ 1338      7400
+ 1339              	.LASF33:
+ 1340 023c 43617053 		.ascii	"CapSense_RAM_SNS_STRUCT\000"
+ 1340      656E7365 
+ 1340      5F52414D 
+ 1340      5F534E53 
+ 1340      5F535452 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 59
 
 
- 1339      6720696E 
- 1339      7400
- 1340              	.LASF33:
- 1341 0289 43617053 		.ascii	"CapSense_RAM_SNS_STRUCT\000"
- 1341      656E7365 
- 1341      5F52414D 
- 1341      5F534E53 
- 1341      5F535452 
- 1342              	.LASF38:
- 1343 02a1 66696E67 		.ascii	"fingerThreshold\000"
- 1343      65725468 
- 1343      72657368 
- 1343      6F6C6400 
- 1344              	.LASF55:
- 1345 02b1 47656E65 		.ascii	"Generated_Source\\PSoC6\\CapSense_Centroid_LL.c\000"
- 1345      72617465 
- 1345      645F536F 
- 1345      75726365 
- 1345      5C50536F 
- 1346              	.LASF36:
- 1347 02df 70747253 		.ascii	"ptrSns\000"
- 1347      6E7300
- 1348              	.LASF46:
- 1349 02e6 6F666673 		.ascii	"offset\000"
- 1349      657400
- 1350              	.LASF53:
- 1351 02ed 6C6F6361 		.ascii	"localMaxIndex\000"
- 1351      6C4D6178 
- 1351      496E6465 
- 1351      7800
- 1352              	.LASF5:
- 1353 02fb 73686F72 		.ascii	"short int\000"
- 1353      7420696E 
- 1353      7400
- 1354              	.LASF17:
- 1355 0305 75696E74 		.ascii	"uint16_t\000"
- 1355      31365F74 
- 1355      00
- 1356              	.LASF56:
- 1357 030e 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Downloads\\Laboratoire3(nouvel"
- 1357      73657273 
- 1357      5C4C6175 
- 1357      7269616E 
- 1357      655C446F 
- 1358 033d 6C655665 		.ascii	"leVersion _7avril)\\Laboratoire3(nouvelleVersion)\\"
- 1358      7273696F 
- 1358      6E205F37 
- 1358      61767269 
- 1358      6C295C4C 
- 1359 036e 4C61626F 		.ascii	"Laboratoire3.cydsn\000"
- 1359      7261746F 
- 1359      69726533 
- 1359      2E637964 
- 1359      736E00
+ 1341              	.LASF38:
+ 1342 0254 66696E67 		.ascii	"fingerThreshold\000"
+ 1342      65725468 
+ 1342      72657368 
+ 1342      6F6C6400 
+ 1343              	.LASF55:
+ 1344 0264 47656E65 		.ascii	"Generated_Source\\PSoC6\\CapSense_Centroid_LL.c\000"
+ 1344      72617465 
+ 1344      645F536F 
+ 1344      75726365 
+ 1344      5C50536F 
+ 1345              	.LASF36:
+ 1346 0292 70747253 		.ascii	"ptrSns\000"
+ 1346      6E7300
+ 1347              	.LASF46:
+ 1348 0299 6F666673 		.ascii	"offset\000"
+ 1348      657400
+ 1349              	.LASF53:
+ 1350 02a0 6C6F6361 		.ascii	"localMaxIndex\000"
+ 1350      6C4D6178 
+ 1350      496E6465 
+ 1350      7800
+ 1351              	.LASF5:
+ 1352 02ae 73686F72 		.ascii	"short int\000"
+ 1352      7420696E 
+ 1352      7400
+ 1353              	.LASF17:
+ 1354 02b8 75696E74 		.ascii	"uint16_t\000"
+ 1354      31365F74 
+ 1354      00
+ 1355              	.LASF54:
+ 1356 02c1 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1356      43313120 
+ 1356      352E342E 
+ 1356      31203230 
+ 1356      31363036 
+ 1357 02f4 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1357      20726576 
+ 1357      6973696F 
+ 1357      6E203233 
+ 1357      37373135 
+ 1358 0327 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 1358      70202D6D 
+ 1358      6670753D 
+ 1358      66707634 
+ 1358      2D73702D 
+ 1359 035a 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1359      6F6E7320 
+ 1359      2D666661 
+ 1359      742D6C74 
+ 1359      6F2D6F62 
  1360              	.LASF47:
- 1361 0381 6E756D65 		.ascii	"numerator\000"
+ 1361 0374 6E756D65 		.ascii	"numerator\000"
  1361      7261746F 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccA2zmgY.s 			page 60
-
-
  1361      7200
  1362              	.LASF19:
- 1363 038b 75696E74 		.ascii	"uint32_t\000"
+ 1363 037e 75696E74 		.ascii	"uint32_t\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cc1Nm8Ql.s 			page 60
+
+
  1363      33325F74 
  1363      00
  1364              	.LASF10:
- 1365 0394 6C6F6E67 		.ascii	"long int\000"
+ 1365 0387 6C6F6E67 		.ascii	"long int\000"
  1365      20696E74 
  1365      00
  1366              	.LASF15:
- 1367 039d 63686172 		.ascii	"char\000"
+ 1367 0390 63686172 		.ascii	"char\000"
  1367      00
  1368              	.LASF34:
- 1369 03a2 706F7341 		.ascii	"posAverage\000"
+ 1369 0395 706F7341 		.ascii	"posAverage\000"
  1369      76657261 
  1369      676500
  1370              	.LASF2:
- 1371 03ad 6C6F6E67 		.ascii	"long double\000"
+ 1371 03a0 6C6F6E67 		.ascii	"long double\000"
  1371      20646F75 
  1371      626C6500 
  1372              	.LASF39:
- 1373 03b9 73656E73 		.ascii	"sensorId\000"
+ 1373 03ac 73656E73 		.ascii	"sensorId\000"
  1373      6F724964 
  1373      00
  1374              	.LASF42:
- 1375 03c2 43617053 		.ascii	"CapSense_DpFindLocalMaxSd\000"
+ 1375 03b5 43617053 		.ascii	"CapSense_DpFindLocalMaxSd\000"
  1375      656E7365 
  1375      5F447046 
  1375      696E644C 
  1375      6F63616C 
  1376              	.LASF28:
- 1377 03dc 62736C6E 		.ascii	"bsln\000"
+ 1377 03cf 62736C6E 		.ascii	"bsln\000"
  1377      00
  1378              	.LASF27:
- 1379 03e1 43617053 		.ascii	"CapSense_LOW_BSLN_RST_TYPE\000"
+ 1379 03d4 43617053 		.ascii	"CapSense_LOW_BSLN_RST_TYPE\000"
  1379      656E7365 
  1379      5F4C4F57 
  1379      5F42534C 
  1379      4E5F5253 
  1380              	.LASF48:
- 1381 03fc 64656E6F 		.ascii	"denominator\000"
+ 1381 03ef 64656E6F 		.ascii	"denominator\000"
  1381      6D696E61 
  1381      746F7200 
  1382              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -148,22 +148,22 @@ void ClearScreen(void)
 //    }
 //}
 
-void alarmeAcc()
-{
-    if (currentPage==PAGE_ALARME_1)
-    {
-        if (flickLeft==true) // seulement si on est dans la page d'alarme
-        {
-            flagAlarme = false;
-            GUI_DispStringAt("Alarme desactivee ", 10, 120);
-        }
-        if (flickRight==true)
-        {
-            flagAlarme = true;
-            GUI_DispStringAt("Alarme activee ", 10, 120);
-        } 
-    }
-}
+//void alarmeAcc()
+//{
+//    if (currentPage==PAGE_ALARME_1)
+//    {
+//        if (flickLeft==true) // seulement si on est dans la page d'alarme
+//        {
+//            flagAlarme = false;
+//            
+//        }
+//        if (flickRight==true)
+//        {
+//            flagAlarme = true;
+//            
+//        } 
+//    }
+//}
 
 void drawSignal(int longueur, int intervalle, int32_t *pointeur)
 {
@@ -244,7 +244,7 @@ void drawPageLED()
     GUI_DispStringAt("Intensite des DELs (V): ", 10, 60); 
     sprintf(&bufferDEL[0], "%d", courantDEL);
     GUI_DispStringAt(bufferDEL, 150, 60);
-    GUI_DispStringAt("augmenter : Bouton1 | diminuer : Bouton0", 10, 120);
+    //GUI_DispStringAt("augmenter : Bouton1 | diminuer : Bouton0", 10, 120);
 }
 
 void drawPageALARME_Acc()
@@ -256,6 +256,14 @@ void drawPageALARME_Acc()
      GUI_SetTextAlign(GUI_TA_LEFT);
      GUI_DispStringAt("Activer l'alarme : balayez a droite ", 10, 60); 
      GUI_DispStringAt("Desactiver l'alarme : balayez a gauche ", 10, 90); 
+//    if (flagAlarme==true)
+//    {
+//        GUI_DispStringAt("Alarme activee ", 10, 120);
+//    }
+//    if (flagAlarme==false)
+//    {
+//        GUI_DispStringAt("Alarme desactivee ", 10, 120);
+//    }
 }
 
 void drawPageALARME_Rythme()
@@ -478,6 +486,12 @@ void Task_Display(void *pvParameters)
             UpdateDisplay(CY_EINK_FULL_4STAGE, true);
             bouton0Touched = false;
         }
+        
+//        if (currentPage==PAGE_ALARME_1)
+//        {
+//            alarmeAcc();
+//            UpdateDisplay(CY_EINK_FULL_4STAGE, true);
+//        }
         
         vTaskDelay(pdMS_TO_TICKS(1000));
     }

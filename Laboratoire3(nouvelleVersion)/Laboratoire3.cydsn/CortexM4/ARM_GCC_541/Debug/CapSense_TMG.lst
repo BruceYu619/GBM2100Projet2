@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
   27:Generated_Source\PSoC6/CapSense_TMG.c **** *
   28:Generated_Source\PSoC6/CapSense_TMG.c **** * Parameters:
   29:Generated_Source\PSoC6/CapSense_TMG.c **** *  touchNumber: Number of fingers on the trackpad. Valid range 0-2.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 2
 
 
   30:Generated_Source\PSoC6/CapSense_TMG.c **** *  currentTimestamp : Current timestamp value.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
   74:Generated_Source\PSoC6/CapSense_TMG.c **** 
   75:Generated_Source\PSoC6/CapSense_TMG.c ****         #if (CapSense_TMG_EDGE_SWIPE_ENABLED == 1u)
   76:Generated_Source\PSoC6/CapSense_TMG.c ****             uint32_t edgeSwipeGesture = CapSense_TMG_NO_GESTURE;
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 3
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 3
 
 
   77:Generated_Source\PSoC6/CapSense_TMG.c ****         #endif /* (CapSense_TMG_EDGE_SWIPE_ENABLED == 1u) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  131:Generated_Source\PSoC6/CapSense_TMG.c ****                     if (clickAndDragActive == 0u)
  132:Generated_Source\PSoC6/CapSense_TMG.c ****                 #elif (CapSense_TMG_EDGE_SWIPE_ENABLED == 1u)
  133:Generated_Source\PSoC6/CapSense_TMG.c ****                     if (edgeSwipeActive == 0u)
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 4
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 4
 
 
  134:Generated_Source\PSoC6/CapSense_TMG.c ****                 #else
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
   56              	.LVL5:
   57              	.L3:
   58 0016 0020     		movs	r0, #0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 5
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 5
 
 
   59              	.LVL6:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  222:Generated_Source\PSoC6/CapSense_TMG.c ****                                                                    (CapSense_TMG_ROTATE_ENABLED == 
  223:Generated_Source\PSoC6/CapSense_TMG.c **** 
  224:Generated_Source\PSoC6/CapSense_TMG.c ****             #if (CapSense_TMG_EDGE_SWIPE_ENABLED != 0u)
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 6
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 6
 
 
  225:Generated_Source\PSoC6/CapSense_TMG.c ****             deltaTimeoutStamp = currentTimestamp - edgeTimeoutStamp;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  266:Generated_Source\PSoC6/CapSense_TMG.c **** *******************************************************************************/
  267:Generated_Source\PSoC6/CapSense_TMG.c **** void CapSense_TMG_BallisticsMultiplier(const CapSense_TMG_BALLISTIC_MULT * ballisticMultiplier, uin
  268:Generated_Source\PSoC6/CapSense_TMG.c **** {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 7
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 7
 
 
   74              		.loc 1 268 0
@@ -386,25 +386,25 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
   96 000c 21000000 		.4byte	.LASF31
   97 0010 0C       		.byte	0xc
   98 0011 F2000000 		.4byte	.LASF32
-  99 0015 8E010000 		.4byte	.LASF33
+  99 0015 84020000 		.4byte	.LASF33
  100 0019 00000000 		.4byte	.Ldebug_ranges0+0
  101 001d 00000000 		.4byte	0
  102 0021 00000000 		.4byte	.Ldebug_line0
  103 0025 02       		.uleb128 0x2
  104 0026 01       		.byte	0x1
  105 0027 06       		.byte	0x6
- 106 0028 18010000 		.4byte	.LASF0
+ 106 0028 82010000 		.4byte	.LASF0
  107 002c 03       		.uleb128 0x3
- 108 002d 5A010000 		.4byte	.LASF2
+ 108 002d 4E010000 		.4byte	.LASF2
  109 0031 02       		.byte	0x2
  110 0032 1D       		.byte	0x1d
  111 0033 37000000 		.4byte	0x37
  112 0037 02       		.uleb128 0x2
  113 0038 01       		.byte	0x1
  114 0039 08       		.byte	0x8
- 115 003a 80010000 		.4byte	.LASF1
+ 115 003a 74010000 		.4byte	.LASF1
  116 003e 03       		.uleb128 0x3
- 117 003f 08030000 		.4byte	.LASF3
+ 117 003f FB020000 		.4byte	.LASF3
  118 0043 02       		.byte	0x2
  119 0044 29       		.byte	0x29
  120 0045 49000000 		.4byte	0x49
@@ -418,16 +418,16 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  128 0056 2B       		.byte	0x2b
  129 0057 5B000000 		.4byte	0x5b
  130 005b 02       		.uleb128 0x2
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 8
 
 
  131 005c 02       		.byte	0x2
  132 005d 07       		.byte	0x7
- 133 005e 80020000 		.4byte	.LASF6
+ 133 005e 0D020000 		.4byte	.LASF6
  134 0062 02       		.uleb128 0x2
  135 0063 04       		.byte	0x4
  136 0064 05       		.byte	0x5
- 137 0065 32010000 		.4byte	.LASF7
+ 137 0065 26010000 		.4byte	.LASF7
  138 0069 03       		.uleb128 0x3
  139 006a D4000000 		.4byte	.LASF8
  140 006e 02       		.byte	0x2
@@ -436,15 +436,15 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  143 0074 02       		.uleb128 0x2
  144 0075 04       		.byte	0x4
  145 0076 07       		.byte	0x7
- 146 0077 C2020000 		.4byte	.LASF9
+ 146 0077 4F020000 		.4byte	.LASF9
  147 007b 02       		.uleb128 0x2
  148 007c 08       		.byte	0x8
  149 007d 05       		.byte	0x5
- 150 007e 24010000 		.4byte	.LASF10
+ 150 007e 18010000 		.4byte	.LASF10
  151 0082 02       		.uleb128 0x2
  152 0083 08       		.byte	0x8
  153 0084 07       		.byte	0x7
- 154 0085 01020000 		.4byte	.LASF11
+ 154 0085 8E010000 		.4byte	.LASF11
  155 0089 04       		.uleb128 0x4
  156 008a 04       		.byte	0x4
  157 008b 05       		.byte	0x5
@@ -452,24 +452,24 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  159 0090 02       		.uleb128 0x2
  160 0091 04       		.byte	0x4
  161 0092 07       		.byte	0x7
- 162 0093 2C020000 		.4byte	.LASF12
+ 162 0093 B9010000 		.4byte	.LASF12
  163 0097 03       		.uleb128 0x3
  164 0098 EA000000 		.4byte	.LASF13
  165 009c 03       		.byte	0x3
  166 009d 18       		.byte	0x18
  167 009e 2C000000 		.4byte	0x2c
  168 00a2 03       		.uleb128 0x3
- 169 00a3 9D020000 		.4byte	.LASF14
+ 169 00a3 2A020000 		.4byte	.LASF14
  170 00a7 03       		.byte	0x3
  171 00a8 20       		.byte	0x20
  172 00a9 3E000000 		.4byte	0x3e
  173 00ad 03       		.uleb128 0x3
- 174 00ae 39020000 		.4byte	.LASF15
+ 174 00ae C6010000 		.4byte	.LASF15
  175 00b2 03       		.byte	0x3
  176 00b3 24       		.byte	0x24
  177 00b4 50000000 		.4byte	0x50
  178 00b8 03       		.uleb128 0x3
- 179 00b9 18020000 		.4byte	.LASF16
+ 179 00b9 A5010000 		.4byte	.LASF16
  180 00bd 03       		.byte	0x3
  181 00be 30       		.byte	0x30
  182 00bf 69000000 		.4byte	0x69
@@ -478,23 +478,23 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  185 00c5 04       		.byte	0x4
  186 00c6 F801     		.2byte	0x1f8
  187 00c8 1B010000 		.4byte	0x11b
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 9
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 9
 
 
  188 00cc 06       		.uleb128 0x6
- 189 00cd EB020000 		.4byte	.LASF17
+ 189 00cd 78020000 		.4byte	.LASF17
  190 00d1 04       		.byte	0x4
  191 00d2 FB01     		.2byte	0x1fb
  192 00d4 97000000 		.4byte	0x97
  193 00d8 00       		.byte	0
  194 00d9 06       		.uleb128 0x6
- 195 00da 21020000 		.4byte	.LASF18
+ 195 00da AE010000 		.4byte	.LASF18
  196 00de 04       		.byte	0x4
  197 00df FD01     		.2byte	0x1fd
  198 00e1 97000000 		.4byte	0x97
  199 00e5 01       		.byte	0x1
  200 00e6 06       		.uleb128 0x6
- 201 00e7 26030000 		.4byte	.LASF19
+ 201 00e7 19030000 		.4byte	.LASF19
  202 00eb 04       		.byte	0x4
  203 00ec FF01     		.2byte	0x1ff
  204 00ee 97000000 		.4byte	0x97
@@ -506,20 +506,20 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  210 00fb 97000000 		.4byte	0x97
  211 00ff 03       		.byte	0x3
  212 0100 06       		.uleb128 0x6
- 213 0101 31030000 		.4byte	.LASF21
+ 213 0101 24030000 		.4byte	.LASF21
  214 0105 04       		.byte	0x4
  215 0106 0302     		.2byte	0x203
  216 0108 97000000 		.4byte	0x97
  217 010c 04       		.byte	0x4
  218 010d 06       		.uleb128 0x6
- 219 010e 41030000 		.4byte	.LASF22
+ 219 010e 34030000 		.4byte	.LASF22
  220 0112 04       		.byte	0x4
  221 0113 0502     		.2byte	0x205
  222 0115 97000000 		.4byte	0x97
  223 0119 05       		.byte	0x5
  224 011a 00       		.byte	0
  225 011b 07       		.uleb128 0x7
- 226 011c 64010000 		.4byte	.LASF23
+ 226 011c 58010000 		.4byte	.LASF23
  227 0120 04       		.byte	0x4
  228 0121 0602     		.2byte	0x206
  229 0123 C3000000 		.4byte	0xc3
@@ -538,19 +538,19 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  242 013c 7900     		.ascii	"y\000"
  243 013e 04       		.byte	0x4
  244 013f 0E02     		.2byte	0x20e
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 10
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 10
 
 
  245 0141 AD000000 		.4byte	0xad
  246 0145 02       		.byte	0x2
  247 0146 00       		.byte	0
  248 0147 07       		.uleb128 0x7
- 249 0148 A5020000 		.4byte	.LASF24
+ 249 0148 32020000 		.4byte	.LASF24
  250 014c 04       		.byte	0x4
  251 014d 0F02     		.2byte	0x20f
  252 014f 27010000 		.4byte	0x127
  253 0153 09       		.uleb128 0x9
- 254 0154 3B010000 		.4byte	.LASF34
+ 254 0154 2F010000 		.4byte	.LASF34
  255 0158 01       		.byte	0x1
  256 0159 25       		.byte	0x25
  257 015a B8000000 		.4byte	0xb8
@@ -560,13 +560,13 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  261 0167 9C       		.byte	0x9c
  262 0168 EF010000 		.4byte	0x1ef
  263 016c 0A       		.uleb128 0xa
- 264 016d EB020000 		.4byte	.LASF17
+ 264 016d 78020000 		.4byte	.LASF17
  265 0171 01       		.byte	0x1
  266 0172 25       		.byte	0x25
  267 0173 B8000000 		.4byte	0xb8
  268 0177 00000000 		.4byte	.LLST0
  269 017b 0A       		.uleb128 0xa
- 270 017c F7020000 		.4byte	.LASF25
+ 270 017c EA020000 		.4byte	.LASF25
  271 0180 01       		.byte	0x1
  272 0181 25       		.byte	0x25
  273 0182 B8000000 		.4byte	0xb8
@@ -578,19 +578,19 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  279 0191 EF010000 		.4byte	0x1ef
  280 0195 42000000 		.4byte	.LLST2
  281 0199 0C       		.uleb128 0xc
- 282 019a E1020000 		.4byte	.LASF26
+ 282 019a 6E020000 		.4byte	.LASF26
  283 019e 01       		.byte	0x1
  284 019f 27       		.byte	0x27
  285 01a0 B8000000 		.4byte	0xb8
  286 01a4 63000000 		.4byte	.LLST3
  287 01a8 0D       		.uleb128 0xd
- 288 01a9 D4020000 		.4byte	.LASF27
+ 288 01a9 61020000 		.4byte	.LASF27
  289 01ad 01       		.byte	0x1
  290 01ae 2A       		.byte	0x2a
  291 01af B8000000 		.4byte	0xb8
  292 01b3 00       		.byte	0
  293 01b4 0C       		.uleb128 0xc
- 294 01b5 93020000 		.4byte	.LASF28
+ 294 01b5 20020000 		.4byte	.LASF28
  295 01b9 01       		.byte	0x1
  296 01ba 2D       		.byte	0x2d
  297 01bb B8000000 		.4byte	0xb8
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  299 01c3 0D       		.uleb128 0xd
  300 01c4 0A000000 		.4byte	.LASF29
  301 01c8 01       		.byte	0x1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 11
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 11
 
 
  302 01c9 30       		.byte	0x30
@@ -636,7 +636,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  334 01f5 11       		.uleb128 0x11
  335 01f6 47010000 		.4byte	0x147
  336 01fa 12       		.uleb128 0x12
- 337 01fb 5E020000 		.4byte	.LASF35
+ 337 01fb EB010000 		.4byte	.LASF35
  338 01ff 01       		.byte	0x1
  339 0200 0B01     		.2byte	0x10b
  340 0202 00000000 		.4byte	.LFB1
@@ -645,20 +645,20 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  343 020b 9C       		.byte	0x9c
  344 020c 3B020000 		.4byte	0x23b
  345 0210 13       		.uleb128 0x13
- 346 0211 12030000 		.4byte	.LASF30
+ 346 0211 05030000 		.4byte	.LASF30
  347 0215 01       		.byte	0x1
  348 0216 0B01     		.2byte	0x10b
  349 0218 3B020000 		.4byte	0x23b
  350 021c 01       		.uleb128 0x1
  351 021d 50       		.byte	0x50
  352 021e 13       		.uleb128 0x13
- 353 021f F7020000 		.4byte	.LASF25
+ 353 021f EA020000 		.4byte	.LASF25
  354 0223 01       		.byte	0x1
  355 0224 0B01     		.2byte	0x10b
  356 0226 B8000000 		.4byte	0xb8
  357 022a 01       		.uleb128 0x1
  358 022b 51       		.byte	0x51
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 12
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 12
 
 
  359 022c 14       		.uleb128 0x14
@@ -678,8 +678,8 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  373 0247 04       		.byte	0x4
  374 0248 A2000000 		.4byte	0xa2
  375 024c 15       		.uleb128 0x15
- 376 024d 42020000 		.4byte	.LASF36
- 377 0251 42020000 		.4byte	.LASF36
+ 376 024d CF010000 		.4byte	.LASF36
+ 377 0251 CF010000 		.4byte	.LASF36
  378 0255 04       		.byte	0x4
  379 0256 A502     		.2byte	0x2a5
  380 0258 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  413 001e 03       		.uleb128 0x3
  414 001f 16       		.uleb128 0x16
  415 0020 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 13
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 13
 
 
  416 0021 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  470 0057 3A       		.uleb128 0x3a
  471 0058 0B       		.uleb128 0xb
  472 0059 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 14
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 14
 
 
  473 005a 05       		.uleb128 0x5
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  527 0091 3B       		.uleb128 0x3b
  528 0092 0B       		.uleb128 0xb
  529 0093 49       		.uleb128 0x49
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 15
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 15
 
 
  530 0094 13       		.uleb128 0x13
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  584 00cc 01       		.uleb128 0x1
  585 00cd 31       		.uleb128 0x31
  586 00ce 13       		.uleb128 0x13
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 16
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 16
 
 
  587 00cf 00       		.byte	0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  641 0109 00       		.byte	0
  642 010a 03       		.uleb128 0x3
  643 010b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 17
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 17
 
 
  644 010c 3A       		.uleb128 0x3a
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  698 0016 01       		.uleb128 0x1
  699 0017 50       		.byte	0x50
  700 0018 9F       		.byte	0x9f
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 18
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 18
 
 
  701 0019 00000000 		.4byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  755 00a1 0100     		.2byte	0x1
  756 00a3 50       		.byte	0x50
  757 00a4 00000000 		.4byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 19
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 19
 
 
  758 00a8 00000000 		.4byte	0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  793 0087 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
  793      70202D6D 
  793      6670753D 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 20
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 20
 
 
  793      66707634 
@@ -1165,165 +1165,162 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 1
  802      645F536F 
  802      75726365 
  802      5C50536F 
- 803              	.LASF0:
- 804 0118 7369676E 		.ascii	"signed char\000"
- 804      65642063 
- 804      68617200 
- 805              	.LASF10:
- 806 0124 6C6F6E67 		.ascii	"long long int\000"
- 806      206C6F6E 
- 806      6720696E 
- 806      7400
- 807              	.LASF7:
- 808 0132 6C6F6E67 		.ascii	"long int\000"
- 808      20696E74 
- 808      00
- 809              	.LASF34:
- 810 013b 43617053 		.ascii	"CapSense_TMG_DecodeAllGestures\000"
- 810      656E7365 
- 810      5F544D47 
- 810      5F446563 
- 810      6F646541 
- 811              	.LASF2:
- 812 015a 5F5F7569 		.ascii	"__uint8_t\000"
- 812      6E74385F 
- 812      7400
- 813              	.LASF23:
- 814 0164 43617053 		.ascii	"CapSense_TMG_BALLISTIC_MULT\000"
- 814      656E7365 
- 814      5F544D47 
- 814      5F42414C 
- 814      4C495354 
- 815              	.LASF1:
- 816 0180 756E7369 		.ascii	"unsigned char\000"
- 816      676E6564 
- 816      20636861 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 21
+ 803              	.LASF10:
+ 804 0118 6C6F6E67 		.ascii	"long long int\000"
+ 804      206C6F6E 
+ 804      6720696E 
+ 804      7400
+ 805              	.LASF7:
+ 806 0126 6C6F6E67 		.ascii	"long int\000"
+ 806      20696E74 
+ 806      00
+ 807              	.LASF34:
+ 808 012f 43617053 		.ascii	"CapSense_TMG_DecodeAllGestures\000"
+ 808      656E7365 
+ 808      5F544D47 
+ 808      5F446563 
+ 808      6F646541 
+ 809              	.LASF2:
+ 810 014e 5F5F7569 		.ascii	"__uint8_t\000"
+ 810      6E74385F 
+ 810      7400
+ 811              	.LASF23:
+ 812 0158 43617053 		.ascii	"CapSense_TMG_BALLISTIC_MULT\000"
+ 812      656E7365 
+ 812      5F544D47 
+ 812      5F42414C 
+ 812      4C495354 
+ 813              	.LASF1:
+ 814 0174 756E7369 		.ascii	"unsigned char\000"
+ 814      676E6564 
+ 814      20636861 
+ 814      7200
+ 815              	.LASF0:
+ 816 0182 7369676E 		.ascii	"signed char\000"
+ 816      65642063 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 21
 
 
- 816      7200
- 817              	.LASF33:
- 818 018e 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Downloads\\Laboratoire3(nouvel"
- 818      73657273 
- 818      5C4C6175 
- 818      7269616E 
- 818      655C446F 
- 819 01bd 6C655665 		.ascii	"leVersion _7avril)\\Laboratoire3(nouvelleVersion)\\"
- 819      7273696F 
- 819      6E205F37 
- 819      61767269 
- 819      6C295C4C 
- 820 01ee 4C61626F 		.ascii	"Laboratoire3.cydsn\000"
- 820      7261746F 
- 820      69726533 
- 820      2E637964 
- 820      736E00
- 821              	.LASF11:
- 822 0201 6C6F6E67 		.ascii	"long long unsigned int\000"
- 822      206C6F6E 
- 822      6720756E 
- 822      7369676E 
- 822      65642069 
- 823              	.LASF16:
- 824 0218 75696E74 		.ascii	"uint32_t\000"
- 824      33325F74 
+ 816      68617200 
+ 817              	.LASF11:
+ 818 018e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 818      206C6F6E 
+ 818      6720756E 
+ 818      7369676E 
+ 818      65642069 
+ 819              	.LASF16:
+ 820 01a5 75696E74 		.ascii	"uint32_t\000"
+ 820      33325F74 
+ 820      00
+ 821              	.LASF18:
+ 822 01ae 61636365 		.ascii	"accelCoeff\000"
+ 822      6C436F65 
+ 822      666600
+ 823              	.LASF12:
+ 824 01b9 756E7369 		.ascii	"unsigned int\000"
+ 824      676E6564 
+ 824      20696E74 
  824      00
- 825              	.LASF18:
- 826 0221 61636365 		.ascii	"accelCoeff\000"
- 826      6C436F65 
- 826      666600
- 827              	.LASF12:
- 828 022c 756E7369 		.ascii	"unsigned int\000"
- 828      676E6564 
- 828      20696E74 
- 828      00
- 829              	.LASF15:
- 830 0239 75696E74 		.ascii	"uint16_t\000"
- 830      31365F74 
- 830      00
- 831              	.LASF36:
- 832 0242 47657374 		.ascii	"Gesture_DecodeFlickGestures\000"
- 832      7572655F 
- 832      4465636F 
- 832      6465466C 
- 832      69636B47 
- 833              	.LASF35:
- 834 025e 43617053 		.ascii	"CapSense_TMG_BallisticsMultiplier\000"
- 834      656E7365 
- 834      5F544D47 
- 834      5F42616C 
- 834      6C697374 
- 835              	.LASF6:
- 836 0280 73686F72 		.ascii	"short unsigned int\000"
- 836      7420756E 
- 836      7369676E 
- 836      65642069 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 22
+ 825              	.LASF15:
+ 826 01c6 75696E74 		.ascii	"uint16_t\000"
+ 826      31365F74 
+ 826      00
+ 827              	.LASF36:
+ 828 01cf 47657374 		.ascii	"Gesture_DecodeFlickGestures\000"
+ 828      7572655F 
+ 828      4465636F 
+ 828      6465466C 
+ 828      69636B47 
+ 829              	.LASF35:
+ 830 01eb 43617053 		.ascii	"CapSense_TMG_BallisticsMultiplier\000"
+ 830      656E7365 
+ 830      5F544D47 
+ 830      5F42616C 
+ 830      6C697374 
+ 831              	.LASF6:
+ 832 020d 73686F72 		.ascii	"short unsigned int\000"
+ 832      7420756E 
+ 832      7369676E 
+ 832      65642069 
+ 832      6E7400
+ 833              	.LASF28:
+ 834 0220 73744765 		.ascii	"stGesture\000"
+ 834      73747572 
+ 834      6500
+ 835              	.LASF14:
+ 836 022a 696E7431 		.ascii	"int16_t\000"
+ 836      365F7400 
+ 837              	.LASF24:
+ 838 0232 43617053 		.ascii	"CapSense_TMG_POSITION_STRUCT\000"
+ 838      656E7365 
+ 838      5F544D47 
+ 838      5F504F53 
+ 838      4954494F 
+ 839              	.LASF9:
+ 840 024f 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 22
 
 
- 836      6E7400
- 837              	.LASF28:
- 838 0293 73744765 		.ascii	"stGesture\000"
- 838      73747572 
- 838      6500
- 839              	.LASF14:
- 840 029d 696E7431 		.ascii	"int16_t\000"
- 840      365F7400 
- 841              	.LASF24:
- 842 02a5 43617053 		.ascii	"CapSense_TMG_POSITION_STRUCT\000"
- 842      656E7365 
- 842      5F544D47 
- 842      5F504F53 
- 842      4954494F 
- 843              	.LASF9:
- 844 02c2 6C6F6E67 		.ascii	"long unsigned int\000"
- 844      20756E73 
- 844      69676E65 
- 844      6420696E 
- 844      7400
- 845              	.LASF27:
- 846 02d4 636C6963 		.ascii	"clickGesture\000"
- 846      6B476573 
- 846      74757265 
- 846      00
- 847              	.LASF26:
- 848 02e1 67657374 		.ascii	"gestureID\000"
- 848      75726549 
- 848      4400
- 849              	.LASF17:
- 850 02eb 746F7563 		.ascii	"touchNumber\000"
- 850      684E756D 
- 850      62657200 
+ 840      20756E73 
+ 840      69676E65 
+ 840      6420696E 
+ 840      7400
+ 841              	.LASF27:
+ 842 0261 636C6963 		.ascii	"clickGesture\000"
+ 842      6B476573 
+ 842      74757265 
+ 842      00
+ 843              	.LASF26:
+ 844 026e 67657374 		.ascii	"gestureID\000"
+ 844      75726549 
+ 844      4400
+ 845              	.LASF17:
+ 846 0278 746F7563 		.ascii	"touchNumber\000"
+ 846      684E756D 
+ 846      62657200 
+ 847              	.LASF33:
+ 848 0284 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Desktop\\Poly\\H2021\\GBM2100\\"
+ 848      73657273 
+ 848      5C4C6175 
+ 848      7269616E 
+ 848      655C4465 
+ 849 02b1 50726F6A 		.ascii	"Projet2\\Laboratoire3(nouvelleVersion)\\Laboratoire"
+ 849      6574325C 
+ 849      4C61626F 
+ 849      7261746F 
+ 849      69726533 
+ 850 02e2 332E6379 		.ascii	"3.cydsn\000"
+ 850      64736E00 
  851              	.LASF25:
- 852 02f7 63757272 		.ascii	"currentTimestamp\000"
+ 852 02ea 63757272 		.ascii	"currentTimestamp\000"
  852      656E7454 
  852      696D6573 
  852      74616D70 
  852      00
  853              	.LASF3:
- 854 0308 5F5F696E 		.ascii	"__int16_t\000"
+ 854 02fb 5F5F696E 		.ascii	"__int16_t\000"
  854      7431365F 
  854      7400
  855              	.LASF30:
- 856 0312 62616C6C 		.ascii	"ballisticMultiplier\000"
+ 856 0305 62616C6C 		.ascii	"ballisticMultiplier\000"
  856      69737469 
  856      634D756C 
  856      7469706C 
  856      69657200 
  857              	.LASF19:
- 858 0326 73706565 		.ascii	"speedCoeff\000"
+ 858 0319 73706565 		.ascii	"speedCoeff\000"
  858      64436F65 
  858      666600
  859              	.LASF21:
- 860 0331 73706565 		.ascii	"speedThresholdX\000"
+ 860 0324 73706565 		.ascii	"speedThresholdX\000"
  860      64546872 
  860      6573686F 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccNsmCro.s 			page 23
-
-
  860      6C645800 
  861              	.LASF22:
- 862 0341 73706565 		.ascii	"speedThresholdY\000"
+ 862 0334 73706565 		.ascii	"speedThresholdY\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccg5kG0A.s 			page 23
+
+
  862      64546872 
  862      6573686F 
  862      6C645900 

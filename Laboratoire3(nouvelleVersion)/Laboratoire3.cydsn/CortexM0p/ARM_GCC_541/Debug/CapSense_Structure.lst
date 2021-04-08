@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
   29:Generated_Source\PSoC6/CapSense_Structure.c **** * Cypress reserves the right to make changes without further notice to the
   30:Generated_Source\PSoC6/CapSense_Structure.c **** * materials described herein. Cypress does not assume any liability arising out
   31:Generated_Source\PSoC6/CapSense_Structure.c **** * of the application or use of any product or circuit described herein. Cypress
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 2
 
 
   32:Generated_Source\PSoC6/CapSense_Structure.c **** * does not authorize its products for use as critical components in life-support
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
   86:Generated_Source\PSoC6/CapSense_Structure.c **** static uint8 CapSense_debounceLinearSlider0[1u];
   87:Generated_Source\PSoC6/CapSense_Structure.c **** 
   88:Generated_Source\PSoC6/CapSense_Structure.c **** 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 3
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 3
 
 
   89:Generated_Source\PSoC6/CapSense_Structure.c **** /***************************************************************************//**
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  143:Generated_Source\PSoC6/CapSense_Structure.c ****             &CapSense_ioList[2u],
  144:Generated_Source\PSoC6/CapSense_Structure.c ****             (void *)&CapSense_dsRam.wdgtList.button1,
  145:Generated_Source\PSoC6/CapSense_Structure.c ****             CapSense_dsRam.snsList.button1,
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 4
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 4
 
 
  146:Generated_Source\PSoC6/CapSense_Structure.c ****             (void *)CapSense_fltrHistoryButton1,
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  200:Generated_Source\PSoC6/CapSense_Structure.c ****         (uint8)CapSense_Tx_0_NUM,
  201:Generated_Source\PSoC6/CapSense_Structure.c ****     },
  202:Generated_Source\PSoC6/CapSense_Structure.c ****     { /* 4: LinearSlider0_Sns0 */
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 5
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 5
 
 
  203:Generated_Source\PSoC6/CapSense_Structure.c ****         CapSense_Sns_0_PORT,
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  257:Generated_Source\PSoC6/CapSense_Structure.c ****         {
  258:Generated_Source\PSoC6/CapSense_Structure.c ****             CapSense_BUTTON1_IDAC_MOD0,
  259:Generated_Source\PSoC6/CapSense_Structure.c ****         },
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 6
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 6
 
 
  260:Generated_Source\PSoC6/CapSense_Structure.c ****         CapSense_BUTTON1_SNS_CLK,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  314:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_DTZM_XPOS_TH,
  315:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_DTZM_YPOS_TH,
  316:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_STFK_POS_TH,
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 7
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 7
 
 
  317:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_STFK_YPOS_TH,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  371:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_STSC_MAX_TOUCH_DURATION,
  372:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_STSC_MIN_TOUCH_DURATION,
  373:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_STDC_MAX_TOUCH_INTERVAL,
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 8
 
 
  374:Generated_Source\PSoC6/CapSense_Structure.c ****     CapSense_LINEARSLIDER0_STDC_MIN_TOUCH_INTERVAL,
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  428:Generated_Source\PSoC6/CapSense_Structure.c **** /**
  429:Generated_Source\PSoC6/CapSense_Structure.c **** * \cond SECTION_CYSENSE_INTERNAL
  430:Generated_Source\PSoC6/CapSense_Structure.c **** * \addtogroup group_cysense_internal
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 9
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 9
 
 
  431:Generated_Source\PSoC6/CapSense_Structure.c **** * \{
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  485:Generated_Source\PSoC6/CapSense_Structure.c **** 
  486:Generated_Source\PSoC6/CapSense_Structure.c ****     #if (0u != CapSense_TOTAL_CSD_WIDGETS)
  487:Generated_Source\PSoC6/CapSense_Structure.c ****         CapSense_dsRam.modCsdClk = CapSense_CSD_SCANSPEED_DIVIDER;
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 10
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 10
 
 
  488:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  542:Generated_Source\PSoC6/CapSense_Structure.c **** 
  543:Generated_Source\PSoC6/CapSense_Structure.c ****                 ptrSnsTmp++;
  544:Generated_Source\PSoC6/CapSense_Structure.c ****             }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 11
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 11
 
 
  545:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  599:Generated_Source\PSoC6/CapSense_Structure.c **** * Function Name: DsParseParamId
  600:Generated_Source\PSoC6/CapSense_Structure.c **** ****************************************************************************//**
  601:Generated_Source\PSoC6/CapSense_Structure.c **** *
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 12
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 12
 
 
  602:Generated_Source\PSoC6/CapSense_Structure.c **** * \brief
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
   47              		.loc 1 635 0
   48 000e 030C     		lsrs	r3, r0, #16
   49 0010 7F22     		movs	r2, #127
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 13
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 13
 
 
   50 0012 1340     		ands	r3, r2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  671:Generated_Source\PSoC6/CapSense_Structure.c ****             /* Wrong widgetId for protected parameter */
  672:Generated_Source\PSoC6/CapSense_Structure.c ****             result = CY_RET_BAD_PARAM;
  673:Generated_Source\PSoC6/CapSense_Structure.c ****         }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 14
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 14
 
 
  674:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
   81              		.loc 1 714 0
   82 003e 8F2D     		cmp	r5, #143
   83 0040 01D8     		bhi	.L10
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 15
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 15
 
 
  618:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  732:Generated_Source\PSoC6/CapSense_Structure.c ****         case DS_PARAM_TYPE_UINT16:
  733:Generated_Source\PSoC6/CapSense_Structure.c ****             if (0u != (pData->offset & UINT16_ALIGN_MASK))
  119              		.loc 1 733 0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 16
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 16
 
 
  120 0066 EB07     		lsls	r3, r5, #31
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  149              	.LFE46:
  150              		.size	DsParseParamId, .-DsParseParamId
  151 007e C046     		.section	.text.CapSense_DsInitialize,"ax",%progbits
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 17
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 17
 
 
  152              		.align	2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  197              		.loc 1 507 0
  198 002a 174D     		ldr	r5, .L21+12
  199 002c 2000     		movs	r0, r4
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 18
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 18
 
 
  200 002e 2030     		adds	r0, r0, #32
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  244 0064 0A32     		adds	r2, r2, #10
  245              	.LVL21:
  530:Generated_Source\PSoC6/CapSense_Structure.c ****             {
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 19
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 19
 
 
  246              		.loc 1 530 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  761:Generated_Source\PSoC6/CapSense_Structure.c **** *
  762:Generated_Source\PSoC6/CapSense_Structure.c **** * \brief
  763:Generated_Source\PSoC6/CapSense_Structure.c **** *  Gets the specified parameter value from the \ref group_structures.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 20
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 20
 
 
  764:Generated_Source\PSoC6/CapSense_Structure.c **** *
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  301 0002 83B0     		sub	sp, sp, #12
  302              		.cfi_def_cfa_offset 24
  303 0004 0D00     		movs	r5, r1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 21
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 21
 
 
  808:Generated_Source\PSoC6/CapSense_Structure.c ****     PARAM_ID_STRUCT pData;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  330 0024 1B88     		ldrh	r3, [r3]
  331              	.LVL34:
  332 0026 D318     		adds	r3, r2, r3
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 22
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 22
 
 
  836:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  856:Generated_Source\PSoC6/CapSense_Structure.c **** 
  857:Generated_Source\PSoC6/CapSense_Structure.c ****     return result;
  858:Generated_Source\PSoC6/CapSense_Structure.c **** }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 23
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 23
 
 
  367              		.loc 1 858 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  888:Generated_Source\PSoC6/CapSense_Structure.c **** *    8. M,L - the parameter offset MSB and LSB accordingly in:
  889:Generated_Source\PSoC6/CapSense_Structure.c **** *      - Flash Data Structure if W bit is 0.
  890:Generated_Source\PSoC6/CapSense_Structure.c **** *      - RAM Data Structure if W bit is 1.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 24
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 24
 
 
  891:Generated_Source\PSoC6/CapSense_Structure.c **** *
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  409              	.LVL42:
  410 000c 041E     		subs	r4, r0, #0
  411              	.LVL43:
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 25
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 25
 
 
  928:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  951:Generated_Source\PSoC6/CapSense_Structure.c ****         }
  952:Generated_Source\PSoC6/CapSense_Structure.c ****         else if (DS_PARAM_TYPE_UINT16 == pData.type)
  443              		.loc 1 952 0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 26
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 26
 
 
  444 0034 022A     		cmp	r2, #2
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  985:Generated_Source\PSoC6/CapSense_Structure.c ****             }
  986:Generated_Source\PSoC6/CapSense_Structure.c ****         #endif /* (CapSense_ENABLE == (CapSense_TST_WDGT_CRC_EN || CapSense_TST_GLOBAL_CRC_EN)) */
  987:Generated_Source\PSoC6/CapSense_Structure.c ****     }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 27
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 27
 
 
  988:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1013:Generated_Source\PSoC6/CapSense_Structure.c ****     uint32 result = 0Lu;
 1014:Generated_Source\PSoC6/CapSense_Structure.c ****     uint32 wdWord;
 1015:Generated_Source\PSoC6/CapSense_Structure.c **** 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 28
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 28
 
 
 1016:Generated_Source\PSoC6/CapSense_Structure.c ****     for (wdWord = CapSense_WDGT_STATUS_WORDS; wdWord-- > 0u;)
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1024:Generated_Source\PSoC6/CapSense_Structure.c **** 
 1025:Generated_Source\PSoC6/CapSense_Structure.c **** /*******************************************************************************
 1026:Generated_Source\PSoC6/CapSense_Structure.c **** * Function Name: CapSense_IsWidgetActive
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 29
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 29
 
 
 1027:Generated_Source\PSoC6/CapSense_Structure.c **** ****************************************************************************//**
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  561 001a 00E0     		b	.L47
  562              	.LVL59:
  563              	.L48:
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 30
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 30
 
 
 1053:Generated_Source\PSoC6/CapSense_Structure.c ****     uint32 result = 0Lu;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1089:Generated_Source\PSoC6/CapSense_Structure.c **** *  CapSense Configuration header file defined as
 1090:Generated_Source\PSoC6/CapSense_Structure.c **** *  CapSense_<WidgetName>_SNS<SensorNumber>_ID.
 1091:Generated_Source\PSoC6/CapSense_Structure.c **** *
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 31
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 31
 
 
 1092:Generated_Source\PSoC6/CapSense_Structure.c **** * \return
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  615              	.LVL64:
  616              	.L53:
 1103:Generated_Source\PSoC6/CapSense_Structure.c **** 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 32
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 32
 
 
  617              		.loc 1 1103 0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1142:Generated_Source\PSoC6/CapSense_Structure.c **** *  A macro for the widget ID can be found in the CapSense Configuration header file
 1143:Generated_Source\PSoC6/CapSense_Structure.c **** *  defined as CapSense_<WidgetName>_WDGT_ID
 1144:Generated_Source\PSoC6/CapSense_Structure.c **** *
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 33
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 33
 
 
 1145:Generated_Source\PSoC6/CapSense_Structure.c **** * \return
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1199:Generated_Source\PSoC6/CapSense_Structure.c ****         #if (0u != CapSense_CSD_MATRIX_WIDGET_EN)
 1200:Generated_Source\PSoC6/CapSense_Structure.c ****             case CapSense_SENSE_METHOD_CSD_E:
 1201:Generated_Source\PSoC6/CapSense_Structure.c ****                 wdCsdMatrix = ptrFlashWdgt->ptr2WdgtRam;
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 34
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 34
 
 
 1202:Generated_Source\PSoC6/CapSense_Structure.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1256:Generated_Source\PSoC6/CapSense_Structure.c **** *  wrong widgetId / proxId is specified.
 1257:Generated_Source\PSoC6/CapSense_Structure.c **** *    - Bits [31..2] are reserved.
 1258:Generated_Source\PSoC6/CapSense_Structure.c **** *    - Bit [1] indicates that a touch is detected.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 35
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 35
 
 
 1259:Generated_Source\PSoC6/CapSense_Structure.c **** *    - Bit [0] indicates that a proximity is detected.
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  647              		@ args = 0, pretend = 0, frame = 0
  648              		@ frame_needed = 0, uses_anonymous_args = 0
  649              		@ link register save eliminated.
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 36
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 36
 
 
  650              	.LVL68:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
 1323:Generated_Source\PSoC6/CapSense_Structure.c **** 
 1324:Generated_Source\PSoC6/CapSense_Structure.c ****     return result;
 1325:Generated_Source\PSoC6/CapSense_Structure.c **** }
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 37
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 37
 
 
  690              		.loc 1 1325 0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  744 0040 68000000 		.word	CapSense_dsRam+104
  745 0044 38000000 		.word	CapSense_fltrHistoryButton1
  746 0048 90000000 		.word	CapSense_debounceButton1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 38
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 38
 
 
  747 004c 01280000 		.word	10241
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  801 00b5 20       		.byte	32
  802 00b6 2A00     		.short	42
  803 00b8 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 39
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 39
 
 
  804 00b9 00       		.space	1
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  858 00f5 05       		.byte	5
  859 00f6 07       		.byte	7
  860 00f7 09       		.byte	9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 40
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 40
 
 
  861 00f8 03       		.byte	3
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  915 0144 02       		.byte	2
  916 0145 000000   		.space	3
  917 0148 80003240 		.word	1077018752
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 41
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 41
 
 
  918 014c 00       		.byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  960 004e 0000     		.space	2
  961              		.type	CapSense_noiseEnvlpLinearSlider0, %object
  962              		.size	CapSense_noiseEnvlpLinearSlider0, 60
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 42
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 42
 
 
  963              	CapSense_noiseEnvlpLinearSlider0:
@@ -2502,14 +2502,14 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  997 000c 8E040000 		.4byte	.LASF269
  998 0010 0C       		.byte	0xc
  999 0011 8C020000 		.4byte	.LASF270
- 1000 0015 22100000 		.4byte	.LASF271
+ 1000 0015 C90E0000 		.4byte	.LASF271
  1001 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1002 001d 00000000 		.4byte	0
  1003 0021 00000000 		.4byte	.Ldebug_line0
  1004 0025 02       		.uleb128 0x2
  1005 0026 01       		.byte	0x1
  1006 0027 06       		.byte	0x6
- 1007 0028 230F0000 		.4byte	.LASF0
+ 1007 0028 890F0000 		.4byte	.LASF0
  1008 002c 03       		.uleb128 0x3
  1009 002d B20C0000 		.4byte	.LASF3
  1010 0031 02       		.byte	0x2
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1013 0037 02       		.uleb128 0x2
  1014 0038 01       		.byte	0x1
  1015 0039 08       		.byte	0x8
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 43
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 43
 
 
  1016 003a 170E0000 		.4byte	.LASF1
@@ -2534,7 +2534,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1026 0050 02       		.uleb128 0x2
  1027 0051 02       		.byte	0x2
  1028 0052 07       		.byte	0x7
- 1029 0053 590F0000 		.4byte	.LASF5
+ 1029 0053 BF0F0000 		.4byte	.LASF5
  1030 0057 02       		.uleb128 0x2
  1031 0058 04       		.byte	0x4
  1032 0059 05       		.byte	0x5
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1070 00a3 49040000 		.4byte	.LASF14
  1071 00a7 03       		.byte	0x3
  1072 00a8 30       		.byte	0x30
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 44
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 44
 
 
  1073 00a9 5E000000 		.4byte	0x5e
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1127 0117 10       		.byte	0x10
  1128 0118 0B       		.uleb128 0xb
  1129 0119 83040000 		.4byte	.LASF20
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 45
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 45
 
 
  1130 011d 04       		.byte	0x4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1184 0189 04       		.byte	0x4
  1185 018a 31       		.byte	0x31
  1186 018b B9000000 		.4byte	0xb9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 46
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 46
 
 
  1187 018f 38       		.byte	0x38
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1241 01ff 04       		.byte	0x4
  1242 0200 3E       		.byte	0x3e
  1243 0201 B9000000 		.4byte	0xb9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 47
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 47
 
 
  1244 0205 0C40     		.2byte	0x400c
@@ -2775,7 +2775,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1255 021b B4000000 		.4byte	0xb4
  1256 021f 1440     		.2byte	0x4014
  1257 0221 0D       		.uleb128 0xd
- 1258 0222 150F0000 		.4byte	.LASF38
+ 1258 0222 7B0F0000 		.4byte	.LASF38
  1259 0226 04       		.byte	0x4
  1260 0227 41       		.byte	0x41
  1261 0228 B4000000 		.4byte	0xb4
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1298 027b 360E0000 		.4byte	.LASF43
  1299 027f 05       		.byte	0x5
  1300 0280 3206     		.2byte	0x632
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 48
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 48
 
 
  1301 0282 59020000 		.4byte	0x259
@@ -2838,14 +2838,14 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1315 02a0 02       		.uleb128 0x2
  1316 02a1 08       		.byte	0x8
  1317 02a2 04       		.byte	0x4
- 1318 02a3 C40F0000 		.4byte	.LASF47
+ 1318 02a3 2A100000 		.4byte	.LASF47
  1319 02a7 0E       		.uleb128 0xe
  1320 02a8 F6050000 		.4byte	.LASF48
  1321 02ac 06       		.byte	0x6
  1322 02ad E703     		.2byte	0x3e7
  1323 02af A2000000 		.4byte	0xa2
  1324 02b3 0E       		.uleb128 0xe
- 1325 02b4 BE0F0000 		.4byte	.LASF49
+ 1325 02b4 24100000 		.4byte	.LASF49
  1326 02b8 06       		.byte	0x6
  1327 02b9 EA03     		.2byte	0x3ea
  1328 02bb 8C000000 		.4byte	0x8c
@@ -2877,8 +2877,8 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1354 02f2 6E       		.byte	0x6e
  1355 02f3 4C030000 		.4byte	0x34c
  1356 02f7 0B       		.uleb128 0xb
- 1357 02f8 E80F0000 		.4byte	.LASF54
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 49
+ 1357 02f8 4E100000 		.4byte	.LASF54
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 49
 
 
  1358 02fc 08       		.byte	0x8
@@ -2886,37 +2886,37 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1360 02fe BF020000 		.4byte	0x2bf
  1361 0302 00       		.byte	0
  1362 0303 0B       		.uleb128 0xb
- 1363 0304 EF0F0000 		.4byte	.LASF55
+ 1363 0304 55100000 		.4byte	.LASF55
  1364 0308 08       		.byte	0x8
  1365 0309 77       		.byte	0x77
  1366 030a BF020000 		.4byte	0x2bf
  1367 030e 02       		.byte	0x2
  1368 030f 0B       		.uleb128 0xb
- 1369 0310 F60F0000 		.4byte	.LASF56
+ 1369 0310 5C100000 		.4byte	.LASF56
  1370 0314 08       		.byte	0x8
  1371 0315 7B       		.byte	0x7b
  1372 0316 BF020000 		.4byte	0x2bf
  1373 031a 04       		.byte	0x4
  1374 031b 0B       		.uleb128 0xb
- 1375 031c FD0F0000 		.4byte	.LASF57
+ 1375 031c 63100000 		.4byte	.LASF57
  1376 0320 08       		.byte	0x8
  1377 0321 7F       		.byte	0x7f
  1378 0322 BF020000 		.4byte	0x2bf
  1379 0326 06       		.byte	0x6
  1380 0327 0B       		.uleb128 0xb
- 1381 0328 04100000 		.4byte	.LASF58
+ 1381 0328 6A100000 		.4byte	.LASF58
  1382 032c 08       		.byte	0x8
  1383 032d 83       		.byte	0x83
  1384 032e BF020000 		.4byte	0x2bf
  1385 0332 08       		.byte	0x8
  1386 0333 0B       		.uleb128 0xb
- 1387 0334 0B100000 		.4byte	.LASF59
+ 1387 0334 71100000 		.4byte	.LASF59
  1388 0338 08       		.byte	0x8
  1389 0339 87       		.byte	0x87
  1390 033a B3020000 		.4byte	0x2b3
  1391 033e 0A       		.byte	0xa
  1392 033f 0B       		.uleb128 0xb
- 1393 0340 12100000 		.4byte	.LASF60
+ 1393 0340 78100000 		.4byte	.LASF60
  1394 0344 08       		.byte	0x8
  1395 0345 8B       		.byte	0x8b
  1396 0346 B3020000 		.4byte	0x2b3
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1412 0365 26       		.byte	0x26
  1413 0366 64020000 		.4byte	0x264
  1414 036a 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 50
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 50
 
 
  1415 036b 0B       		.uleb128 0xb
@@ -2984,7 +2984,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1455 03ba 64020000 		.4byte	0x264
  1456 03be 07       		.byte	0x7
  1457 03bf 0B       		.uleb128 0xb
- 1458 03c0 C4100000 		.4byte	.LASF70
+ 1458 03c0 B7100000 		.4byte	.LASF70
  1459 03c4 09       		.byte	0x9
  1460 03c5 57       		.byte	0x57
  1461 03c6 64020000 		.4byte	0x264
@@ -2998,20 +2998,20 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1469 03d7 0B       		.uleb128 0xb
  1470 03d8 11030000 		.4byte	.LASF72
  1471 03dc 09       		.byte	0x9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 51
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 51
 
 
  1472 03dd 63       		.byte	0x63
  1473 03de 64020000 		.4byte	0x264
  1474 03e2 0A       		.byte	0xa
  1475 03e3 0B       		.uleb128 0xb
- 1476 03e4 AA0F0000 		.4byte	.LASF73
+ 1476 03e4 10100000 		.4byte	.LASF73
  1477 03e8 09       		.byte	0x9
  1478 03e9 69       		.byte	0x69
  1479 03ea 64020000 		.4byte	0x264
  1480 03ee 0B       		.byte	0xb
  1481 03ef 0B       		.uleb128 0xb
- 1482 03f0 D8100000 		.4byte	.LASF74
+ 1482 03f0 CB100000 		.4byte	.LASF74
  1483 03f4 09       		.byte	0x9
  1484 03f5 6F       		.byte	0x6f
  1485 03f6 64020000 		.4byte	0x264
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1526 0449 A2       		.byte	0xa2
  1527 044a 64020000 		.4byte	0x264
  1528 044e 13       		.byte	0x13
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 52
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 52
 
 
  1529 044f 0B       		.uleb128 0xb
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1583 04bb 0B       		.uleb128 0xb
  1584 04bc 1A0B0000 		.4byte	.LASF91
  1585 04c0 09       		.byte	0x9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 53
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 53
 
 
  1586 04c1 E2       		.byte	0xe2
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1640 0532 2301     		.2byte	0x123
  1641 0534 64020000 		.4byte	0x264
  1642 0538 26       		.byte	0x26
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 54
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 54
 
 
  1643 0539 10       		.uleb128 0x10
@@ -3188,13 +3188,13 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1647 0541 64020000 		.4byte	0x264
  1648 0545 27       		.byte	0x27
  1649 0546 10       		.uleb128 0x10
- 1650 0547 2F0F0000 		.4byte	.LASF102
+ 1650 0547 950F0000 		.4byte	.LASF102
  1651 054b 09       		.byte	0x9
  1652 054c 3101     		.2byte	0x131
  1653 054e 64020000 		.4byte	0x264
  1654 0552 28       		.byte	0x28
  1655 0553 10       		.uleb128 0x10
- 1656 0554 470F0000 		.4byte	.LASF103
+ 1656 0554 AD0F0000 		.4byte	.LASF103
  1657 0558 09       		.byte	0x9
  1658 0559 3701     		.2byte	0x137
  1659 055b 64020000 		.4byte	0x264
@@ -3224,7 +3224,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1683 058f 64020000 		.4byte	0x264
  1684 0593 2D       		.byte	0x2d
  1685 0594 10       		.uleb128 0x10
- 1686 0595 770F0000 		.4byte	.LASF108
+ 1686 0595 DD0F0000 		.4byte	.LASF108
  1687 0599 09       		.byte	0x9
  1688 059a 5701     		.2byte	0x157
  1689 059c 64020000 		.4byte	0x264
@@ -3236,9 +3236,9 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1695 05a9 64020000 		.4byte	0x264
  1696 05ad 2F       		.byte	0x2f
  1697 05ae 10       		.uleb128 0x10
- 1698 05af CB0F0000 		.4byte	.LASF110
+ 1698 05af 31100000 		.4byte	.LASF110
  1699 05b3 09       		.byte	0x9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 55
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 55
 
 
  1700 05b4 6801     		.2byte	0x168
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1754 0629 9A01     		.2byte	0x19a
  1755 062b 69020000 		.4byte	0x269
  1756 062f 3E       		.byte	0x3e
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 56
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 56
 
 
  1757 0630 10       		.uleb128 0x10
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1811 06a5 10       		.uleb128 0x10
  1812 06a6 B8020000 		.4byte	.LASF129
  1813 06aa 09       		.byte	0x9
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 57
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 57
 
 
  1814 06ab DB01     		.2byte	0x1db
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1868 071e 12       		.uleb128 0x12
  1869 071f 8E050000 		.4byte	.LASF139
  1870 0723 04       		.byte	0x4
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 58
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 58
 
 
  1871 0724 12       		.uleb128 0x12
@@ -3449,7 +3449,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1896 0755 D80B0000 		.4byte	.LASF145
  1897 0759 02       		.byte	0x2
  1898 075a 12       		.uleb128 0x12
- 1899 075b C90E0000 		.4byte	.LASF146
+ 1899 075b 2F0F0000 		.4byte	.LASF146
  1900 075f 03       		.byte	0x3
  1901 0760 00       		.byte	0
  1902 0761 07       		.uleb128 0x7
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1925 0790 02       		.byte	0x2
  1926 0791 0B       		.uleb128 0xb
  1927 0792 AC070000 		.4byte	.LASF149
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 59
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 59
 
 
  1928 0796 0A       		.byte	0xa
@@ -3516,7 +3516,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1960 07d6 61070000 		.4byte	0x761
  1961 07da 09       		.byte	0x9
  1962 07db 10       		.uleb128 0x10
- 1963 07dc 0E0F0000 		.4byte	.LASF155
+ 1963 07dc 740F0000 		.4byte	.LASF155
  1964 07e0 0A       		.byte	0xa
  1965 07e1 1601     		.2byte	0x116
  1966 07e3 BF020000 		.4byte	0x2bf
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  1982 0807 0A       		.byte	0xa
  1983 0808 2701     		.2byte	0x127
  1984 080a BF020000 		.4byte	0x2bf
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 60
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 60
 
 
  1985 080e 10       		.byte	0x10
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2039 0880 10       		.uleb128 0x10
  2040 0881 01070000 		.4byte	.LASF153
  2041 0885 0A       		.byte	0xa
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 61
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 61
 
 
  2042 0886 5801     		.2byte	0x158
@@ -3611,7 +3611,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2049 0895 61070000 		.4byte	0x761
  2050 0899 09       		.byte	0x9
  2051 089a 10       		.uleb128 0x10
- 2052 089b 0E0F0000 		.4byte	.LASF155
+ 2052 089b 740F0000 		.4byte	.LASF155
  2053 089f 0A       		.byte	0xa
  2054 08a0 6901     		.2byte	0x169
  2055 08a2 BF020000 		.4byte	0x2bf
@@ -3641,7 +3641,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2079 08d6 B3020000 		.4byte	0x2b3
  2080 08da 12       		.byte	0x12
  2081 08db 10       		.uleb128 0x10
- 2082 08dc 9E100000 		.4byte	.LASF161
+ 2082 08dc 91100000 		.4byte	.LASF161
  2083 08e0 0A       		.byte	0xa
  2084 08e1 8401     		.2byte	0x184
  2085 08e3 E9080000 		.4byte	0x8e9
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2096 08fa FA0C0000 		.4byte	.LASF162
  2097 08fe 0A       		.byte	0xa
  2098 08ff 8501     		.2byte	0x185
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 62
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 62
 
 
  2099 0901 29080000 		.4byte	0x829
@@ -3680,7 +3680,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2115 0923 1D080000 		.4byte	0x81d
  2116 0927 14       		.byte	0x14
  2117 0928 10       		.uleb128 0x10
- 2118 0929 EE0E0000 		.4byte	.LASF165
+ 2118 0929 540F0000 		.4byte	.LASF165
  2119 092d 0A       		.byte	0xa
  2120 092e 9A01     		.2byte	0x19a
  2121 0930 F9080000 		.4byte	0x8f9
@@ -3718,13 +3718,13 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2153 0973 C20B0000 		.4byte	.LASF169
  2154 0977 0A       		.byte	0xa
  2155 0978 B601     		.2byte	0x1b6
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 63
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 63
 
 
  2156 097a D9020000 		.4byte	0x2d9
  2157 097e 06       		.byte	0x6
  2158 097f 10       		.uleb128 0x10
- 2159 0980 DA0F0000 		.4byte	.LASF170
+ 2159 0980 40100000 		.4byte	.LASF170
  2160 0984 0A       		.byte	0xa
  2161 0985 BB01     		.2byte	0x1bb
  2162 0987 9A090000 		.4byte	0x99a
@@ -3766,7 +3766,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2198 09d4 E7090000 		.4byte	0x9e7
  2199 09d8 0A       		.byte	0xa
  2200 09d9 10       		.uleb128 0x10
- 2201 09da EE0E0000 		.4byte	.LASF165
+ 2201 09da 540F0000 		.4byte	.LASF165
  2202 09de 0A       		.byte	0xa
  2203 09df D701     		.2byte	0x1d7
  2204 09e1 F7090000 		.4byte	0x9f7
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2210 09f0 08       		.uleb128 0x8
  2211 09f1 BE000000 		.4byte	0xbe
  2212 09f5 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 64
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 64
 
 
  2213 09f6 00       		.byte	0
@@ -3790,7 +3790,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2219 0a05 04       		.byte	0x4
  2220 0a06 00       		.byte	0
  2221 0a07 0E       		.uleb128 0xe
- 2222 0a08 A7100000 		.4byte	.LASF173
+ 2222 0a08 9A100000 		.4byte	.LASF173
  2223 0a0c 0A       		.byte	0xa
  2224 0a0d D801     		.2byte	0x1d8
  2225 0a0f B6090000 		.4byte	0x9b6
@@ -3806,7 +3806,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2235 0a25 BF020000 		.4byte	0x2bf
  2236 0a29 00       		.byte	0
  2237 0a2a 10       		.uleb128 0x10
- 2238 0a2b 19100000 		.4byte	.LASF175
+ 2238 0a2b 7F100000 		.4byte	.LASF175
  2239 0a2f 0A       		.byte	0xa
  2240 0a30 EB01     		.2byte	0x1eb
  2241 0a32 BF020000 		.4byte	0x2bf
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2267 0a6b 10       		.uleb128 0x10
  2268 0a6c 880B0000 		.4byte	.LASF180
  2269 0a70 0A       		.byte	0xa
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 65
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 65
 
 
  2270 0a71 0602     		.2byte	0x206
@@ -3898,11 +3898,11 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2324 0ae6 4102     		.2byte	0x241
  2325 0ae8 CB020000 		.4byte	0x2cb
  2326 0aec FC       		.byte	0xfc
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 66
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 66
 
 
  2327 0aed 16       		.uleb128 0x16
- 2328 0aee 040F0000 		.4byte	.LASF190
+ 2328 0aee 6A0F0000 		.4byte	.LASF190
  2329 0af2 0A       		.byte	0xa
  2330 0af3 4602     		.2byte	0x246
  2331 0af5 CB020000 		.4byte	0x2cb
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2381 0b67 0A       		.byte	0xa
  2382 0b68 6102     		.2byte	0x261
  2383 0b6a 890B0000 		.4byte	0xb89
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 67
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 67
 
 
  2384 0b6e 10       		.uleb128 0x10
@@ -3988,7 +3988,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2408 0b9e 9902     		.2byte	0x299
  2409 0ba0 750C0000 		.4byte	0xc75
  2410 0ba4 10       		.uleb128 0x10
- 2411 0ba5 9D0F0000 		.4byte	.LASF199
+ 2411 0ba5 03100000 		.4byte	.LASF199
  2412 0ba9 0A       		.byte	0xa
  2413 0baa A202     		.2byte	0x2a2
  2414 0bac 750C0000 		.4byte	0xc75
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2438 0be0 820C0000 		.4byte	0xc82
  2439 0be4 10       		.byte	0x10
  2440 0be5 10       		.uleb128 0x10
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 68
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 68
 
 
  2441 0be6 560E0000 		.4byte	.LASF204
@@ -4051,7 +4051,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2468 0c21 B3020000 		.4byte	0x2b3
  2469 0c25 1C       		.byte	0x1c
  2470 0c26 10       		.uleb128 0x10
- 2471 0c27 E60E0000 		.4byte	.LASF209
+ 2471 0c27 4C0F0000 		.4byte	.LASF209
  2472 0c2b 0A       		.byte	0xa
  2473 0c2c E602     		.2byte	0x2e6
  2474 0c2e B3020000 		.4byte	0x2b3
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2495 0c5b D30D0000 		.4byte	.LASF213
  2496 0c5f 0A       		.byte	0xa
  2497 0c60 0303     		.2byte	0x303
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 69
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 69
 
 
  2498 0c62 D7020000 		.4byte	0x2d7
@@ -4114,7 +4114,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2528 0c9d 0F03     		.2byte	0x30f
  2529 0c9f B10C0000 		.4byte	0xcb1
  2530 0ca3 10       		.uleb128 0x10
- 2531 0ca4 0D110000 		.4byte	.LASF216
+ 2531 0ca4 00110000 		.4byte	.LASF216
  2532 0ca8 0A       		.byte	0xa
  2533 0ca9 1403     		.2byte	0x314
  2534 0cab B10C0000 		.4byte	0xcb1
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2552 0cd0 4A03     		.2byte	0x34a
  2553 0cd2 F10C0000 		.4byte	0xcf1
  2554 0cd6 10       		.uleb128 0x10
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 70
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 70
 
 
  2555 0cd7 D5090000 		.4byte	.LASF218
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2609 0d4c 1D0D0000 		.4byte	0xd1d
  2610 0d50 13       		.uleb128 0x13
  2611 0d51 02       		.byte	0x2
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 71
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 71
 
 
  2612 0d52 0A       		.byte	0xa
@@ -4228,13 +4228,13 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2636 0d84 BF020000 		.4byte	0x2bf
  2637 0d88 00       		.byte	0
  2638 0d89 10       		.uleb128 0x10
- 2639 0d8a 95100000 		.4byte	.LASF226
+ 2639 0d8a 88100000 		.4byte	.LASF226
  2640 0d8e 01       		.byte	0x1
  2641 0d8f A001     		.2byte	0x1a0
  2642 0d91 B3020000 		.4byte	0x2b3
  2643 0d95 02       		.byte	0x2
  2644 0d96 10       		.uleb128 0x10
- 2645 0d97 6C0F0000 		.4byte	.LASF227
+ 2645 0d97 D20F0000 		.4byte	.LASF227
  2646 0d9b 01       		.byte	0x1
  2647 0d9c A101     		.2byte	0x1a1
  2648 0d9e B3020000 		.4byte	0x2b3
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2666 0dc4 B3020000 		.4byte	0x2b3
  2667 0dc8 06       		.byte	0x6
  2668 0dc9 10       		.uleb128 0x10
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 72
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 72
 
 
  2669 0dca 120E0000 		.4byte	.LASF229
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2723 0e49 4D0C0000 		.4byte	.LASF234
  2724 0e4d 01       		.byte	0x1
  2725 0e4e CC01     		.2byte	0x1cc
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 73
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 73
 
 
  2726 0e50 CB020000 		.4byte	0x2cb
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2780 0ec7 50       		.byte	0x50
  2781 0ec8 02       		.uleb128 0x2
  2782 0ec9 74       		.byte	0x74
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 74
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 74
 
 
  2783 0eca 20       		.sleb128 32
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2837 0f21 01       		.uleb128 0x1
  2838 0f22 9C       		.byte	0x9c
  2839 0f23 E60F0000 		.4byte	0xfe6
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 75
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 75
 
 
  2840 0f27 1A       		.uleb128 0x1a
@@ -4494,11 +4494,11 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2890 0f9b 18100000 		.4byte	0x1018
  2891 0f9f 00       		.byte	0
  2892 0fa0 1C       		.uleb128 0x1c
- 2893 0fa1 FC0E0000 		.4byte	.LASF243
+ 2893 0fa1 620F0000 		.4byte	.LASF243
  2894 0fa5 01       		.byte	0x1
  2895 0fa6 3103     		.2byte	0x331
  2896 0fa8 660F0000 		.4byte	0xf66
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 76
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 76
 
 
  2897 0fac B2010000 		.4byte	.LLST10
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  2951 100a 13100000 		.4byte	0x1013
  2952 100e 05       		.uleb128 0x5
  2953 100f BF020000 		.4byte	0x2bf
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 77
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 77
 
 
  2954 1013 06       		.uleb128 0x6
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3008 1092 2F010000 		.4byte	.LASF240
  3009 1096 01       		.byte	0x1
  3010 1097 9A03     		.2byte	0x39a
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 78
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 78
 
 
  3011 1099 FE100000 		.4byte	0x10fe
@@ -4634,7 +4634,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3021 10b1 0A110000 		.4byte	0x110a
  3022 10b5 00       		.byte	0
  3023 10b6 27       		.uleb128 0x27
- 3024 10b7 FC0E0000 		.4byte	.LASF243
+ 3024 10b7 620F0000 		.4byte	.LASF243
  3025 10bb 01       		.byte	0x1
  3026 10bc 9D03     		.2byte	0x39d
  3027 10be 7C100000 		.4byte	0x107c
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3065 10fa F20F0000 		.4byte	0xff2
  3066 10fe 17       		.uleb128 0x17
  3067 10ff 04       		.byte	0x4
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 79
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 79
 
 
  3068 1100 FE0F0000 		.4byte	0xffe
@@ -4722,7 +4722,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3106 1160 9C       		.byte	0x9c
  3107 1161 86110000 		.4byte	0x1186
  3108 1165 1A       		.uleb128 0x1a
- 3109 1166 95100000 		.4byte	.LASF226
+ 3109 1166 88100000 		.4byte	.LASF226
  3110 116a 01       		.byte	0x1
  3111 116b 1B04     		.2byte	0x41b
  3112 116d CB020000 		.4byte	0x2cb
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3122 1187 5C0A0000 		.4byte	.LASF249
  3123 118b 01       		.byte	0x1
  3124 118c 4D04     		.2byte	0x44d
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 80
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 80
 
 
  3125 118e CB020000 		.4byte	0x2cb
@@ -4748,7 +4748,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3129 119b 9C       		.byte	0x9c
  3130 119c CF110000 		.4byte	0x11cf
  3131 11a0 1A       		.uleb128 0x1a
- 3132 11a1 95100000 		.4byte	.LASF226
+ 3132 11a1 88100000 		.4byte	.LASF226
  3133 11a5 01       		.byte	0x1
  3134 11a6 4D04     		.2byte	0x44d
  3135 11a8 CB020000 		.4byte	0x2cb
@@ -4778,7 +4778,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3159 11e4 9C       		.byte	0x9c
  3160 11e5 1A120000 		.4byte	0x121a
  3161 11e9 1A       		.uleb128 0x1a
- 3162 11ea 95100000 		.4byte	.LASF226
+ 3162 11ea 88100000 		.4byte	.LASF226
  3163 11ee 01       		.byte	0x1
  3164 11ef 1D05     		.2byte	0x51d
  3165 11f1 CB020000 		.4byte	0x2cb
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3179 1219 00       		.byte	0
  3180 121a 17       		.uleb128 0x17
  3181 121b 04       		.byte	0x4
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 81
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 81
 
 
  3182 121c F9080000 		.4byte	0x8f9
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3236 1291 44000000 		.4byte	CapSense_fltrHistoryButton0
  3237 1295 28       		.uleb128 0x28
  3238 1296 5C020000 		.4byte	.LASF258
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 82
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 82
 
 
  3239 129a 01       		.byte	0x1
@@ -4890,7 +4890,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3265 12d5 00       		.byte	0
  3266 12d6 00       		.byte	0
  3267 12d7 28       		.uleb128 0x28
- 3268 12d8 EC100000 		.4byte	.LASF260
+ 3268 12d8 DF100000 		.4byte	.LASF260
  3269 12dc 01       		.byte	0x1
  3270 12dd 68       		.byte	0x68
  3271 12de C7120000 		.4byte	0x12c7
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3293 130f 07       		.uleb128 0x7
  3294 1310 1F130000 		.4byte	0x131f
  3295 1314 1F130000 		.4byte	0x131f
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 83
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 83
 
 
  3296 1318 08       		.uleb128 0x8
@@ -4928,7 +4928,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3300 131f 06       		.uleb128 0x6
  3301 1320 8F0B0000 		.4byte	0xb8f
  3302 1324 29       		.uleb128 0x29
- 3303 1325 860F0000 		.4byte	.LASF263
+ 3303 1325 EC0F0000 		.4byte	.LASF263
  3304 1329 01       		.byte	0x1
  3305 132a B8       		.byte	0xb8
  3306 132b 35130000 		.4byte	0x1335
@@ -4978,11 +4978,11 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3350 138f 37090000 		.4byte	.LASF267
  3351 1393 37090000 		.4byte	.LASF267
  3352 1397 2B       		.uleb128 0x2b
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 84
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 84
 
 
- 3353 1398 960F0000 		.4byte	.LASF268
- 3354 139c 960F0000 		.4byte	.LASF268
+ 3353 1398 FC0F0000 		.4byte	.LASF268
+ 3354 139c FC0F0000 		.4byte	.LASF268
  3355 13a0 2C       		.uleb128 0x2c
  3356 13a1 B9070000 		.4byte	.LASF274
  3357 13a5 B9070000 		.4byte	.LASF274
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3407 002c 24       		.uleb128 0x24
  3408 002d 00       		.byte	0
  3409 002e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 85
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 85
 
 
  3410 002f 0B       		.uleb128 0xb
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3464 0065 00       		.byte	0
  3465 0066 03       		.uleb128 0x3
  3466 0067 08       		.uleb128 0x8
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 86
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 86
 
 
  3467 0068 3A       		.uleb128 0x3a
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3521 009e 16       		.uleb128 0x16
  3522 009f 00       		.byte	0
  3523 00a0 03       		.uleb128 0x3
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 87
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 87
 
 
  3524 00a1 0E       		.uleb128 0xe
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3578 00d7 00       		.byte	0
  3579 00d8 13       		.uleb128 0x13
  3580 00d9 13       		.uleb128 0x13
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 88
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 88
 
 
  3581 00da 01       		.byte	0x1
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3635 0110 17       		.uleb128 0x17
  3636 0111 0F       		.uleb128 0xf
  3637 0112 00       		.byte	0
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 89
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 89
 
 
  3638 0113 0B       		.uleb128 0xb
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3692 014a 03       		.uleb128 0x3
  3693 014b 0E       		.uleb128 0xe
  3694 014c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 90
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 90
 
 
  3695 014d 0B       		.uleb128 0xb
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3749 0186 31       		.uleb128 0x31
  3750 0187 13       		.uleb128 0x13
  3751 0188 01       		.uleb128 0x1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 91
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 91
 
 
  3752 0189 13       		.uleb128 0x13
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3806 01c5 0B       		.uleb128 0xb
  3807 01c6 3B       		.uleb128 0x3b
  3808 01c7 05       		.uleb128 0x5
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 92
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 92
 
 
  3809 01c8 49       		.uleb128 0x49
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3863 01fe 0E       		.uleb128 0xe
  3864 01ff 3A       		.uleb128 0x3a
  3865 0200 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 93
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 93
 
 
  3866 0201 3B       		.uleb128 0x3b
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3920 0237 00       		.byte	0
  3921 0238 2B       		.uleb128 0x2b
  3922 0239 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 94
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 94
 
 
  3923 023a 00       		.byte	0
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  3977 0037 50       		.byte	0x50
  3978 0038 4E000000 		.4byte	.LVL4
  3979 003c 52000000 		.4byte	.LVL5
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 95
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 95
 
 
  3980 0040 0200     		.2byte	0x2
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4034 00ce 78000000 		.4byte	.LVL28
  4035 00d2 90000000 		.4byte	.LFE45
  4036 00d6 0300     		.2byte	0x3
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 96
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 96
 
 
  4037 00d8 73       		.byte	0x73
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4091 0161 08000000 		.4byte	.LVL30
  4092 0165 0100     		.2byte	0x1
  4093 0167 51       		.byte	0x51
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 97
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 97
 
 
  4094 0168 08000000 		.4byte	.LVL30
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4148 01f1 08000000 		.4byte	.LVL41
  4149 01f5 30000000 		.4byte	.LVL45
  4150 01f9 0100     		.2byte	0x1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 98
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 98
 
 
  4151 01fb 55       		.byte	0x55
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4205 027d 20000000 		.4byte	.LFE49
  4206 0281 0100     		.2byte	0x1
  4207 0283 50       		.byte	0x50
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 99
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 99
 
 
  4208 0284 00000000 		.4byte	0
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4262 030b 1C000000 		.4byte	.LVL59
  4263 030f 0100     		.2byte	0x1
  4264 0311 50       		.byte	0x50
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 100
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 100
 
 
  4265 0312 1C000000 		.4byte	.LVL59
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4319 0394 22000000 		.4byte	.LVL64
  4320 0398 0100     		.2byte	0x1
  4321 039a 50       		.byte	0x50
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 101
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 101
 
 
  4322 039b 22000000 		.4byte	.LVL64
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4376 041b 26000000 		.4byte	.LVL71
  4377 041f 28000000 		.4byte	.LVL72
  4378 0423 0100     		.2byte	0x1
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 102
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 102
 
 
  4379 0425 50       		.byte	0x50
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4433 0018 00000000 		.4byte	.LFB48
  4434 001c 60000000 		.4byte	.LFE48
  4435 0020 00000000 		.4byte	.LFB49
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 103
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 103
 
 
  4436 0024 20000000 		.4byte	.LFE49
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4464              	.LASF68:
  4465 0076 666C6963 		.ascii	"flickActiveDistanceY\000"
  4465      6B416374 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 104
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 104
 
 
  4465      69766544 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4487 012f 70747255 		.ascii	"ptrUint8\000"
  4487      696E7438 
  4487      00
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 105
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 105
 
 
  4488              	.LASF100:
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4509      726F6C6C 
  4509      53746570 
  4509      3200
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 106
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 106
 
 
  4510              	.LASF79:
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4531 02c4 4F55545F 		.ascii	"OUT_SET\000"
  4531      53455400 
  4532              	.LASF256:
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 107
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 107
 
 
  4533 02cc 43617053 		.ascii	"CapSense_noiseEnvlpLinearSlider0\000"
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4551      756E6365 
  4551      00
  4552              	.LASF140:
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 108
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 108
 
 
  4553 039f 43617053 		.ascii	"CapSense_WD_TOUCHPAD_E\000"
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4573      6C00
  4574              	.LASF14:
  4575 0449 75696E74 		.ascii	"uint32_t\000"
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 109
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 109
 
 
  4575      33325F74 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4595      64335900 
  4596              	.LASF187:
  4597 0550 736E734C 		.ascii	"snsList\000"
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 110
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 110
 
 
  4597      69737400 
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4621 0600 76616C75 		.ascii	"value\000"
  4621      6500
  4622              	.LASF26:
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 111
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 111
 
 
  4623 0606 4346475F 		.ascii	"CFG_OUT\000"
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4647      656E7365 
  4647      5F57445F 
  4647      52414449 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 112
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 112
 
 
  4647      414C5F53 
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4669      65446973 
  4669      74616E63 
  4670              	.LASF97:
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 113
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 113
 
 
  4671 0770 7374496E 		.ascii	"stInScrActiveDistanceY\000"
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4693      385F7400 
  4694              	.LASF179:
  4695 083a 73746174 		.ascii	"status\000"
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 114
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 114
 
 
  4695      757300
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4718              	.LASF152:
  4719 08e7 6F6E4465 		.ascii	"onDebounce\000"
  4719      626F756E 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 115
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 115
 
 
  4719      636500
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4744              	.LASF62:
  4745 0987 73697A65 		.ascii	"size\000"
  4745      00
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 116
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 116
 
 
  4746              	.LASF159:
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4771 0a37 5644445F 		.ascii	"VDD_INTR_MASKED\000"
  4771      494E5452 
  4771      5F4D4153 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 117
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 117
 
 
  4771      4B454400 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4795 0adf 736E7343 		.ascii	"snsClkSource\000"
  4795      6C6B536F 
  4795      75726365 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 118
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 118
 
 
  4795      00
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4818              	.LASF266:
  4819 0b93 43617053 		.ascii	"CapSense_ramGesturesInit\000"
  4819      656E7365 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 119
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 119
 
 
  4819      5F72616D 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4843 0c53 43617053 		.ascii	"CapSense_WD_BUTTON_E\000"
  4843      656E7365 
  4843      5F57445F 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 120
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 120
 
 
  4843      42555454 
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4867      534C4944 
  4868              	.LASF144:
  4869 0d18 43617053 		.ascii	"CapSense_SENSE_METHOD_CSD_E\000"
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 121
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 121
 
 
  4869      656E7365 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4891      45787400 
  4892              	.LASF213:
  4893 0dd3 70747232 		.ascii	"ptr2PosHistory\000"
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 122
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 122
 
 
  4893      506F7348 
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4916              	.LASF24:
  4917 0e7a 494E5452 		.ascii	"INTR_CFG\000"
  4917      5F434647 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 123
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 123
 
 
  4917      00
@@ -7342,185 +7342,182 @@ ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 1
  4925      5F544852 
  4925      4553484F 
  4925      4C445F54 
- 4926              	.LASF146:
- 4927 0ec9 43617053 		.ascii	"CapSense_SENSE_METHOD_BIST_E\000"
- 4927      656E7365 
- 4927      5F53454E 
- 4927      53455F4D 
- 4927      4554484F 
- 4928              	.LASF209:
- 4929 0ee6 6E756D52 		.ascii	"numRows\000"
- 4929      6F777300 
- 4930              	.LASF165:
- 4931 0eee 6C696E65 		.ascii	"linearslider0\000"
- 4931      6172736C 
- 4931      69646572 
- 4931      3000
- 4932              	.LASF243:
- 4933 0efc 70747244 		.ascii	"ptrData\000"
- 4933      61746100 
- 4934              	.LASF190:
- 4935 0f04 74696D65 		.ascii	"timestamp\000"
- 4935      7374616D 
- 4935      7000
- 4936              	.LASF155:
- 4937 0f0e 736E7343 		.ascii	"snsClk\000"
- 4937      6C6B00
- 4938              	.LASF38:
- 4939 0f15 5644445F 		.ascii	"VDD_INTR_MASK\000"
- 4939      494E5452 
- 4939      5F4D4153 
- 4939      4B00
- 4940              	.LASF0:
- 4941 0f23 7369676E 		.ascii	"signed char\000"
- 4941      65642063 
- 4941      68617200 
- 4942              	.LASF102:
- 4943 0f2f 65646765 		.ascii	"edgeSwipeActiveDistance\000"
- 4943      53776970 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 124
+ 4926              	.LASF271:
+ 4927 0ec9 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Desktop\\Poly\\H2021\\GBM2100\\"
+ 4927      73657273 
+ 4927      5C4C6175 
+ 4927      7269616E 
+ 4927      655C4465 
+ 4928 0ef6 50726F6A 		.ascii	"Projet2\\Laboratoire3(nouvelleVersion)\\Laboratoire"
+ 4928      6574325C 
+ 4928      4C61626F 
+ 4928      7261746F 
+ 4928      69726533 
+ 4929 0f27 332E6379 		.ascii	"3.cydsn\000"
+ 4929      64736E00 
+ 4930              	.LASF146:
+ 4931 0f2f 43617053 		.ascii	"CapSense_SENSE_METHOD_BIST_E\000"
+ 4931      656E7365 
+ 4931      5F53454E 
+ 4931      53455F4D 
+ 4931      4554484F 
+ 4932              	.LASF209:
+ 4933 0f4c 6E756D52 		.ascii	"numRows\000"
+ 4933      6F777300 
+ 4934              	.LASF165:
+ 4935 0f54 6C696E65 		.ascii	"linearslider0\000"
+ 4935      6172736C 
+ 4935      69646572 
+ 4935      3000
+ 4936              	.LASF243:
+ 4937 0f62 70747244 		.ascii	"ptrData\000"
+ 4937      61746100 
+ 4938              	.LASF190:
+ 4939 0f6a 74696D65 		.ascii	"timestamp\000"
+ 4939      7374616D 
+ 4939      7000
+ 4940              	.LASF155:
+ 4941 0f74 736E7343 		.ascii	"snsClk\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 124
 
 
- 4943      65416374 
- 4943      69766544 
- 4943      69737461 
- 4944              	.LASF103:
- 4945 0f47 746F7041 		.ascii	"topAngleThreshold\000"
- 4945      6E676C65 
- 4945      54687265 
- 4945      73686F6C 
- 4945      6400
- 4946              	.LASF5:
- 4947 0f59 73686F72 		.ascii	"short unsigned int\000"
- 4947      7420756E 
- 4947      7369676E 
- 4947      65642069 
- 4947      6E7400
- 4948              	.LASF227:
- 4949 0f6c 61666665 		.ascii	"affectsCrc\000"
- 4949      63747343 
- 4949      726300
- 4950              	.LASF108:
- 4951 0f77 44545A6F 		.ascii	"DTZoomDebounce\000"
- 4951      6F6D4465 
- 4951      626F756E 
- 4951      636500
- 4952              	.LASF263:
- 4953 0f86 43617053 		.ascii	"CapSense_ioList\000"
- 4953      656E7365 
- 4953      5F696F4C 
- 4953      69737400 
- 4954              	.LASF268:
- 4955 0f96 6D656D63 		.ascii	"memcpy\000"
- 4955      707900
- 4956              	.LASF199:
- 4957 0f9d 70747232 		.ascii	"ptr2SnsFlash\000"
- 4957      536E7346 
- 4957      6C617368 
- 4957      00
- 4958              	.LASF73:
- 4959 0faa 73745363 		.ascii	"stScrollThreshold1Y\000"
- 4959      726F6C6C 
- 4959      54687265 
- 4959      73686F6C 
- 4959      64315900 
- 4960              	.LASF49:
- 4961 0fbe 75696E74 		.ascii	"uint8\000"
- 4961      3800
- 4962              	.LASF47:
- 4963 0fc4 646F7562 		.ascii	"double\000"
- 4963      6C6500
- 4964              	.LASF110:
- 4965 0fcb 726F7461 		.ascii	"rotateDebounce\000"
- 4965      74654465 
- 4965      626F756E 
- 4965      636500
- 4966              	.LASF170:
- 4967 0fda 6E656742 		.ascii	"negBslnRstCnt\000"
- 4967      736C6E52 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 125
+ 4941      6C6B00
+ 4942              	.LASF38:
+ 4943 0f7b 5644445F 		.ascii	"VDD_INTR_MASK\000"
+ 4943      494E5452 
+ 4943      5F4D4153 
+ 4943      4B00
+ 4944              	.LASF0:
+ 4945 0f89 7369676E 		.ascii	"signed char\000"
+ 4945      65642063 
+ 4945      68617200 
+ 4946              	.LASF102:
+ 4947 0f95 65646765 		.ascii	"edgeSwipeActiveDistance\000"
+ 4947      53776970 
+ 4947      65416374 
+ 4947      69766544 
+ 4947      69737461 
+ 4948              	.LASF103:
+ 4949 0fad 746F7041 		.ascii	"topAngleThreshold\000"
+ 4949      6E676C65 
+ 4949      54687265 
+ 4949      73686F6C 
+ 4949      6400
+ 4950              	.LASF5:
+ 4951 0fbf 73686F72 		.ascii	"short unsigned int\000"
+ 4951      7420756E 
+ 4951      7369676E 
+ 4951      65642069 
+ 4951      6E7400
+ 4952              	.LASF227:
+ 4953 0fd2 61666665 		.ascii	"affectsCrc\000"
+ 4953      63747343 
+ 4953      726300
+ 4954              	.LASF108:
+ 4955 0fdd 44545A6F 		.ascii	"DTZoomDebounce\000"
+ 4955      6F6D4465 
+ 4955      626F756E 
+ 4955      636500
+ 4956              	.LASF263:
+ 4957 0fec 43617053 		.ascii	"CapSense_ioList\000"
+ 4957      656E7365 
+ 4957      5F696F4C 
+ 4957      69737400 
+ 4958              	.LASF268:
+ 4959 0ffc 6D656D63 		.ascii	"memcpy\000"
+ 4959      707900
+ 4960              	.LASF199:
+ 4961 1003 70747232 		.ascii	"ptr2SnsFlash\000"
+ 4961      536E7346 
+ 4961      6C617368 
+ 4961      00
+ 4962              	.LASF73:
+ 4963 1010 73745363 		.ascii	"stScrollThreshold1Y\000"
+ 4963      726F6C6C 
+ 4963      54687265 
+ 4963      73686F6C 
+ 4963      64315900 
+ 4964              	.LASF49:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 125
 
 
- 4967      7374436E 
- 4967      7400
- 4968              	.LASF54:
- 4969 0fe8 70617261 		.ascii	"param0\000"
- 4969      6D3000
- 4970              	.LASF55:
- 4971 0fef 70617261 		.ascii	"param1\000"
- 4971      6D3100
- 4972              	.LASF56:
- 4973 0ff6 70617261 		.ascii	"param2\000"
- 4973      6D3200
- 4974              	.LASF57:
- 4975 0ffd 70617261 		.ascii	"param3\000"
- 4975      6D3300
- 4976              	.LASF58:
- 4977 1004 70617261 		.ascii	"param4\000"
- 4977      6D3400
- 4978              	.LASF59:
- 4979 100b 70617261 		.ascii	"param5\000"
- 4979      6D3500
- 4980              	.LASF60:
- 4981 1012 70617261 		.ascii	"param6\000"
- 4981      6D3600
- 4982              	.LASF175:
- 4983 1019 64657669 		.ascii	"deviceId\000"
- 4983      63654964 
- 4983      00
- 4984              	.LASF271:
- 4985 1022 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Downloads\\Laboratoire3(nouvel"
- 4985      73657273 
- 4985      5C4C6175 
- 4985      7269616E 
- 4985      655C446F 
- 4986 1051 6C655665 		.ascii	"leVersion _7avril)\\Laboratoire3(nouvelleVersion)\\"
- 4986      7273696F 
- 4986      6E205F37 
- 4986      61767269 
- 4986      6C295C4C 
- 4987 1082 4C61626F 		.ascii	"Laboratoire3.cydsn\000"
- 4987      7261746F 
- 4987      69726533 
- 4987      2E637964 
- 4987      736E00
+ 4965 1024 75696E74 		.ascii	"uint8\000"
+ 4965      3800
+ 4966              	.LASF47:
+ 4967 102a 646F7562 		.ascii	"double\000"
+ 4967      6C6500
+ 4968              	.LASF110:
+ 4969 1031 726F7461 		.ascii	"rotateDebounce\000"
+ 4969      74654465 
+ 4969      626F756E 
+ 4969      636500
+ 4970              	.LASF170:
+ 4971 1040 6E656742 		.ascii	"negBslnRstCnt\000"
+ 4971      736C6E52 
+ 4971      7374436E 
+ 4971      7400
+ 4972              	.LASF54:
+ 4973 104e 70617261 		.ascii	"param0\000"
+ 4973      6D3000
+ 4974              	.LASF55:
+ 4975 1055 70617261 		.ascii	"param1\000"
+ 4975      6D3100
+ 4976              	.LASF56:
+ 4977 105c 70617261 		.ascii	"param2\000"
+ 4977      6D3200
+ 4978              	.LASF57:
+ 4979 1063 70617261 		.ascii	"param3\000"
+ 4979      6D3300
+ 4980              	.LASF58:
+ 4981 106a 70617261 		.ascii	"param4\000"
+ 4981      6D3400
+ 4982              	.LASF59:
+ 4983 1071 70617261 		.ascii	"param5\000"
+ 4983      6D3500
+ 4984              	.LASF60:
+ 4985 1078 70617261 		.ascii	"param6\000"
+ 4985      6D3600
+ 4986              	.LASF175:
+ 4987 107f 64657669 		.ascii	"deviceId\000"
+ 4987      63654964 
+ 4987      00
  4988              	.LASF226:
- 4989 1095 77696467 		.ascii	"widgetId\000"
+ 4989 1088 77696467 		.ascii	"widgetId\000"
  4989      65744964 
  4989      00
  4990              	.LASF161:
- 4991 109e 706F7369 		.ascii	"position\000"
+ 4991 1091 706F7369 		.ascii	"position\000"
  4991      74696F6E 
  4991      00
  4992              	.LASF173:
- 4993 10a7 43617053 		.ascii	"CapSense_RAM_SNS_LIST_STRUCT\000"
+ 4993 109a 43617053 		.ascii	"CapSense_RAM_SNS_LIST_STRUCT\000"
  4993      656E7365 
  4993      5F52414D 
  4993      5F534E53 
  4993      5F4C4953 
-ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\cclv8mi9.s 			page 126
-
-
  4994              	.LASF70:
- 4995 10c4 73745363 		.ascii	"stScrollThreshold2X\000"
+ 4995 10b7 73745363 		.ascii	"stScrollThreshold2X\000"
  4995      726F6C6C 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccu9HNxj.s 			page 126
+
+
  4995      54687265 
  4995      73686F6C 
  4995      64325800 
  4996              	.LASF74:
- 4997 10d8 73745363 		.ascii	"stScrollThreshold2Y\000"
+ 4997 10cb 73745363 		.ascii	"stScrollThreshold2Y\000"
  4997      726F6C6C 
  4997      54687265 
  4997      73686F6C 
  4997      64325900 
  4998              	.LASF260:
- 4999 10ec 43617053 		.ascii	"CapSense_posHistoryLinearSlider0\000"
+ 4999 10df 43617053 		.ascii	"CapSense_posHistoryLinearSlider0\000"
  4999      656E7365 
  4999      5F706F73 
  4999      48697374 
  4999      6F72794C 
  5000              	.LASF216:
- 5001 110d 77646774 		.ascii	"wdgtArray\000"
+ 5001 1100 77646774 		.ascii	"wdgtArray\000"
  5001      41727261 
  5001      7900
  5002              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

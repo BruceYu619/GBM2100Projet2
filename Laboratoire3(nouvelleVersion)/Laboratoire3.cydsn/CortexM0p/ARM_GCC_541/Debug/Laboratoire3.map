@@ -438,7 +438,7 @@ Discarded input sections
                 0x00000000       0x30 .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
  .debug_ranges  0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
  .debug_line    0x00000000      0x20a .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
- .debug_str     0x00000000      0x4d0 .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
+ .debug_str     0x00000000      0x4c3 .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
  .debug_frame   0x00000000       0x4c .\CortexM0p\ARM_GCC_541\Debug\LCDConf.o
  .ARM.attributes
@@ -475,7 +475,7 @@ Discarded input sections
                 0x00000000       0x70 .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
  .debug_ranges  0x00000000       0x60 .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
  .debug_line    0x00000000      0x2a0 .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
- .debug_str     0x00000000      0x327 .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
+ .debug_str     0x00000000      0x31a .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
  .debug_frame   0x00000000      0x114 .\CortexM0p\ARM_GCC_541\Debug\GUI_X_RTOS.o
  .ARM.attributes
@@ -491,7 +491,7 @@ Discarded input sections
                 0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
  .debug_ranges  0x00000000       0x10 .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
  .debug_line    0x00000000       0x8d .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
- .debug_str     0x00000000      0x42a .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
+ .debug_str     0x00000000      0x41d .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
  .debug_frame   0x00000000       0x2c .\CortexM0p\ARM_GCC_541\Debug\GUIConf.o
  .ARM.attributes
@@ -504,7 +504,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .debug_line    0x00000000      0x15e .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_str     0x00000000      0x795 .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_str     0x00000000      0x788 .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .ARM.attributes
                 0x00000000       0x32 .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
@@ -527,7 +527,7 @@ Discarded input sections
                 0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
  .debug_ranges  0x00000000       0x10 .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
  .debug_line    0x00000000      0x2bf .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
- .debug_str     0x00000000      0xf1c .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
+ .debug_str     0x00000000      0xf0f .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
  .debug_frame   0x00000000       0x2c .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_SPIM.o
  .ARM.attributes
@@ -546,7 +546,7 @@ Discarded input sections
                 0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
  .debug_ranges  0x00000000       0x10 .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
  .debug_line    0x00000000      0x248 .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
- .debug_str     0x00000000      0x4bb .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
+ .debug_str     0x00000000      0x4ae .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
  .debug_frame   0x00000000       0x2c .\CortexM0p\ARM_GCC_541\Debug\CY_EINK_Timer.o
  .ARM.attributes
@@ -585,7 +585,7 @@ Discarded input sections
                 0x00000000       0x70 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
  .debug_ranges  0x00000000       0x60 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
  .debug_line    0x00000000      0x491 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
- .debug_str     0x00000000     0x1711 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
+ .debug_str     0x00000000     0x1704 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
  .debug_frame   0x00000000      0x148 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Control.o
  .ARM.attributes
@@ -624,7 +624,7 @@ Discarded input sections
                 0x00000000       0x70 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
  .debug_ranges  0x00000000       0x60 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
  .debug_line    0x00000000      0x5a2 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
- .debug_str     0x00000000     0x10f9 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
+ .debug_str     0x00000000     0x10ec .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
  .debug_frame   0x00000000      0x1b4 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Processing.o
  .ARM.attributes
@@ -658,7 +658,7 @@ Discarded input sections
                 0x00000000       0x58 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
  .debug_ranges  0x00000000       0x48 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
  .debug_line    0x00000000      0x3c3 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
- .debug_str     0x00000000     0x1117 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
+ .debug_str     0x00000000     0x110a .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
  .debug_frame   0x00000000       0xd0 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Structure.o
  .ARM.attributes
@@ -679,7 +679,7 @@ Discarded input sections
                 0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
  .debug_ranges  0x00000000       0x18 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
  .debug_line    0x00000000      0x2b7 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
- .debug_str     0x00000000     0x1250 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
+ .debug_str     0x00000000     0x1243 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
  .debug_frame   0x00000000       0x40 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Tuner.o
  .ARM.attributes
@@ -746,7 +746,7 @@ Discarded input sections
                 0x00000000       0xe8 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
  .debug_ranges  0x00000000       0xd8 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
  .debug_line    0x00000000      0x4c3 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
- .debug_str     0x00000000      0xa86 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
+ .debug_str     0x00000000      0xa79 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
  .debug_frame   0x00000000      0x384 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Filter.o
  .ARM.attributes
@@ -822,7 +822,7 @@ Discarded input sections
                 0x00000000      0x100 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
  .debug_ranges  0x00000000       0xf0 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
  .debug_line    0x00000000      0x8d7 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
- .debug_str     0x00000000     0x7609 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
+ .debug_str     0x00000000     0x75fc .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
  .debug_frame   0x00000000      0x328 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Sensing.o
  .ARM.attributes
@@ -846,7 +846,7 @@ Discarded input sections
                 0x00000000       0x38 .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
  .debug_ranges  0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
  .debug_line    0x00000000      0x374 .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
- .debug_str     0x00000000     0x156c .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
+ .debug_str     0x00000000     0x155f .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
  .debug_frame   0x00000000       0x78 .\CortexM0p\ARM_GCC_541\Debug\CapSense_INT.o
  .ARM.attributes
@@ -913,7 +913,7 @@ Discarded input sections
                 0x00000000       0xe0 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
  .debug_ranges  0x00000000       0xd0 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
  .debug_line    0x00000000      0x749 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
- .debug_str     0x00000000     0x7367 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
+ .debug_str     0x00000000     0x735a .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
  .debug_frame   0x00000000      0x2d8 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
  .ARM.attributes
@@ -964,7 +964,7 @@ Discarded input sections
                 0x00000000       0xa0 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
  .debug_ranges  0x00000000       0x90 .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
  .debug_line    0x00000000      0x6bb .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
- .debug_str     0x00000000     0x732c .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
+ .debug_str     0x00000000     0x731f .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
  .debug_frame   0x00000000      0x21c .\CortexM0p\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
  .ARM.attributes
@@ -985,7 +985,7 @@ Discarded input sections
                 0x00000000       0x30 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
  .debug_ranges  0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
  .debug_line    0x00000000      0x27d .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
- .debug_str     0x00000000      0x3da .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
+ .debug_str     0x00000000      0x3cd .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
  .debug_frame   0x00000000       0x74 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
  .ARM.attributes
@@ -1012,7 +1012,7 @@ Discarded input sections
                 0x00000000       0x40 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
  .debug_ranges  0x00000000       0x30 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
  .debug_line    0x00000000      0x296 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
- .debug_str     0x00000000      0xe2f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
+ .debug_str     0x00000000      0xe22 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
  .debug_frame   0x00000000       0x88 .\CortexM0p\ARM_GCC_541\Debug\CapSense_Gesture.o
  .ARM.attributes
@@ -1031,7 +1031,7 @@ Discarded input sections
                 0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
  .debug_ranges  0x00000000       0x18 .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
  .debug_line    0x00000000      0x18c .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
- .debug_str     0x00000000      0x330 .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
+ .debug_str     0x00000000      0x323 .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
  .debug_frame   0x00000000       0x3c .\CortexM0p\ARM_GCC_541\Debug\CapSense_TMG.o
  .ARM.attributes
@@ -1056,7 +1056,7 @@ Discarded input sections
                 0x00000000       0x38 .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
  .debug_ranges  0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
  .debug_line    0x00000000      0x34e .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
- .debug_str     0x00000000      0x9fb .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
+ .debug_str     0x00000000      0x9ee .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
  .debug_frame   0x00000000       0x6c .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
  .ARM.attributes
@@ -1129,7 +1129,7 @@ Discarded input sections
                 0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
  .debug_ranges  0x00000000       0x10 .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
  .debug_line    0x00000000      0x295 .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
- .debug_str     0x00000000      0xd54 .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
+ .debug_str     0x00000000      0xd47 .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
  .debug_frame   0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
  .ARM.attributes
@@ -1168,7 +1168,7 @@ Discarded input sections
                 0x00000000       0x70 .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
  .debug_ranges  0x00000000       0x78 .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
  .debug_line    0x00000000      0x409 .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
- .debug_str     0x00000000      0xe16 .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
+ .debug_str     0x00000000      0xe09 .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
  .debug_frame   0x00000000      0x154 .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
  .ARM.attributes
@@ -1300,7 +1300,7 @@ Discarded input sections
                 0x00000000       0x68 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
  .debug_ranges  0x00000000       0x88 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
  .debug_line    0x00000000      0x4a9 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_str     0x00000000      0xc9f .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_str     0x00000000      0xc92 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
  .debug_frame   0x00000000      0x128 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o
  .ARM.attributes
@@ -1399,7 +1399,7 @@ Discarded input sections
                 0x00000000      0x160 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
  .debug_ranges  0x00000000      0x168 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
  .debug_line    0x00000000     0x1128 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
- .debug_str     0x00000000     0x1ad1 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
+ .debug_str     0x00000000     0x1ac4 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
  .debug_frame   0x00000000      0x4c0 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o
  .ARM.attributes
@@ -1456,7 +1456,7 @@ Discarded input sections
                 0x00000000       0xb8 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
  .debug_ranges  0x00000000       0xc0 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
  .debug_line    0x00000000      0x7d3 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
- .debug_str     0x00000000     0x142a .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
+ .debug_str     0x00000000     0x141d .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
  .debug_frame   0x00000000      0x234 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o
  .ARM.attributes
@@ -1499,7 +1499,7 @@ Discarded input sections
                 0x00000000       0x80 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
  .debug_ranges  0x00000000       0x70 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
  .debug_line    0x00000000      0x7ee .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
- .debug_str     0x00000000     0x14d4 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
+ .debug_str     0x00000000     0x14c7 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
  .debug_frame   0x00000000      0x184 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o
  .ARM.attributes
@@ -1560,7 +1560,7 @@ Discarded input sections
                 0x00000000       0xc8 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
  .debug_ranges  0x00000000       0xd0 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
  .debug_line    0x00000000      0xa43 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_str     0x00000000     0x16cf .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_str     0x00000000     0x16c2 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
  .debug_frame   0x00000000      0x288 .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o
  .ARM.attributes
@@ -1580,7 +1580,7 @@ Discarded input sections
                 0x00000000       0x20 .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
  .debug_ranges  0x00000000       0x10 .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
  .debug_line    0x00000000      0x2a6 .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
- .debug_str     0x00000000      0xb2b .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
+ .debug_str     0x00000000      0xb1e .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
  .debug_frame   0x00000000       0x2c .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
  .ARM.attributes
@@ -1723,7 +1723,7 @@ Discarded input sections
                 0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .debug_ranges  0x00000000       0x18 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .debug_line    0x00000000      0x277 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_str     0x00000000      0x4b8 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_str     0x00000000      0x4ab .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .debug_frame   0x00000000       0x50 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .ARM.attributes
@@ -1742,7 +1742,7 @@ Discarded input sections
                 0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
  .debug_ranges  0x00000000       0x18 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
  .debug_line    0x00000000      0x28c .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
- .debug_str     0x00000000      0x4e0 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
+ .debug_str     0x00000000      0x4d3 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
  .debug_frame   0x00000000       0x54 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o
  .ARM.attributes
@@ -1761,7 +1761,7 @@ Discarded input sections
                 0x00000000       0x28 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
  .debug_ranges  0x00000000       0x18 .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
  .debug_line    0x00000000      0x25f .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
- .debug_str     0x00000000      0x41b .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
+ .debug_str     0x00000000      0x40e .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
  .debug_frame   0x00000000       0x4c .\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o
  .ARM.attributes
@@ -1788,7 +1788,7 @@ Discarded input sections
                 0x00000000       0x40 .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
  .debug_ranges  0x00000000       0x48 .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
  .debug_line    0x00000000      0x355 .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
- .debug_str     0x00000000      0x952 .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
+ .debug_str     0x00000000      0x945 .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
  .debug_frame   0x00000000       0xc8 .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o
  .ARM.attributes
@@ -1846,7 +1846,7 @@ Discarded input sections
                 0x00000000       0x68 .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
  .debug_ranges  0x00000000       0x70 .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
  .debug_line    0x00000000      0x5ae .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
- .debug_str     0x00000000     0x300f .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
+ .debug_str     0x00000000     0x3002 .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
  .comment       0x00000000       0x6f .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
  .debug_frame   0x00000000      0x130 .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
  .ARM.attributes
@@ -4959,7 +4959,7 @@ END GROUP
                 0x90700000                __cy_memory_4_start = 0x90700000
                 0x00100000                __cy_memory_4_length = 0x100000
                 0x00000001                __cy_memory_4_row_size = 0x1
-OUTPUT(C:\Users\Lauriane\Downloads\Laboratoire3(nouvelleVersion _7avril)\Laboratoire3(nouvelleVersion)\Laboratoire3.cydsn\CortexM0p\ARM_GCC_541\Debug\Laboratoire3_link.elf elf32-littlearm)
+OUTPUT(C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\Laboratoire3(nouvelleVersion)\Laboratoire3.cydsn\CortexM0p\ARM_GCC_541\Debug\Laboratoire3_link.elf elf32-littlearm)
 
 .rel.dyn        0x0800084c        0x0 load address 0x9850259c
  .rel.iplt      0x0800084c        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
@@ -5062,26 +5062,26 @@ OUTPUT(C:\Users\Lauriane\Downloads\Laboratoire3(nouvelleVersion _7avril)\Laborat
  .debug_line    0x00005189      0x2e3 .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
  .debug_line    0x0000546c      0x17f .\CortexM0p\ARM_GCC_541\Debug\cy_device.o
 
-.debug_info     0x00000000    0x1b1bb
- .debug_info    0x00000000       0xba .\CortexM0p\ARM_GCC_541\Debug\startup_psoc6_01_cm0plus.o
- .debug_info    0x000000ba      0x75c .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o
- .debug_info    0x00000816     0x21bb .\CortexM0p\ARM_GCC_541\Debug\system_psoc6_cm0plus.o
- .debug_info    0x000029d1     0x22d7 .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x00004ca8       0xac .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00004d54     0x2393 .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o
- .debug_info    0x000070e7     0x3408 .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o
- .debug_info    0x0000a4ef      0x8df .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_info    0x0000adce      0xbf9 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_info    0x0000b9c7     0x19e8 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_info    0x0000d3af     0x2b76 .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o
- .debug_info    0x0000ff25     0x21b4 .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o
- .debug_info    0x000120d9     0x1af4 .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o
- .debug_info    0x00013bcd     0x20bb .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o
- .debug_info    0x00015c88       0xe4 .\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_info    0x00015d6c     0x3ef3 .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o
- .debug_info    0x00019c5f      0x7fc .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o
- .debug_info    0x0001a45b      0x80f .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
- .debug_info    0x0001ac6a      0x551 .\CortexM0p\ARM_GCC_541\Debug\cy_device.o
+.debug_info     0x00000000    0x1b1a1
+ .debug_info    0x00000000       0xad .\CortexM0p\ARM_GCC_541\Debug\startup_psoc6_01_cm0plus.o
+ .debug_info    0x000000ad      0x75c .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o
+ .debug_info    0x00000809     0x21bb .\CortexM0p\ARM_GCC_541\Debug\system_psoc6_cm0plus.o
+ .debug_info    0x000029c4     0x22d7 .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00004c9b       0xac .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00004d47     0x2393 .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o
+ .debug_info    0x000070da     0x3408 .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o
+ .debug_info    0x0000a4e2      0x8df .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_info    0x0000adc1      0xbf9 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_info    0x0000b9ba     0x19e8 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_info    0x0000d3a2     0x2b76 .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o
+ .debug_info    0x0000ff18     0x21b4 .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o
+ .debug_info    0x000120cc     0x1af4 .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_info    0x00013bc0     0x20bb .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_info    0x00015c7b       0xd7 .\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_info    0x00015d52     0x3ef3 .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_info    0x00019c45      0x7fc .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o
+ .debug_info    0x0001a441      0x80f .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
+ .debug_info    0x0001ac50      0x551 .\CortexM0p\ARM_GCC_541\Debug\cy_device.o
 
 .debug_abbrev   0x00000000     0x250c
  .debug_abbrev  0x00000000       0x14 .\CortexM0p\ARM_GCC_541\Debug\startup_psoc6_01_cm0plus.o
@@ -5162,41 +5162,41 @@ OUTPUT(C:\Users\Lauriane\Downloads\Laboratoire3(nouvelleVersion _7avril)\Laborat
  .debug_ranges  0x00000728       0x48 .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
  .debug_ranges  0x00000770       0x10 .\CortexM0p\ARM_GCC_541\Debug\cy_device.o
 
-.debug_str      0x00000000     0xe0bd
- .debug_str     0x00000000      0x965 .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o
-                                0x9d3 (size before relaxing)
- .debug_str     0x00000965     0x145e .\CortexM0p\ARM_GCC_541\Debug\system_psoc6_cm0plus.o
-                               0x1e11 (size before relaxing)
- .debug_str     0x00001dc3     0x15cd .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o
-                               0x2202 (size before relaxing)
- .debug_str     0x00003390       0x30 .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o
-                                0x1d4 (size before relaxing)
- .debug_str     0x000033c0     0x1037 .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o
-                               0x1d37 (size before relaxing)
- .debug_str     0x000043f7     0x5b4b .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o
-                               0x63ed (size before relaxing)
- .debug_str     0x00009f42       0xfd .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o
-                                0x976 (size before relaxing)
- .debug_str     0x0000a03f       0xe6 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o
-                                0xb63 (size before relaxing)
- .debug_str     0x0000a125     0x12c2 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                               0x223a (size before relaxing)
- .debug_str     0x0000b3e7      0xe0c .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o
-                               0x16ee (size before relaxing)
- .debug_str     0x0000c1f3      0x6bc .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o
-                               0x1e93 (size before relaxing)
- .debug_str     0x0000c8af      0x39f .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o
-                               0x2081 (size before relaxing)
- .debug_str     0x0000cc4e      0x23c .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o
-                               0x1b2c (size before relaxing)
- .debug_str     0x0000ce8a      0xf32 .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o
-                               0x2b17 (size before relaxing)
- .debug_str     0x0000ddbc      0x1e5 .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o
-                                0xa30 (size before relaxing)
- .debug_str     0x0000dfa1       0xbf .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
-                                0x713 (size before relaxing)
- .debug_str     0x0000e060       0x5d .\CortexM0p\ARM_GCC_541\Debug\cy_device.o
-                                0x7e2 (size before relaxing)
+.debug_str      0x00000000     0xe0b0
+ .debug_str     0x00000000      0x958 .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o
+                                0x9c6 (size before relaxing)
+ .debug_str     0x00000958     0x145e .\CortexM0p\ARM_GCC_541\Debug\system_psoc6_cm0plus.o
+                               0x1e04 (size before relaxing)
+ .debug_str     0x00001db6     0x15cd .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o
+                               0x21f5 (size before relaxing)
+ .debug_str     0x00003383       0x30 .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o
+                                0x1c7 (size before relaxing)
+ .debug_str     0x000033b3     0x1037 .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o
+                               0x1d2a (size before relaxing)
+ .debug_str     0x000043ea     0x5b4b .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o
+                               0x63e0 (size before relaxing)
+ .debug_str     0x00009f35       0xfd .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o
+                                0x969 (size before relaxing)
+ .debug_str     0x0000a032       0xe6 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o
+                                0xb56 (size before relaxing)
+ .debug_str     0x0000a118     0x12c2 .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                               0x222d (size before relaxing)
+ .debug_str     0x0000b3da      0xe0c .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o
+                               0x16e1 (size before relaxing)
+ .debug_str     0x0000c1e6      0x6bc .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o
+                               0x1e86 (size before relaxing)
+ .debug_str     0x0000c8a2      0x39f .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o
+                               0x2074 (size before relaxing)
+ .debug_str     0x0000cc41      0x23c .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o
+                               0x1b1f (size before relaxing)
+ .debug_str     0x0000ce7d      0xf32 .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o
+                               0x2b0a (size before relaxing)
+ .debug_str     0x0000ddaf      0x1e5 .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o
+                                0xa23 (size before relaxing)
+ .debug_str     0x0000df94       0xbf .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
+                                0x706 (size before relaxing)
+ .debug_str     0x0000e053       0x5d .\CortexM0p\ARM_GCC_541\Debug\cy_device.o
+                                0x7d5 (size before relaxing)
 
 .debug_frame    0x00000000     0x173c
  .debug_frame   0x00000000       0x2c .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o

@@ -1,0 +1,6 @@
+C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\Laboratoire3(nouvelleVersion)\Laboratoire3.cydsn\Laboratoire3.cyprj|de9122a6-4b72-4b18-943e-45d77e2b1108
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|450319e1-bc5e-45d4-aa5f-4f05977bc7c8
+C:\Users\Lauriane\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|fd19bed3-cfab-4ebb-ab79-32371f4bc173
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|214a5d1d-6855-43ef-8a37-408d1572ba25
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5486c3dd-1987-4c7a-b617-d55e244122b3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|27d5f131-0afe-42ea-831f-1eea65b01613
