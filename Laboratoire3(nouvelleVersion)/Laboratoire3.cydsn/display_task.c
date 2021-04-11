@@ -272,8 +272,8 @@ void drawPageLED()
     GUI_SetTextAlign(GUI_TA_LEFT);
     GUI_DispStringAt("Intensite des DELs (mV): ", 10, 60); 
     sprintf(&bufferDEL[0], "%d", courantDEL);
-    GUI_DispStringAt(bufferDEL, 150, 60);
-    //GUI_DispStringAt("augmenter : Bouton1 | diminuer : Bouton0", 10, 120);
+    GUI_DispStringAt(bufferDEL, 160, 60);
+    
 }
 
 void drawPageALARME_Acc()
