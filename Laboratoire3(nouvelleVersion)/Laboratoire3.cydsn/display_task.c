@@ -220,14 +220,14 @@ void updateParameters(int param1, int param2)  // on peut utiliser cette fonctio
 {
     char buffer[50];
     char buffer2[50];
-    GUI_SetFont(GUI_FONT_10_1);
+    GUI_SetFont(GUI_FONT_20B_1);
     GUI_SetTextAlign(GUI_TA_LEFT);
-    GUI_DispStringAt("Frequence cardiaque (bpm): ", 10, 150); 
+    GUI_DispStringAt("PR bpm ", 10, 150); 
     sprintf(&buffer[0], "%d", param1);
-    GUI_DispStringAt(buffer,155,150);
-    GUI_DispStringAt("Saturation en oxygene (%): ", 10,160);
+    GUI_DispStringAt(buffer,87,150);
+    GUI_DispStringAt("%SpO2 ", 150,150);
     sprintf(&buffer2[0], "%d", param2);
-    GUI_DispStringAt(buffer2, 155, 160);
+    GUI_DispStringAt(buffer2, 220, 150);
 }
 
 void initialiserGUI()
