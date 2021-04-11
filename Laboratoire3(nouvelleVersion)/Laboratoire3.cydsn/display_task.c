@@ -52,7 +52,7 @@ uint8_t currentGraph = RED_SIGNAL;
 uint8_t previousGraph;
 bool flagAlarme = false;
 
-volatile int courantDEL = 5;
+volatile int courantDEL = 20;
 
 volatile int borneSup = 130;
 volatile int borneInf = 40;
@@ -153,9 +153,9 @@ void modifDEL()
             courantDEL+=5;
             
         } 
-        if (courantDEL<5) // sous l'hypothèse que le courant min = 5 et max = 20 
+        if (courantDEL<5) // sous l'hypothèse que le courant min = 5 et max = 50 mA 
             courantDEL = 20;
-        if (courantDEL>20)
+        if (courantDEL>50)
             courantDEL = 5;
     }
 }
@@ -270,7 +270,7 @@ void drawPageLED()
     char bufferDEL[50];
     GUI_SetFont(GUI_FONT_16_1);
     GUI_SetTextAlign(GUI_TA_LEFT);
-    GUI_DispStringAt("Intensite des DELs (V): ", 10, 60); 
+    GUI_DispStringAt("Intensite des DELs (mV): ", 10, 60); 
     sprintf(&bufferDEL[0], "%d", courantDEL);
     GUI_DispStringAt(bufferDEL, 150, 60);
     //GUI_DispStringAt("augmenter : Bouton1 | diminuer : Bouton0", 10, 120);
