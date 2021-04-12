@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\TopDesign</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Pins</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Analog</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\DMA</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Clocks</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Interrupts</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\System</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Directives</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM GCC Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM IAR Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM MDK Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Header Files</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM GCC Generic</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM IAR Generic</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM MDK Generic</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Header Files</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Header Files\arm_math.h</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Header Files\core_cm4.h</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Header Files\FreeRTOSConfig.h</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>Traitement de signal-exploration\Design01\Shared Files</v>
+<v>Traitement de signal-exploration\Design01\Shared Files\cyapicallbacks.h</v>
+<v>Traitement de signal-exploration\Design01\Shared Files\system_psoc6.h</v>
+<v>Traitement de signal-exploration\Design01\Generated_Source</v>
+<v>Traitement de signal-exploration\Design01\Generated_Source\PSoC6</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\TopDesign</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Pins</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Analog</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\DMA</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Clocks</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Interrupts</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\System</v>
+<v>Traitement de signal-exploration\Design01\Design01.cydwr\Directives</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM GCC Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM IAR Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM MDK Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Header Files</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)</v>
+<v>Traitement de signal-exploration\Design01\CM4 (Core 1)\ARM GCC Generic</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\TopDesign</v>
+<v>Traitement de signal-exploration\Design01\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\TopDesign</v>
+<v>Traitement de signal-exploration\Design01\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.elf</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.hex</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.map</v>
+<v>Traitement de signal-exploration\Design01\CortexM4</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\croutine.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_wdt.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cyfitter_sysint_cfg.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\event_groups.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\heap_1.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\list.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\main_cm4.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\port.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\queue.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm4.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\stream_buffer.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm4.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\tasks.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\timers.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Design01.elf</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Design01.hex</v>
+<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Design01.map</v>
+<v>Traitement de signal-exploration\Design01\Design01.gpdsc</v>
+<v>Traitement de signal-exploration\Design01\Design01.rpt</v>
+<v>Traitement de signal-exploration\Design01\Design01_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_device.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_efuse.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_flash.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_gpio.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_drv.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_pipe.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ipc_sema.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syslib_gcc.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_syspm.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_systick.lst</v>
+<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_trigmux.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\PSoC 6 Architecture TRM</v>
+<v>Traitement de signal-exploration\Design01\PSoC 63 Family Datasheet</v>
+<v>Traitement de signal-exploration\Design01\Peripheral Driver Library</v>
+<v>Traitement de signal-exploration\Design01\System Reference Guides</v>
+<v>Traitement de signal-exploration\Design01\SCB_UART_PDL_v2_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Traitement de signal-exploration</v>
+<v>Traitement de signal-exploration\Design01</v>
+<v>Traitement de signal-exploration\Design01\PSoC 6 Architecture TRM</v>
+<v>Traitement de signal-exploration\Design01\PSoC 63 Family Datasheet</v>
+<v>Traitement de signal-exploration\Design01\Peripheral Driver Library</v>
+<v>Traitement de signal-exploration\Design01\System Reference Guides</v>
+<v>Traitement de signal-exploration\Design01\SCB_UART_PDL_v2_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="776, 387" SelectedTabbedMdiWindow="59369f14-d96a-4fd2-b1b0-6236d805bc85"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="9366cbd4-b65e-4368-947c-ed2473a56a13" /><DocumentWindow Key="C:\Users\Bruce\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="59369f14-d96a-4fd2-b1b0-6236d805bc85" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
