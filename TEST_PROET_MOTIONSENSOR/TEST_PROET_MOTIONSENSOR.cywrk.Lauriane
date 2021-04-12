@@ -13,15 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<<<<<<< HEAD
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\TopDesign">
-=======
-<<<<<<< HEAD
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
-=======
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\TopDesign">
->>>>>>> Prototype
->>>>>>> 7834c7d0695b6bcc2cc27e5950513e0169f8c472
 <ExpandedNodeIds>
 <v>TEST_PROET_MOTIONSENSOR</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor</v>
@@ -63,12 +55,7 @@
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Bosch\bmi160.h</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Bosch\bmi160_defs.h</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files\acquisition_BMI.h</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files\acquisition_SPO2.h</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files\display_task.h</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files\FreeRTOSConfig.h</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files\touch_task.h</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Header Files\traitement_de_signal.h</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
@@ -76,13 +63,8 @@
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\acquisition_BMI.c</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\acquisition_SPO2.c</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\display_task.c</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\main_cm4.c</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\touch_task.c</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CM4 (Core 1)\Source Files\traitement_de_signal.c</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Shared Files</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Shared Files\cyapicallbacks.h</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Shared Files\stdio_user.c</v>
@@ -297,19 +279,9 @@
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\PSoC 63 Family Datasheet</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Peripheral Driver Library</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\System Reference Guides</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CapSense_v3_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\GPIO_PDL_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\LED_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\LED_v1_0\LED_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Power_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Power_v1_0\Power_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Resistor_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Resistor_v1_0\Resistor_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Scan_ADC_P6_v3_10.pdf</v>
+<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\GPIO_PDL_v1_0.pdf</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\SCB_I2C_PDL_v2_0.pdf</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\SCB_UART_PDL_v2_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\TCPWM_PWM_PDL_v1_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>TEST_PROET_MOTIONSENSOR</v>
@@ -318,19 +290,9 @@
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\PSoC 63 Family Datasheet</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Peripheral Driver Library</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\System Reference Guides</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\CapSense_v3_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\GPIO_PDL_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\LED_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\LED_v1_0\LED_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Power_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Power_v1_0\Power_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Resistor_v1_0</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Resistor_v1_0\Resistor_v1_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\Scan_ADC_P6_v3_10.pdf</v>
+<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\GPIO_PDL_v1_0.pdf</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\SCB_I2C_PDL_v2_0.pdf</v>
 <v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\SCB_UART_PDL_v2_0.pdf</v>
-<v>TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor\TCPWM_PWM_PDL_v1_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -341,13 +303,6 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<name v=".\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cydwr" />
-=======
->>>>>>> Prototype
->>>>>>> 7834c7d0695b6bcc2cc27e5950513e0169f8c472
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -355,15 +310,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
-<<<<<<< HEAD
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="917, 534" SelectedTabbedMdiWindow="b7593812-7971-4f81-a481-a70f9836a2b4"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b7c41b36-9ee6-40ed-91b8-5bcc85851053" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="b7593812-7971-4f81-a481-a70f9836a2b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
-=======
-<<<<<<< HEAD
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1171, 534" SelectedTabbedMdiWindow="b3ae2f0b-753c-4f19-a027-b5c1cd0fe2a1"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b7c41b36-9ee6-40ed-91b8-5bcc85851053" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="855874a5-71bd-4338-8517-9362fa1992c0" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cydwr" Guid="b3ae2f0b-753c-4f19-a027-b5c1cd0fe2a1" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
-=======
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="917, 534" SelectedTabbedMdiWindow="b7593812-7971-4f81-a481-a70f9836a2b4"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b7c41b36-9ee6-40ed-91b8-5bcc85851053" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="b7593812-7971-4f81-a481-a70f9836a2b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
->>>>>>> Prototype
->>>>>>> 7834c7d0695b6bcc2cc27e5950513e0169f8c472
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="917, 534" SelectedTabbedMdiWindow="3266eab5-369b-4b9c-9df6-0889e0247cba"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b7c41b36-9ee6-40ed-91b8-5bcc85851053" /><DocumentWindow Key="C:\Users\Lauriane\Desktop\Poly\H2021\GBM2100\Projet2\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\TopDesign\TopDesign.cysch" Guid="3266eab5-369b-4b9c-9df6-0889e0247cba" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
