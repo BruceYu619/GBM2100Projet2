@@ -1,0 +1,4841 @@
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"CapSense_Tuner.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.CapSense_TuInitialize,"ax",%progbits
+  21              		.align	2
+  22              		.global	CapSense_TuInitialize
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	CapSense_TuInitialize, %function
+  26              	CapSense_TuInitialize:
+  27              	.LFB166:
+  28              		.file 1 "Generated_Source\\PSoC6\\CapSense_Tuner.c"
+   1:Generated_Source\PSoC6/CapSense_Tuner.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC6/CapSense_Tuner.c **** * \file CapSense_Tuner.c
+   3:Generated_Source\PSoC6/CapSense_Tuner.c **** * \version 3.0
+   4:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+   5:Generated_Source\PSoC6/CapSense_Tuner.c **** * \brief
+   6:Generated_Source\PSoC6/CapSense_Tuner.c **** *   This file provides the source code for the Tuner module API of the 
+   7:Generated_Source\PSoC6/CapSense_Tuner.c **** *   Component.
+   8:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+   9:Generated_Source\PSoC6/CapSense_Tuner.c **** * \see CapSense v3.0 Datasheet
+  10:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  11:Generated_Source\PSoC6/CapSense_Tuner.c **** *//*****************************************************************************
+  12:Generated_Source\PSoC6/CapSense_Tuner.c **** * Copyright (2016-2017), Cypress Semiconductor Corporation.
+  13:Generated_Source\PSoC6/CapSense_Tuner.c **** ********************************************************************************
+  14:Generated_Source\PSoC6/CapSense_Tuner.c **** * This software is owned by Cypress Semiconductor Corporation (Cypress) and is
+  15:Generated_Source\PSoC6/CapSense_Tuner.c **** * protected by and subject to worldwide patent protection (United States and
+  16:Generated_Source\PSoC6/CapSense_Tuner.c **** * foreign), United States copyright laws and international treaty provisions.
+  17:Generated_Source\PSoC6/CapSense_Tuner.c **** * Cypress hereby grants to licensee a personal, non-exclusive, non-transferable
+  18:Generated_Source\PSoC6/CapSense_Tuner.c **** * license to copy, use, modify, create derivative works of, and compile the
+  19:Generated_Source\PSoC6/CapSense_Tuner.c **** * Cypress Source Code and derivative works for the sole purpose of creating
+  20:Generated_Source\PSoC6/CapSense_Tuner.c **** * custom software in support of licensee product to be used only in conjunction
+  21:Generated_Source\PSoC6/CapSense_Tuner.c **** * with a Cypress integrated circuit as specified in the applicable agreement.
+  22:Generated_Source\PSoC6/CapSense_Tuner.c **** * Any reproduction, modification, translation, compilation, or representation of
+  23:Generated_Source\PSoC6/CapSense_Tuner.c **** * this software except as specified above is prohibited without the express
+  24:Generated_Source\PSoC6/CapSense_Tuner.c **** * written permission of Cypress.
+  25:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  26:Generated_Source\PSoC6/CapSense_Tuner.c **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH
+  27:Generated_Source\PSoC6/CapSense_Tuner.c **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  28:Generated_Source\PSoC6/CapSense_Tuner.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  29:Generated_Source\PSoC6/CapSense_Tuner.c **** * Cypress reserves the right to make changes without further notice to the
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 2
+
+
+  30:Generated_Source\PSoC6/CapSense_Tuner.c **** * materials described herein. Cypress does not assume any liability arising out
+  31:Generated_Source\PSoC6/CapSense_Tuner.c **** * of the application or use of any product or circuit described herein. Cypress
+  32:Generated_Source\PSoC6/CapSense_Tuner.c **** * does not authorize its products for use as critical components in life-support
+  33:Generated_Source\PSoC6/CapSense_Tuner.c **** * systems where a malfunction or failure may reasonably be expected to result in
+  34:Generated_Source\PSoC6/CapSense_Tuner.c **** * significant injury to the user. The inclusion of Cypress' product in a life-
+  35:Generated_Source\PSoC6/CapSense_Tuner.c **** * support systems application implies that the manufacturer assumes all risk of
+  36:Generated_Source\PSoC6/CapSense_Tuner.c **** * such use and in doing so indemnifies Cypress against all charges. Use may be
+  37:Generated_Source\PSoC6/CapSense_Tuner.c **** * limited by and subject to the applicable Cypress software license agreement.
+  38:Generated_Source\PSoC6/CapSense_Tuner.c **** *******************************************************************************/
+  39:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  40:Generated_Source\PSoC6/CapSense_Tuner.c **** #include "syslib/cy_syslib.h"
+  41:Generated_Source\PSoC6/CapSense_Tuner.c **** #include "CapSense_Structure.h"
+  42:Generated_Source\PSoC6/CapSense_Tuner.c **** #include "CapSense_Tuner.h"
+  43:Generated_Source\PSoC6/CapSense_Tuner.c **** #include "CapSense_Control.h"
+  44:Generated_Source\PSoC6/CapSense_Tuner.c **** #include "CapSense_Configuration.h"
+  45:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  46:Generated_Source\PSoC6/CapSense_Tuner.c **** /* Tuner states definition */
+  47:Generated_Source\PSoC6/CapSense_Tuner.c **** #define TU_FSM_RUNNING      (0u)
+  48:Generated_Source\PSoC6/CapSense_Tuner.c **** #define TU_FSM_SUSPENDED    (1u)
+  49:Generated_Source\PSoC6/CapSense_Tuner.c **** #define TU_FSM_SNR_TEST     (2u)
+  50:Generated_Source\PSoC6/CapSense_Tuner.c **** #define TU_FSM_ONE_SCAN     (3u)
+  51:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  52:Generated_Source\PSoC6/CapSense_Tuner.c **** /* Tuner state variable */
+  53:Generated_Source\PSoC6/CapSense_Tuner.c **** static uint32 tunerFsm = TU_FSM_RUNNING;
+  54:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  55:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  56:Generated_Source\PSoC6/CapSense_Tuner.c **** /*******************************************************************************
+  57:Generated_Source\PSoC6/CapSense_Tuner.c **** * Function Name: CapSense_TuInitialize
+  58:Generated_Source\PSoC6/CapSense_Tuner.c **** ****************************************************************************//**
+  59:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  60:Generated_Source\PSoC6/CapSense_Tuner.c **** * \brief
+  61:Generated_Source\PSoC6/CapSense_Tuner.c **** *   This function initializes the communication interface with the Tuner GUI.
+  62:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  63:Generated_Source\PSoC6/CapSense_Tuner.c **** * \details
+  64:Generated_Source\PSoC6/CapSense_Tuner.c **** *   This API sets the tuner state machine to the default state. It is called by
+  65:Generated_Source\PSoC6/CapSense_Tuner.c **** *   the CapSense_Start() API.
+  66:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  67:Generated_Source\PSoC6/CapSense_Tuner.c **** *******************************************************************************/
+  68:Generated_Source\PSoC6/CapSense_Tuner.c **** void CapSense_TuInitialize(void)
+  69:Generated_Source\PSoC6/CapSense_Tuner.c **** {
+  29              		.loc 1 69 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34              	.LVL0:
+  70:Generated_Source\PSoC6/CapSense_Tuner.c ****     volatile CapSense_RAM_STRUCT *ptrDsRam = &CapSense_dsRam;
+  71:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  72:Generated_Source\PSoC6/CapSense_Tuner.c ****     ptrDsRam->tunerCmd = (uint16)CapSense_TU_CMD_NONE_E;
+  35              		.loc 1 72 0
+  36 0000 0023     		movs	r3, #0
+  37 0002 024A     		ldr	r2, .L2
+  38 0004 D380     		strh	r3, [r2, #6]	@ movhi
+  73:Generated_Source\PSoC6/CapSense_Tuner.c ****     tunerFsm = TU_FSM_RUNNING;
+  39              		.loc 1 73 0
+  40 0006 024A     		ldr	r2, .L2+4
+  41 0008 1360     		str	r3, [r2]
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 3
+
+
+  42 000a 7047     		bx	lr
+  43              	.L3:
+  44              		.align	2
+  45              	.L2:
+  46 000c 00000000 		.word	CapSense_dsRam
+  47 0010 00000000 		.word	.LANCHOR0
+  48              		.cfi_endproc
+  49              	.LFE166:
+  50              		.size	CapSense_TuInitialize, .-CapSense_TuInitialize
+  51              		.section	.text.CapSense_RunTuner,"ax",%progbits
+  52              		.align	2
+  53              		.global	CapSense_RunTuner
+  54              		.thumb
+  55              		.thumb_func
+  56              		.type	CapSense_RunTuner, %function
+  57              	CapSense_RunTuner:
+  58              	.LFB167:
+  74:Generated_Source\PSoC6/CapSense_Tuner.c **** }
+  75:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+  76:Generated_Source\PSoC6/CapSense_Tuner.c **** /*******************************************************************************
+  77:Generated_Source\PSoC6/CapSense_Tuner.c **** * Function Name: CapSense_RunTuner
+  78:Generated_Source\PSoC6/CapSense_Tuner.c **** ****************************************************************************//**
+  79:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  80:Generated_Source\PSoC6/CapSense_Tuner.c **** * \brief
+  81:Generated_Source\PSoC6/CapSense_Tuner.c **** *  Establishes synchronized communication with the Tuner application.
+  82:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  83:Generated_Source\PSoC6/CapSense_Tuner.c **** * \details
+  84:Generated_Source\PSoC6/CapSense_Tuner.c **** *  This function is used to establish synchronized communication between the
+  85:Generated_Source\PSoC6/CapSense_Tuner.c **** *  CapSense Component and Tuner application (or other host controllers).
+  86:Generated_Source\PSoC6/CapSense_Tuner.c **** *  This function is called periodically in the application program loop
+  87:Generated_Source\PSoC6/CapSense_Tuner.c **** *  to serve the Tuner application (or host controller) requests and commands.
+  88:Generated_Source\PSoC6/CapSense_Tuner.c **** *  In most cases, the best place to call this function is after processing and
+  89:Generated_Source\PSoC6/CapSense_Tuner.c **** *  before next scanning.
+  90:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+  91:Generated_Source\PSoC6/CapSense_Tuner.c **** *  If this function is absent in the application program, then communication is
+  92:Generated_Source\PSoC6/CapSense_Tuner.c **** *  asynchronous and the following disadvantages are applicable:
+  93:Generated_Source\PSoC6/CapSense_Tuner.c **** *    - The raw counts displayed in the tuner may be filtered and/or unfiltered.
+  94:Generated_Source\PSoC6/CapSense_Tuner.c **** *      As a result, noise and SNR measurements will not be accurate.
+  95:Generated_Source\PSoC6/CapSense_Tuner.c **** *    - The Tuner tool may read the sensor data such as raw counts from a scan
+  96:Generated_Source\PSoC6/CapSense_Tuner.c **** *      multiple times, as a result, noise and SNR measurement will not be
+  97:Generated_Source\PSoC6/CapSense_Tuner.c **** *      accurate.
+  98:Generated_Source\PSoC6/CapSense_Tuner.c **** *    - The Tuner tool and host controller should not change the Component parameters
+  99:Generated_Source\PSoC6/CapSense_Tuner.c **** *      via the tuner interface. Changing the Component parameters via the tuner
+ 100:Generated_Source\PSoC6/CapSense_Tuner.c **** *      interface in the async mode will result in Component abnormal behavior.
+ 101:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+ 102:Generated_Source\PSoC6/CapSense_Tuner.c **** *  Note that calling this function is not mandatory for the application, but
+ 103:Generated_Source\PSoC6/CapSense_Tuner.c **** *  required only to synchronize the communication with the host controller or
+ 104:Generated_Source\PSoC6/CapSense_Tuner.c **** *  tuner application.
+ 105:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+ 106:Generated_Source\PSoC6/CapSense_Tuner.c **** * \return
+ 107:Generated_Source\PSoC6/CapSense_Tuner.c **** *  In some cases, the application program may need to know if the Component was
+ 108:Generated_Source\PSoC6/CapSense_Tuner.c **** *  re-initialized. The return indicates if a restart command was executed or not:
+ 109:Generated_Source\PSoC6/CapSense_Tuner.c **** *    - CapSense_STATUS_RESTART_DONE - Based on a received command, the
+ 110:Generated_Source\PSoC6/CapSense_Tuner.c **** *      Component was restarted.
+ 111:Generated_Source\PSoC6/CapSense_Tuner.c **** *    -  CapSense_STATUS_RESTART_NONE - No restart was executed by this
+ 112:Generated_Source\PSoC6/CapSense_Tuner.c **** *      function.
+ 113:Generated_Source\PSoC6/CapSense_Tuner.c **** *
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 4
+
+
+ 114:Generated_Source\PSoC6/CapSense_Tuner.c **** *******************************************************************************/
+ 115:Generated_Source\PSoC6/CapSense_Tuner.c **** uint32 CapSense_RunTuner(void)
+ 116:Generated_Source\PSoC6/CapSense_Tuner.c **** {
+  59              		.loc 1 116 0
+  60              		.cfi_startproc
+  61              		@ args = 0, pretend = 0, frame = 0
+  62              		@ frame_needed = 0, uses_anonymous_args = 0
+  63 0000 70B5     		push	{r4, r5, r6, lr}
+  64              		.cfi_def_cfa_offset 16
+  65              		.cfi_offset 4, -16
+  66              		.cfi_offset 5, -12
+  67              		.cfi_offset 6, -8
+  68              		.cfi_offset 14, -4
+  69              	.LVL1:
+ 117:Generated_Source\PSoC6/CapSense_Tuner.c ****     uint32 interruptState;
+ 118:Generated_Source\PSoC6/CapSense_Tuner.c ****     uint32 widgetId;
+ 119:Generated_Source\PSoC6/CapSense_Tuner.c ****     uint32 sensorId;
+ 120:Generated_Source\PSoC6/CapSense_Tuner.c ****     uint32 updateFlag = 0Lu;
+ 121:Generated_Source\PSoC6/CapSense_Tuner.c ****     CapSense_TU_CMD_ENUM command;
+ 122:Generated_Source\PSoC6/CapSense_Tuner.c ****     uint32 tunerStatus = CapSense_STATUS_RESTART_NONE;
+  70              		.loc 1 122 0
+  71 0002 0026     		movs	r6, #0
+ 120:Generated_Source\PSoC6/CapSense_Tuner.c ****     CapSense_TU_CMD_ENUM command;
+  72              		.loc 1 120 0
+  73 0004 3546     		mov	r5, r6
+  74              	.LVL2:
+  75              	.L16:
+ 123:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 124:Generated_Source\PSoC6/CapSense_Tuner.c ****     volatile CapSense_RAM_STRUCT *ptrDsRam;
+ 125:Generated_Source\PSoC6/CapSense_Tuner.c ****     volatile CapSense_RAM_SNS_STRUCT *ptrSnsTmp;
+ 126:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 127:Generated_Source\PSoC6/CapSense_Tuner.c ****     ptrDsRam = &CapSense_dsRam;
+ 128:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 129:Generated_Source\PSoC6/CapSense_Tuner.c ****     do
+ 130:Generated_Source\PSoC6/CapSense_Tuner.c ****     {
+ 131:Generated_Source\PSoC6/CapSense_Tuner.c ****         /* ONE_SCAN command could be interpreted as two commands:
+ 132:Generated_Source\PSoC6/CapSense_Tuner.c ****         * RESUME till next call of this function and then
+ 133:Generated_Source\PSoC6/CapSense_Tuner.c ****         * SUSPEND till next command receiving.
+ 134:Generated_Source\PSoC6/CapSense_Tuner.c ****         */
+ 135:Generated_Source\PSoC6/CapSense_Tuner.c ****         if (TU_FSM_ONE_SCAN == tunerFsm)
+  76              		.loc 1 135 0
+  77 0006 3F4B     		ldr	r3, .L19
+  78 0008 1B68     		ldr	r3, [r3]
+  79 000a 032B     		cmp	r3, #3
+  80 000c 06D1     		bne	.L5
+ 136:Generated_Source\PSoC6/CapSense_Tuner.c ****         {
+ 137:Generated_Source\PSoC6/CapSense_Tuner.c ****             interruptState = Cy_SysLib_EnterCriticalSection();
+  81              		.loc 1 137 0
+  82 000e FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
+  83              	.LVL3:
+ 138:Generated_Source\PSoC6/CapSense_Tuner.c ****             ptrDsRam->tunerCmd = (uint16)CapSense_TU_CMD_SUSPEND_E;
+  84              		.loc 1 138 0
+  85 0012 0122     		movs	r2, #1
+  86 0014 3C4B     		ldr	r3, .L19+4
+  87 0016 DA80     		strh	r2, [r3, #6]	@ movhi
+ 139:Generated_Source\PSoC6/CapSense_Tuner.c ****             Cy_SysLib_ExitCriticalSection(interruptState);
+  88              		.loc 1 139 0
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 5
+
+
+  89 0018 FFF7FEFF 		bl	Cy_SysLib_ExitCriticalSection
+  90              	.LVL4:
+  91              	.L5:
+ 140:Generated_Source\PSoC6/CapSense_Tuner.c ****         }
+ 141:Generated_Source\PSoC6/CapSense_Tuner.c ****         command = (CapSense_TU_CMD_ENUM)ptrDsRam->tunerCmd;
+  92              		.loc 1 141 0
+  93 001c 3A4B     		ldr	r3, .L19+4
+  94 001e DC88     		ldrh	r4, [r3, #6]
+  95 0020 E4B2     		uxtb	r4, r4
+  96              	.LVL5:
+ 142:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 143:Generated_Source\PSoC6/CapSense_Tuner.c ****         /* Check command register */
+ 144:Generated_Source\PSoC6/CapSense_Tuner.c ****         switch (command)
+  97              		.loc 1 144 0
+  98 0022 631E     		subs	r3, r4, #1
+  99 0024 052B     		cmp	r3, #5
+ 100 0026 23D8     		bhi	.L6
+ 101 0028 DFE803F0 		tbb	[pc, r3]
+ 102              	.L8:
+ 103 002c 03       		.byte	(.L7-.L8)/2
+ 104 002d 07       		.byte	(.L9-.L8)/2
+ 105 002e 0C       		.byte	(.L10-.L8)/2
+ 106 002f 14       		.byte	(.L11-.L8)/2
+ 107 0030 19       		.byte	(.L12-.L8)/2
+ 108 0031 1E       		.byte	(.L13-.L8)/2
+ 109              		.p2align 1
+ 110              	.L7:
+ 145:Generated_Source\PSoC6/CapSense_Tuner.c ****         {
+ 146:Generated_Source\PSoC6/CapSense_Tuner.c ****         case CapSense_TU_CMD_SUSPEND_E:
+ 147:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerFsm = TU_FSM_SUSPENDED;
+ 111              		.loc 1 147 0
+ 112 0032 0125     		movs	r5, #1
+ 113              	.LVL6:
+ 114 0034 334B     		ldr	r3, .L19
+ 115 0036 1D60     		str	r5, [r3]
+ 116              	.LVL7:
+ 148:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 1Lu;
+ 149:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 117              		.loc 1 149 0
+ 118 0038 1AE0     		b	.L6
+ 119              	.LVL8:
+ 120              	.L9:
+ 150:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 151:Generated_Source\PSoC6/CapSense_Tuner.c ****         case CapSense_TU_CMD_RESUME_E:
+ 152:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerFsm = TU_FSM_RUNNING;
+ 121              		.loc 1 152 0
+ 122 003a 0022     		movs	r2, #0
+ 123 003c 314B     		ldr	r3, .L19
+ 124 003e 1A60     		str	r2, [r3]
+ 125              	.LVL9:
+ 153:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 1Lu;
+ 126              		.loc 1 153 0
+ 127 0040 0125     		movs	r5, #1
+ 154:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 128              		.loc 1 154 0
+ 129 0042 15E0     		b	.L6
+ 130              	.LVL10:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 6
+
+
+ 131              	.L10:
+ 155:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 156:Generated_Source\PSoC6/CapSense_Tuner.c ****         case CapSense_TU_CMD_RESTART_E:
+ 157:Generated_Source\PSoC6/CapSense_Tuner.c ****             (void)CapSense_Start();
+ 132              		.loc 1 157 0
+ 133 0044 FFF7FEFF 		bl	CapSense_Start
+ 134              	.LVL11:
+ 158:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerStatus = CapSense_STATUS_RESTART_DONE;
+ 159:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerFsm = TU_FSM_RUNNING;
+ 135              		.loc 1 159 0
+ 136 0048 0022     		movs	r2, #0
+ 137 004a 2E4B     		ldr	r3, .L19
+ 138 004c 1A60     		str	r2, [r3]
+ 139              	.LVL12:
+ 158:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerStatus = CapSense_STATUS_RESTART_DONE;
+ 140              		.loc 1 158 0
+ 141 004e 0126     		movs	r6, #1
+ 160:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 1Lu;
+ 142              		.loc 1 160 0
+ 143 0050 3546     		mov	r5, r6
+ 161:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 144              		.loc 1 161 0
+ 145 0052 0DE0     		b	.L6
+ 146              	.LVL13:
+ 147              	.L11:
+ 162:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 163:Generated_Source\PSoC6/CapSense_Tuner.c ****         case CapSense_TU_CMD_RUN_SNR_TEST_E:
+ 164:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerFsm = TU_FSM_SNR_TEST;
+ 148              		.loc 1 164 0
+ 149 0054 0222     		movs	r2, #2
+ 150 0056 2B4B     		ldr	r3, .L19
+ 151 0058 1A60     		str	r2, [r3]
+ 152              	.LVL14:
+ 165:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 1Lu;
+ 153              		.loc 1 165 0
+ 154 005a 0125     		movs	r5, #1
+ 166:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 155              		.loc 1 166 0
+ 156 005c 08E0     		b	.L6
+ 157              	.LVL15:
+ 158              	.L12:
+ 167:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 168:Generated_Source\PSoC6/CapSense_Tuner.c ****         case CapSense_TU_CMD_PING_E:
+ 169:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerFsm = TU_FSM_RUNNING;
+ 159              		.loc 1 169 0
+ 160 005e 0022     		movs	r2, #0
+ 161 0060 284B     		ldr	r3, .L19
+ 162 0062 1A60     		str	r2, [r3]
+ 163              	.LVL16:
+ 170:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 1Lu;
+ 164              		.loc 1 170 0
+ 165 0064 0125     		movs	r5, #1
+ 171:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 166              		.loc 1 171 0
+ 167 0066 03E0     		b	.L6
+ 168              	.LVL17:
+ 169              	.L13:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 7
+
+
+ 172:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 173:Generated_Source\PSoC6/CapSense_Tuner.c ****         case CapSense_TU_CMD_ONE_SCAN_E:
+ 174:Generated_Source\PSoC6/CapSense_Tuner.c ****             tunerFsm = TU_FSM_ONE_SCAN;
+ 170              		.loc 1 174 0
+ 171 0068 0322     		movs	r2, #3
+ 172 006a 264B     		ldr	r3, .L19
+ 173 006c 1A60     		str	r2, [r3]
+ 174              	.LVL18:
+ 175:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 0Lu;
+ 175              		.loc 1 175 0
+ 176 006e 0025     		movs	r5, #0
+ 177              	.LVL19:
+ 178              	.L6:
+ 176:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 177:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 178:Generated_Source\PSoC6/CapSense_Tuner.c ****         default:
+ 179:Generated_Source\PSoC6/CapSense_Tuner.c ****             break;
+ 180:Generated_Source\PSoC6/CapSense_Tuner.c ****         }
+ 181:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 182:Generated_Source\PSoC6/CapSense_Tuner.c ****         /* Set Complete flag in command register if needed */
+ 183:Generated_Source\PSoC6/CapSense_Tuner.c ****         if (0Lu != updateFlag)
+ 179              		.loc 1 183 0
+ 180 0070 8DB1     		cbz	r5, .L14
+ 184:Generated_Source\PSoC6/CapSense_Tuner.c ****         {
+ 185:Generated_Source\PSoC6/CapSense_Tuner.c ****             interruptState = Cy_SysLib_EnterCriticalSection();
+ 181              		.loc 1 185 0
+ 182 0072 FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
+ 183              	.LVL20:
+ 186:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 187:Generated_Source\PSoC6/CapSense_Tuner.c ****             /* Check if command wasn't overwritten with new command */
+ 188:Generated_Source\PSoC6/CapSense_Tuner.c ****             if (command == (CapSense_TU_CMD_ENUM)ptrDsRam->tunerCmd)
+ 184              		.loc 1 188 0
+ 185 0076 244B     		ldr	r3, .L19+4
+ 186 0078 DB88     		ldrh	r3, [r3, #6]
+ 187 007a DBB2     		uxtb	r3, r3
+ 188 007c 9C42     		cmp	r4, r3
+ 189 007e 07D1     		bne	.L15
+ 189:Generated_Source\PSoC6/CapSense_Tuner.c ****             {
+ 190:Generated_Source\PSoC6/CapSense_Tuner.c ****                 ptrDsRam->tunerCmd |= CapSense_TU_CMD_COMPLETE_BIT;
+ 190              		.loc 1 190 0
+ 191 0080 214A     		ldr	r2, .L19+4
+ 192 0082 D388     		ldrh	r3, [r2, #6]
+ 193 0084 6FEA4343 		mvn	r3, r3, lsl #17
+ 194 0088 6FEA5343 		mvn	r3, r3, lsr #17
+ 195 008c 9BB2     		uxth	r3, r3
+ 196 008e D380     		strh	r3, [r2, #6]	@ movhi
+ 197              	.L15:
+ 191:Generated_Source\PSoC6/CapSense_Tuner.c ****             }
+ 192:Generated_Source\PSoC6/CapSense_Tuner.c ****             Cy_SysLib_ExitCriticalSection(interruptState);
+ 198              		.loc 1 192 0
+ 199 0090 FFF7FEFF 		bl	Cy_SysLib_ExitCriticalSection
+ 200              	.LVL21:
+ 193:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 194:Generated_Source\PSoC6/CapSense_Tuner.c ****             updateFlag = 0Lu;
+ 201              		.loc 1 194 0
+ 202 0094 0025     		movs	r5, #0
+ 203              	.LVL22:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 8
+
+
+ 204              	.L14:
+ 195:Generated_Source\PSoC6/CapSense_Tuner.c ****         }
+ 196:Generated_Source\PSoC6/CapSense_Tuner.c ****     } while (TU_FSM_SUSPENDED == tunerFsm);
+ 205              		.loc 1 196 0
+ 206 0096 1B4B     		ldr	r3, .L19
+ 207 0098 1B68     		ldr	r3, [r3]
+ 208 009a 012B     		cmp	r3, #1
+ 209 009c B3D0     		beq	.L16
+ 197:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 198:Generated_Source\PSoC6/CapSense_Tuner.c ****     /* Check for SNR Test mode and do appropriate actions */
+ 199:Generated_Source\PSoC6/CapSense_Tuner.c ****     if (TU_FSM_SNR_TEST == tunerFsm)
+ 210              		.loc 1 199 0
+ 211 009e 022B     		cmp	r3, #2
+ 212 00a0 2ED1     		bne	.L17
+ 200:Generated_Source\PSoC6/CapSense_Tuner.c ****     {
+ 201:Generated_Source\PSoC6/CapSense_Tuner.c ****         widgetId = ptrDsRam->snrTestWidgetId;
+ 213              		.loc 1 201 0
+ 214 00a2 194A     		ldr	r2, .L19+4
+ 215 00a4 92F80431 		ldrb	r3, [r2, #260]	@ zero_extendqisi2
+ 216 00a8 DBB2     		uxtb	r3, r3
+ 217              	.LVL23:
+ 202:Generated_Source\PSoC6/CapSense_Tuner.c ****         sensorId = ptrDsRam->snrTestSensorId;
+ 218              		.loc 1 202 0
+ 219 00aa 92F80521 		ldrb	r2, [r2, #261]	@ zero_extendqisi2
+ 220 00ae D2B2     		uxtb	r2, r2
+ 221              	.LVL24:
+ 203:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 204:Generated_Source\PSoC6/CapSense_Tuner.c ****         /* Check if widgetId and sensorId are in range,
+ 205:Generated_Source\PSoC6/CapSense_Tuner.c ****          * and data was updated in RAM (scan counter changed)
+ 206:Generated_Source\PSoC6/CapSense_Tuner.c ****          */
+ 207:Generated_Source\PSoC6/CapSense_Tuner.c ****         if ((widgetId < CapSense_TOTAL_WIDGETS)              &&
+ 222              		.loc 1 207 0
+ 223 00b0 022B     		cmp	r3, #2
+ 224 00b2 25D8     		bhi	.L17
+ 208:Generated_Source\PSoC6/CapSense_Tuner.c ****             (sensorId < CapSense_GET_SENSOR_COUNT(widgetId)) &&
+ 225              		.loc 1 208 0 discriminator 1
+ 226 00b4 03EB4300 		add	r0, r3, r3, lsl #1
+ 227 00b8 0101     		lsls	r1, r0, #4
+ 228 00ba 1448     		ldr	r0, .L19+8
+ 229 00bc 0144     		add	r1, r1, r0
+ 230 00be 098B     		ldrh	r1, [r1, #24]
+ 207:Generated_Source\PSoC6/CapSense_Tuner.c ****             (sensorId < CapSense_GET_SENSOR_COUNT(widgetId)) &&
+ 231              		.loc 1 207 0 discriminator 1
+ 232 00c0 8A42     		cmp	r2, r1
+ 233 00c2 1DD2     		bcs	.L17
+ 209:Generated_Source\PSoC6/CapSense_Tuner.c ****             (ptrDsRam->scanCounter != ptrDsRam->snrTestScanCounter))
+ 234              		.loc 1 209 0
+ 235 00c4 1049     		ldr	r1, .L19+4
+ 236 00c6 0889     		ldrh	r0, [r1, #8]
+ 237 00c8 80B2     		uxth	r0, r0
+ 238 00ca B1F80611 		ldrh	r1, [r1, #262]
+ 239 00ce 89B2     		uxth	r1, r1
+ 208:Generated_Source\PSoC6/CapSense_Tuner.c ****             (sensorId < CapSense_GET_SENSOR_COUNT(widgetId)) &&
+ 240              		.loc 1 208 0
+ 241 00d0 8842     		cmp	r0, r1
+ 242 00d2 15D0     		beq	.L17
+ 210:Generated_Source\PSoC6/CapSense_Tuner.c ****         {
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 9
+
+
+ 211:Generated_Source\PSoC6/CapSense_Tuner.c ****             /* Get access to the Sensor Object */
+ 212:Generated_Source\PSoC6/CapSense_Tuner.c ****             ptrSnsTmp = CapSense_dsFlash.wdgtArray[widgetId].ptr2SnsRam;
+ 243              		.loc 1 212 0
+ 244 00d4 03EB4303 		add	r3, r3, r3, lsl #1
+ 245              	.LVL25:
+ 246 00d8 1901     		lsls	r1, r3, #4
+ 247 00da 0C4B     		ldr	r3, .L19+8
+ 248 00dc 1944     		add	r1, r1, r3
+ 249 00de 8D68     		ldr	r5, [r1, #8]
+ 250              	.LVL26:
+ 213:Generated_Source\PSoC6/CapSense_Tuner.c ****             ptrSnsTmp += sensorId;
+ 251              		.loc 1 213 0
+ 252 00e0 02EB8202 		add	r2, r2, r2, lsl #2
+ 253              	.LVL27:
+ 254 00e4 5400     		lsls	r4, r2, #1
+ 255              	.LVL28:
+ 214:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 215:Generated_Source\PSoC6/CapSense_Tuner.c ****             /* Update data in SNR Test Object */
+ 216:Generated_Source\PSoC6/CapSense_Tuner.c ****             interruptState = Cy_SysLib_EnterCriticalSection();
+ 256              		.loc 1 216 0
+ 257 00e6 FFF7FEFF 		bl	Cy_SysLib_EnterCriticalSection
+ 258              	.LVL29:
+ 217:Generated_Source\PSoC6/CapSense_Tuner.c ****             ptrDsRam->snrTestScanCounter = ptrDsRam->scanCounter;
+ 259              		.loc 1 217 0
+ 260 00ea 074B     		ldr	r3, .L19+4
+ 261 00ec 1A89     		ldrh	r2, [r3, #8]
+ 262 00ee 92B2     		uxth	r2, r2
+ 263 00f0 A3F80621 		strh	r2, [r3, #262]	@ movhi
+ 218:Generated_Source\PSoC6/CapSense_Tuner.c ****             ptrDsRam->snrTestRawCount[0u] = ptrSnsTmp->raw[0u];
+ 264              		.loc 1 218 0
+ 265 00f4 2A5B     		ldrh	r2, [r5, r4]
+ 266 00f6 92B2     		uxth	r2, r2
+ 267 00f8 A3F80821 		strh	r2, [r3, #264]	@ movhi
+ 219:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 220:Generated_Source\PSoC6/CapSense_Tuner.c ****             #if (0u != CapSense_MULTI_FREQ_SCAN_EN)
+ 221:Generated_Source\PSoC6/CapSense_Tuner.c ****                 ptrDsRam->snrTestRawCount[1u] = ptrSnsTmp->raw[1u];
+ 222:Generated_Source\PSoC6/CapSense_Tuner.c ****                 ptrDsRam->snrTestRawCount[2u] = ptrSnsTmp->raw[2u];
+ 223:Generated_Source\PSoC6/CapSense_Tuner.c ****             #endif
+ 224:Generated_Source\PSoC6/CapSense_Tuner.c **** 
+ 225:Generated_Source\PSoC6/CapSense_Tuner.c ****             Cy_SysLib_ExitCriticalSection(interruptState);
+ 268              		.loc 1 225 0
+ 269 00fc FFF7FEFF 		bl	Cy_SysLib_ExitCriticalSection
+ 270              	.LVL30:
+ 271              	.L17:
+ 226:Generated_Source\PSoC6/CapSense_Tuner.c ****         }
+ 227:Generated_Source\PSoC6/CapSense_Tuner.c ****     }
+ 228:Generated_Source\PSoC6/CapSense_Tuner.c ****     return tunerStatus;
+ 229:Generated_Source\PSoC6/CapSense_Tuner.c **** }
+ 272              		.loc 1 229 0
+ 273 0100 3046     		mov	r0, r6
+ 274 0102 70BD     		pop	{r4, r5, r6, pc}
+ 275              	.LVL31:
+ 276              	.L20:
+ 277              		.align	2
+ 278              	.L19:
+ 279 0104 00000000 		.word	.LANCHOR0
+ 280 0108 00000000 		.word	CapSense_dsRam
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 10
+
+
+ 281 010c 00000000 		.word	CapSense_dsFlash
+ 282              		.cfi_endproc
+ 283              	.LFE167:
+ 284              		.size	CapSense_RunTuner, .-CapSense_RunTuner
+ 285              		.bss
+ 286              		.align	2
+ 287              		.set	.LANCHOR0,. + 0
+ 288              		.type	tunerFsm, %object
+ 289              		.size	tunerFsm, 4
+ 290              	tunerFsm:
+ 291 0000 00000000 		.space	4
+ 292              		.text
+ 293              	.Letext0:
+ 294              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 295              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 296              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+ 297              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+ 298              		.file 6 "Generated_Source\\PSoC6\\CapSense_Configuration.h"
+ 299              		.file 7 "Generated_Source\\PSoC6\\CapSense_SmartSense_LL.h"
+ 300              		.file 8 "Generated_Source\\PSoC6\\CapSense_TMG.h"
+ 301              		.file 9 "Generated_Source\\PSoC6\\CapSense_Structure.h"
+ 302              		.file 10 "Generated_Source\\PSoC6\\CapSense_Tuner.h"
+ 303              		.file 11 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+ 304              		.file 12 "Generated_Source\\PSoC6\\CapSense_Control.h"
+ 305              		.section	.debug_info,"",%progbits
+ 306              	.Ldebug_info0:
+ 307 0000 60100000 		.4byte	0x1060
+ 308 0004 0400     		.2byte	0x4
+ 309 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 310 000a 04       		.byte	0x4
+ 311 000b 01       		.uleb128 0x1
+ 312 000c 46030000 		.4byte	.LASF290
+ 313 0010 0C       		.byte	0xc
+ 314 0011 AD010000 		.4byte	.LASF291
+ 315 0015 C80F0000 		.4byte	.LASF292
+ 316 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 317 001d 00000000 		.4byte	0
+ 318 0021 00000000 		.4byte	.Ldebug_line0
+ 319 0025 02       		.uleb128 0x2
+ 320 0026 01       		.byte	0x1
+ 321 0027 06       		.byte	0x6
+ 322 0028 A5100000 		.4byte	.LASF0
+ 323 002c 03       		.uleb128 0x3
+ 324 002d 840D0000 		.4byte	.LASF2
+ 325 0031 02       		.byte	0x2
+ 326 0032 1D       		.byte	0x1d
+ 327 0033 37000000 		.4byte	0x37
+ 328 0037 02       		.uleb128 0x2
+ 329 0038 01       		.byte	0x1
+ 330 0039 08       		.byte	0x8
+ 331 003a 2F0F0000 		.4byte	.LASF1
+ 332 003e 03       		.uleb128 0x3
+ 333 003f 5C0A0000 		.4byte	.LASF3
+ 334 0043 02       		.byte	0x2
+ 335 0044 29       		.byte	0x29
+ 336 0045 49000000 		.4byte	0x49
+ 337 0049 02       		.uleb128 0x2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 11
+
+
+ 338 004a 02       		.byte	0x2
+ 339 004b 05       		.byte	0x5
+ 340 004c CB0C0000 		.4byte	.LASF4
+ 341 0050 03       		.uleb128 0x3
+ 342 0051 58060000 		.4byte	.LASF5
+ 343 0055 02       		.byte	0x2
+ 344 0056 2B       		.byte	0x2b
+ 345 0057 5B000000 		.4byte	0x5b
+ 346 005b 02       		.uleb128 0x2
+ 347 005c 02       		.byte	0x2
+ 348 005d 07       		.byte	0x7
+ 349 005e A00B0000 		.4byte	.LASF6
+ 350 0062 03       		.uleb128 0x3
+ 351 0063 45020000 		.4byte	.LASF7
+ 352 0067 02       		.byte	0x2
+ 353 0068 3F       		.byte	0x3f
+ 354 0069 6D000000 		.4byte	0x6d
+ 355 006d 02       		.uleb128 0x2
+ 356 006e 04       		.byte	0x4
+ 357 006f 05       		.byte	0x5
+ 358 0070 E90C0000 		.4byte	.LASF8
+ 359 0074 03       		.uleb128 0x3
+ 360 0075 3D0F0000 		.4byte	.LASF9
+ 361 0079 02       		.byte	0x2
+ 362 007a 41       		.byte	0x41
+ 363 007b 7F000000 		.4byte	0x7f
+ 364 007f 02       		.uleb128 0x2
+ 365 0080 04       		.byte	0x4
+ 366 0081 07       		.byte	0x7
+ 367 0082 690E0000 		.4byte	.LASF10
+ 368 0086 02       		.uleb128 0x2
+ 369 0087 08       		.byte	0x8
+ 370 0088 05       		.byte	0x5
+ 371 0089 FC090000 		.4byte	.LASF11
+ 372 008d 02       		.uleb128 0x2
+ 373 008e 08       		.byte	0x8
+ 374 008f 07       		.byte	0x7
+ 375 0090 B7050000 		.4byte	.LASF12
+ 376 0094 04       		.uleb128 0x4
+ 377 0095 04       		.byte	0x4
+ 378 0096 05       		.byte	0x5
+ 379 0097 696E7400 		.ascii	"int\000"
+ 380 009b 02       		.uleb128 0x2
+ 381 009c 04       		.byte	0x4
+ 382 009d 07       		.byte	0x7
+ 383 009e A0010000 		.4byte	.LASF13
+ 384 00a2 03       		.uleb128 0x3
+ 385 00a3 49090000 		.4byte	.LASF14
+ 386 00a7 03       		.byte	0x3
+ 387 00a8 18       		.byte	0x18
+ 388 00a9 2C000000 		.4byte	0x2c
+ 389 00ad 03       		.uleb128 0x3
+ 390 00ae 94050000 		.4byte	.LASF15
+ 391 00b2 03       		.byte	0x3
+ 392 00b3 20       		.byte	0x20
+ 393 00b4 3E000000 		.4byte	0x3e
+ 394 00b8 03       		.uleb128 0x3
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 12
+
+
+ 395 00b9 BF0B0000 		.4byte	.LASF16
+ 396 00bd 03       		.byte	0x3
+ 397 00be 24       		.byte	0x24
+ 398 00bf 50000000 		.4byte	0x50
+ 399 00c3 03       		.uleb128 0x3
+ 400 00c4 8B020000 		.4byte	.LASF17
+ 401 00c8 03       		.byte	0x3
+ 402 00c9 2C       		.byte	0x2c
+ 403 00ca 62000000 		.4byte	0x62
+ 404 00ce 03       		.uleb128 0x3
+ 405 00cf EA040000 		.4byte	.LASF18
+ 406 00d3 03       		.byte	0x3
+ 407 00d4 30       		.byte	0x30
+ 408 00d5 74000000 		.4byte	0x74
+ 409 00d9 02       		.uleb128 0x2
+ 410 00da 08       		.byte	0x8
+ 411 00db 04       		.byte	0x4
+ 412 00dc B30B0000 		.4byte	.LASF19
+ 413 00e0 02       		.uleb128 0x2
+ 414 00e1 04       		.byte	0x4
+ 415 00e2 07       		.byte	0x7
+ 416 00e3 5C0C0000 		.4byte	.LASF20
+ 417 00e7 05       		.uleb128 0x5
+ 418 00e8 A2000000 		.4byte	0xa2
+ 419 00ec 05       		.uleb128 0x5
+ 420 00ed B8000000 		.4byte	0xb8
+ 421 00f1 06       		.uleb128 0x6
+ 422 00f2 B8       		.byte	0xb8
+ 423 00f3 04       		.byte	0x4
+ 424 00f4 34       		.byte	0x34
+ 425 00f5 02050000 		.4byte	0x502
+ 426 00f9 07       		.uleb128 0x7
+ 427 00fa 81020000 		.4byte	.LASF21
+ 428 00fe 04       		.byte	0x4
+ 429 00ff 37       		.byte	0x37
+ 430 0100 CE000000 		.4byte	0xce
+ 431 0104 00       		.byte	0
+ 432 0105 07       		.uleb128 0x7
+ 433 0106 A1080000 		.4byte	.LASF22
+ 434 010a 04       		.byte	0x4
+ 435 010b 38       		.byte	0x38
+ 436 010c CE000000 		.4byte	0xce
+ 437 0110 04       		.byte	0x4
+ 438 0111 07       		.uleb128 0x7
+ 439 0112 FA000000 		.4byte	.LASF23
+ 440 0116 04       		.byte	0x4
+ 441 0117 39       		.byte	0x39
+ 442 0118 CE000000 		.4byte	0xce
+ 443 011c 08       		.byte	0x8
+ 444 011d 07       		.uleb128 0x7
+ 445 011e E0000000 		.4byte	.LASF24
+ 446 0122 04       		.byte	0x4
+ 447 0123 3A       		.byte	0x3a
+ 448 0124 CE000000 		.4byte	0xce
+ 449 0128 0C       		.byte	0xc
+ 450 0129 07       		.uleb128 0x7
+ 451 012a C80B0000 		.4byte	.LASF25
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 13
+
+
+ 452 012e 04       		.byte	0x4
+ 453 012f 3B       		.byte	0x3b
+ 454 0130 CE000000 		.4byte	0xce
+ 455 0134 10       		.byte	0x10
+ 456 0135 07       		.uleb128 0x7
+ 457 0136 9B0A0000 		.4byte	.LASF26
+ 458 013a 04       		.byte	0x4
+ 459 013b 3C       		.byte	0x3c
+ 460 013c CE000000 		.4byte	0xce
+ 461 0140 14       		.byte	0x14
+ 462 0141 07       		.uleb128 0x7
+ 463 0142 4D070000 		.4byte	.LASF27
+ 464 0146 04       		.byte	0x4
+ 465 0147 3D       		.byte	0x3d
+ 466 0148 CE000000 		.4byte	0xce
+ 467 014c 18       		.byte	0x18
+ 468 014d 07       		.uleb128 0x7
+ 469 014e 69110000 		.4byte	.LASF28
+ 470 0152 04       		.byte	0x4
+ 471 0153 3E       		.byte	0x3e
+ 472 0154 CE000000 		.4byte	0xce
+ 473 0158 1C       		.byte	0x1c
+ 474 0159 07       		.uleb128 0x7
+ 475 015a 0A0A0000 		.4byte	.LASF29
+ 476 015e 04       		.byte	0x4
+ 477 015f 3F       		.byte	0x3f
+ 478 0160 CE000000 		.4byte	0xce
+ 479 0164 20       		.byte	0x20
+ 480 0165 07       		.uleb128 0x7
+ 481 0166 210A0000 		.4byte	.LASF30
+ 482 016a 04       		.byte	0x4
+ 483 016b 40       		.byte	0x40
+ 484 016c CE000000 		.4byte	0xce
+ 485 0170 24       		.byte	0x24
+ 486 0171 07       		.uleb128 0x7
+ 487 0172 F20C0000 		.4byte	.LASF31
+ 488 0176 04       		.byte	0x4
+ 489 0177 43       		.byte	0x43
+ 490 0178 A2000000 		.4byte	0xa2
+ 491 017c 28       		.byte	0x28
+ 492 017d 07       		.uleb128 0x7
+ 493 017e 4C050000 		.4byte	.LASF32
+ 494 0182 04       		.byte	0x4
+ 495 0183 44       		.byte	0x44
+ 496 0184 A2000000 		.4byte	0xa2
+ 497 0188 29       		.byte	0x29
+ 498 0189 07       		.uleb128 0x7
+ 499 018a 270C0000 		.4byte	.LASF33
+ 500 018e 04       		.byte	0x4
+ 501 018f 45       		.byte	0x45
+ 502 0190 A2000000 		.4byte	0xa2
+ 503 0194 2A       		.byte	0x2a
+ 504 0195 07       		.uleb128 0x7
+ 505 0196 230D0000 		.4byte	.LASF34
+ 506 019a 04       		.byte	0x4
+ 507 019b 46       		.byte	0x46
+ 508 019c A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 14
+
+
+ 509 01a0 2B       		.byte	0x2b
+ 510 01a1 07       		.uleb128 0x7
+ 511 01a2 0C0D0000 		.4byte	.LASF35
+ 512 01a6 04       		.byte	0x4
+ 513 01a7 47       		.byte	0x47
+ 514 01a8 A2000000 		.4byte	0xa2
+ 515 01ac 2C       		.byte	0x2c
+ 516 01ad 07       		.uleb128 0x7
+ 517 01ae 5C0E0000 		.4byte	.LASF36
+ 518 01b2 04       		.byte	0x4
+ 519 01b3 48       		.byte	0x48
+ 520 01b4 A2000000 		.4byte	0xa2
+ 521 01b8 2D       		.byte	0x2d
+ 522 01b9 07       		.uleb128 0x7
+ 523 01ba 1C0C0000 		.4byte	.LASF37
+ 524 01be 04       		.byte	0x4
+ 525 01bf 49       		.byte	0x49
+ 526 01c0 A2000000 		.4byte	0xa2
+ 527 01c4 2E       		.byte	0x2e
+ 528 01c5 07       		.uleb128 0x7
+ 529 01c6 50110000 		.4byte	.LASF38
+ 530 01ca 04       		.byte	0x4
+ 531 01cb 4A       		.byte	0x4a
+ 532 01cc A2000000 		.4byte	0xa2
+ 533 01d0 2F       		.byte	0x2f
+ 534 01d1 07       		.uleb128 0x7
+ 535 01d2 F9030000 		.4byte	.LASF39
+ 536 01d6 04       		.byte	0x4
+ 537 01d7 4B       		.byte	0x4b
+ 538 01d8 A2000000 		.4byte	0xa2
+ 539 01dc 30       		.byte	0x30
+ 540 01dd 07       		.uleb128 0x7
+ 541 01de FD0A0000 		.4byte	.LASF40
+ 542 01e2 04       		.byte	0x4
+ 543 01e3 4E       		.byte	0x4e
+ 544 01e4 A2000000 		.4byte	0xa2
+ 545 01e8 31       		.byte	0x31
+ 546 01e9 07       		.uleb128 0x7
+ 547 01ea E6100000 		.4byte	.LASF41
+ 548 01ee 04       		.byte	0x4
+ 549 01ef 4F       		.byte	0x4f
+ 550 01f0 A2000000 		.4byte	0xa2
+ 551 01f4 32       		.byte	0x32
+ 552 01f5 07       		.uleb128 0x7
+ 553 01f6 D50A0000 		.4byte	.LASF42
+ 554 01fa 04       		.byte	0x4
+ 555 01fb 50       		.byte	0x50
+ 556 01fc A2000000 		.4byte	0xa2
+ 557 0200 33       		.byte	0x33
+ 558 0201 07       		.uleb128 0x7
+ 559 0202 7F080000 		.4byte	.LASF43
+ 560 0206 04       		.byte	0x4
+ 561 0207 51       		.byte	0x51
+ 562 0208 A2000000 		.4byte	0xa2
+ 563 020c 34       		.byte	0x34
+ 564 020d 07       		.uleb128 0x7
+ 565 020e 17060000 		.4byte	.LASF44
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 15
+
+
+ 566 0212 04       		.byte	0x4
+ 567 0213 52       		.byte	0x52
+ 568 0214 AD000000 		.4byte	0xad
+ 569 0218 36       		.byte	0x36
+ 570 0219 07       		.uleb128 0x7
+ 571 021a 93020000 		.4byte	.LASF45
+ 572 021e 04       		.byte	0x4
+ 573 021f 53       		.byte	0x53
+ 574 0220 AD000000 		.4byte	0xad
+ 575 0224 38       		.byte	0x38
+ 576 0225 07       		.uleb128 0x7
+ 577 0226 AA020000 		.4byte	.LASF46
+ 578 022a 04       		.byte	0x4
+ 579 022b 54       		.byte	0x54
+ 580 022c AD000000 		.4byte	0xad
+ 581 0230 3A       		.byte	0x3a
+ 582 0231 07       		.uleb128 0x7
+ 583 0232 4F020000 		.4byte	.LASF47
+ 584 0236 04       		.byte	0x4
+ 585 0237 55       		.byte	0x55
+ 586 0238 A2000000 		.4byte	0xa2
+ 587 023c 3C       		.byte	0x3c
+ 588 023d 07       		.uleb128 0x7
+ 589 023e B8060000 		.4byte	.LASF48
+ 590 0242 04       		.byte	0x4
+ 591 0243 56       		.byte	0x56
+ 592 0244 A2000000 		.4byte	0xa2
+ 593 0248 3D       		.byte	0x3d
+ 594 0249 07       		.uleb128 0x7
+ 595 024a 19070000 		.4byte	.LASF49
+ 596 024e 04       		.byte	0x4
+ 597 024f 57       		.byte	0x57
+ 598 0250 A2000000 		.4byte	0xa2
+ 599 0254 3E       		.byte	0x3e
+ 600 0255 07       		.uleb128 0x7
+ 601 0256 D4000000 		.4byte	.LASF50
+ 602 025a 04       		.byte	0x4
+ 603 025b 58       		.byte	0x58
+ 604 025c A2000000 		.4byte	0xa2
+ 605 0260 3F       		.byte	0x3f
+ 606 0261 07       		.uleb128 0x7
+ 607 0262 E1010000 		.4byte	.LASF51
+ 608 0266 04       		.byte	0x4
+ 609 0267 59       		.byte	0x59
+ 610 0268 A2000000 		.4byte	0xa2
+ 611 026c 40       		.byte	0x40
+ 612 026d 07       		.uleb128 0x7
+ 613 026e 4B0B0000 		.4byte	.LASF52
+ 614 0272 04       		.byte	0x4
+ 615 0273 5A       		.byte	0x5a
+ 616 0274 A2000000 		.4byte	0xa2
+ 617 0278 41       		.byte	0x41
+ 618 0279 07       		.uleb128 0x7
+ 619 027a 99100000 		.4byte	.LASF53
+ 620 027e 04       		.byte	0x4
+ 621 027f 5B       		.byte	0x5b
+ 622 0280 A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 16
+
+
+ 623 0284 42       		.byte	0x42
+ 624 0285 07       		.uleb128 0x7
+ 625 0286 CE070000 		.4byte	.LASF54
+ 626 028a 04       		.byte	0x4
+ 627 028b 5C       		.byte	0x5c
+ 628 028c A2000000 		.4byte	0xa2
+ 629 0290 43       		.byte	0x43
+ 630 0291 07       		.uleb128 0x7
+ 631 0292 B1080000 		.4byte	.LASF55
+ 632 0296 04       		.byte	0x4
+ 633 0297 5D       		.byte	0x5d
+ 634 0298 A2000000 		.4byte	0xa2
+ 635 029c 44       		.byte	0x44
+ 636 029d 07       		.uleb128 0x7
+ 637 029e 310D0000 		.4byte	.LASF56
+ 638 02a2 04       		.byte	0x4
+ 639 02a3 5E       		.byte	0x5e
+ 640 02a4 CE000000 		.4byte	0xce
+ 641 02a8 48       		.byte	0x48
+ 642 02a9 07       		.uleb128 0x7
+ 643 02aa 1C030000 		.4byte	.LASF57
+ 644 02ae 04       		.byte	0x4
+ 645 02af 5F       		.byte	0x5f
+ 646 02b0 CE000000 		.4byte	0xce
+ 647 02b4 4C       		.byte	0x4c
+ 648 02b5 07       		.uleb128 0x7
+ 649 02b6 70100000 		.4byte	.LASF58
+ 650 02ba 04       		.byte	0x4
+ 651 02bb 60       		.byte	0x60
+ 652 02bc A2000000 		.4byte	0xa2
+ 653 02c0 50       		.byte	0x50
+ 654 02c1 07       		.uleb128 0x7
+ 655 02c2 E5060000 		.4byte	.LASF59
+ 656 02c6 04       		.byte	0x4
+ 657 02c7 61       		.byte	0x61
+ 658 02c8 A2000000 		.4byte	0xa2
+ 659 02cc 51       		.byte	0x51
+ 660 02cd 07       		.uleb128 0x7
+ 661 02ce 370A0000 		.4byte	.LASF60
+ 662 02d2 04       		.byte	0x4
+ 663 02d3 62       		.byte	0x62
+ 664 02d4 A2000000 		.4byte	0xa2
+ 665 02d8 52       		.byte	0x52
+ 666 02d9 07       		.uleb128 0x7
+ 667 02da 5A050000 		.4byte	.LASF61
+ 668 02de 04       		.byte	0x4
+ 669 02df 63       		.byte	0x63
+ 670 02e0 A2000000 		.4byte	0xa2
+ 671 02e4 53       		.byte	0x53
+ 672 02e5 07       		.uleb128 0x7
+ 673 02e6 B80F0000 		.4byte	.LASF62
+ 674 02ea 04       		.byte	0x4
+ 675 02eb 64       		.byte	0x64
+ 676 02ec A2000000 		.4byte	0xa2
+ 677 02f0 54       		.byte	0x54
+ 678 02f1 07       		.uleb128 0x7
+ 679 02f2 39070000 		.4byte	.LASF63
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 17
+
+
+ 680 02f6 04       		.byte	0x4
+ 681 02f7 65       		.byte	0x65
+ 682 02f8 A2000000 		.4byte	0xa2
+ 683 02fc 55       		.byte	0x55
+ 684 02fd 07       		.uleb128 0x7
+ 685 02fe 00000000 		.4byte	.LASF64
+ 686 0302 04       		.byte	0x4
+ 687 0303 66       		.byte	0x66
+ 688 0304 A2000000 		.4byte	0xa2
+ 689 0308 56       		.byte	0x56
+ 690 0309 07       		.uleb128 0x7
+ 691 030a 310C0000 		.4byte	.LASF65
+ 692 030e 04       		.byte	0x4
+ 693 030f 67       		.byte	0x67
+ 694 0310 A2000000 		.4byte	0xa2
+ 695 0314 57       		.byte	0x57
+ 696 0315 07       		.uleb128 0x7
+ 697 0316 A4060000 		.4byte	.LASF66
+ 698 031a 04       		.byte	0x4
+ 699 031b 68       		.byte	0x68
+ 700 031c A2000000 		.4byte	0xa2
+ 701 0320 58       		.byte	0x58
+ 702 0321 07       		.uleb128 0x7
+ 703 0322 A9000000 		.4byte	.LASF67
+ 704 0326 04       		.byte	0x4
+ 705 0327 69       		.byte	0x69
+ 706 0328 A2000000 		.4byte	0xa2
+ 707 032c 59       		.byte	0x59
+ 708 032d 07       		.uleb128 0x7
+ 709 032e C9100000 		.4byte	.LASF68
+ 710 0332 04       		.byte	0x4
+ 711 0333 6E       		.byte	0x6e
+ 712 0334 B8000000 		.4byte	0xb8
+ 713 0338 5A       		.byte	0x5a
+ 714 0339 07       		.uleb128 0x7
+ 715 033a 73010000 		.4byte	.LASF69
+ 716 033e 04       		.byte	0x4
+ 717 033f 6F       		.byte	0x6f
+ 718 0340 B8000000 		.4byte	0xb8
+ 719 0344 5C       		.byte	0x5c
+ 720 0345 07       		.uleb128 0x7
+ 721 0346 120A0000 		.4byte	.LASF70
+ 722 034a 04       		.byte	0x4
+ 723 034b 70       		.byte	0x70
+ 724 034c A2000000 		.4byte	0xa2
+ 725 0350 5E       		.byte	0x5e
+ 726 0351 07       		.uleb128 0x7
+ 727 0352 F4100000 		.4byte	.LASF71
+ 728 0356 04       		.byte	0x4
+ 729 0357 71       		.byte	0x71
+ 730 0358 A2000000 		.4byte	0xa2
+ 731 035c 5F       		.byte	0x5f
+ 732 035d 07       		.uleb128 0x7
+ 733 035e FD070000 		.4byte	.LASF72
+ 734 0362 04       		.byte	0x4
+ 735 0363 72       		.byte	0x72
+ 736 0364 A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 18
+
+
+ 737 0368 60       		.byte	0x60
+ 738 0369 07       		.uleb128 0x7
+ 739 036a 2D090000 		.4byte	.LASF73
+ 740 036e 04       		.byte	0x4
+ 741 036f 73       		.byte	0x73
+ 742 0370 CE000000 		.4byte	0xce
+ 743 0374 64       		.byte	0x64
+ 744 0375 07       		.uleb128 0x7
+ 745 0376 F7060000 		.4byte	.LASF74
+ 746 037a 04       		.byte	0x4
+ 747 037b 76       		.byte	0x76
+ 748 037c B8000000 		.4byte	0xb8
+ 749 0380 68       		.byte	0x68
+ 750 0381 07       		.uleb128 0x7
+ 751 0382 E40B0000 		.4byte	.LASF75
+ 752 0386 04       		.byte	0x4
+ 753 0387 77       		.byte	0x77
+ 754 0388 B8000000 		.4byte	0xb8
+ 755 038c 6A       		.byte	0x6a
+ 756 038d 07       		.uleb128 0x7
+ 757 038e A50A0000 		.4byte	.LASF76
+ 758 0392 04       		.byte	0x4
+ 759 0393 78       		.byte	0x78
+ 760 0394 B8000000 		.4byte	0xb8
+ 761 0398 6C       		.byte	0x6c
+ 762 0399 07       		.uleb128 0x7
+ 763 039a E7020000 		.4byte	.LASF77
+ 764 039e 04       		.byte	0x4
+ 765 039f 79       		.byte	0x79
+ 766 03a0 B8000000 		.4byte	0xb8
+ 767 03a4 6E       		.byte	0x6e
+ 768 03a5 07       		.uleb128 0x7
+ 769 03a6 8A090000 		.4byte	.LASF78
+ 770 03aa 04       		.byte	0x4
+ 771 03ab 7B       		.byte	0x7b
+ 772 03ac A2000000 		.4byte	0xa2
+ 773 03b0 70       		.byte	0x70
+ 774 03b1 07       		.uleb128 0x7
+ 775 03b2 48040000 		.4byte	.LASF79
+ 776 03b6 04       		.byte	0x4
+ 777 03b7 7C       		.byte	0x7c
+ 778 03b8 A2000000 		.4byte	0xa2
+ 779 03bc 71       		.byte	0x71
+ 780 03bd 07       		.uleb128 0x7
+ 781 03be 06030000 		.4byte	.LASF80
+ 782 03c2 04       		.byte	0x4
+ 783 03c3 7D       		.byte	0x7d
+ 784 03c4 A2000000 		.4byte	0xa2
+ 785 03c8 72       		.byte	0x72
+ 786 03c9 07       		.uleb128 0x7
+ 787 03ca EE010000 		.4byte	.LASF81
+ 788 03ce 04       		.byte	0x4
+ 789 03cf 7E       		.byte	0x7e
+ 790 03d0 A2000000 		.4byte	0xa2
+ 791 03d4 73       		.byte	0x73
+ 792 03d5 07       		.uleb128 0x7
+ 793 03d6 8F0C0000 		.4byte	.LASF82
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 19
+
+
+ 794 03da 04       		.byte	0x4
+ 795 03db 80       		.byte	0x80
+ 796 03dc B8000000 		.4byte	0xb8
+ 797 03e0 74       		.byte	0x74
+ 798 03e1 07       		.uleb128 0x7
+ 799 03e2 8D0B0000 		.4byte	.LASF83
+ 800 03e6 04       		.byte	0x4
+ 801 03e7 81       		.byte	0x81
+ 802 03e8 B8000000 		.4byte	0xb8
+ 803 03ec 76       		.byte	0x76
+ 804 03ed 07       		.uleb128 0x7
+ 805 03ee CD090000 		.4byte	.LASF84
+ 806 03f2 04       		.byte	0x4
+ 807 03f3 82       		.byte	0x82
+ 808 03f4 B8000000 		.4byte	0xb8
+ 809 03f8 78       		.byte	0x78
+ 810 03f9 07       		.uleb128 0x7
+ 811 03fa CE050000 		.4byte	.LASF85
+ 812 03fe 04       		.byte	0x4
+ 813 03ff 83       		.byte	0x83
+ 814 0400 B8000000 		.4byte	0xb8
+ 815 0404 7A       		.byte	0x7a
+ 816 0405 07       		.uleb128 0x7
+ 817 0406 C00D0000 		.4byte	.LASF86
+ 818 040a 04       		.byte	0x4
+ 819 040b 86       		.byte	0x86
+ 820 040c A2000000 		.4byte	0xa2
+ 821 0410 7C       		.byte	0x7c
+ 822 0411 07       		.uleb128 0x7
+ 823 0412 88100000 		.4byte	.LASF87
+ 824 0416 04       		.byte	0x4
+ 825 0417 87       		.byte	0x87
+ 826 0418 A2000000 		.4byte	0xa2
+ 827 041c 7D       		.byte	0x7d
+ 828 041d 07       		.uleb128 0x7
+ 829 041e 9C050000 		.4byte	.LASF88
+ 830 0422 04       		.byte	0x4
+ 831 0423 88       		.byte	0x88
+ 832 0424 A2000000 		.4byte	0xa2
+ 833 0428 7E       		.byte	0x7e
+ 834 0429 07       		.uleb128 0x7
+ 835 042a 07050000 		.4byte	.LASF89
+ 836 042e 04       		.byte	0x4
+ 837 042f 89       		.byte	0x89
+ 838 0430 A2000000 		.4byte	0xa2
+ 839 0434 7F       		.byte	0x7f
+ 840 0435 07       		.uleb128 0x7
+ 841 0436 E3050000 		.4byte	.LASF90
+ 842 043a 04       		.byte	0x4
+ 843 043b 8A       		.byte	0x8a
+ 844 043c A2000000 		.4byte	0xa2
+ 845 0440 80       		.byte	0x80
+ 846 0441 07       		.uleb128 0x7
+ 847 0442 BD000000 		.4byte	.LASF91
+ 848 0446 04       		.byte	0x4
+ 849 0447 8D       		.byte	0x8d
+ 850 0448 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 20
+
+
+ 851 044c 84       		.byte	0x84
+ 852 044d 07       		.uleb128 0x7
+ 853 044e D50D0000 		.4byte	.LASF92
+ 854 0452 04       		.byte	0x4
+ 855 0453 8E       		.byte	0x8e
+ 856 0454 CE000000 		.4byte	0xce
+ 857 0458 88       		.byte	0x88
+ 858 0459 07       		.uleb128 0x7
+ 859 045a 360B0000 		.4byte	.LASF93
+ 860 045e 04       		.byte	0x4
+ 861 045f 8F       		.byte	0x8f
+ 862 0460 CE000000 		.4byte	0xce
+ 863 0464 8C       		.byte	0x8c
+ 864 0465 07       		.uleb128 0x7
+ 865 0466 E8110000 		.4byte	.LASF94
+ 866 046a 04       		.byte	0x4
+ 867 046b 90       		.byte	0x90
+ 868 046c CE000000 		.4byte	0xce
+ 869 0470 90       		.byte	0x90
+ 870 0471 07       		.uleb128 0x7
+ 871 0472 7A0C0000 		.4byte	.LASF95
+ 872 0476 04       		.byte	0x4
+ 873 0477 91       		.byte	0x91
+ 874 0478 CE000000 		.4byte	0xce
+ 875 047c 94       		.byte	0x94
+ 876 047d 07       		.uleb128 0x7
+ 877 047e 5D040000 		.4byte	.LASF96
+ 878 0482 04       		.byte	0x4
+ 879 0483 92       		.byte	0x92
+ 880 0484 CE000000 		.4byte	0xce
+ 881 0488 98       		.byte	0x98
+ 882 0489 07       		.uleb128 0x7
+ 883 048a FE0D0000 		.4byte	.LASF97
+ 884 048e 04       		.byte	0x4
+ 885 048f 93       		.byte	0x93
+ 886 0490 CE000000 		.4byte	0xce
+ 887 0494 9C       		.byte	0x9c
+ 888 0495 07       		.uleb128 0x7
+ 889 0496 B8070000 		.4byte	.LASF98
+ 890 049a 04       		.byte	0x4
+ 891 049b 94       		.byte	0x94
+ 892 049c CE000000 		.4byte	0xce
+ 893 04a0 A0       		.byte	0xa0
+ 894 04a1 07       		.uleb128 0x7
+ 895 04a2 41010000 		.4byte	.LASF99
+ 896 04a6 04       		.byte	0x4
+ 897 04a7 95       		.byte	0x95
+ 898 04a8 B8000000 		.4byte	0xb8
+ 899 04ac A4       		.byte	0xa4
+ 900 04ad 07       		.uleb128 0x7
+ 901 04ae 650C0000 		.4byte	.LASF100
+ 902 04b2 04       		.byte	0x4
+ 903 04b3 96       		.byte	0x96
+ 904 04b4 B8000000 		.4byte	0xb8
+ 905 04b8 A6       		.byte	0xa6
+ 906 04b9 07       		.uleb128 0x7
+ 907 04ba 830E0000 		.4byte	.LASF101
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 21
+
+
+ 908 04be 04       		.byte	0x4
+ 909 04bf 97       		.byte	0x97
+ 910 04c0 B8000000 		.4byte	0xb8
+ 911 04c4 A8       		.byte	0xa8
+ 912 04c5 07       		.uleb128 0x7
+ 913 04c6 EE090000 		.4byte	.LASF102
+ 914 04ca 04       		.byte	0x4
+ 915 04cb 98       		.byte	0x98
+ 916 04cc B8000000 		.4byte	0xb8
+ 917 04d0 AA       		.byte	0xaa
+ 918 04d1 07       		.uleb128 0x7
+ 919 04d2 2A030000 		.4byte	.LASF103
+ 920 04d6 04       		.byte	0x4
+ 921 04d7 99       		.byte	0x99
+ 922 04d8 B8000000 		.4byte	0xb8
+ 923 04dc AC       		.byte	0xac
+ 924 04dd 07       		.uleb128 0x7
+ 925 04de 670B0000 		.4byte	.LASF104
+ 926 04e2 04       		.byte	0x4
+ 927 04e3 9A       		.byte	0x9a
+ 928 04e4 B8000000 		.4byte	0xb8
+ 929 04e8 AE       		.byte	0xae
+ 930 04e9 07       		.uleb128 0x7
+ 931 04ea 38030000 		.4byte	.LASF105
+ 932 04ee 04       		.byte	0x4
+ 933 04ef 9D       		.byte	0x9d
+ 934 04f0 B8000000 		.4byte	0xb8
+ 935 04f4 B0       		.byte	0xb0
+ 936 04f5 07       		.uleb128 0x7
+ 937 04f6 480F0000 		.4byte	.LASF106
+ 938 04fa 04       		.byte	0x4
+ 939 04fb 9E       		.byte	0x9e
+ 940 04fc CE000000 		.4byte	0xce
+ 941 0500 B4       		.byte	0xb4
+ 942 0501 00       		.byte	0
+ 943 0502 03       		.uleb128 0x3
+ 944 0503 82040000 		.4byte	.LASF107
+ 945 0507 04       		.byte	0x4
+ 946 0508 9F       		.byte	0x9f
+ 947 0509 F1000000 		.4byte	0xf1
+ 948 050d 02       		.uleb128 0x2
+ 949 050e 01       		.byte	0x1
+ 950 050f 08       		.byte	0x8
+ 951 0510 AC080000 		.4byte	.LASF108
+ 952 0514 02       		.uleb128 0x2
+ 953 0515 04       		.byte	0x4
+ 954 0516 04       		.byte	0x4
+ 955 0517 2B050000 		.4byte	.LASF109
+ 956 051b 02       		.uleb128 0x2
+ 957 051c 08       		.byte	0x8
+ 958 051d 04       		.byte	0x4
+ 959 051e 62110000 		.4byte	.LASF110
+ 960 0522 08       		.uleb128 0x8
+ 961 0523 5C110000 		.4byte	.LASF111
+ 962 0527 05       		.byte	0x5
+ 963 0528 EA03     		.2byte	0x3ea
+ 964 052a A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 22
+
+
+ 965 052e 08       		.uleb128 0x8
+ 966 052f 06090000 		.4byte	.LASF112
+ 967 0533 05       		.byte	0x5
+ 968 0534 EB03     		.2byte	0x3eb
+ 969 0536 B8000000 		.4byte	0xb8
+ 970 053a 08       		.uleb128 0x8
+ 971 053b 580D0000 		.4byte	.LASF113
+ 972 053f 05       		.byte	0x5
+ 973 0540 EC03     		.2byte	0x3ec
+ 974 0542 CE000000 		.4byte	0xce
+ 975 0546 03       		.uleb128 0x3
+ 976 0547 A00F0000 		.4byte	.LASF114
+ 977 054b 06       		.byte	0x6
+ 978 054c F2       		.byte	0xf2
+ 979 054d 2E050000 		.4byte	0x52e
+ 980 0551 03       		.uleb128 0x3
+ 981 0552 58090000 		.4byte	.LASF115
+ 982 0556 06       		.byte	0x6
+ 983 0557 F6       		.byte	0xf6
+ 984 0558 22050000 		.4byte	0x522
+ 985 055c 06       		.uleb128 0x6
+ 986 055d 0C       		.byte	0xc
+ 987 055e 07       		.byte	0x7
+ 988 055f 6E       		.byte	0x6e
+ 989 0560 B9050000 		.4byte	0x5b9
+ 990 0564 07       		.uleb128 0x7
+ 991 0565 8F110000 		.4byte	.LASF116
+ 992 0569 07       		.byte	0x7
+ 993 056a 73       		.byte	0x73
+ 994 056b 2E050000 		.4byte	0x52e
+ 995 056f 00       		.byte	0
+ 996 0570 07       		.uleb128 0x7
+ 997 0571 96110000 		.4byte	.LASF117
+ 998 0575 07       		.byte	0x7
+ 999 0576 77       		.byte	0x77
+ 1000 0577 2E050000 		.4byte	0x52e
+ 1001 057b 02       		.byte	0x2
+ 1002 057c 07       		.uleb128 0x7
+ 1003 057d 9D110000 		.4byte	.LASF118
+ 1004 0581 07       		.byte	0x7
+ 1005 0582 7B       		.byte	0x7b
+ 1006 0583 2E050000 		.4byte	0x52e
+ 1007 0587 04       		.byte	0x4
+ 1008 0588 07       		.uleb128 0x7
+ 1009 0589 A4110000 		.4byte	.LASF119
+ 1010 058d 07       		.byte	0x7
+ 1011 058e 7F       		.byte	0x7f
+ 1012 058f 2E050000 		.4byte	0x52e
+ 1013 0593 06       		.byte	0x6
+ 1014 0594 07       		.uleb128 0x7
+ 1015 0595 AB110000 		.4byte	.LASF120
+ 1016 0599 07       		.byte	0x7
+ 1017 059a 83       		.byte	0x83
+ 1018 059b 2E050000 		.4byte	0x52e
+ 1019 059f 08       		.byte	0x8
+ 1020 05a0 07       		.uleb128 0x7
+ 1021 05a1 B2110000 		.4byte	.LASF121
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 23
+
+
+ 1022 05a5 07       		.byte	0x7
+ 1023 05a6 87       		.byte	0x87
+ 1024 05a7 22050000 		.4byte	0x522
+ 1025 05ab 0A       		.byte	0xa
+ 1026 05ac 07       		.uleb128 0x7
+ 1027 05ad B9110000 		.4byte	.LASF122
+ 1028 05b1 07       		.byte	0x7
+ 1029 05b2 8B       		.byte	0x8b
+ 1030 05b3 22050000 		.4byte	0x522
+ 1031 05b7 0B       		.byte	0xb
+ 1032 05b8 00       		.byte	0
+ 1033 05b9 03       		.uleb128 0x3
+ 1034 05ba 5A080000 		.4byte	.LASF123
+ 1035 05be 07       		.byte	0x7
+ 1036 05bf 8C       		.byte	0x8c
+ 1037 05c0 5C050000 		.4byte	0x55c
+ 1038 05c4 06       		.uleb128 0x6
+ 1039 05c5 56       		.byte	0x56
+ 1040 05c6 08       		.byte	0x8
+ 1041 05c7 21       		.byte	0x21
+ 1042 05c8 61090000 		.4byte	0x961
+ 1043 05cc 07       		.uleb128 0x7
+ 1044 05cd E60A0000 		.4byte	.LASF124
+ 1045 05d1 08       		.byte	0x8
+ 1046 05d2 26       		.byte	0x26
+ 1047 05d3 E7000000 		.4byte	0xe7
+ 1048 05d7 00       		.byte	0
+ 1049 05d8 07       		.uleb128 0x7
+ 1050 05d9 5D000000 		.4byte	.LASF125
+ 1051 05dd 08       		.byte	0x8
+ 1052 05de 2D       		.byte	0x2d
+ 1053 05df E7000000 		.4byte	0xe7
+ 1054 05e3 01       		.byte	0x1
+ 1055 05e4 07       		.uleb128 0x7
+ 1056 05e5 70000000 		.4byte	.LASF126
+ 1057 05e9 08       		.byte	0x8
+ 1058 05ea 33       		.byte	0x33
+ 1059 05eb E7000000 		.4byte	0xe7
+ 1060 05ef 02       		.byte	0x2
+ 1061 05f0 07       		.uleb128 0x7
+ 1062 05f1 B0040000 		.4byte	.LASF127
+ 1063 05f5 08       		.byte	0x8
+ 1064 05f6 39       		.byte	0x39
+ 1065 05f7 E7000000 		.4byte	0xe7
+ 1066 05fb 03       		.byte	0x3
+ 1067 05fc 07       		.uleb128 0x7
+ 1068 05fd C4040000 		.4byte	.LASF128
+ 1069 0601 08       		.byte	0x8
+ 1070 0602 3F       		.byte	0x3f
+ 1071 0603 E7000000 		.4byte	0xe7
+ 1072 0607 04       		.byte	0x4
+ 1073 0608 07       		.uleb128 0x7
+ 1074 0609 25000000 		.4byte	.LASF129
+ 1075 060d 08       		.byte	0x8
+ 1076 060e 45       		.byte	0x45
+ 1077 060f E7000000 		.4byte	0xe7
+ 1078 0613 05       		.byte	0x5
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 24
+
+
+ 1079 0614 07       		.uleb128 0x7
+ 1080 0615 3A000000 		.4byte	.LASF130
+ 1081 0619 08       		.byte	0x8
+ 1082 061a 4B       		.byte	0x4b
+ 1083 061b E7000000 		.4byte	0xe7
+ 1084 061f 06       		.byte	0x6
+ 1085 0620 07       		.uleb128 0x7
+ 1086 0621 8F0E0000 		.4byte	.LASF131
+ 1087 0625 08       		.byte	0x8
+ 1088 0626 51       		.byte	0x51
+ 1089 0627 E7000000 		.4byte	0xe7
+ 1090 062b 07       		.byte	0x7
+ 1091 062c 07       		.uleb128 0x7
+ 1092 062d 51120000 		.4byte	.LASF132
+ 1093 0631 08       		.byte	0x8
+ 1094 0632 57       		.byte	0x57
+ 1095 0633 E7000000 		.4byte	0xe7
+ 1096 0637 08       		.byte	0x8
+ 1097 0638 07       		.uleb128 0x7
+ 1098 0639 8C010000 		.4byte	.LASF133
+ 1099 063d 08       		.byte	0x8
+ 1100 063e 5D       		.byte	0x5d
+ 1101 063f E7000000 		.4byte	0xe7
+ 1102 0643 09       		.byte	0x9
+ 1103 0644 07       		.uleb128 0x7
+ 1104 0645 BF020000 		.4byte	.LASF134
+ 1105 0649 08       		.byte	0x8
+ 1106 064a 63       		.byte	0x63
+ 1107 064b E7000000 		.4byte	0xe7
+ 1108 064f 0A       		.byte	0xa
+ 1109 0650 07       		.uleb128 0x7
+ 1110 0651 3C110000 		.4byte	.LASF135
+ 1111 0655 08       		.byte	0x8
+ 1112 0656 69       		.byte	0x69
+ 1113 0657 E7000000 		.4byte	0xe7
+ 1114 065b 0B       		.byte	0xb
+ 1115 065c 07       		.uleb128 0x7
+ 1116 065d 65120000 		.4byte	.LASF136
+ 1117 0661 08       		.byte	0x8
+ 1118 0662 6F       		.byte	0x6f
+ 1119 0663 E7000000 		.4byte	0xe7
+ 1120 0667 0C       		.byte	0xc
+ 1121 0668 07       		.uleb128 0x7
+ 1122 0669 56010000 		.4byte	.LASF137
+ 1123 066d 08       		.byte	0x8
+ 1124 066e 75       		.byte	0x75
+ 1125 066f E7000000 		.4byte	0xe7
+ 1126 0673 0D       		.byte	0xd
+ 1127 0674 07       		.uleb128 0x7
+ 1128 0675 D3020000 		.4byte	.LASF138
+ 1129 0679 08       		.byte	0x8
+ 1130 067a 7B       		.byte	0x7b
+ 1131 067b E7000000 		.4byte	0xe7
+ 1132 067f 0E       		.byte	0xe
+ 1133 0680 07       		.uleb128 0x7
+ 1134 0681 0D020000 		.4byte	.LASF139
+ 1135 0685 08       		.byte	0x8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 25
+
+
+ 1136 0686 83       		.byte	0x83
+ 1137 0687 E7000000 		.4byte	0xe7
+ 1138 068b 0F       		.byte	0xf
+ 1139 068c 07       		.uleb128 0x7
+ 1140 068d 1B020000 		.4byte	.LASF140
+ 1141 0691 08       		.byte	0x8
+ 1142 0692 8B       		.byte	0x8b
+ 1143 0693 E7000000 		.4byte	0xe7
+ 1144 0697 10       		.byte	0x10
+ 1145 0698 07       		.uleb128 0x7
+ 1146 0699 29020000 		.4byte	.LASF141
+ 1147 069d 08       		.byte	0x8
+ 1148 069e 93       		.byte	0x93
+ 1149 069f E7000000 		.4byte	0xe7
+ 1150 06a3 11       		.byte	0x11
+ 1151 06a4 07       		.uleb128 0x7
+ 1152 06a5 37020000 		.4byte	.LASF142
+ 1153 06a9 08       		.byte	0x8
+ 1154 06aa 9B       		.byte	0x9b
+ 1155 06ab E7000000 		.4byte	0xe7
+ 1156 06af 12       		.byte	0x12
+ 1157 06b0 07       		.uleb128 0x7
+ 1158 06b1 B3090000 		.4byte	.LASF143
+ 1159 06b5 08       		.byte	0x8
+ 1160 06b6 A2       		.byte	0xa2
+ 1161 06b7 E7000000 		.4byte	0xe7
+ 1162 06bb 13       		.byte	0x13
+ 1163 06bc 07       		.uleb128 0x7
+ 1164 06bd 5E020000 		.4byte	.LASF144
+ 1165 06c1 08       		.byte	0x8
+ 1166 06c2 A8       		.byte	0xa8
+ 1167 06c3 E7000000 		.4byte	0xe7
+ 1168 06c7 14       		.byte	0x14
+ 1169 06c8 07       		.uleb128 0x7
+ 1170 06c9 16040000 		.4byte	.LASF145
+ 1171 06cd 08       		.byte	0x8
+ 1172 06ce AE       		.byte	0xae
+ 1173 06cf E7000000 		.4byte	0xe7
+ 1174 06d3 15       		.byte	0x15
+ 1175 06d4 07       		.uleb128 0x7
+ 1176 06d5 6C050000 		.4byte	.LASF146
+ 1177 06d9 08       		.byte	0x8
+ 1178 06da B4       		.byte	0xb4
+ 1179 06db E7000000 		.4byte	0xe7
+ 1180 06df 16       		.byte	0x16
+ 1181 06e0 07       		.uleb128 0x7
+ 1182 06e1 86060000 		.4byte	.LASF147
+ 1183 06e5 08       		.byte	0x8
+ 1184 06e6 BA       		.byte	0xba
+ 1185 06e7 E7000000 		.4byte	0xe7
+ 1186 06eb 17       		.byte	0x17
+ 1187 06ec 07       		.uleb128 0x7
+ 1188 06ed 17120000 		.4byte	.LASF148
+ 1189 06f1 08       		.byte	0x8
+ 1190 06f2 C0       		.byte	0xc0
+ 1191 06f3 E7000000 		.4byte	0xe7
+ 1192 06f7 18       		.byte	0x18
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 26
+
+
+ 1193 06f8 07       		.uleb128 0x7
+ 1194 06f9 2A040000 		.4byte	.LASF149
+ 1195 06fd 08       		.byte	0x8
+ 1196 06fe C6       		.byte	0xc6
+ 1197 06ff E7000000 		.4byte	0xe7
+ 1198 0703 19       		.byte	0x19
+ 1199 0704 07       		.uleb128 0x7
+ 1200 0705 80050000 		.4byte	.LASF150
+ 1201 0709 08       		.byte	0x8
+ 1202 070a CC       		.byte	0xcc
+ 1203 070b E7000000 		.4byte	0xe7
+ 1204 070f 1A       		.byte	0x1a
+ 1205 0710 07       		.uleb128 0x7
+ 1206 0711 A4070000 		.4byte	.LASF151
+ 1207 0715 08       		.byte	0x8
+ 1208 0716 D2       		.byte	0xd2
+ 1209 0717 E7000000 		.4byte	0xe7
+ 1210 071b 1B       		.byte	0x1b
+ 1211 071c 07       		.uleb128 0x7
+ 1212 071d 4F000000 		.4byte	.LASF152
+ 1213 0721 08       		.byte	0x8
+ 1214 0722 DA       		.byte	0xda
+ 1215 0723 E7000000 		.4byte	0xe7
+ 1216 0727 1C       		.byte	0x1c
+ 1217 0728 07       		.uleb128 0x7
+ 1218 0729 A10C0000 		.4byte	.LASF153
+ 1219 072d 08       		.byte	0x8
+ 1220 072e E2       		.byte	0xe2
+ 1221 072f E7000000 		.4byte	0xe7
+ 1222 0733 1D       		.byte	0x1d
+ 1223 0734 07       		.uleb128 0x7
+ 1224 0735 AF0C0000 		.4byte	.LASF154
+ 1225 0739 08       		.byte	0x8
+ 1226 073a EA       		.byte	0xea
+ 1227 073b E7000000 		.4byte	0xe7
+ 1228 073f 1E       		.byte	0x1e
+ 1229 0740 07       		.uleb128 0x7
+ 1230 0741 BD0C0000 		.4byte	.LASF155
+ 1231 0745 08       		.byte	0x8
+ 1232 0746 F2       		.byte	0xf2
+ 1233 0747 E7000000 		.4byte	0xe7
+ 1234 074b 1F       		.byte	0x1f
+ 1235 074c 07       		.uleb128 0x7
+ 1236 074d 05040000 		.4byte	.LASF156
+ 1237 0751 08       		.byte	0x8
+ 1238 0752 F9       		.byte	0xf9
+ 1239 0753 E7000000 		.4byte	0xe7
+ 1240 0757 20       		.byte	0x20
+ 1241 0758 09       		.uleb128 0x9
+ 1242 0759 E6070000 		.4byte	.LASF157
+ 1243 075d 08       		.byte	0x8
+ 1244 075e 0001     		.2byte	0x100
+ 1245 0760 E7000000 		.4byte	0xe7
+ 1246 0764 21       		.byte	0x21
+ 1247 0765 09       		.uleb128 0x9
+ 1248 0766 2C080000 		.4byte	.LASF158
+ 1249 076a 08       		.byte	0x8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 27
+
+
+ 1250 076b 0701     		.2byte	0x107
+ 1251 076d E7000000 		.4byte	0xe7
+ 1252 0771 22       		.byte	0x22
+ 1253 0772 09       		.uleb128 0x9
+ 1254 0773 43080000 		.4byte	.LASF159
+ 1255 0777 08       		.byte	0x8
+ 1256 0778 0E01     		.2byte	0x10e
+ 1257 077a E7000000 		.4byte	0xe7
+ 1258 077e 23       		.byte	0x23
+ 1259 077f 09       		.uleb128 0x9
+ 1260 0780 E8000000 		.4byte	.LASF160
+ 1261 0784 08       		.byte	0x8
+ 1262 0785 1501     		.2byte	0x115
+ 1263 0787 E7000000 		.4byte	0xe7
+ 1264 078b 24       		.byte	0x24
+ 1265 078c 09       		.uleb128 0x9
+ 1266 078d 13010000 		.4byte	.LASF161
+ 1267 0791 08       		.byte	0x8
+ 1268 0792 1C01     		.2byte	0x11c
+ 1269 0794 E7000000 		.4byte	0xe7
+ 1270 0798 25       		.byte	0x25
+ 1271 0799 09       		.uleb128 0x9
+ 1272 079a 2A010000 		.4byte	.LASF162
+ 1273 079e 08       		.byte	0x8
+ 1274 079f 2301     		.2byte	0x123
+ 1275 07a1 E7000000 		.4byte	0xe7
+ 1276 07a5 26       		.byte	0x26
+ 1277 07a6 09       		.uleb128 0x9
+ 1278 07a7 F7050000 		.4byte	.LASF163
+ 1279 07ab 08       		.byte	0x8
+ 1280 07ac 2A01     		.2byte	0x12a
+ 1281 07ae E7000000 		.4byte	0xe7
+ 1282 07b2 27       		.byte	0x27
+ 1283 07b3 09       		.uleb128 0x9
+ 1284 07b4 B1100000 		.4byte	.LASF164
+ 1285 07b8 08       		.byte	0x8
+ 1286 07b9 3101     		.2byte	0x131
+ 1287 07bb E7000000 		.4byte	0xe7
+ 1288 07bf 28       		.byte	0x28
+ 1289 07c0 09       		.uleb128 0x9
+ 1290 07c1 D4100000 		.4byte	.LASF165
+ 1291 07c5 08       		.byte	0x8
+ 1292 07c6 3701     		.2byte	0x137
+ 1293 07c8 E7000000 		.4byte	0xe7
+ 1294 07cc 29       		.byte	0x29
+ 1295 07cd 09       		.uleb128 0x9
+ 1296 07ce 9E090000 		.4byte	.LASF166
+ 1297 07d2 08       		.byte	0x8
+ 1298 07d3 3D01     		.2byte	0x13d
+ 1299 07d5 E7000000 		.4byte	0xe7
+ 1300 07d9 2A       		.byte	0x2a
+ 1301 07da 09       		.uleb128 0x9
+ 1302 07db 19110000 		.4byte	.LASF167
+ 1303 07df 08       		.byte	0x8
+ 1304 07e0 4401     		.2byte	0x144
+ 1305 07e2 E7000000 		.4byte	0xe7
+ 1306 07e6 2B       		.byte	0x2b
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 28
+
+
+ 1307 07e7 09       		.uleb128 0x9
+ 1308 07e8 09060000 		.4byte	.LASF168
+ 1309 07ec 08       		.byte	0x8
+ 1310 07ed 4A01     		.2byte	0x14a
+ 1311 07ef E7000000 		.4byte	0xe7
+ 1312 07f3 2C       		.byte	0x2c
+ 1313 07f4 09       		.uleb128 0x9
+ 1314 07f5 7F0B0000 		.4byte	.LASF169
+ 1315 07f9 08       		.byte	0x8
+ 1316 07fa 5001     		.2byte	0x150
+ 1317 07fc E7000000 		.4byte	0xe7
+ 1318 0800 2D       		.byte	0x2d
+ 1319 0801 09       		.uleb128 0x9
+ 1320 0802 0A110000 		.4byte	.LASF170
+ 1321 0806 08       		.byte	0x8
+ 1322 0807 5701     		.2byte	0x157
+ 1323 0809 E7000000 		.4byte	0xe7
+ 1324 080d 2E       		.byte	0x2e
+ 1325 080e 09       		.uleb128 0x9
+ 1326 080f F3040000 		.4byte	.LASF171
+ 1327 0813 08       		.byte	0x8
+ 1328 0814 5F01     		.2byte	0x15f
+ 1329 0816 E7000000 		.4byte	0xe7
+ 1330 081a 2F       		.byte	0x2f
+ 1331 081b 09       		.uleb128 0x9
+ 1332 081c 72110000 		.4byte	.LASF172
+ 1333 0820 08       		.byte	0x8
+ 1334 0821 6801     		.2byte	0x168
+ 1335 0823 E7000000 		.4byte	0xe7
+ 1336 0827 30       		.byte	0x30
+ 1337 0828 09       		.uleb128 0x9
+ 1338 0829 92070000 		.4byte	.LASF173
+ 1339 082d 08       		.byte	0x8
+ 1340 082e 6E01     		.2byte	0x16e
+ 1341 0830 E7000000 		.4byte	0xe7
+ 1342 0834 31       		.byte	0x31
+ 1343 0835 09       		.uleb128 0x9
+ 1344 0836 1A080000 		.4byte	.LASF174
+ 1345 083a 08       		.byte	0x8
+ 1346 083b 7401     		.2byte	0x174
+ 1347 083d E7000000 		.4byte	0xe7
+ 1348 0841 32       		.byte	0x32
+ 1349 0842 09       		.uleb128 0x9
+ 1350 0843 C80A0000 		.4byte	.LASF175
+ 1351 0847 08       		.byte	0x8
+ 1352 0848 7A01     		.2byte	0x17a
+ 1353 084a E7000000 		.4byte	0xe7
+ 1354 084e 33       		.byte	0x33
+ 1355 084f 09       		.uleb128 0x9
+ 1356 0850 D9070000 		.4byte	.LASF176
+ 1357 0854 08       		.byte	0x8
+ 1358 0855 8001     		.2byte	0x180
+ 1359 0857 E7000000 		.4byte	0xe7
+ 1360 085b 34       		.byte	0x34
+ 1361 085c 09       		.uleb128 0x9
+ 1362 085d 7C010000 		.4byte	.LASF177
+ 1363 0861 08       		.byte	0x8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 29
+
+
+ 1364 0862 8601     		.2byte	0x186
+ 1365 0864 EC000000 		.4byte	0xec
+ 1366 0868 36       		.byte	0x36
+ 1367 0869 09       		.uleb128 0x9
+ 1368 086a B30E0000 		.4byte	.LASF178
+ 1369 086e 08       		.byte	0x8
+ 1370 086f 8B01     		.2byte	0x18b
+ 1371 0871 EC000000 		.4byte	0xec
+ 1372 0875 38       		.byte	0x38
+ 1373 0876 09       		.uleb128 0x9
+ 1374 0877 BF0E0000 		.4byte	.LASF179
+ 1375 087b 08       		.byte	0x8
+ 1376 087c 9001     		.2byte	0x190
+ 1377 087e EC000000 		.4byte	0xec
+ 1378 0882 3A       		.byte	0x3a
+ 1379 0883 09       		.uleb128 0x9
+ 1380 0884 1B050000 		.4byte	.LASF180
+ 1381 0888 08       		.byte	0x8
+ 1382 0889 9501     		.2byte	0x195
+ 1383 088b EC000000 		.4byte	0xec
+ 1384 088f 3C       		.byte	0x3c
+ 1385 0890 09       		.uleb128 0x9
+ 1386 0891 14000000 		.4byte	.LASF181
+ 1387 0895 08       		.byte	0x8
+ 1388 0896 9A01     		.2byte	0x19a
+ 1389 0898 EC000000 		.4byte	0xec
+ 1390 089c 3E       		.byte	0x3e
+ 1391 089d 09       		.uleb128 0x9
+ 1392 089e F4020000 		.4byte	.LASF182
+ 1393 08a2 08       		.byte	0x8
+ 1394 08a3 A001     		.2byte	0x1a0
+ 1395 08a5 EC000000 		.4byte	0xec
+ 1396 08a9 40       		.byte	0x40
+ 1397 08aa 09       		.uleb128 0x9
+ 1398 08ab 0A0C0000 		.4byte	.LASF183
+ 1399 08af 08       		.byte	0x8
+ 1400 08b0 A801     		.2byte	0x1a8
+ 1401 08b2 EC000000 		.4byte	0xec
+ 1402 08b6 42       		.byte	0x42
+ 1403 08b7 09       		.uleb128 0x9
+ 1404 08b8 1D0F0000 		.4byte	.LASF184
+ 1405 08bc 08       		.byte	0x8
+ 1406 08bd AF01     		.2byte	0x1af
+ 1407 08bf EC000000 		.4byte	0xec
+ 1408 08c3 44       		.byte	0x44
+ 1409 08c4 09       		.uleb128 0x9
+ 1410 08c5 07070000 		.4byte	.LASF185
+ 1411 08c9 08       		.byte	0x8
+ 1412 08ca B701     		.2byte	0x1b7
+ 1413 08cc EC000000 		.4byte	0xec
+ 1414 08d0 46       		.byte	0x46
+ 1415 08d1 09       		.uleb128 0x9
+ 1416 08d2 7C0F0000 		.4byte	.LASF186
+ 1417 08d6 08       		.byte	0x8
+ 1418 08d7 BD01     		.2byte	0x1bd
+ 1419 08d9 EC000000 		.4byte	0xec
+ 1420 08dd 48       		.byte	0x48
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 30
+
+
+ 1421 08de 09       		.uleb128 0x9
+ 1422 08df 6F070000 		.4byte	.LASF187
+ 1423 08e3 08       		.byte	0x8
+ 1424 08e4 C301     		.2byte	0x1c3
+ 1425 08e6 EC000000 		.4byte	0xec
+ 1426 08ea 4A       		.byte	0x4a
+ 1427 08eb 09       		.uleb128 0x9
+ 1428 08ec A6040000 		.4byte	.LASF188
+ 1429 08f0 08       		.byte	0x8
+ 1430 08f1 CC01     		.2byte	0x1cc
+ 1431 08f3 E7000000 		.4byte	0xe7
+ 1432 08f7 4C       		.byte	0x4c
+ 1433 08f8 09       		.uleb128 0x9
+ 1434 08f9 5B0B0000 		.4byte	.LASF189
+ 1435 08fd 08       		.byte	0x8
+ 1436 08fe D101     		.2byte	0x1d1
+ 1437 0900 E7000000 		.4byte	0xe7
+ 1438 0904 4D       		.byte	0x4d
+ 1439 0905 09       		.uleb128 0x9
+ 1440 0906 750B0000 		.4byte	.LASF190
+ 1441 090a 08       		.byte	0x8
+ 1442 090b D601     		.2byte	0x1d6
+ 1443 090d E7000000 		.4byte	0xe7
+ 1444 0911 4E       		.byte	0x4e
+ 1445 0912 09       		.uleb128 0x9
+ 1446 0913 9E020000 		.4byte	.LASF191
+ 1447 0917 08       		.byte	0x8
+ 1448 0918 DB01     		.2byte	0x1db
+ 1449 091a E7000000 		.4byte	0xe7
+ 1450 091e 4F       		.byte	0x4f
+ 1451 091f 09       		.uleb128 0x9
+ 1452 0920 3E040000 		.4byte	.LASF192
+ 1453 0924 08       		.byte	0x8
+ 1454 0925 E001     		.2byte	0x1e0
+ 1455 0927 E7000000 		.4byte	0xe7
+ 1456 092b 50       		.byte	0x50
+ 1457 092c 09       		.uleb128 0x9
+ 1458 092d 8E0D0000 		.4byte	.LASF193
+ 1459 0931 08       		.byte	0x8
+ 1460 0932 E501     		.2byte	0x1e5
+ 1461 0934 E7000000 		.4byte	0xe7
+ 1462 0938 51       		.byte	0x51
+ 1463 0939 09       		.uleb128 0x9
+ 1464 093a 720D0000 		.4byte	.LASF194
+ 1465 093e 08       		.byte	0x8
+ 1466 093f EA01     		.2byte	0x1ea
+ 1467 0941 E7000000 		.4byte	0xe7
+ 1468 0945 52       		.byte	0x52
+ 1469 0946 09       		.uleb128 0x9
+ 1470 0947 C2080000 		.4byte	.LASF195
+ 1471 094b 08       		.byte	0x8
+ 1472 094c EF01     		.2byte	0x1ef
+ 1473 094e E7000000 		.4byte	0xe7
+ 1474 0952 53       		.byte	0x53
+ 1475 0953 09       		.uleb128 0x9
+ 1476 0954 DB060000 		.4byte	.LASF196
+ 1477 0958 08       		.byte	0x8
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 31
+
+
+ 1478 0959 F401     		.2byte	0x1f4
+ 1479 095b E7000000 		.4byte	0xe7
+ 1480 095f 54       		.byte	0x54
+ 1481 0960 00       		.byte	0
+ 1482 0961 08       		.uleb128 0x8
+ 1483 0962 410E0000 		.4byte	.LASF197
+ 1484 0966 08       		.byte	0x8
+ 1485 0967 F501     		.2byte	0x1f5
+ 1486 0969 C4050000 		.4byte	0x5c4
+ 1487 096d 0A       		.uleb128 0xa
+ 1488 096e 22050000 		.4byte	0x522
+ 1489 0972 7D090000 		.4byte	0x97d
+ 1490 0976 0B       		.uleb128 0xb
+ 1491 0977 E0000000 		.4byte	0xe0
+ 1492 097b 00       		.byte	0
+ 1493 097c 00       		.byte	0
+ 1494 097d 06       		.uleb128 0x6
+ 1495 097e 14       		.byte	0x14
+ 1496 097f 09       		.byte	0x9
+ 1497 0980 DF       		.byte	0xdf
+ 1498 0981 290A0000 		.4byte	0xa29
+ 1499 0985 07       		.uleb128 0x7
+ 1500 0986 3E090000 		.4byte	.LASF198
+ 1501 098a 09       		.byte	0x9
+ 1502 098b E5       		.byte	0xe5
+ 1503 098c 2E050000 		.4byte	0x52e
+ 1504 0990 00       		.byte	0
+ 1505 0991 07       		.uleb128 0x7
+ 1506 0992 690D0000 		.4byte	.LASF199
+ 1507 0996 09       		.byte	0x9
+ 1508 0997 EA       		.byte	0xea
+ 1509 0998 46050000 		.4byte	0x546
+ 1510 099c 02       		.byte	0x2
+ 1511 099d 07       		.uleb128 0x7
+ 1512 099e 99080000 		.4byte	.LASF200
+ 1513 09a2 09       		.byte	0x9
+ 1514 09a3 EF       		.byte	0xef
+ 1515 09a4 22050000 		.4byte	0x522
+ 1516 09a8 04       		.byte	0x4
+ 1517 09a9 07       		.uleb128 0x7
+ 1518 09aa B40A0000 		.4byte	.LASF201
+ 1519 09ae 09       		.byte	0x9
+ 1520 09af F4       		.byte	0xf4
+ 1521 09b0 22050000 		.4byte	0x522
+ 1522 09b4 05       		.byte	0x5
+ 1523 09b5 07       		.uleb128 0x7
+ 1524 09b6 2E070000 		.4byte	.LASF202
+ 1525 09ba 09       		.byte	0x9
+ 1526 09bb F9       		.byte	0xf9
+ 1527 09bc 22050000 		.4byte	0x522
+ 1528 09c0 06       		.byte	0x6
+ 1529 09c1 07       		.uleb128 0x7
+ 1530 09c2 2C0A0000 		.4byte	.LASF203
+ 1531 09c6 09       		.byte	0x9
+ 1532 09c7 FE       		.byte	0xfe
+ 1533 09c8 22050000 		.4byte	0x522
+ 1534 09cc 07       		.byte	0x7
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 32
+
+
+ 1535 09cd 09       		.uleb128 0x9
+ 1536 09ce 87070000 		.4byte	.LASF204
+ 1537 09d2 09       		.byte	0x9
+ 1538 09d3 0501     		.2byte	0x105
+ 1539 09d5 51050000 		.4byte	0x551
+ 1540 09d9 08       		.byte	0x8
+ 1541 09da 09       		.uleb128 0x9
+ 1542 09db 7B0E0000 		.4byte	.LASF205
+ 1543 09df 09       		.byte	0x9
+ 1544 09e0 0D01     		.2byte	0x10d
+ 1545 09e2 6D090000 		.4byte	0x96d
+ 1546 09e6 09       		.byte	0x9
+ 1547 09e7 09       		.uleb128 0x9
+ 1548 09e8 81100000 		.4byte	.LASF206
+ 1549 09ec 09       		.byte	0x9
+ 1550 09ed 1601     		.2byte	0x116
+ 1551 09ef 2E050000 		.4byte	0x52e
+ 1552 09f3 0A       		.byte	0xa
+ 1553 09f4 09       		.uleb128 0x9
+ 1554 09f5 4F0C0000 		.4byte	.LASF207
+ 1555 09f9 09       		.byte	0x9
+ 1556 09fa 1B01     		.2byte	0x11b
+ 1557 09fc 22050000 		.4byte	0x522
+ 1558 0a00 0C       		.byte	0xc
+ 1559 0a01 09       		.uleb128 0x9
+ 1560 0a02 AB0D0000 		.4byte	.LASF208
+ 1561 0a06 09       		.byte	0x9
+ 1562 0a07 2201     		.2byte	0x122
+ 1563 0a09 2E050000 		.4byte	0x52e
+ 1564 0a0d 0E       		.byte	0xe
+ 1565 0a0e 09       		.uleb128 0x9
+ 1566 0a0f 27070000 		.4byte	.LASF209
+ 1567 0a13 09       		.byte	0x9
+ 1568 0a14 2701     		.2byte	0x127
+ 1569 0a16 2E050000 		.4byte	0x52e
+ 1570 0a1a 10       		.byte	0x10
+ 1571 0a1b 09       		.uleb128 0x9
+ 1572 0a1c EB0A0000 		.4byte	.LASF210
+ 1573 0a20 09       		.byte	0x9
+ 1574 0a21 2C01     		.2byte	0x12c
+ 1575 0a23 22050000 		.4byte	0x522
+ 1576 0a27 12       		.byte	0x12
+ 1577 0a28 00       		.byte	0
+ 1578 0a29 08       		.uleb128 0x8
+ 1579 0a2a FF0E0000 		.4byte	.LASF211
+ 1580 0a2e 09       		.byte	0x9
+ 1581 0a2f 2D01     		.2byte	0x12d
+ 1582 0a31 7D090000 		.4byte	0x97d
+ 1583 0a35 0C       		.uleb128 0xc
+ 1584 0a36 16       		.byte	0x16
+ 1585 0a37 09       		.byte	0x9
+ 1586 0a38 3201     		.2byte	0x132
+ 1587 0a3a F50A0000 		.4byte	0xaf5
+ 1588 0a3e 09       		.uleb128 0x9
+ 1589 0a3f 3E090000 		.4byte	.LASF198
+ 1590 0a43 09       		.byte	0x9
+ 1591 0a44 3801     		.2byte	0x138
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 33
+
+
+ 1592 0a46 2E050000 		.4byte	0x52e
+ 1593 0a4a 00       		.byte	0
+ 1594 0a4b 09       		.uleb128 0x9
+ 1595 0a4c 690D0000 		.4byte	.LASF199
+ 1596 0a50 09       		.byte	0x9
+ 1597 0a51 3D01     		.2byte	0x13d
+ 1598 0a53 46050000 		.4byte	0x546
+ 1599 0a57 02       		.byte	0x2
+ 1600 0a58 09       		.uleb128 0x9
+ 1601 0a59 99080000 		.4byte	.LASF200
+ 1602 0a5d 09       		.byte	0x9
+ 1603 0a5e 4201     		.2byte	0x142
+ 1604 0a60 22050000 		.4byte	0x522
+ 1605 0a64 04       		.byte	0x4
+ 1606 0a65 09       		.uleb128 0x9
+ 1607 0a66 B40A0000 		.4byte	.LASF201
+ 1608 0a6a 09       		.byte	0x9
+ 1609 0a6b 4701     		.2byte	0x147
+ 1610 0a6d 22050000 		.4byte	0x522
+ 1611 0a71 05       		.byte	0x5
+ 1612 0a72 09       		.uleb128 0x9
+ 1613 0a73 2E070000 		.4byte	.LASF202
+ 1614 0a77 09       		.byte	0x9
+ 1615 0a78 4C01     		.2byte	0x14c
+ 1616 0a7a 22050000 		.4byte	0x522
+ 1617 0a7e 06       		.byte	0x6
+ 1618 0a7f 09       		.uleb128 0x9
+ 1619 0a80 2C0A0000 		.4byte	.LASF203
+ 1620 0a84 09       		.byte	0x9
+ 1621 0a85 5101     		.2byte	0x151
+ 1622 0a87 22050000 		.4byte	0x522
+ 1623 0a8b 07       		.byte	0x7
+ 1624 0a8c 09       		.uleb128 0x9
+ 1625 0a8d 87070000 		.4byte	.LASF204
+ 1626 0a91 09       		.byte	0x9
+ 1627 0a92 5801     		.2byte	0x158
+ 1628 0a94 51050000 		.4byte	0x551
+ 1629 0a98 08       		.byte	0x8
+ 1630 0a99 09       		.uleb128 0x9
+ 1631 0a9a 7B0E0000 		.4byte	.LASF205
+ 1632 0a9e 09       		.byte	0x9
+ 1633 0a9f 6001     		.2byte	0x160
+ 1634 0aa1 6D090000 		.4byte	0x96d
+ 1635 0aa5 09       		.byte	0x9
+ 1636 0aa6 09       		.uleb128 0x9
+ 1637 0aa7 81100000 		.4byte	.LASF206
+ 1638 0aab 09       		.byte	0x9
+ 1639 0aac 6901     		.2byte	0x169
+ 1640 0aae 2E050000 		.4byte	0x52e
+ 1641 0ab2 0A       		.byte	0xa
+ 1642 0ab3 09       		.uleb128 0x9
+ 1643 0ab4 4F0C0000 		.4byte	.LASF207
+ 1644 0ab8 09       		.byte	0x9
+ 1645 0ab9 6E01     		.2byte	0x16e
+ 1646 0abb 22050000 		.4byte	0x522
+ 1647 0abf 0C       		.byte	0xc
+ 1648 0ac0 09       		.uleb128 0x9
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 34
+
+
+ 1649 0ac1 AB0D0000 		.4byte	.LASF208
+ 1650 0ac5 09       		.byte	0x9
+ 1651 0ac6 7501     		.2byte	0x175
+ 1652 0ac8 2E050000 		.4byte	0x52e
+ 1653 0acc 0E       		.byte	0xe
+ 1654 0acd 09       		.uleb128 0x9
+ 1655 0ace 27070000 		.4byte	.LASF209
+ 1656 0ad2 09       		.byte	0x9
+ 1657 0ad3 7A01     		.2byte	0x17a
+ 1658 0ad5 2E050000 		.4byte	0x52e
+ 1659 0ad9 10       		.byte	0x10
+ 1660 0ada 09       		.uleb128 0x9
+ 1661 0adb EB0A0000 		.4byte	.LASF210
+ 1662 0adf 09       		.byte	0x9
+ 1663 0ae0 7F01     		.2byte	0x17f
+ 1664 0ae2 22050000 		.4byte	0x522
+ 1665 0ae6 12       		.byte	0x12
+ 1666 0ae7 09       		.uleb128 0x9
+ 1667 0ae8 2B120000 		.4byte	.LASF212
+ 1668 0aec 09       		.byte	0x9
+ 1669 0aed 8401     		.2byte	0x184
+ 1670 0aef F50A0000 		.4byte	0xaf5
+ 1671 0af3 14       		.byte	0x14
+ 1672 0af4 00       		.byte	0
+ 1673 0af5 0A       		.uleb128 0xa
+ 1674 0af6 2E050000 		.4byte	0x52e
+ 1675 0afa 050B0000 		.4byte	0xb05
+ 1676 0afe 0B       		.uleb128 0xb
+ 1677 0aff E0000000 		.4byte	0xe0
+ 1678 0b03 00       		.byte	0
+ 1679 0b04 00       		.byte	0
+ 1680 0b05 08       		.uleb128 0x8
+ 1681 0b06 140E0000 		.4byte	.LASF213
+ 1682 0b0a 09       		.byte	0x9
+ 1683 0b0b 8501     		.2byte	0x185
+ 1684 0b0d 350A0000 		.4byte	0xa35
+ 1685 0b11 0C       		.uleb128 0xc
+ 1686 0b12 3E       		.byte	0x3e
+ 1687 0b13 09       		.byte	0x9
+ 1688 0b14 8B01     		.2byte	0x18b
+ 1689 0b16 420B0000 		.4byte	0xb42
+ 1690 0b1a 09       		.uleb128 0x9
+ 1691 0b1b 480D0000 		.4byte	.LASF214
+ 1692 0b1f 09       		.byte	0x9
+ 1693 0b20 9001     		.2byte	0x190
+ 1694 0b22 290A0000 		.4byte	0xa29
+ 1695 0b26 00       		.byte	0
+ 1696 0b27 09       		.uleb128 0x9
+ 1697 0b28 500D0000 		.4byte	.LASF215
+ 1698 0b2c 09       		.byte	0x9
+ 1699 0b2d 9501     		.2byte	0x195
+ 1700 0b2f 290A0000 		.4byte	0xa29
+ 1701 0b33 14       		.byte	0x14
+ 1702 0b34 09       		.uleb128 0x9
+ 1703 0b35 42100000 		.4byte	.LASF216
+ 1704 0b39 09       		.byte	0x9
+ 1705 0b3a 9A01     		.2byte	0x19a
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 35
+
+
+ 1706 0b3c 050B0000 		.4byte	0xb05
+ 1707 0b40 28       		.byte	0x28
+ 1708 0b41 00       		.byte	0
+ 1709 0b42 08       		.uleb128 0x8
+ 1710 0b43 83000000 		.4byte	.LASF217
+ 1711 0b47 09       		.byte	0x9
+ 1712 0b48 9B01     		.2byte	0x19b
+ 1713 0b4a 110B0000 		.4byte	0xb11
+ 1714 0b4e 0C       		.uleb128 0xc
+ 1715 0b4f 0A       		.byte	0xa
+ 1716 0b50 09       		.byte	0x9
+ 1717 0b51 A101     		.2byte	0x1a1
+ 1718 0b53 A60B0000 		.4byte	0xba6
+ 1719 0b57 0D       		.uleb128 0xd
+ 1720 0b58 72617700 		.ascii	"raw\000"
+ 1721 0b5c 09       		.byte	0x9
+ 1722 0b5d A601     		.2byte	0x1a6
+ 1723 0b5f F50A0000 		.4byte	0xaf5
+ 1724 0b63 00       		.byte	0
+ 1725 0b64 09       		.uleb128 0x9
+ 1726 0b65 E10A0000 		.4byte	.LASF218
+ 1727 0b69 09       		.byte	0x9
+ 1728 0b6a AB01     		.2byte	0x1ab
+ 1729 0b6c F50A0000 		.4byte	0xaf5
+ 1730 0b70 02       		.byte	0x2
+ 1731 0b71 09       		.uleb128 0x9
+ 1732 0b72 E80E0000 		.4byte	.LASF219
+ 1733 0b76 09       		.byte	0x9
+ 1734 0b77 B101     		.2byte	0x1b1
+ 1735 0b79 6D090000 		.4byte	0x96d
+ 1736 0b7d 04       		.byte	0x4
+ 1737 0b7e 09       		.uleb128 0x9
+ 1738 0b7f 430D0000 		.4byte	.LASF220
+ 1739 0b83 09       		.byte	0x9
+ 1740 0b84 B601     		.2byte	0x1b6
+ 1741 0b86 46050000 		.4byte	0x546
+ 1742 0b8a 06       		.byte	0x6
+ 1743 0b8b 09       		.uleb128 0x9
+ 1744 0b8c 81110000 		.4byte	.LASF221
+ 1745 0b90 09       		.byte	0x9
+ 1746 0b91 BB01     		.2byte	0x1bb
+ 1747 0b93 A60B0000 		.4byte	0xba6
+ 1748 0b97 08       		.byte	0x8
+ 1749 0b98 09       		.uleb128 0x9
+ 1750 0b99 C4090000 		.4byte	.LASF222
+ 1751 0b9d 09       		.byte	0x9
+ 1752 0b9e C101     		.2byte	0x1c1
+ 1753 0ba0 6D090000 		.4byte	0x96d
+ 1754 0ba4 09       		.byte	0x9
+ 1755 0ba5 00       		.byte	0
+ 1756 0ba6 0A       		.uleb128 0xa
+ 1757 0ba7 51050000 		.4byte	0x551
+ 1758 0bab B60B0000 		.4byte	0xbb6
+ 1759 0baf 0B       		.uleb128 0xb
+ 1760 0bb0 E0000000 		.4byte	0xe0
+ 1761 0bb4 00       		.byte	0
+ 1762 0bb5 00       		.byte	0
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 36
+
+
+ 1763 0bb6 08       		.uleb128 0x8
+ 1764 0bb7 C3060000 		.4byte	.LASF223
+ 1765 0bbb 09       		.byte	0x9
+ 1766 0bbc C201     		.2byte	0x1c2
+ 1767 0bbe 4E0B0000 		.4byte	0xb4e
+ 1768 0bc2 0C       		.uleb128 0xc
+ 1769 0bc3 46       		.byte	0x46
+ 1770 0bc4 09       		.byte	0x9
+ 1771 0bc5 C801     		.2byte	0x1c8
+ 1772 0bc7 F30B0000 		.4byte	0xbf3
+ 1773 0bcb 09       		.uleb128 0x9
+ 1774 0bcc 480D0000 		.4byte	.LASF214
+ 1775 0bd0 09       		.byte	0x9
+ 1776 0bd1 CD01     		.2byte	0x1cd
+ 1777 0bd3 F30B0000 		.4byte	0xbf3
+ 1778 0bd7 00       		.byte	0
+ 1779 0bd8 09       		.uleb128 0x9
+ 1780 0bd9 500D0000 		.4byte	.LASF215
+ 1781 0bdd 09       		.byte	0x9
+ 1782 0bde D201     		.2byte	0x1d2
+ 1783 0be0 F30B0000 		.4byte	0xbf3
+ 1784 0be4 0A       		.byte	0xa
+ 1785 0be5 09       		.uleb128 0x9
+ 1786 0be6 42100000 		.4byte	.LASF216
+ 1787 0bea 09       		.byte	0x9
+ 1788 0beb D701     		.2byte	0x1d7
+ 1789 0bed 030C0000 		.4byte	0xc03
+ 1790 0bf1 14       		.byte	0x14
+ 1791 0bf2 00       		.byte	0
+ 1792 0bf3 0A       		.uleb128 0xa
+ 1793 0bf4 B60B0000 		.4byte	0xbb6
+ 1794 0bf8 030C0000 		.4byte	0xc03
+ 1795 0bfc 0B       		.uleb128 0xb
+ 1796 0bfd E0000000 		.4byte	0xe0
+ 1797 0c01 00       		.byte	0
+ 1798 0c02 00       		.byte	0
+ 1799 0c03 0A       		.uleb128 0xa
+ 1800 0c04 B60B0000 		.4byte	0xbb6
+ 1801 0c08 130C0000 		.4byte	0xc13
+ 1802 0c0c 0B       		.uleb128 0xb
+ 1803 0c0d E0000000 		.4byte	0xe0
+ 1804 0c11 04       		.byte	0x4
+ 1805 0c12 00       		.byte	0
+ 1806 0c13 08       		.uleb128 0x8
+ 1807 0c14 34120000 		.4byte	.LASF224
+ 1808 0c18 09       		.byte	0x9
+ 1809 0c19 D801     		.2byte	0x1d8
+ 1810 0c1b C20B0000 		.4byte	0xbc2
+ 1811 0c1f 0E       		.uleb128 0xe
+ 1812 0c20 0C01     		.2byte	0x10c
+ 1813 0c22 09       		.byte	0x9
+ 1814 0c23 DE01     		.2byte	0x1de
+ 1815 0c25 400D0000 		.4byte	0xd40
+ 1816 0c29 09       		.uleb128 0x9
+ 1817 0c2a F60B0000 		.4byte	.LASF225
+ 1818 0c2e 09       		.byte	0x9
+ 1819 0c2f E601     		.2byte	0x1e6
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 37
+
+
+ 1820 0c31 2E050000 		.4byte	0x52e
+ 1821 0c35 00       		.byte	0
+ 1822 0c36 09       		.uleb128 0x9
+ 1823 0c37 C0110000 		.4byte	.LASF226
+ 1824 0c3b 09       		.byte	0x9
+ 1825 0c3c EB01     		.2byte	0x1eb
+ 1826 0c3e 2E050000 		.4byte	0x52e
+ 1827 0c42 02       		.byte	0x2
+ 1828 0c43 09       		.uleb128 0x9
+ 1829 0c44 05020000 		.4byte	.LASF227
+ 1830 0c48 09       		.byte	0x9
+ 1831 0c49 F001     		.2byte	0x1f0
+ 1832 0c4b 2E050000 		.4byte	0x52e
+ 1833 0c4f 04       		.byte	0x4
+ 1834 0c50 09       		.uleb128 0x9
+ 1835 0c51 DF0E0000 		.4byte	.LASF228
+ 1836 0c55 09       		.byte	0x9
+ 1837 0c56 F601     		.2byte	0x1f6
+ 1838 0c58 2E050000 		.4byte	0x52e
+ 1839 0c5c 06       		.byte	0x6
+ 1840 0c5d 09       		.uleb128 0x9
+ 1841 0c5e D5010000 		.4byte	.LASF229
+ 1842 0c62 09       		.byte	0x9
+ 1843 0c63 FB01     		.2byte	0x1fb
+ 1844 0c65 2E050000 		.4byte	0x52e
+ 1845 0c69 08       		.byte	0x8
+ 1846 0c6a 09       		.uleb128 0x9
+ 1847 0c6b 51090000 		.4byte	.LASF230
+ 1848 0c6f 09       		.byte	0x9
+ 1849 0c70 0002     		.2byte	0x200
+ 1850 0c72 400D0000 		.4byte	0xd40
+ 1851 0c76 0C       		.byte	0xc
+ 1852 0c77 09       		.uleb128 0x9
+ 1853 0c78 180D0000 		.4byte	.LASF231
+ 1854 0c7c 09       		.byte	0x9
+ 1855 0c7d 0602     		.2byte	0x206
+ 1856 0c7f 450D0000 		.4byte	0xd45
+ 1857 0c83 10       		.byte	0x10
+ 1858 0c84 09       		.uleb128 0x9
+ 1859 0c85 B50D0000 		.4byte	.LASF232
+ 1860 0c89 09       		.byte	0x9
+ 1861 0c8a 0C02     		.2byte	0x20c
+ 1862 0c8c 450D0000 		.4byte	0xd45
+ 1863 0c90 14       		.byte	0x14
+ 1864 0c91 09       		.uleb128 0x9
+ 1865 0c92 450C0000 		.4byte	.LASF233
+ 1866 0c96 09       		.byte	0x9
+ 1867 0c97 1E02     		.2byte	0x21e
+ 1868 0c99 550D0000 		.4byte	0xd55
+ 1869 0c9d 18       		.byte	0x18
+ 1870 0c9e 09       		.uleb128 0x9
+ 1871 0c9f BD0A0000 		.4byte	.LASF234
+ 1872 0ca3 09       		.byte	0x9
+ 1873 0ca4 2302     		.2byte	0x223
+ 1874 0ca6 2E050000 		.4byte	0x52e
+ 1875 0caa 1C       		.byte	0x1c
+ 1876 0cab 09       		.uleb128 0x9
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 38
+
+
+ 1877 0cac 9A060000 		.4byte	.LASF235
+ 1878 0cb0 09       		.byte	0x9
+ 1879 0cb1 2802     		.2byte	0x228
+ 1880 0cb3 22050000 		.4byte	0x522
+ 1881 0cb7 1E       		.byte	0x1e
+ 1882 0cb8 09       		.uleb128 0x9
+ 1883 0cb9 720F0000 		.4byte	.LASF236
+ 1884 0cbd 09       		.byte	0x9
+ 1885 0cbe 2D02     		.2byte	0x22d
+ 1886 0cc0 22050000 		.4byte	0x522
+ 1887 0cc4 1F       		.byte	0x1f
+ 1888 0cc5 09       		.uleb128 0x9
+ 1889 0cc6 470A0000 		.4byte	.LASF237
+ 1890 0cca 09       		.byte	0x9
+ 1891 0ccb 3202     		.2byte	0x232
+ 1892 0ccd 420B0000 		.4byte	0xb42
+ 1893 0cd1 20       		.byte	0x20
+ 1894 0cd2 09       		.uleb128 0x9
+ 1895 0cd3 AF050000 		.4byte	.LASF238
+ 1896 0cd7 09       		.byte	0x9
+ 1897 0cd8 3702     		.2byte	0x237
+ 1898 0cda 130C0000 		.4byte	0xc13
+ 1899 0cde 5E       		.byte	0x5e
+ 1900 0cdf 09       		.uleb128 0x9
+ 1901 0ce0 5C0F0000 		.4byte	.LASF239
+ 1902 0ce4 09       		.byte	0x9
+ 1903 0ce5 3C02     		.2byte	0x23c
+ 1904 0ce7 61090000 		.4byte	0x961
+ 1905 0ceb A4       		.byte	0xa4
+ 1906 0cec 09       		.uleb128 0x9
+ 1907 0ced D8040000 		.4byte	.LASF240
+ 1908 0cf1 09       		.byte	0x9
+ 1909 0cf2 4102     		.2byte	0x241
+ 1910 0cf4 3A050000 		.4byte	0x53a
+ 1911 0cf8 FC       		.byte	0xfc
+ 1912 0cf9 0F       		.uleb128 0xf
+ 1913 0cfa 50100000 		.4byte	.LASF241
+ 1914 0cfe 09       		.byte	0x9
+ 1915 0cff 4602     		.2byte	0x246
+ 1916 0d01 3A050000 		.4byte	0x53a
+ 1917 0d05 0001     		.2byte	0x100
+ 1918 0d07 0F       		.uleb128 0xf
+ 1919 0d08 03010000 		.4byte	.LASF242
+ 1920 0d0c 09       		.byte	0x9
+ 1921 0d0d 4B02     		.2byte	0x24b
+ 1922 0d0f 22050000 		.4byte	0x522
+ 1923 0d13 0401     		.2byte	0x104
+ 1924 0d15 0F       		.uleb128 0xf
+ 1925 0d16 39060000 		.4byte	.LASF243
+ 1926 0d1a 09       		.byte	0x9
+ 1927 0d1b 5002     		.2byte	0x250
+ 1928 0d1d 22050000 		.4byte	0x522
+ 1929 0d21 0501     		.2byte	0x105
+ 1930 0d23 0F       		.uleb128 0xf
+ 1931 0d24 D10B0000 		.4byte	.LASF244
+ 1932 0d28 09       		.byte	0x9
+ 1933 0d29 5502     		.2byte	0x255
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 39
+
+
+ 1934 0d2b 2E050000 		.4byte	0x52e
+ 1935 0d2f 0601     		.2byte	0x106
+ 1936 0d31 0F       		.uleb128 0xf
+ 1937 0d32 8B0A0000 		.4byte	.LASF245
+ 1938 0d36 09       		.byte	0x9
+ 1939 0d37 5A02     		.2byte	0x25a
+ 1940 0d39 F50A0000 		.4byte	0xaf5
+ 1941 0d3d 0801     		.2byte	0x108
+ 1942 0d3f 00       		.byte	0
+ 1943 0d40 05       		.uleb128 0x5
+ 1944 0d41 3A050000 		.4byte	0x53a
+ 1945 0d45 0A       		.uleb128 0xa
+ 1946 0d46 3A050000 		.4byte	0x53a
+ 1947 0d4a 550D0000 		.4byte	0xd55
+ 1948 0d4e 0B       		.uleb128 0xb
+ 1949 0d4f E0000000 		.4byte	0xe0
+ 1950 0d53 00       		.byte	0
+ 1951 0d54 00       		.byte	0
+ 1952 0d55 0A       		.uleb128 0xa
+ 1953 0d56 22050000 		.4byte	0x522
+ 1954 0d5a 650D0000 		.4byte	0xd65
+ 1955 0d5e 0B       		.uleb128 0xb
+ 1956 0d5f E0000000 		.4byte	0xe0
+ 1957 0d63 02       		.byte	0x2
+ 1958 0d64 00       		.byte	0
+ 1959 0d65 08       		.uleb128 0x8
+ 1960 0d66 D50C0000 		.4byte	.LASF246
+ 1961 0d6a 09       		.byte	0x9
+ 1962 0d6b 5B02     		.2byte	0x25b
+ 1963 0d6d 1F0C0000 		.4byte	0xc1f
+ 1964 0d71 0C       		.uleb128 0xc
+ 1965 0d72 30       		.byte	0x30
+ 1966 0d73 09       		.byte	0x9
+ 1967 0d74 9902     		.2byte	0x299
+ 1968 0d76 4B0E0000 		.4byte	0xe4b
+ 1969 0d7a 09       		.uleb128 0x9
+ 1970 0d7b 2F110000 		.4byte	.LASF247
+ 1971 0d7f 09       		.byte	0x9
+ 1972 0d80 A202     		.2byte	0x2a2
+ 1973 0d82 4B0E0000 		.4byte	0xe4b
+ 1974 0d86 00       		.byte	0
+ 1975 0d87 09       		.uleb128 0x9
+ 1976 0d88 940F0000 		.4byte	.LASF248
+ 1977 0d8c 09       		.byte	0x9
+ 1978 0d8d A902     		.2byte	0x2a9
+ 1979 0d8f 520E0000 		.4byte	0xe52
+ 1980 0d93 04       		.byte	0x4
+ 1981 0d94 09       		.uleb128 0x9
+ 1982 0d95 FF0B0000 		.4byte	.LASF249
+ 1983 0d99 09       		.byte	0x9
+ 1984 0d9a AF02     		.2byte	0x2af
+ 1985 0d9c 540E0000 		.4byte	0xe54
+ 1986 0da0 08       		.byte	0x8
+ 1987 0da1 09       		.uleb128 0x9
+ 1988 0da2 260B0000 		.4byte	.LASF250
+ 1989 0da6 09       		.byte	0x9
+ 1990 0da7 B402     		.2byte	0x2b4
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 40
+
+
+ 1991 0da9 520E0000 		.4byte	0xe52
+ 1992 0dad 0C       		.byte	0xc
+ 1993 0dae 09       		.uleb128 0x9
+ 1994 0daf A30E0000 		.4byte	.LASF251
+ 1995 0db3 09       		.byte	0x9
+ 1996 0db4 BB02     		.2byte	0x2bb
+ 1997 0db6 5A0E0000 		.4byte	0xe5a
+ 1998 0dba 10       		.byte	0x10
+ 1999 0dbb 09       		.uleb128 0x9
+ 2000 0dbc 650F0000 		.4byte	.LASF252
+ 2001 0dc0 09       		.byte	0x9
+ 2002 0dc1 C002     		.2byte	0x2c0
+ 2003 0dc3 3A050000 		.4byte	0x53a
+ 2004 0dc7 14       		.byte	0x14
+ 2005 0dc8 09       		.uleb128 0x9
+ 2006 0dc9 0E080000 		.4byte	.LASF253
+ 2007 0dcd 09       		.byte	0x9
+ 2008 0dce C702     		.2byte	0x2c7
+ 2009 0dd0 2E050000 		.4byte	0x52e
+ 2010 0dd4 18       		.byte	0x18
+ 2011 0dd5 09       		.uleb128 0x9
+ 2012 0dd6 63060000 		.4byte	.LASF254
+ 2013 0dda 09       		.byte	0x9
+ 2014 0ddb D202     		.2byte	0x2d2
+ 2015 0ddd 22050000 		.4byte	0x522
+ 2016 0de1 1A       		.byte	0x1a
+ 2017 0de2 09       		.uleb128 0x9
+ 2018 0de3 E2090000 		.4byte	.LASF255
+ 2019 0de7 09       		.byte	0x9
+ 2020 0de8 D702     		.2byte	0x2d7
+ 2021 0dea 22050000 		.4byte	0x522
+ 2022 0dee 1B       		.byte	0x1b
+ 2023 0def 09       		.uleb128 0x9
+ 2024 0df0 7C0D0000 		.4byte	.LASF256
+ 2025 0df4 09       		.byte	0x9
+ 2026 0df5 DF02     		.2byte	0x2df
+ 2027 0df7 22050000 		.4byte	0x522
+ 2028 0dfb 1C       		.byte	0x1c
+ 2029 0dfc 09       		.uleb128 0x9
+ 2030 0dfd 2E100000 		.4byte	.LASF257
+ 2031 0e01 09       		.byte	0x9
+ 2032 0e02 E602     		.2byte	0x2e6
+ 2033 0e04 22050000 		.4byte	0x522
+ 2034 0e08 1D       		.byte	0x1d
+ 2035 0e09 09       		.uleb128 0x9
+ 2036 0e0a 500A0000 		.4byte	.LASF258
+ 2037 0e0e 09       		.byte	0x9
+ 2038 0e0f EC02     		.2byte	0x2ec
+ 2039 0e11 2E050000 		.4byte	0x52e
+ 2040 0e15 1E       		.byte	0x1e
+ 2041 0e16 09       		.uleb128 0x9
+ 2042 0e17 CB0E0000 		.4byte	.LASF259
+ 2043 0e1b 09       		.byte	0x9
+ 2044 0e1c F602     		.2byte	0x2f6
+ 2045 0e1e 3A050000 		.4byte	0x53a
+ 2046 0e22 20       		.byte	0x20
+ 2047 0e23 09       		.uleb128 0x9
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 41
+
+
+ 2048 0e24 49060000 		.4byte	.LASF260
+ 2049 0e28 09       		.byte	0x9
+ 2050 0e29 FE02     		.2byte	0x2fe
+ 2051 0e2b 600E0000 		.4byte	0xe60
+ 2052 0e2f 24       		.byte	0x24
+ 2053 0e30 09       		.uleb128 0x9
+ 2054 0e31 F00E0000 		.4byte	.LASF261
+ 2055 0e35 09       		.byte	0x9
+ 2056 0e36 0303     		.2byte	0x303
+ 2057 0e38 520E0000 		.4byte	0xe52
+ 2058 0e3c 28       		.byte	0x28
+ 2059 0e3d 09       		.uleb128 0x9
+ 2060 0e3e 73040000 		.4byte	.LASF262
+ 2061 0e42 09       		.byte	0x9
+ 2062 0e43 0803     		.2byte	0x308
+ 2063 0e45 22050000 		.4byte	0x522
+ 2064 0e49 2C       		.byte	0x2c
+ 2065 0e4a 00       		.byte	0
+ 2066 0e4b 10       		.uleb128 0x10
+ 2067 0e4c 04       		.byte	0x4
+ 2068 0e4d 510E0000 		.4byte	0xe51
+ 2069 0e51 11       		.uleb128 0x11
+ 2070 0e52 12       		.uleb128 0x12
+ 2071 0e53 04       		.byte	0x4
+ 2072 0e54 10       		.uleb128 0x10
+ 2073 0e55 04       		.byte	0x4
+ 2074 0e56 B60B0000 		.4byte	0xbb6
+ 2075 0e5a 10       		.uleb128 0x10
+ 2076 0e5b 04       		.byte	0x4
+ 2077 0e5c 22050000 		.4byte	0x522
+ 2078 0e60 10       		.uleb128 0x10
+ 2079 0e61 04       		.byte	0x4
+ 2080 0e62 B9050000 		.4byte	0x5b9
+ 2081 0e66 08       		.uleb128 0x8
+ 2082 0e67 56070000 		.4byte	.LASF263
+ 2083 0e6b 09       		.byte	0x9
+ 2084 0e6c 0903     		.2byte	0x309
+ 2085 0e6e 710D0000 		.4byte	0xd71
+ 2086 0e72 0C       		.uleb128 0xc
+ 2087 0e73 90       		.byte	0x90
+ 2088 0e74 09       		.byte	0x9
+ 2089 0e75 0F03     		.2byte	0x30f
+ 2090 0e77 890E0000 		.4byte	0xe89
+ 2091 0e7b 09       		.uleb128 0x9
+ 2092 0e7c 79120000 		.4byte	.LASF264
+ 2093 0e80 09       		.byte	0x9
+ 2094 0e81 1403     		.2byte	0x314
+ 2095 0e83 890E0000 		.4byte	0xe89
+ 2096 0e87 00       		.byte	0
+ 2097 0e88 00       		.byte	0
+ 2098 0e89 0A       		.uleb128 0xa
+ 2099 0e8a 660E0000 		.4byte	0xe66
+ 2100 0e8e 990E0000 		.4byte	0xe99
+ 2101 0e92 0B       		.uleb128 0xb
+ 2102 0e93 E0000000 		.4byte	0xe0
+ 2103 0e97 02       		.byte	0x2
+ 2104 0e98 00       		.byte	0
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 42
+
+
+ 2105 0e99 08       		.uleb128 0x8
+ 2106 0e9a 660A0000 		.4byte	.LASF265
+ 2107 0e9e 09       		.byte	0x9
+ 2108 0e9f 1503     		.2byte	0x315
+ 2109 0ea1 720E0000 		.4byte	0xe72
+ 2110 0ea5 13       		.uleb128 0x13
+ 2111 0ea6 01       		.byte	0x1
+ 2112 0ea7 37000000 		.4byte	0x37
+ 2113 0eab 0A       		.byte	0xa
+ 2114 0eac 2E       		.byte	0x2e
+ 2115 0ead DC0E0000 		.4byte	0xedc
+ 2116 0eb1 14       		.uleb128 0x14
+ 2117 0eb2 0D090000 		.4byte	.LASF266
+ 2118 0eb6 00       		.byte	0
+ 2119 0eb7 14       		.uleb128 0x14
+ 2120 0eb8 FD110000 		.4byte	.LASF267
+ 2121 0ebc 01       		.byte	0x1
+ 2122 0ebd 14       		.uleb128 0x14
+ 2123 0ebe ED080000 		.4byte	.LASF268
+ 2124 0ec2 02       		.byte	0x2
+ 2125 0ec3 14       		.uleb128 0x14
+ 2126 0ec4 6C060000 		.4byte	.LASF269
+ 2127 0ec8 03       		.byte	0x3
+ 2128 0ec9 14       		.uleb128 0x14
+ 2129 0eca C9110000 		.4byte	.LASF270
+ 2130 0ece 04       		.byte	0x4
+ 2131 0ecf 14       		.uleb128 0x14
+ 2132 0ed0 73090000 		.4byte	.LASF271
+ 2133 0ed4 05       		.byte	0x5
+ 2134 0ed5 14       		.uleb128 0x14
+ 2135 0ed6 31050000 		.4byte	.LASF272
+ 2136 0eda 06       		.byte	0x6
+ 2137 0edb 00       		.byte	0
+ 2138 0edc 03       		.uleb128 0x3
+ 2139 0edd 24060000 		.4byte	.LASF273
+ 2140 0ee1 0A       		.byte	0xa
+ 2141 0ee2 36       		.byte	0x36
+ 2142 0ee3 A50E0000 		.4byte	0xea5
+ 2143 0ee7 15       		.uleb128 0x15
+ 2144 0ee8 5A100000 		.4byte	.LASF293
+ 2145 0eec 01       		.byte	0x1
+ 2146 0eed 44       		.byte	0x44
+ 2147 0eee 00000000 		.4byte	.LFB166
+ 2148 0ef2 14000000 		.4byte	.LFE166-.LFB166
+ 2149 0ef6 01       		.uleb128 0x1
+ 2150 0ef7 9C       		.byte	0x9c
+ 2151 0ef8 080F0000 		.4byte	0xf08
+ 2152 0efc 16       		.uleb128 0x16
+ 2153 0efd 24090000 		.4byte	.LASF280
+ 2154 0f01 01       		.byte	0x1
+ 2155 0f02 46       		.byte	0x46
+ 2156 0f03 080F0000 		.4byte	0xf08
+ 2157 0f07 00       		.byte	0
+ 2158 0f08 10       		.uleb128 0x10
+ 2159 0f09 04       		.byte	0x4
+ 2160 0f0a 0E0F0000 		.4byte	0xf0e
+ 2161 0f0e 05       		.uleb128 0x5
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 43
+
+
+ 2162 0f0f 650D0000 		.4byte	0xd65
+ 2163 0f13 17       		.uleb128 0x17
+ 2164 0f14 EC0D0000 		.4byte	.LASF294
+ 2165 0f18 01       		.byte	0x1
+ 2166 0f19 73       		.byte	0x73
+ 2167 0f1a 3A050000 		.4byte	0x53a
+ 2168 0f1e 00000000 		.4byte	.LFB167
+ 2169 0f22 10010000 		.4byte	.LFE167-.LFB167
+ 2170 0f26 01       		.uleb128 0x1
+ 2171 0f27 9C       		.byte	0x9c
+ 2172 0f28 E00F0000 		.4byte	0xfe0
+ 2173 0f2c 18       		.uleb128 0x18
+ 2174 0f2d 72020000 		.4byte	.LASF274
+ 2175 0f31 01       		.byte	0x1
+ 2176 0f32 75       		.byte	0x75
+ 2177 0f33 3A050000 		.4byte	0x53a
+ 2178 0f37 00000000 		.4byte	.LLST0
+ 2179 0f3b 18       		.uleb128 0x18
+ 2180 0f3c 6A010000 		.4byte	.LASF275
+ 2181 0f40 01       		.byte	0x1
+ 2182 0f41 76       		.byte	0x76
+ 2183 0f42 3A050000 		.4byte	0x53a
+ 2184 0f46 29000000 		.4byte	.LLST1
+ 2185 0f4a 18       		.uleb128 0x18
+ 2186 0f4b 9D040000 		.4byte	.LASF276
+ 2187 0f4f 01       		.byte	0x1
+ 2188 0f50 77       		.byte	0x77
+ 2189 0f51 3A050000 		.4byte	0x53a
+ 2190 0f55 3C000000 		.4byte	.LLST2
+ 2191 0f59 18       		.uleb128 0x18
+ 2192 0f5a 92040000 		.4byte	.LASF277
+ 2193 0f5e 01       		.byte	0x1
+ 2194 0f5f 78       		.byte	0x78
+ 2195 0f60 3A050000 		.4byte	0x53a
+ 2196 0f64 4F000000 		.4byte	.LLST3
+ 2197 0f68 18       		.uleb128 0x18
+ 2198 0f69 F50A0000 		.4byte	.LASF278
+ 2199 0f6d 01       		.byte	0x1
+ 2200 0f6e 79       		.byte	0x79
+ 2201 0f6f DC0E0000 		.4byte	0xedc
+ 2202 0f73 0F010000 		.4byte	.LLST4
+ 2203 0f77 18       		.uleb128 0x18
+ 2204 0f78 36100000 		.4byte	.LASF279
+ 2205 0f7c 01       		.byte	0x1
+ 2206 0f7d 7A       		.byte	0x7a
+ 2207 0f7e 3A050000 		.4byte	0x53a
+ 2208 0f82 22010000 		.4byte	.LLST5
+ 2209 0f86 16       		.uleb128 0x16
+ 2210 0f87 24090000 		.4byte	.LASF280
+ 2211 0f8b 01       		.byte	0x1
+ 2212 0f8c 7C       		.byte	0x7c
+ 2213 0f8d 080F0000 		.4byte	0xf08
+ 2214 0f91 18       		.uleb128 0x18
+ 2215 0f92 5F0D0000 		.4byte	.LASF281
+ 2216 0f96 01       		.byte	0x1
+ 2217 0f97 7D       		.byte	0x7d
+ 2218 0f98 E00F0000 		.4byte	0xfe0
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 44
+
+
+ 2219 0f9c 63010000 		.4byte	.LLST6
+ 2220 0fa0 19       		.uleb128 0x19
+ 2221 0fa1 12000000 		.4byte	.LVL3
+ 2222 0fa5 40100000 		.4byte	0x1040
+ 2223 0fa9 19       		.uleb128 0x19
+ 2224 0faa 1C000000 		.4byte	.LVL4
+ 2225 0fae 4C100000 		.4byte	0x104c
+ 2226 0fb2 19       		.uleb128 0x19
+ 2227 0fb3 48000000 		.4byte	.LVL11
+ 2228 0fb7 58100000 		.4byte	0x1058
+ 2229 0fbb 19       		.uleb128 0x19
+ 2230 0fbc 76000000 		.4byte	.LVL20
+ 2231 0fc0 40100000 		.4byte	0x1040
+ 2232 0fc4 19       		.uleb128 0x19
+ 2233 0fc5 94000000 		.4byte	.LVL21
+ 2234 0fc9 4C100000 		.4byte	0x104c
+ 2235 0fcd 19       		.uleb128 0x19
+ 2236 0fce EA000000 		.4byte	.LVL29
+ 2237 0fd2 40100000 		.4byte	0x1040
+ 2238 0fd6 19       		.uleb128 0x19
+ 2239 0fd7 00010000 		.4byte	.LVL30
+ 2240 0fdb 4C100000 		.4byte	0x104c
+ 2241 0fdf 00       		.byte	0
+ 2242 0fe0 10       		.uleb128 0x10
+ 2243 0fe1 04       		.byte	0x4
+ 2244 0fe2 E60F0000 		.4byte	0xfe6
+ 2245 0fe6 05       		.uleb128 0x5
+ 2246 0fe7 B60B0000 		.4byte	0xbb6
+ 2247 0feb 1A       		.uleb128 0x1a
+ 2248 0fec 90080000 		.4byte	.LASF282
+ 2249 0ff0 01       		.byte	0x1
+ 2250 0ff1 35       		.byte	0x35
+ 2251 0ff2 3A050000 		.4byte	0x53a
+ 2252 0ff6 05       		.uleb128 0x5
+ 2253 0ff7 03       		.byte	0x3
+ 2254 0ff8 00000000 		.4byte	tunerFsm
+ 2255 0ffc 1B       		.uleb128 0x1b
+ 2256 0ffd 9F000000 		.4byte	.LASF283
+ 2257 1001 04       		.byte	0x4
+ 2258 1002 A7       		.byte	0xa7
+ 2259 1003 07100000 		.4byte	0x1007
+ 2260 1007 10       		.uleb128 0x10
+ 2261 1008 04       		.byte	0x4
+ 2262 1009 0D100000 		.4byte	0x100d
+ 2263 100d 1C       		.uleb128 0x1c
+ 2264 100e 02050000 		.4byte	0x502
+ 2265 1012 1D       		.uleb128 0x1d
+ 2266 1013 FF0C0000 		.4byte	.LASF284
+ 2267 1017 0B       		.byte	0xb
+ 2268 1018 F907     		.2byte	0x7f9
+ 2269 101a 1E100000 		.4byte	0x101e
+ 2270 101e 05       		.uleb128 0x5
+ 2271 101f C3000000 		.4byte	0xc3
+ 2272 1023 1D       		.uleb128 0x1d
+ 2273 1024 7C0A0000 		.4byte	.LASF285
+ 2274 1028 09       		.byte	0x9
+ 2275 1029 AB04     		.2byte	0x4ab
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 45
+
+
+ 2276 102b 650D0000 		.4byte	0xd65
+ 2277 102f 1D       		.uleb128 0x1d
+ 2278 1030 9A0D0000 		.4byte	.LASF286
+ 2279 1034 09       		.byte	0x9
+ 2280 1035 AC04     		.2byte	0x4ac
+ 2281 1037 3B100000 		.4byte	0x103b
+ 2282 103b 1C       		.uleb128 0x1c
+ 2283 103c 990E0000 		.4byte	0xe99
+ 2284 1040 1E       		.uleb128 0x1e
+ 2285 1041 CE080000 		.4byte	.LASF287
+ 2286 1045 CE080000 		.4byte	.LASF287
+ 2287 1049 05       		.byte	0x5
+ 2288 104a B203     		.2byte	0x3b2
+ 2289 104c 1E       		.uleb128 0x1e
+ 2290 104d 080B0000 		.4byte	.LASF288
+ 2291 1051 080B0000 		.4byte	.LASF288
+ 2292 1055 05       		.byte	0x5
+ 2293 1056 C103     		.2byte	0x3c1
+ 2294 1058 1F       		.uleb128 0x1f
+ 2295 1059 320E0000 		.4byte	.LASF289
+ 2296 105d 320E0000 		.4byte	.LASF289
+ 2297 1061 0C       		.byte	0xc
+ 2298 1062 3A       		.byte	0x3a
+ 2299 1063 00       		.byte	0
+ 2300              		.section	.debug_abbrev,"",%progbits
+ 2301              	.Ldebug_abbrev0:
+ 2302 0000 01       		.uleb128 0x1
+ 2303 0001 11       		.uleb128 0x11
+ 2304 0002 01       		.byte	0x1
+ 2305 0003 25       		.uleb128 0x25
+ 2306 0004 0E       		.uleb128 0xe
+ 2307 0005 13       		.uleb128 0x13
+ 2308 0006 0B       		.uleb128 0xb
+ 2309 0007 03       		.uleb128 0x3
+ 2310 0008 0E       		.uleb128 0xe
+ 2311 0009 1B       		.uleb128 0x1b
+ 2312 000a 0E       		.uleb128 0xe
+ 2313 000b 55       		.uleb128 0x55
+ 2314 000c 17       		.uleb128 0x17
+ 2315 000d 11       		.uleb128 0x11
+ 2316 000e 01       		.uleb128 0x1
+ 2317 000f 10       		.uleb128 0x10
+ 2318 0010 17       		.uleb128 0x17
+ 2319 0011 00       		.byte	0
+ 2320 0012 00       		.byte	0
+ 2321 0013 02       		.uleb128 0x2
+ 2322 0014 24       		.uleb128 0x24
+ 2323 0015 00       		.byte	0
+ 2324 0016 0B       		.uleb128 0xb
+ 2325 0017 0B       		.uleb128 0xb
+ 2326 0018 3E       		.uleb128 0x3e
+ 2327 0019 0B       		.uleb128 0xb
+ 2328 001a 03       		.uleb128 0x3
+ 2329 001b 0E       		.uleb128 0xe
+ 2330 001c 00       		.byte	0
+ 2331 001d 00       		.byte	0
+ 2332 001e 03       		.uleb128 0x3
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 46
+
+
+ 2333 001f 16       		.uleb128 0x16
+ 2334 0020 00       		.byte	0
+ 2335 0021 03       		.uleb128 0x3
+ 2336 0022 0E       		.uleb128 0xe
+ 2337 0023 3A       		.uleb128 0x3a
+ 2338 0024 0B       		.uleb128 0xb
+ 2339 0025 3B       		.uleb128 0x3b
+ 2340 0026 0B       		.uleb128 0xb
+ 2341 0027 49       		.uleb128 0x49
+ 2342 0028 13       		.uleb128 0x13
+ 2343 0029 00       		.byte	0
+ 2344 002a 00       		.byte	0
+ 2345 002b 04       		.uleb128 0x4
+ 2346 002c 24       		.uleb128 0x24
+ 2347 002d 00       		.byte	0
+ 2348 002e 0B       		.uleb128 0xb
+ 2349 002f 0B       		.uleb128 0xb
+ 2350 0030 3E       		.uleb128 0x3e
+ 2351 0031 0B       		.uleb128 0xb
+ 2352 0032 03       		.uleb128 0x3
+ 2353 0033 08       		.uleb128 0x8
+ 2354 0034 00       		.byte	0
+ 2355 0035 00       		.byte	0
+ 2356 0036 05       		.uleb128 0x5
+ 2357 0037 35       		.uleb128 0x35
+ 2358 0038 00       		.byte	0
+ 2359 0039 49       		.uleb128 0x49
+ 2360 003a 13       		.uleb128 0x13
+ 2361 003b 00       		.byte	0
+ 2362 003c 00       		.byte	0
+ 2363 003d 06       		.uleb128 0x6
+ 2364 003e 13       		.uleb128 0x13
+ 2365 003f 01       		.byte	0x1
+ 2366 0040 0B       		.uleb128 0xb
+ 2367 0041 0B       		.uleb128 0xb
+ 2368 0042 3A       		.uleb128 0x3a
+ 2369 0043 0B       		.uleb128 0xb
+ 2370 0044 3B       		.uleb128 0x3b
+ 2371 0045 0B       		.uleb128 0xb
+ 2372 0046 01       		.uleb128 0x1
+ 2373 0047 13       		.uleb128 0x13
+ 2374 0048 00       		.byte	0
+ 2375 0049 00       		.byte	0
+ 2376 004a 07       		.uleb128 0x7
+ 2377 004b 0D       		.uleb128 0xd
+ 2378 004c 00       		.byte	0
+ 2379 004d 03       		.uleb128 0x3
+ 2380 004e 0E       		.uleb128 0xe
+ 2381 004f 3A       		.uleb128 0x3a
+ 2382 0050 0B       		.uleb128 0xb
+ 2383 0051 3B       		.uleb128 0x3b
+ 2384 0052 0B       		.uleb128 0xb
+ 2385 0053 49       		.uleb128 0x49
+ 2386 0054 13       		.uleb128 0x13
+ 2387 0055 38       		.uleb128 0x38
+ 2388 0056 0B       		.uleb128 0xb
+ 2389 0057 00       		.byte	0
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 47
+
+
+ 2390 0058 00       		.byte	0
+ 2391 0059 08       		.uleb128 0x8
+ 2392 005a 16       		.uleb128 0x16
+ 2393 005b 00       		.byte	0
+ 2394 005c 03       		.uleb128 0x3
+ 2395 005d 0E       		.uleb128 0xe
+ 2396 005e 3A       		.uleb128 0x3a
+ 2397 005f 0B       		.uleb128 0xb
+ 2398 0060 3B       		.uleb128 0x3b
+ 2399 0061 05       		.uleb128 0x5
+ 2400 0062 49       		.uleb128 0x49
+ 2401 0063 13       		.uleb128 0x13
+ 2402 0064 00       		.byte	0
+ 2403 0065 00       		.byte	0
+ 2404 0066 09       		.uleb128 0x9
+ 2405 0067 0D       		.uleb128 0xd
+ 2406 0068 00       		.byte	0
+ 2407 0069 03       		.uleb128 0x3
+ 2408 006a 0E       		.uleb128 0xe
+ 2409 006b 3A       		.uleb128 0x3a
+ 2410 006c 0B       		.uleb128 0xb
+ 2411 006d 3B       		.uleb128 0x3b
+ 2412 006e 05       		.uleb128 0x5
+ 2413 006f 49       		.uleb128 0x49
+ 2414 0070 13       		.uleb128 0x13
+ 2415 0071 38       		.uleb128 0x38
+ 2416 0072 0B       		.uleb128 0xb
+ 2417 0073 00       		.byte	0
+ 2418 0074 00       		.byte	0
+ 2419 0075 0A       		.uleb128 0xa
+ 2420 0076 01       		.uleb128 0x1
+ 2421 0077 01       		.byte	0x1
+ 2422 0078 49       		.uleb128 0x49
+ 2423 0079 13       		.uleb128 0x13
+ 2424 007a 01       		.uleb128 0x1
+ 2425 007b 13       		.uleb128 0x13
+ 2426 007c 00       		.byte	0
+ 2427 007d 00       		.byte	0
+ 2428 007e 0B       		.uleb128 0xb
+ 2429 007f 21       		.uleb128 0x21
+ 2430 0080 00       		.byte	0
+ 2431 0081 49       		.uleb128 0x49
+ 2432 0082 13       		.uleb128 0x13
+ 2433 0083 2F       		.uleb128 0x2f
+ 2434 0084 0B       		.uleb128 0xb
+ 2435 0085 00       		.byte	0
+ 2436 0086 00       		.byte	0
+ 2437 0087 0C       		.uleb128 0xc
+ 2438 0088 13       		.uleb128 0x13
+ 2439 0089 01       		.byte	0x1
+ 2440 008a 0B       		.uleb128 0xb
+ 2441 008b 0B       		.uleb128 0xb
+ 2442 008c 3A       		.uleb128 0x3a
+ 2443 008d 0B       		.uleb128 0xb
+ 2444 008e 3B       		.uleb128 0x3b
+ 2445 008f 05       		.uleb128 0x5
+ 2446 0090 01       		.uleb128 0x1
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 48
+
+
+ 2447 0091 13       		.uleb128 0x13
+ 2448 0092 00       		.byte	0
+ 2449 0093 00       		.byte	0
+ 2450 0094 0D       		.uleb128 0xd
+ 2451 0095 0D       		.uleb128 0xd
+ 2452 0096 00       		.byte	0
+ 2453 0097 03       		.uleb128 0x3
+ 2454 0098 08       		.uleb128 0x8
+ 2455 0099 3A       		.uleb128 0x3a
+ 2456 009a 0B       		.uleb128 0xb
+ 2457 009b 3B       		.uleb128 0x3b
+ 2458 009c 05       		.uleb128 0x5
+ 2459 009d 49       		.uleb128 0x49
+ 2460 009e 13       		.uleb128 0x13
+ 2461 009f 38       		.uleb128 0x38
+ 2462 00a0 0B       		.uleb128 0xb
+ 2463 00a1 00       		.byte	0
+ 2464 00a2 00       		.byte	0
+ 2465 00a3 0E       		.uleb128 0xe
+ 2466 00a4 13       		.uleb128 0x13
+ 2467 00a5 01       		.byte	0x1
+ 2468 00a6 0B       		.uleb128 0xb
+ 2469 00a7 05       		.uleb128 0x5
+ 2470 00a8 3A       		.uleb128 0x3a
+ 2471 00a9 0B       		.uleb128 0xb
+ 2472 00aa 3B       		.uleb128 0x3b
+ 2473 00ab 05       		.uleb128 0x5
+ 2474 00ac 01       		.uleb128 0x1
+ 2475 00ad 13       		.uleb128 0x13
+ 2476 00ae 00       		.byte	0
+ 2477 00af 00       		.byte	0
+ 2478 00b0 0F       		.uleb128 0xf
+ 2479 00b1 0D       		.uleb128 0xd
+ 2480 00b2 00       		.byte	0
+ 2481 00b3 03       		.uleb128 0x3
+ 2482 00b4 0E       		.uleb128 0xe
+ 2483 00b5 3A       		.uleb128 0x3a
+ 2484 00b6 0B       		.uleb128 0xb
+ 2485 00b7 3B       		.uleb128 0x3b
+ 2486 00b8 05       		.uleb128 0x5
+ 2487 00b9 49       		.uleb128 0x49
+ 2488 00ba 13       		.uleb128 0x13
+ 2489 00bb 38       		.uleb128 0x38
+ 2490 00bc 05       		.uleb128 0x5
+ 2491 00bd 00       		.byte	0
+ 2492 00be 00       		.byte	0
+ 2493 00bf 10       		.uleb128 0x10
+ 2494 00c0 0F       		.uleb128 0xf
+ 2495 00c1 00       		.byte	0
+ 2496 00c2 0B       		.uleb128 0xb
+ 2497 00c3 0B       		.uleb128 0xb
+ 2498 00c4 49       		.uleb128 0x49
+ 2499 00c5 13       		.uleb128 0x13
+ 2500 00c6 00       		.byte	0
+ 2501 00c7 00       		.byte	0
+ 2502 00c8 11       		.uleb128 0x11
+ 2503 00c9 26       		.uleb128 0x26
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 49
+
+
+ 2504 00ca 00       		.byte	0
+ 2505 00cb 00       		.byte	0
+ 2506 00cc 00       		.byte	0
+ 2507 00cd 12       		.uleb128 0x12
+ 2508 00ce 0F       		.uleb128 0xf
+ 2509 00cf 00       		.byte	0
+ 2510 00d0 0B       		.uleb128 0xb
+ 2511 00d1 0B       		.uleb128 0xb
+ 2512 00d2 00       		.byte	0
+ 2513 00d3 00       		.byte	0
+ 2514 00d4 13       		.uleb128 0x13
+ 2515 00d5 04       		.uleb128 0x4
+ 2516 00d6 01       		.byte	0x1
+ 2517 00d7 0B       		.uleb128 0xb
+ 2518 00d8 0B       		.uleb128 0xb
+ 2519 00d9 49       		.uleb128 0x49
+ 2520 00da 13       		.uleb128 0x13
+ 2521 00db 3A       		.uleb128 0x3a
+ 2522 00dc 0B       		.uleb128 0xb
+ 2523 00dd 3B       		.uleb128 0x3b
+ 2524 00de 0B       		.uleb128 0xb
+ 2525 00df 01       		.uleb128 0x1
+ 2526 00e0 13       		.uleb128 0x13
+ 2527 00e1 00       		.byte	0
+ 2528 00e2 00       		.byte	0
+ 2529 00e3 14       		.uleb128 0x14
+ 2530 00e4 28       		.uleb128 0x28
+ 2531 00e5 00       		.byte	0
+ 2532 00e6 03       		.uleb128 0x3
+ 2533 00e7 0E       		.uleb128 0xe
+ 2534 00e8 1C       		.uleb128 0x1c
+ 2535 00e9 0B       		.uleb128 0xb
+ 2536 00ea 00       		.byte	0
+ 2537 00eb 00       		.byte	0
+ 2538 00ec 15       		.uleb128 0x15
+ 2539 00ed 2E       		.uleb128 0x2e
+ 2540 00ee 01       		.byte	0x1
+ 2541 00ef 3F       		.uleb128 0x3f
+ 2542 00f0 19       		.uleb128 0x19
+ 2543 00f1 03       		.uleb128 0x3
+ 2544 00f2 0E       		.uleb128 0xe
+ 2545 00f3 3A       		.uleb128 0x3a
+ 2546 00f4 0B       		.uleb128 0xb
+ 2547 00f5 3B       		.uleb128 0x3b
+ 2548 00f6 0B       		.uleb128 0xb
+ 2549 00f7 27       		.uleb128 0x27
+ 2550 00f8 19       		.uleb128 0x19
+ 2551 00f9 11       		.uleb128 0x11
+ 2552 00fa 01       		.uleb128 0x1
+ 2553 00fb 12       		.uleb128 0x12
+ 2554 00fc 06       		.uleb128 0x6
+ 2555 00fd 40       		.uleb128 0x40
+ 2556 00fe 18       		.uleb128 0x18
+ 2557 00ff 9742     		.uleb128 0x2117
+ 2558 0101 19       		.uleb128 0x19
+ 2559 0102 01       		.uleb128 0x1
+ 2560 0103 13       		.uleb128 0x13
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 50
+
+
+ 2561 0104 00       		.byte	0
+ 2562 0105 00       		.byte	0
+ 2563 0106 16       		.uleb128 0x16
+ 2564 0107 34       		.uleb128 0x34
+ 2565 0108 00       		.byte	0
+ 2566 0109 03       		.uleb128 0x3
+ 2567 010a 0E       		.uleb128 0xe
+ 2568 010b 3A       		.uleb128 0x3a
+ 2569 010c 0B       		.uleb128 0xb
+ 2570 010d 3B       		.uleb128 0x3b
+ 2571 010e 0B       		.uleb128 0xb
+ 2572 010f 49       		.uleb128 0x49
+ 2573 0110 13       		.uleb128 0x13
+ 2574 0111 00       		.byte	0
+ 2575 0112 00       		.byte	0
+ 2576 0113 17       		.uleb128 0x17
+ 2577 0114 2E       		.uleb128 0x2e
+ 2578 0115 01       		.byte	0x1
+ 2579 0116 3F       		.uleb128 0x3f
+ 2580 0117 19       		.uleb128 0x19
+ 2581 0118 03       		.uleb128 0x3
+ 2582 0119 0E       		.uleb128 0xe
+ 2583 011a 3A       		.uleb128 0x3a
+ 2584 011b 0B       		.uleb128 0xb
+ 2585 011c 3B       		.uleb128 0x3b
+ 2586 011d 0B       		.uleb128 0xb
+ 2587 011e 27       		.uleb128 0x27
+ 2588 011f 19       		.uleb128 0x19
+ 2589 0120 49       		.uleb128 0x49
+ 2590 0121 13       		.uleb128 0x13
+ 2591 0122 11       		.uleb128 0x11
+ 2592 0123 01       		.uleb128 0x1
+ 2593 0124 12       		.uleb128 0x12
+ 2594 0125 06       		.uleb128 0x6
+ 2595 0126 40       		.uleb128 0x40
+ 2596 0127 18       		.uleb128 0x18
+ 2597 0128 9742     		.uleb128 0x2117
+ 2598 012a 19       		.uleb128 0x19
+ 2599 012b 01       		.uleb128 0x1
+ 2600 012c 13       		.uleb128 0x13
+ 2601 012d 00       		.byte	0
+ 2602 012e 00       		.byte	0
+ 2603 012f 18       		.uleb128 0x18
+ 2604 0130 34       		.uleb128 0x34
+ 2605 0131 00       		.byte	0
+ 2606 0132 03       		.uleb128 0x3
+ 2607 0133 0E       		.uleb128 0xe
+ 2608 0134 3A       		.uleb128 0x3a
+ 2609 0135 0B       		.uleb128 0xb
+ 2610 0136 3B       		.uleb128 0x3b
+ 2611 0137 0B       		.uleb128 0xb
+ 2612 0138 49       		.uleb128 0x49
+ 2613 0139 13       		.uleb128 0x13
+ 2614 013a 02       		.uleb128 0x2
+ 2615 013b 17       		.uleb128 0x17
+ 2616 013c 00       		.byte	0
+ 2617 013d 00       		.byte	0
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 51
+
+
+ 2618 013e 19       		.uleb128 0x19
+ 2619 013f 898201   		.uleb128 0x4109
+ 2620 0142 00       		.byte	0
+ 2621 0143 11       		.uleb128 0x11
+ 2622 0144 01       		.uleb128 0x1
+ 2623 0145 31       		.uleb128 0x31
+ 2624 0146 13       		.uleb128 0x13
+ 2625 0147 00       		.byte	0
+ 2626 0148 00       		.byte	0
+ 2627 0149 1A       		.uleb128 0x1a
+ 2628 014a 34       		.uleb128 0x34
+ 2629 014b 00       		.byte	0
+ 2630 014c 03       		.uleb128 0x3
+ 2631 014d 0E       		.uleb128 0xe
+ 2632 014e 3A       		.uleb128 0x3a
+ 2633 014f 0B       		.uleb128 0xb
+ 2634 0150 3B       		.uleb128 0x3b
+ 2635 0151 0B       		.uleb128 0xb
+ 2636 0152 49       		.uleb128 0x49
+ 2637 0153 13       		.uleb128 0x13
+ 2638 0154 02       		.uleb128 0x2
+ 2639 0155 18       		.uleb128 0x18
+ 2640 0156 00       		.byte	0
+ 2641 0157 00       		.byte	0
+ 2642 0158 1B       		.uleb128 0x1b
+ 2643 0159 34       		.uleb128 0x34
+ 2644 015a 00       		.byte	0
+ 2645 015b 03       		.uleb128 0x3
+ 2646 015c 0E       		.uleb128 0xe
+ 2647 015d 3A       		.uleb128 0x3a
+ 2648 015e 0B       		.uleb128 0xb
+ 2649 015f 3B       		.uleb128 0x3b
+ 2650 0160 0B       		.uleb128 0xb
+ 2651 0161 49       		.uleb128 0x49
+ 2652 0162 13       		.uleb128 0x13
+ 2653 0163 3F       		.uleb128 0x3f
+ 2654 0164 19       		.uleb128 0x19
+ 2655 0165 3C       		.uleb128 0x3c
+ 2656 0166 19       		.uleb128 0x19
+ 2657 0167 00       		.byte	0
+ 2658 0168 00       		.byte	0
+ 2659 0169 1C       		.uleb128 0x1c
+ 2660 016a 26       		.uleb128 0x26
+ 2661 016b 00       		.byte	0
+ 2662 016c 49       		.uleb128 0x49
+ 2663 016d 13       		.uleb128 0x13
+ 2664 016e 00       		.byte	0
+ 2665 016f 00       		.byte	0
+ 2666 0170 1D       		.uleb128 0x1d
+ 2667 0171 34       		.uleb128 0x34
+ 2668 0172 00       		.byte	0
+ 2669 0173 03       		.uleb128 0x3
+ 2670 0174 0E       		.uleb128 0xe
+ 2671 0175 3A       		.uleb128 0x3a
+ 2672 0176 0B       		.uleb128 0xb
+ 2673 0177 3B       		.uleb128 0x3b
+ 2674 0178 05       		.uleb128 0x5
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 52
+
+
+ 2675 0179 49       		.uleb128 0x49
+ 2676 017a 13       		.uleb128 0x13
+ 2677 017b 3F       		.uleb128 0x3f
+ 2678 017c 19       		.uleb128 0x19
+ 2679 017d 3C       		.uleb128 0x3c
+ 2680 017e 19       		.uleb128 0x19
+ 2681 017f 00       		.byte	0
+ 2682 0180 00       		.byte	0
+ 2683 0181 1E       		.uleb128 0x1e
+ 2684 0182 2E       		.uleb128 0x2e
+ 2685 0183 00       		.byte	0
+ 2686 0184 3F       		.uleb128 0x3f
+ 2687 0185 19       		.uleb128 0x19
+ 2688 0186 3C       		.uleb128 0x3c
+ 2689 0187 19       		.uleb128 0x19
+ 2690 0188 6E       		.uleb128 0x6e
+ 2691 0189 0E       		.uleb128 0xe
+ 2692 018a 03       		.uleb128 0x3
+ 2693 018b 0E       		.uleb128 0xe
+ 2694 018c 3A       		.uleb128 0x3a
+ 2695 018d 0B       		.uleb128 0xb
+ 2696 018e 3B       		.uleb128 0x3b
+ 2697 018f 05       		.uleb128 0x5
+ 2698 0190 00       		.byte	0
+ 2699 0191 00       		.byte	0
+ 2700 0192 1F       		.uleb128 0x1f
+ 2701 0193 2E       		.uleb128 0x2e
+ 2702 0194 00       		.byte	0
+ 2703 0195 3F       		.uleb128 0x3f
+ 2704 0196 19       		.uleb128 0x19
+ 2705 0197 3C       		.uleb128 0x3c
+ 2706 0198 19       		.uleb128 0x19
+ 2707 0199 6E       		.uleb128 0x6e
+ 2708 019a 0E       		.uleb128 0xe
+ 2709 019b 03       		.uleb128 0x3
+ 2710 019c 0E       		.uleb128 0xe
+ 2711 019d 3A       		.uleb128 0x3a
+ 2712 019e 0B       		.uleb128 0xb
+ 2713 019f 3B       		.uleb128 0x3b
+ 2714 01a0 0B       		.uleb128 0xb
+ 2715 01a1 00       		.byte	0
+ 2716 01a2 00       		.byte	0
+ 2717 01a3 00       		.byte	0
+ 2718              		.section	.debug_loc,"",%progbits
+ 2719              	.Ldebug_loc0:
+ 2720              	.LLST0:
+ 2721 0000 12000000 		.4byte	.LVL3
+ 2722 0004 1B000000 		.4byte	.LVL4-1
+ 2723 0008 0100     		.2byte	0x1
+ 2724 000a 50       		.byte	0x50
+ 2725 000b 76000000 		.4byte	.LVL20
+ 2726 000f 93000000 		.4byte	.LVL21-1
+ 2727 0013 0100     		.2byte	0x1
+ 2728 0015 50       		.byte	0x50
+ 2729 0016 EA000000 		.4byte	.LVL29
+ 2730 001a FF000000 		.4byte	.LVL30-1
+ 2731 001e 0100     		.2byte	0x1
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 53
+
+
+ 2732 0020 50       		.byte	0x50
+ 2733 0021 00000000 		.4byte	0
+ 2734 0025 00000000 		.4byte	0
+ 2735              	.LLST1:
+ 2736 0029 AA000000 		.4byte	.LVL23
+ 2737 002d D8000000 		.4byte	.LVL25
+ 2738 0031 0100     		.2byte	0x1
+ 2739 0033 53       		.byte	0x53
+ 2740 0034 00000000 		.4byte	0
+ 2741 0038 00000000 		.4byte	0
+ 2742              	.LLST2:
+ 2743 003c B0000000 		.4byte	.LVL24
+ 2744 0040 E4000000 		.4byte	.LVL27
+ 2745 0044 0100     		.2byte	0x1
+ 2746 0046 52       		.byte	0x52
+ 2747 0047 00000000 		.4byte	0
+ 2748 004b 00000000 		.4byte	0
+ 2749              	.LLST3:
+ 2750 004f 02000000 		.4byte	.LVL1
+ 2751 0053 06000000 		.4byte	.LVL2
+ 2752 0057 0200     		.2byte	0x2
+ 2753 0059 30       		.byte	0x30
+ 2754 005a 9F       		.byte	0x9f
+ 2755 005b 06000000 		.4byte	.LVL2
+ 2756 005f 34000000 		.4byte	.LVL6
+ 2757 0063 0100     		.2byte	0x1
+ 2758 0065 55       		.byte	0x55
+ 2759 0066 38000000 		.4byte	.LVL7
+ 2760 006a 3A000000 		.4byte	.LVL8
+ 2761 006e 0200     		.2byte	0x2
+ 2762 0070 31       		.byte	0x31
+ 2763 0071 9F       		.byte	0x9f
+ 2764 0072 3A000000 		.4byte	.LVL8
+ 2765 0076 40000000 		.4byte	.LVL9
+ 2766 007a 0100     		.2byte	0x1
+ 2767 007c 55       		.byte	0x55
+ 2768 007d 40000000 		.4byte	.LVL9
+ 2769 0081 44000000 		.4byte	.LVL10
+ 2770 0085 0200     		.2byte	0x2
+ 2771 0087 31       		.byte	0x31
+ 2772 0088 9F       		.byte	0x9f
+ 2773 0089 44000000 		.4byte	.LVL10
+ 2774 008d 4E000000 		.4byte	.LVL12
+ 2775 0091 0100     		.2byte	0x1
+ 2776 0093 55       		.byte	0x55
+ 2777 0094 4E000000 		.4byte	.LVL12
+ 2778 0098 54000000 		.4byte	.LVL13
+ 2779 009c 0200     		.2byte	0x2
+ 2780 009e 31       		.byte	0x31
+ 2781 009f 9F       		.byte	0x9f
+ 2782 00a0 54000000 		.4byte	.LVL13
+ 2783 00a4 5A000000 		.4byte	.LVL14
+ 2784 00a8 0100     		.2byte	0x1
+ 2785 00aa 55       		.byte	0x55
+ 2786 00ab 5A000000 		.4byte	.LVL14
+ 2787 00af 5E000000 		.4byte	.LVL15
+ 2788 00b3 0200     		.2byte	0x2
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 54
+
+
+ 2789 00b5 31       		.byte	0x31
+ 2790 00b6 9F       		.byte	0x9f
+ 2791 00b7 5E000000 		.4byte	.LVL15
+ 2792 00bb 64000000 		.4byte	.LVL16
+ 2793 00bf 0100     		.2byte	0x1
+ 2794 00c1 55       		.byte	0x55
+ 2795 00c2 64000000 		.4byte	.LVL16
+ 2796 00c6 68000000 		.4byte	.LVL17
+ 2797 00ca 0200     		.2byte	0x2
+ 2798 00cc 31       		.byte	0x31
+ 2799 00cd 9F       		.byte	0x9f
+ 2800 00ce 68000000 		.4byte	.LVL17
+ 2801 00d2 6E000000 		.4byte	.LVL18
+ 2802 00d6 0100     		.2byte	0x1
+ 2803 00d8 55       		.byte	0x55
+ 2804 00d9 6E000000 		.4byte	.LVL18
+ 2805 00dd 70000000 		.4byte	.LVL19
+ 2806 00e1 0200     		.2byte	0x2
+ 2807 00e3 30       		.byte	0x30
+ 2808 00e4 9F       		.byte	0x9f
+ 2809 00e5 70000000 		.4byte	.LVL19
+ 2810 00e9 94000000 		.4byte	.LVL21
+ 2811 00ed 0100     		.2byte	0x1
+ 2812 00ef 55       		.byte	0x55
+ 2813 00f0 94000000 		.4byte	.LVL21
+ 2814 00f4 96000000 		.4byte	.LVL22
+ 2815 00f8 0200     		.2byte	0x2
+ 2816 00fa 30       		.byte	0x30
+ 2817 00fb 9F       		.byte	0x9f
+ 2818 00fc 96000000 		.4byte	.LVL22
+ 2819 0100 E0000000 		.4byte	.LVL26
+ 2820 0104 0100     		.2byte	0x1
+ 2821 0106 55       		.byte	0x55
+ 2822 0107 00000000 		.4byte	0
+ 2823 010b 00000000 		.4byte	0
+ 2824              	.LLST4:
+ 2825 010f 22000000 		.4byte	.LVL5
+ 2826 0113 E6000000 		.4byte	.LVL28
+ 2827 0117 0100     		.2byte	0x1
+ 2828 0119 54       		.byte	0x54
+ 2829 011a 00000000 		.4byte	0
+ 2830 011e 00000000 		.4byte	0
+ 2831              	.LLST5:
+ 2832 0122 02000000 		.4byte	.LVL1
+ 2833 0126 06000000 		.4byte	.LVL2
+ 2834 012a 0200     		.2byte	0x2
+ 2835 012c 30       		.byte	0x30
+ 2836 012d 9F       		.byte	0x9f
+ 2837 012e 06000000 		.4byte	.LVL2
+ 2838 0132 48000000 		.4byte	.LVL11
+ 2839 0136 0100     		.2byte	0x1
+ 2840 0138 56       		.byte	0x56
+ 2841 0139 48000000 		.4byte	.LVL11
+ 2842 013d 54000000 		.4byte	.LVL13
+ 2843 0141 0200     		.2byte	0x2
+ 2844 0143 31       		.byte	0x31
+ 2845 0144 9F       		.byte	0x9f
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 55
+
+
+ 2846 0145 54000000 		.4byte	.LVL13
+ 2847 0149 04010000 		.4byte	.LVL31
+ 2848 014d 0100     		.2byte	0x1
+ 2849 014f 56       		.byte	0x56
+ 2850 0150 04010000 		.4byte	.LVL31
+ 2851 0154 10010000 		.4byte	.LFE167
+ 2852 0158 0100     		.2byte	0x1
+ 2853 015a 50       		.byte	0x50
+ 2854 015b 00000000 		.4byte	0
+ 2855 015f 00000000 		.4byte	0
+ 2856              	.LLST6:
+ 2857 0163 E0000000 		.4byte	.LVL26
+ 2858 0167 E6000000 		.4byte	.LVL28
+ 2859 016b 0100     		.2byte	0x1
+ 2860 016d 55       		.byte	0x55
+ 2861 016e E6000000 		.4byte	.LVL28
+ 2862 0172 00010000 		.4byte	.LVL30
+ 2863 0176 0600     		.2byte	0x6
+ 2864 0178 75       		.byte	0x75
+ 2865 0179 00       		.sleb128 0
+ 2866 017a 74       		.byte	0x74
+ 2867 017b 00       		.sleb128 0
+ 2868 017c 22       		.byte	0x22
+ 2869 017d 9F       		.byte	0x9f
+ 2870 017e 00000000 		.4byte	0
+ 2871 0182 00000000 		.4byte	0
+ 2872              		.section	.debug_aranges,"",%progbits
+ 2873 0000 24000000 		.4byte	0x24
+ 2874 0004 0200     		.2byte	0x2
+ 2875 0006 00000000 		.4byte	.Ldebug_info0
+ 2876 000a 04       		.byte	0x4
+ 2877 000b 00       		.byte	0
+ 2878 000c 0000     		.2byte	0
+ 2879 000e 0000     		.2byte	0
+ 2880 0010 00000000 		.4byte	.LFB166
+ 2881 0014 14000000 		.4byte	.LFE166-.LFB166
+ 2882 0018 00000000 		.4byte	.LFB167
+ 2883 001c 10010000 		.4byte	.LFE167-.LFB167
+ 2884 0020 00000000 		.4byte	0
+ 2885 0024 00000000 		.4byte	0
+ 2886              		.section	.debug_ranges,"",%progbits
+ 2887              	.Ldebug_ranges0:
+ 2888 0000 00000000 		.4byte	.LFB166
+ 2889 0004 14000000 		.4byte	.LFE166
+ 2890 0008 00000000 		.4byte	.LFB167
+ 2891 000c 10010000 		.4byte	.LFE167
+ 2892 0010 00000000 		.4byte	0
+ 2893 0014 00000000 		.4byte	0
+ 2894              		.section	.debug_line,"",%progbits
+ 2895              	.Ldebug_line0:
+ 2896 0000 E8020000 		.section	.debug_str,"MS",%progbits,1
+ 2896      02008602 
+ 2896      00000201 
+ 2896      FB0E0D00 
+ 2896      01010101 
+ 2897              	.LASF64:
+ 2898 0000 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 56
+
+
+ 2898      6843746C 
+ 2898      4D61696E 
+ 2898      57733146 
+ 2898      72657100 
+ 2899              	.LASF181:
+ 2900 0014 65646765 		.ascii	"edgeSwipeTimeout\000"
+ 2900      53776970 
+ 2900      6554696D 
+ 2900      656F7574 
+ 2900      00
+ 2901              	.LASF129:
+ 2902 0025 666C6963 		.ascii	"flickActiveDistanceX\000"
+ 2902      6B416374 
+ 2902      69766544 
+ 2902      69737461 
+ 2902      6E636558 
+ 2903              	.LASF130:
+ 2904 003a 666C6963 		.ascii	"flickActiveDistanceY\000"
+ 2904      6B416374 
+ 2904      69766544 
+ 2904      69737461 
+ 2904      6E636559 
+ 2905              	.LASF152:
+ 2906 004f 64745363 		.ascii	"dtScrollStep1\000"
+ 2906      726F6C6C 
+ 2906      53746570 
+ 2906      3100
+ 2907              	.LASF125:
+ 2908 005d 70616E41 		.ascii	"panActiveDistanceX\000"
+ 2908      63746976 
+ 2908      65446973 
+ 2908      74616E63 
+ 2908      655800
+ 2909              	.LASF126:
+ 2910 0070 70616E41 		.ascii	"panActiveDistanceY\000"
+ 2910      63746976 
+ 2910      65446973 
+ 2910      74616E63 
+ 2910      655900
+ 2911              	.LASF217:
+ 2912 0083 43617053 		.ascii	"CapSense_RAM_WD_LIST_STRUCT\000"
+ 2912      656E7365 
+ 2912      5F52414D 
+ 2912      5F57445F 
+ 2912      4C495354 
+ 2913              	.LASF283:
+ 2914 009f 63795F64 		.ascii	"cy_device\000"
+ 2914      65766963 
+ 2914      6500
+ 2915              	.LASF67:
+ 2916 00a9 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 2916      6843746C 
+ 2916      4D61696E 
+ 2916      57733446 
+ 2916      72657100 
+ 2917              	.LASF91:
+ 2918 00bd 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 57
+
+
+ 2918      73436D30 
+ 2918      436C6F63 
+ 2918      6B43746C 
+ 2918      4F666673 
+ 2919              	.LASF50:
+ 2920 00d4 70657269 		.ascii	"periClockNr\000"
+ 2920      436C6F63 
+ 2920      6B4E7200 
+ 2921              	.LASF24:
+ 2922 00e0 75646242 		.ascii	"udbBase\000"
+ 2922      61736500 
+ 2923              	.LASF160:
+ 2924 00e8 7374496E 		.ascii	"stInScrCountLevel\000"
+ 2924      53637243 
+ 2924      6F756E74 
+ 2924      4C657665 
+ 2924      6C00
+ 2925              	.LASF23:
+ 2926 00fa 70657269 		.ascii	"periBase\000"
+ 2926      42617365 
+ 2926      00
+ 2927              	.LASF242:
+ 2928 0103 736E7254 		.ascii	"snrTestWidgetId\000"
+ 2928      65737457 
+ 2928      69646765 
+ 2928      74496400 
+ 2929              	.LASF161:
+ 2930 0113 6474496E 		.ascii	"dtInScrActiveDistanceX\000"
+ 2930      53637241 
+ 2930      63746976 
+ 2930      65446973 
+ 2930      74616E63 
+ 2931              	.LASF162:
+ 2932 012a 6474496E 		.ascii	"dtInScrActiveDistanceY\000"
+ 2932      53637241 
+ 2932      63746976 
+ 2932      65446973 
+ 2932      74616E63 
+ 2933              	.LASF99:
+ 2934 0141 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 2934      73436D30 
+ 2934      4E6D6943 
+ 2934      746C4F66 
+ 2934      66736574 
+ 2935              	.LASF137:
+ 2936 0156 73745363 		.ascii	"stScrollThreshold3Y\000"
+ 2936      726F6C6C 
+ 2936      54687265 
+ 2936      73686F6C 
+ 2936      64335900 
+ 2937              	.LASF275:
+ 2938 016a 77696467 		.ascii	"widgetId\000"
+ 2938      65744964 
+ 2938      00
+ 2939              	.LASF69:
+ 2940 0173 64774368 		.ascii	"dwChSize\000"
+ 2940      53697A65 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 58
+
+
+ 2940      00
+ 2941              	.LASF177:
+ 2942 017c 73657474 		.ascii	"settlingTimeout\000"
+ 2942      6C696E67 
+ 2942      54696D65 
+ 2942      6F757400 
+ 2943              	.LASF133:
+ 2944 018c 73745363 		.ascii	"stScrollThreshold3X\000"
+ 2944      726F6C6C 
+ 2944      54687265 
+ 2944      73686F6C 
+ 2944      64335800 
+ 2945              	.LASF13:
+ 2946 01a0 756E7369 		.ascii	"unsigned int\000"
+ 2946      676E6564 
+ 2946      20696E74 
+ 2946      00
+ 2947              	.LASF291:
+ 2948 01ad 47656E65 		.ascii	"Generated_Source\\PSoC6\\CapSense_Tuner.c\000"
+ 2948      72617465 
+ 2948      645F536F 
+ 2948      75726365 
+ 2948      5C50536F 
+ 2949              	.LASF229:
+ 2950 01d5 7363616E 		.ascii	"scanCounter\000"
+ 2950      436F756E 
+ 2950      74657200 
+ 2951              	.LASF51:
+ 2952 01e1 736D6966 		.ascii	"smifDeviceNr\000"
+ 2952      44657669 
+ 2952      63654E72 
+ 2952      00
+ 2953              	.LASF81:
+ 2954 01ee 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 2954      44697643 
+ 2954      6D645061 
+ 2954      54797065 
+ 2954      53656C50 
+ 2955              	.LASF227:
+ 2956 0205 6877436C 		.ascii	"hwClock\000"
+ 2956      6F636B00 
+ 2957              	.LASF139:
+ 2958 020d 73745363 		.ascii	"stScrollStep1\000"
+ 2958      726F6C6C 
+ 2958      53746570 
+ 2958      3100
+ 2959              	.LASF140:
+ 2960 021b 73745363 		.ascii	"stScrollStep2\000"
+ 2960      726F6C6C 
+ 2960      53746570 
+ 2960      3200
+ 2961              	.LASF141:
+ 2962 0229 73745363 		.ascii	"stScrollStep3\000"
+ 2962      726F6C6C 
+ 2962      53746570 
+ 2962      3300
+ 2963              	.LASF142:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 59
+
+
+ 2964 0237 73745363 		.ascii	"stScrollStep4\000"
+ 2964      726F6C6C 
+ 2964      53746570 
+ 2964      3400
+ 2965              	.LASF7:
+ 2966 0245 5F5F696E 		.ascii	"__int32_t\000"
+ 2966      7433325F 
+ 2966      7400
+ 2967              	.LASF47:
+ 2968 024f 73727373 		.ascii	"srssNumClkpath\000"
+ 2968      4E756D43 
+ 2968      6C6B7061 
+ 2968      746800
+ 2969              	.LASF144:
+ 2970 025e 64745363 		.ascii	"dtScrollThreshold1X\000"
+ 2970      726F6C6C 
+ 2970      54687265 
+ 2970      73686F6C 
+ 2970      64315800 
+ 2971              	.LASF274:
+ 2972 0272 696E7465 		.ascii	"interruptState\000"
+ 2972      72727570 
+ 2972      74537461 
+ 2972      746500
+ 2973              	.LASF21:
+ 2974 0281 63707573 		.ascii	"cpussBase\000"
+ 2974      73426173 
+ 2974      6500
+ 2975              	.LASF17:
+ 2976 028b 696E7433 		.ascii	"int32_t\000"
+ 2976      325F7400 
+ 2977              	.LASF45:
+ 2978 0293 63707573 		.ascii	"cpussFmIrq\000"
+ 2978      73466D49 
+ 2978      727100
+ 2979              	.LASF191:
+ 2980 029e 67726F75 		.ascii	"group2Start\000"
+ 2980      70325374 
+ 2980      61727400 
+ 2981              	.LASF46:
+ 2982 02aa 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 2982      734E6F74 
+ 2982      436F6E6E 
+ 2982      65637465 
+ 2982      64497271 
+ 2983              	.LASF134:
+ 2984 02bf 73745363 		.ascii	"stScrollThreshold4X\000"
+ 2984      726F6C6C 
+ 2984      54687265 
+ 2984      73686F6C 
+ 2984      64345800 
+ 2985              	.LASF138:
+ 2986 02d3 73745363 		.ascii	"stScrollThreshold4Y\000"
+ 2986      726F6C6C 
+ 2986      54687265 
+ 2986      73686F6C 
+ 2986      64345900 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 60
+
+
+ 2987              	.LASF77:
+ 2988 02e7 70657269 		.ascii	"periTrGrSize\000"
+ 2988      54724772 
+ 2988      53697A65 
+ 2988      00
+ 2989              	.LASF182:
+ 2990 02f4 4454436C 		.ascii	"DTClickTimeoutMax\000"
+ 2990      69636B54 
+ 2990      696D656F 
+ 2990      75744D61 
+ 2990      7800
+ 2991              	.LASF80:
+ 2992 0306 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 2992      44697643 
+ 2992      6D645061 
+ 2992      44697653 
+ 2992      656C506F 
+ 2993              	.LASF57:
+ 2994 031c 63727970 		.ascii	"cryptoMemSize\000"
+ 2994      746F4D65 
+ 2994      6D53697A 
+ 2994      6500
+ 2995              	.LASF103:
+ 2996 032a 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 2996      7352616D 
+ 2996      3143746C 
+ 2996      3000
+ 2997              	.LASF105:
+ 2998 0338 69706353 		.ascii	"ipcStructSize\000"
+ 2998      74727563 
+ 2998      7453697A 
+ 2998      6500
+ 2999              	.LASF290:
+ 3000 0346 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 3000      43313120 
+ 3000      352E342E 
+ 3000      31203230 
+ 3000      31363036 
+ 3001 0379 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 3001      20726576 
+ 3001      6973696F 
+ 3001      6E203233 
+ 3001      37373135 
+ 3002 03ac 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 3002      70202D6D 
+ 3002      6670753D 
+ 3002      66707634 
+ 3002      2D73702D 
+ 3003 03df 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 3003      6F6E7320 
+ 3003      2D666661 
+ 3003      742D6C74 
+ 3003      6F2D6F62 
+ 3004              	.LASF39:
+ 3005 03f9 70726F74 		.ascii	"protVersion\000"
+ 3005      56657273 
+ 3005      696F6E00 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 61
+
+
+ 3006              	.LASF156:
+ 3007 0405 64745363 		.ascii	"dtScrollDebounce\000"
+ 3007      726F6C6C 
+ 3007      4465626F 
+ 3007      756E6365 
+ 3007      00
+ 3008              	.LASF145:
+ 3009 0416 64745363 		.ascii	"dtScrollThreshold2X\000"
+ 3009      726F6C6C 
+ 3009      54687265 
+ 3009      73686F6C 
+ 3009      64325800 
+ 3010              	.LASF149:
+ 3011 042a 64745363 		.ascii	"dtScrollThreshold2Y\000"
+ 3011      726F6C6C 
+ 3011      54687265 
+ 3011      73686F6C 
+ 3011      64325900 
+ 3012              	.LASF192:
+ 3013 043e 67726F75 		.ascii	"group2End\000"
+ 3013      7032456E 
+ 3013      6400
+ 3014              	.LASF79:
+ 3015 0448 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 3015      44697643 
+ 3015      6D645479 
+ 3015      70655365 
+ 3015      6C506F73 
+ 3016              	.LASF96:
+ 3017 045d 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 3017      73547269 
+ 3017      6D52616D 
+ 3017      43746C4F 
+ 3017      66667365 
+ 3018              	.LASF262:
+ 3019 0473 69697246 		.ascii	"iirFilterCoeff\000"
+ 3019      696C7465 
+ 3019      72436F65 
+ 3019      666600
+ 3020              	.LASF107:
+ 3021 0482 63795F73 		.ascii	"cy_stc_device_t\000"
+ 3021      74635F64 
+ 3021      65766963 
+ 3021      655F7400 
+ 3022              	.LASF277:
+ 3023 0492 75706461 		.ascii	"updateFlag\000"
+ 3023      7465466C 
+ 3023      616700
+ 3024              	.LASF276:
+ 3025 049d 73656E73 		.ascii	"sensorId\000"
+ 3025      6F724964 
+ 3025      00
+ 3026              	.LASF188:
+ 3027 04a6 67726F75 		.ascii	"groupMask\000"
+ 3027      704D6173 
+ 3027      6B00
+ 3028              	.LASF127:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 62
+
+
+ 3029 04b0 7A6F6F6D 		.ascii	"zoomActiveDistanceX\000"
+ 3029      41637469 
+ 3029      76654469 
+ 3029      7374616E 
+ 3029      63655800 
+ 3030              	.LASF128:
+ 3031 04c4 7A6F6F6D 		.ascii	"zoomActiveDistanceY\000"
+ 3031      41637469 
+ 3031      76654469 
+ 3031      7374616E 
+ 3031      63655900 
+ 3032              	.LASF240:
+ 3033 04d8 74696D65 		.ascii	"timestampInterval\000"
+ 3033      7374616D 
+ 3033      70496E74 
+ 3033      65727661 
+ 3033      6C00
+ 3034              	.LASF18:
+ 3035 04ea 75696E74 		.ascii	"uint32_t\000"
+ 3035      33325F74 
+ 3035      00
+ 3036              	.LASF171:
+ 3037 04f3 44545061 		.ascii	"DTPanToZoomDebounce\000"
+ 3037      6E546F5A 
+ 3037      6F6F6D44 
+ 3037      65626F75 
+ 3037      6E636500 
+ 3038              	.LASF89:
+ 3039 0507 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 3039      50727443 
+ 3039      66674F75 
+ 3039      744F6666 
+ 3039      73657400 
+ 3040              	.LASF180:
+ 3041 051b 666C6963 		.ascii	"flickSampleTime\000"
+ 3041      6B53616D 
+ 3041      706C6554 
+ 3041      696D6500 
+ 3042              	.LASF109:
+ 3043 052b 666C6F61 		.ascii	"float\000"
+ 3043      7400
+ 3044              	.LASF272:
+ 3045 0531 43617053 		.ascii	"CapSense_TU_CMD_ONE_SCAN_E\000"
+ 3045      656E7365 
+ 3045      5F54555F 
+ 3045      434D445F 
+ 3045      4F4E455F 
+ 3046              	.LASF32:
+ 3047 054c 63727970 		.ascii	"cryptoVersion\000"
+ 3047      746F5665 
+ 3047      7273696F 
+ 3047      6E00
+ 3048              	.LASF61:
+ 3049 055a 666C6173 		.ascii	"flashProgramDelay\000"
+ 3049      6850726F 
+ 3049      6772616D 
+ 3049      44656C61 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 63
+
+
+ 3049      7900
+ 3050              	.LASF146:
+ 3051 056c 64745363 		.ascii	"dtScrollThreshold3X\000"
+ 3051      726F6C6C 
+ 3051      54687265 
+ 3051      73686F6C 
+ 3051      64335800 
+ 3052              	.LASF150:
+ 3053 0580 64745363 		.ascii	"dtScrollThreshold3Y\000"
+ 3053      726F6C6C 
+ 3053      54687265 
+ 3053      73686F6C 
+ 3053      64335900 
+ 3054              	.LASF15:
+ 3055 0594 696E7431 		.ascii	"int16_t\000"
+ 3055      365F7400 
+ 3056              	.LASF88:
+ 3057 059c 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 3057      50727443 
+ 3057      6667496E 
+ 3057      4F666673 
+ 3057      657400
+ 3058              	.LASF238:
+ 3059 05af 736E734C 		.ascii	"snsList\000"
+ 3059      69737400 
+ 3060              	.LASF12:
+ 3061 05b7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3061      206C6F6E 
+ 3061      6720756E 
+ 3061      7369676E 
+ 3061      65642069 
+ 3062              	.LASF85:
+ 3063 05ce 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 3063      44697632 
+ 3063      345F3543 
+ 3063      746C4F66 
+ 3063      66736574 
+ 3064              	.LASF90:
+ 3065 05e3 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 3065      50727443 
+ 3065      66675369 
+ 3065      6F4F6666 
+ 3065      73657400 
+ 3066              	.LASF163:
+ 3067 05f7 6474496E 		.ascii	"dtInScrCountLevel\000"
+ 3067      53637243 
+ 3067      6F756E74 
+ 3067      4C657665 
+ 3067      6C00
+ 3068              	.LASF168:
+ 3069 0609 53545061 		.ascii	"STPanDebounce\000"
+ 3069      6E446562 
+ 3069      6F756E63 
+ 3069      6500
+ 3070              	.LASF44:
+ 3071 0617 63707573 		.ascii	"cpussIpc0Irq\000"
+ 3071      73497063 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 64
+
+
+ 3071      30497271 
+ 3071      00
+ 3072              	.LASF273:
+ 3073 0624 43617053 		.ascii	"CapSense_TU_CMD_ENUM\000"
+ 3073      656E7365 
+ 3073      5F54555F 
+ 3073      434D445F 
+ 3073      454E554D 
+ 3074              	.LASF243:
+ 3075 0639 736E7254 		.ascii	"snrTestSensorId\000"
+ 3075      65737453 
+ 3075      656E736F 
+ 3075      72496400 
+ 3076              	.LASF260:
+ 3077 0649 70747232 		.ascii	"ptr2NoiseEnvlp\000"
+ 3077      4E6F6973 
+ 3077      65456E76 
+ 3077      6C7000
+ 3078              	.LASF5:
+ 3079 0658 5F5F7569 		.ascii	"__uint16_t\000"
+ 3079      6E743136 
+ 3079      5F7400
+ 3080              	.LASF254:
+ 3081 0663 77646774 		.ascii	"wdgtType\000"
+ 3081      54797065 
+ 3081      00
+ 3082              	.LASF269:
+ 3083 066c 43617053 		.ascii	"CapSense_TU_CMD_RESTART_E\000"
+ 3083      656E7365 
+ 3083      5F54555F 
+ 3083      434D445F 
+ 3083      52455354 
+ 3084              	.LASF147:
+ 3085 0686 64745363 		.ascii	"dtScrollThreshold4X\000"
+ 3085      726F6C6C 
+ 3085      54687265 
+ 3085      73686F6C 
+ 3085      64345800 
+ 3086              	.LASF235:
+ 3087 069a 6D6F6443 		.ascii	"modCsdClk\000"
+ 3087      7364436C 
+ 3087      6B00
+ 3088              	.LASF66:
+ 3089 06a4 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 3089      6843746C 
+ 3089      4D61696E 
+ 3089      57733346 
+ 3089      72657100 
+ 3090              	.LASF48:
+ 3091 06b8 73727373 		.ascii	"srssNumPll\000"
+ 3091      4E756D50 
+ 3091      6C6C00
+ 3092              	.LASF223:
+ 3093 06c3 43617053 		.ascii	"CapSense_RAM_SNS_STRUCT\000"
+ 3093      656E7365 
+ 3093      5F52414D 
+ 3093      5F534E53 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 65
+
+
+ 3093      5F535452 
+ 3094              	.LASF196:
+ 3095 06db 67726F75 		.ascii	"group4End\000"
+ 3095      7034456E 
+ 3095      6400
+ 3096              	.LASF59:
+ 3097 06e5 666C6173 		.ascii	"flashPipeRequired\000"
+ 3097      68506970 
+ 3097      65526571 
+ 3097      75697265 
+ 3097      6400
+ 3098              	.LASF74:
+ 3099 06f7 70657269 		.ascii	"periTrCmdOffset\000"
+ 3099      5472436D 
+ 3099      644F6666 
+ 3099      73657400 
+ 3100              	.LASF185:
+ 3101 0707 5354436C 		.ascii	"STClickTimeoutMin\000"
+ 3101      69636B54 
+ 3101      696D656F 
+ 3101      75744D69 
+ 3101      6E00
+ 3102              	.LASF49:
+ 3103 0719 73727373 		.ascii	"srssNumHfroot\000"
+ 3103      4E756D48 
+ 3103      66726F6F 
+ 3103      7400
+ 3104              	.LASF209:
+ 3105 0727 73696750 		.ascii	"sigPFC\000"
+ 3105      464300
+ 3106              	.LASF202:
+ 3107 072e 68797374 		.ascii	"hysteresis\000"
+ 3107      65726573 
+ 3107      697300
+ 3108              	.LASF63:
+ 3109 0739 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 3109      6843746C 
+ 3109      4D61696E 
+ 3109      57733046 
+ 3109      72657100 
+ 3110              	.LASF27:
+ 3111 074d 6770696F 		.ascii	"gpioBase\000"
+ 3111      42617365 
+ 3111      00
+ 3112              	.LASF263:
+ 3113 0756 43617053 		.ascii	"CapSense_FLASH_WD_STRUCT\000"
+ 3113      656E7365 
+ 3113      5F464C41 
+ 3113      53485F57 
+ 3113      445F5354 
+ 3114              	.LASF187:
+ 3115 076f 5354446F 		.ascii	"STDoubleClickTimeoutMin\000"
+ 3115      75626C65 
+ 3115      436C6963 
+ 3115      6B54696D 
+ 3115      656F7574 
+ 3116              	.LASF204:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 66
+
+
+ 3117 0787 6C6F7742 		.ascii	"lowBslnRst\000"
+ 3117      736C6E52 
+ 3117      737400
+ 3118              	.LASF173:
+ 3119 0792 636F6D70 		.ascii	"completedDebounce\000"
+ 3119      6C657465 
+ 3119      64446562 
+ 3119      6F756E63 
+ 3119      6500
+ 3120              	.LASF151:
+ 3121 07a4 64745363 		.ascii	"dtScrollThreshold4Y\000"
+ 3121      726F6C6C 
+ 3121      54687265 
+ 3121      73686F6C 
+ 3121      64345900 
+ 3122              	.LASF98:
+ 3123 07b8 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 3123      73537973 
+ 3123      5469636B 
+ 3123      43746C4F 
+ 3123      66667365 
+ 3124              	.LASF54:
+ 3125 07ce 75646250 		.ascii	"udbPresent\000"
+ 3125      72657365 
+ 3125      6E7400
+ 3126              	.LASF176:
+ 3127 07d9 636C6963 		.ascii	"clickRadiusY\000"
+ 3127      6B526164 
+ 3127      69757359 
+ 3127      00
+ 3128              	.LASF157:
+ 3129 07e6 64745363 		.ascii	"dtScrollToZoomDebounce\000"
+ 3129      726F6C6C 
+ 3129      546F5A6F 
+ 3129      6F6D4465 
+ 3129      626F756E 
+ 3130              	.LASF72:
+ 3131 07fd 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 3131      61747573 
+ 3131      43684964 
+ 3131      78506F73 
+ 3131      00
+ 3132              	.LASF253:
+ 3133 080e 746F7461 		.ascii	"totalNumSns\000"
+ 3133      6C4E756D 
+ 3133      536E7300 
+ 3134              	.LASF174:
+ 3135 081a 646F7562 		.ascii	"doubleClickRadius\000"
+ 3135      6C65436C 
+ 3135      69636B52 
+ 3135      61646975 
+ 3135      7300
+ 3136              	.LASF158:
+ 3137 082c 7374496E 		.ascii	"stInScrActiveDistanceX\000"
+ 3137      53637241 
+ 3137      63746976 
+ 3137      65446973 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 67
+
+
+ 3137      74616E63 
+ 3138              	.LASF159:
+ 3139 0843 7374496E 		.ascii	"stInScrActiveDistanceY\000"
+ 3139      53637241 
+ 3139      63746976 
+ 3139      65446973 
+ 3139      74616E63 
+ 3140              	.LASF123:
+ 3141 085a 534D4152 		.ascii	"SMARTSENSE_CSD_NOISE_ENVELOPE_STRUCT\000"
+ 3141      5453454E 
+ 3141      53455F43 
+ 3141      53445F4E 
+ 3141      4F495345 
+ 3142              	.LASF43:
+ 3143 087f 63707573 		.ascii	"cpussFlashPaSize\000"
+ 3143      73466C61 
+ 3143      73685061 
+ 3143      53697A65 
+ 3143      00
+ 3144              	.LASF282:
+ 3145 0890 74756E65 		.ascii	"tunerFsm\000"
+ 3145      7246736D 
+ 3145      00
+ 3146              	.LASF200:
+ 3147 0899 6E6F6973 		.ascii	"noiseTh\000"
+ 3147      65546800 
+ 3148              	.LASF22:
+ 3149 08a1 666C6173 		.ascii	"flashcBase\000"
+ 3149      68634261 
+ 3149      736500
+ 3150              	.LASF108:
+ 3151 08ac 63686172 		.ascii	"char\000"
+ 3151      00
+ 3152              	.LASF55:
+ 3153 08b1 73797350 		.ascii	"sysPmSimoPresent\000"
+ 3153      6D53696D 
+ 3153      6F507265 
+ 3153      73656E74 
+ 3153      00
+ 3154              	.LASF195:
+ 3155 08c2 67726F75 		.ascii	"group4Start\000"
+ 3155      70345374 
+ 3155      61727400 
+ 3156              	.LASF287:
+ 3157 08ce 43795F53 		.ascii	"Cy_SysLib_EnterCriticalSection\000"
+ 3157      79734C69 
+ 3157      625F456E 
+ 3157      74657243 
+ 3157      72697469 
+ 3158              	.LASF268:
+ 3159 08ed 43617053 		.ascii	"CapSense_TU_CMD_RESUME_E\000"
+ 3159      656E7365 
+ 3159      5F54555F 
+ 3159      434D445F 
+ 3159      52455355 
+ 3160              	.LASF112:
+ 3161 0906 75696E74 		.ascii	"uint16\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 68
+
+
+ 3161      313600
+ 3162              	.LASF266:
+ 3163 090d 43617053 		.ascii	"CapSense_TU_CMD_NONE_E\000"
+ 3163      656E7365 
+ 3163      5F54555F 
+ 3163      434D445F 
+ 3163      4E4F4E45 
+ 3164              	.LASF280:
+ 3165 0924 70747244 		.ascii	"ptrDsRam\000"
+ 3165      7352616D 
+ 3165      00
+ 3166              	.LASF73:
+ 3167 092d 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 3167      61747573 
+ 3167      43684964 
+ 3167      784D736B 
+ 3167      00
+ 3168              	.LASF198:
+ 3169 093e 7265736F 		.ascii	"resolution\000"
+ 3169      6C757469 
+ 3169      6F6E00
+ 3170              	.LASF14:
+ 3171 0949 75696E74 		.ascii	"uint8_t\000"
+ 3171      385F7400 
+ 3172              	.LASF230:
+ 3173 0951 73746174 		.ascii	"status\000"
+ 3173      757300
+ 3174              	.LASF115:
+ 3175 0958 43617053 		.ascii	"CapSense_LOW_BSLN_RST_TYPE\000"
+ 3175      656E7365 
+ 3175      5F4C4F57 
+ 3175      5F42534C 
+ 3175      4E5F5253 
+ 3176              	.LASF271:
+ 3177 0973 43617053 		.ascii	"CapSense_TU_CMD_PING_E\000"
+ 3177      656E7365 
+ 3177      5F54555F 
+ 3177      434D445F 
+ 3177      50494E47 
+ 3178              	.LASF78:
+ 3179 098a 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 3179      44697643 
+ 3179      6D644469 
+ 3179      7653656C 
+ 3179      4D736B00 
+ 3180              	.LASF166:
+ 3181 099e 626F7474 		.ascii	"bottomAngleThreshold\000"
+ 3181      6F6D416E 
+ 3181      676C6554 
+ 3181      68726573 
+ 3181      686F6C64 
+ 3182              	.LASF143:
+ 3183 09b3 73745363 		.ascii	"stScrollDebounce\000"
+ 3183      726F6C6C 
+ 3183      4465626F 
+ 3183      756E6365 
+ 3183      00
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 69
+
+
+ 3184              	.LASF222:
+ 3185 09c4 69646163 		.ascii	"idacComp\000"
+ 3185      436F6D70 
+ 3185      00
+ 3186              	.LASF84:
+ 3187 09cd 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 3187      44697631 
+ 3187      365F3543 
+ 3187      746C4F66 
+ 3187      66736574 
+ 3188              	.LASF255:
+ 3189 09e2 73656E73 		.ascii	"senseMethod\000"
+ 3189      654D6574 
+ 3189      686F6400 
+ 3190              	.LASF102:
+ 3191 09ee 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 3191      7352616D 
+ 3191      3043746C 
+ 3191      3000
+ 3192              	.LASF11:
+ 3193 09fc 6C6F6E67 		.ascii	"long long int\000"
+ 3193      206C6F6E 
+ 3193      6720696E 
+ 3193      7400
+ 3194              	.LASF29:
+ 3195 0a0a 69706342 		.ascii	"ipcBase\000"
+ 3195      61736500 
+ 3196              	.LASF70:
+ 3197 0a12 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 3197      43746C50 
+ 3197      72696F50 
+ 3197      6F7300
+ 3198              	.LASF30:
+ 3199 0a21 63727970 		.ascii	"cryptoBase\000"
+ 3199      746F4261 
+ 3199      736500
+ 3200              	.LASF203:
+ 3201 0a2c 6F6E4465 		.ascii	"onDebounce\000"
+ 3201      626F756E 
+ 3201      636500
+ 3202              	.LASF60:
+ 3203 0a37 666C6173 		.ascii	"flashWriteDelay\000"
+ 3203      68577269 
+ 3203      74654465 
+ 3203      6C617900 
+ 3204              	.LASF237:
+ 3205 0a47 77646774 		.ascii	"wdgtList\000"
+ 3205      4C697374 
+ 3205      00
+ 3206              	.LASF258:
+ 3207 0a50 78526573 		.ascii	"xResolution\000"
+ 3207      6F6C7574 
+ 3207      696F6E00 
+ 3208              	.LASF3:
+ 3209 0a5c 5F5F696E 		.ascii	"__int16_t\000"
+ 3209      7431365F 
+ 3209      7400
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 70
+
+
+ 3210              	.LASF265:
+ 3211 0a66 43617053 		.ascii	"CapSense_FLASH_STRUCT\000"
+ 3211      656E7365 
+ 3211      5F464C41 
+ 3211      53485F53 
+ 3211      54525543 
+ 3212              	.LASF285:
+ 3213 0a7c 43617053 		.ascii	"CapSense_dsRam\000"
+ 3213      656E7365 
+ 3213      5F647352 
+ 3213      616D00
+ 3214              	.LASF245:
+ 3215 0a8b 736E7254 		.ascii	"snrTestRawCount\000"
+ 3215      65737452 
+ 3215      6177436F 
+ 3215      756E7400 
+ 3216              	.LASF26:
+ 3217 0a9b 6873696F 		.ascii	"hsiomBase\000"
+ 3217      6D426173 
+ 3217      6500
+ 3218              	.LASF76:
+ 3219 0aa5 70657269 		.ascii	"periTrGrOffset\000"
+ 3219      54724772 
+ 3219      4F666673 
+ 3219      657400
+ 3220              	.LASF201:
+ 3221 0ab4 6E4E6F69 		.ascii	"nNoiseTh\000"
+ 3221      73655468 
+ 3221      00
+ 3222              	.LASF234:
+ 3223 0abd 63736430 		.ascii	"csd0Config\000"
+ 3223      436F6E66 
+ 3223      696700
+ 3224              	.LASF175:
+ 3225 0ac8 636C6963 		.ascii	"clickRadiusX\000"
+ 3225      6B526164 
+ 3225      69757358 
+ 3225      00
+ 3226              	.LASF42:
+ 3227 0ad5 63707573 		.ascii	"cpussDwChNr\000"
+ 3227      73447743 
+ 3227      684E7200 
+ 3228              	.LASF218:
+ 3229 0ae1 62736C6E 		.ascii	"bsln\000"
+ 3229      00
+ 3230              	.LASF124:
+ 3231 0ae6 73697A65 		.ascii	"size\000"
+ 3231      00
+ 3232              	.LASF210:
+ 3233 0aeb 67657374 		.ascii	"gestureId\000"
+ 3233      75726549 
+ 3233      6400
+ 3234              	.LASF278:
+ 3235 0af5 636F6D6D 		.ascii	"command\000"
+ 3235      616E6400 
+ 3236              	.LASF40:
+ 3237 0afd 63707573 		.ascii	"cpussIpcNr\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 71
+
+
+ 3237      73497063 
+ 3237      4E7200
+ 3238              	.LASF288:
+ 3239 0b08 43795F53 		.ascii	"Cy_SysLib_ExitCriticalSection\000"
+ 3239      79734C69 
+ 3239      625F4578 
+ 3239      69744372 
+ 3239      69746963 
+ 3240              	.LASF250:
+ 3241 0b26 70747232 		.ascii	"ptr2FltrHistory\000"
+ 3241      466C7472 
+ 3241      48697374 
+ 3241      6F727900 
+ 3242              	.LASF93:
+ 3243 0b36 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 3243      73436D34 
+ 3243      53746174 
+ 3243      75734F66 
+ 3243      66736574 
+ 3244              	.LASF52:
+ 3245 0b4b 70617373 		.ascii	"passSarChannels\000"
+ 3245      53617243 
+ 3245      68616E6E 
+ 3245      656C7300 
+ 3246              	.LASF189:
+ 3247 0b5b 67726F75 		.ascii	"group1Start\000"
+ 3247      70315374 
+ 3247      61727400 
+ 3248              	.LASF104:
+ 3249 0b67 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 3249      7352616D 
+ 3249      3243746C 
+ 3249      3000
+ 3250              	.LASF190:
+ 3251 0b75 67726F75 		.ascii	"group1End\000"
+ 3251      7031456E 
+ 3251      6400
+ 3252              	.LASF169:
+ 3253 0b7f 44545061 		.ascii	"DTPanDebounce\000"
+ 3253      6E446562 
+ 3253      6F756E63 
+ 3253      6500
+ 3254              	.LASF83:
+ 3255 0b8d 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 3255      44697631 
+ 3255      3643746C 
+ 3255      4F666673 
+ 3255      657400
+ 3256              	.LASF6:
+ 3257 0ba0 73686F72 		.ascii	"short unsigned int\000"
+ 3257      7420756E 
+ 3257      7369676E 
+ 3257      65642069 
+ 3257      6E7400
+ 3258              	.LASF19:
+ 3259 0bb3 6C6F6E67 		.ascii	"long double\000"
+ 3259      20646F75 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 72
+
+
+ 3259      626C6500 
+ 3260              	.LASF16:
+ 3261 0bbf 75696E74 		.ascii	"uint16_t\000"
+ 3261      31365F74 
+ 3261      00
+ 3262              	.LASF25:
+ 3263 0bc8 70726F74 		.ascii	"protBase\000"
+ 3263      42617365 
+ 3263      00
+ 3264              	.LASF244:
+ 3265 0bd1 736E7254 		.ascii	"snrTestScanCounter\000"
+ 3265      65737453 
+ 3265      63616E43 
+ 3265      6F756E74 
+ 3265      657200
+ 3266              	.LASF75:
+ 3267 0be4 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 3267      5472436D 
+ 3267      64477253 
+ 3267      656C4D73 
+ 3267      6B00
+ 3268              	.LASF225:
+ 3269 0bf6 636F6E66 		.ascii	"configId\000"
+ 3269      69674964 
+ 3269      00
+ 3270              	.LASF249:
+ 3271 0bff 70747232 		.ascii	"ptr2SnsRam\000"
+ 3271      536E7352 
+ 3271      616D00
+ 3272              	.LASF183:
+ 3273 0c0a 4454436C 		.ascii	"DTClickTimeoutMin\000"
+ 3273      69636B54 
+ 3273      696D656F 
+ 3273      75744D69 
+ 3273      6E00
+ 3274              	.LASF37:
+ 3275 0c1c 69706356 		.ascii	"ipcVersion\000"
+ 3275      65727369 
+ 3275      6F6E00
+ 3276              	.LASF33:
+ 3277 0c27 64775665 		.ascii	"dwVersion\000"
+ 3277      7273696F 
+ 3277      6E00
+ 3278              	.LASF65:
+ 3279 0c31 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 3279      6843746C 
+ 3279      4D61696E 
+ 3279      57733246 
+ 3279      72657100 
+ 3280              	.LASF233:
+ 3281 0c45 736E7353 		.ascii	"snsStatus\000"
+ 3281      74617475 
+ 3281      7300
+ 3282              	.LASF207:
+ 3283 0c4f 736E7343 		.ascii	"snsClkSource\000"
+ 3283      6C6B536F 
+ 3283      75726365 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 73
+
+
+ 3283      00
+ 3284              	.LASF20:
+ 3285 0c5c 73697A65 		.ascii	"sizetype\000"
+ 3285      74797065 
+ 3285      00
+ 3286              	.LASF100:
+ 3287 0c65 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 3287      73436D34 
+ 3287      4E6D6943 
+ 3287      746C4F66 
+ 3287      66736574 
+ 3288              	.LASF95:
+ 3289 0c7a 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 3289      73436D34 
+ 3289      50777243 
+ 3289      746C4F66 
+ 3289      66736574 
+ 3290              	.LASF82:
+ 3291 0c8f 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 3291      44697638 
+ 3291      43746C4F 
+ 3291      66667365 
+ 3291      7400
+ 3292              	.LASF153:
+ 3293 0ca1 64745363 		.ascii	"dtScrollStep2\000"
+ 3293      726F6C6C 
+ 3293      53746570 
+ 3293      3200
+ 3294              	.LASF154:
+ 3295 0caf 64745363 		.ascii	"dtScrollStep3\000"
+ 3295      726F6C6C 
+ 3295      53746570 
+ 3295      3300
+ 3296              	.LASF155:
+ 3297 0cbd 64745363 		.ascii	"dtScrollStep4\000"
+ 3297      726F6C6C 
+ 3297      53746570 
+ 3297      3400
+ 3298              	.LASF4:
+ 3299 0ccb 73686F72 		.ascii	"short int\000"
+ 3299      7420696E 
+ 3299      7400
+ 3300              	.LASF246:
+ 3301 0cd5 43617053 		.ascii	"CapSense_RAM_STRUCT\000"
+ 3301      656E7365 
+ 3301      5F52414D 
+ 3301      5F535452 
+ 3301      55435400 
+ 3302              	.LASF8:
+ 3303 0ce9 6C6F6E67 		.ascii	"long int\000"
+ 3303      20696E74 
+ 3303      00
+ 3304              	.LASF31:
+ 3305 0cf2 63707573 		.ascii	"cpussVersion\000"
+ 3305      73566572 
+ 3305      73696F6E 
+ 3305      00
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 74
+
+
+ 3306              	.LASF284:
+ 3307 0cff 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 3307      52784275 
+ 3307      66666572 
+ 3307      00
+ 3308              	.LASF35:
+ 3309 0d0c 6770696F 		.ascii	"gpioVersion\000"
+ 3309      56657273 
+ 3309      696F6E00 
+ 3310              	.LASF231:
+ 3311 0d18 77646774 		.ascii	"wdgtEnable\000"
+ 3311      456E6162 
+ 3311      6C6500
+ 3312              	.LASF34:
+ 3313 0d23 666C6173 		.ascii	"flashcVersion\000"
+ 3313      68635665 
+ 3313      7273696F 
+ 3313      6E00
+ 3314              	.LASF56:
+ 3315 0d31 70726F74 		.ascii	"protBusMasterMask\000"
+ 3315      4275734D 
+ 3315      61737465 
+ 3315      724D6173 
+ 3315      6B00
+ 3316              	.LASF220:
+ 3317 0d43 64696666 		.ascii	"diff\000"
+ 3317      00
+ 3318              	.LASF214:
+ 3319 0d48 62757474 		.ascii	"button0\000"
+ 3319      6F6E3000 
+ 3320              	.LASF215:
+ 3321 0d50 62757474 		.ascii	"button1\000"
+ 3321      6F6E3100 
+ 3322              	.LASF113:
+ 3323 0d58 75696E74 		.ascii	"uint32\000"
+ 3323      333200
+ 3324              	.LASF281:
+ 3325 0d5f 70747253 		.ascii	"ptrSnsTmp\000"
+ 3325      6E73546D 
+ 3325      7000
+ 3326              	.LASF199:
+ 3327 0d69 66696E67 		.ascii	"fingerTh\000"
+ 3327      65725468 
+ 3327      00
+ 3328              	.LASF194:
+ 3329 0d72 67726F75 		.ascii	"group3End\000"
+ 3329      7033456E 
+ 3329      6400
+ 3330              	.LASF256:
+ 3331 0d7c 6E756D43 		.ascii	"numCols\000"
+ 3331      6F6C7300 
+ 3332              	.LASF2:
+ 3333 0d84 5F5F7569 		.ascii	"__uint8_t\000"
+ 3333      6E74385F 
+ 3333      7400
+ 3334              	.LASF193:
+ 3335 0d8e 67726F75 		.ascii	"group3Start\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 75
+
+
+ 3335      70335374 
+ 3335      61727400 
+ 3336              	.LASF286:
+ 3337 0d9a 43617053 		.ascii	"CapSense_dsFlash\000"
+ 3337      656E7365 
+ 3337      5F647346 
+ 3337      6C617368 
+ 3337      00
+ 3338              	.LASF208:
+ 3339 0dab 66696E67 		.ascii	"fingerCap\000"
+ 3339      65724361 
+ 3339      7000
+ 3340              	.LASF232:
+ 3341 0db5 77646774 		.ascii	"wdgtStatus\000"
+ 3341      53746174 
+ 3341      757300
+ 3342              	.LASF86:
+ 3343 0dc0 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 3343      50727449 
+ 3343      6E747243 
+ 3343      66674F66 
+ 3343      66736574 
+ 3344              	.LASF92:
+ 3345 0dd5 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 3345      73436D34 
+ 3345      436C6F63 
+ 3345      6B43746C 
+ 3345      4F666673 
+ 3346              	.LASF294:
+ 3347 0dec 43617053 		.ascii	"CapSense_RunTuner\000"
+ 3347      656E7365 
+ 3347      5F52756E 
+ 3347      54756E65 
+ 3347      7200
+ 3348              	.LASF97:
+ 3349 0dfe 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 3349      73547269 
+ 3349      6D526F6D 
+ 3349      43746C4F 
+ 3349      66667365 
+ 3350              	.LASF213:
+ 3351 0e14 43617053 		.ascii	"CapSense_RAM_WD_SLIDER_STRUCT\000"
+ 3351      656E7365 
+ 3351      5F52414D 
+ 3351      5F57445F 
+ 3351      534C4944 
+ 3352              	.LASF289:
+ 3353 0e32 43617053 		.ascii	"CapSense_Start\000"
+ 3353      656E7365 
+ 3353      5F537461 
+ 3353      727400
+ 3354              	.LASF197:
+ 3355 0e41 43617053 		.ascii	"CapSense_TMG_CONFIG_STRUCT\000"
+ 3355      656E7365 
+ 3355      5F544D47 
+ 3355      5F434F4E 
+ 3355      4649475F 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 76
+
+
+ 3356              	.LASF36:
+ 3357 0e5c 6873696F 		.ascii	"hsiomVersion\000"
+ 3357      6D566572 
+ 3357      73696F6E 
+ 3357      00
+ 3358              	.LASF10:
+ 3359 0e69 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3359      20756E73 
+ 3359      69676E65 
+ 3359      6420696E 
+ 3359      7400
+ 3360              	.LASF205:
+ 3361 0e7b 69646163 		.ascii	"idacMod\000"
+ 3361      4D6F6400 
+ 3362              	.LASF101:
+ 3363 0e83 63707573 		.ascii	"cpussRomCtl\000"
+ 3363      73526F6D 
+ 3363      43746C00 
+ 3364              	.LASF131:
+ 3365 0e8f 73745363 		.ascii	"stScrollThreshold1X\000"
+ 3365      726F6C6C 
+ 3365      54687265 
+ 3365      73686F6C 
+ 3365      64315800 
+ 3366              	.LASF251:
+ 3367 0ea3 70747232 		.ascii	"ptr2DebounceArr\000"
+ 3367      4465626F 
+ 3367      756E6365 
+ 3367      41727200 
+ 3368              	.LASF178:
+ 3369 0eb3 7265736F 		.ascii	"resolutionX\000"
+ 3369      6C757469 
+ 3369      6F6E5800 
+ 3370              	.LASF179:
+ 3371 0ebf 7265736F 		.ascii	"resolutionY\000"
+ 3371      6C757469 
+ 3371      6F6E5900 
+ 3372              	.LASF259:
+ 3373 0ecb 7843656E 		.ascii	"xCentroidMultiplier\000"
+ 3373      74726F69 
+ 3373      644D756C 
+ 3373      7469706C 
+ 3373      69657200 
+ 3374              	.LASF228:
+ 3375 0edf 74756E65 		.ascii	"tunerCmd\000"
+ 3375      72436D64 
+ 3375      00
+ 3376              	.LASF219:
+ 3377 0ee8 62736C6E 		.ascii	"bslnExt\000"
+ 3377      45787400 
+ 3378              	.LASF261:
+ 3379 0ef0 70747232 		.ascii	"ptr2PosHistory\000"
+ 3379      506F7348 
+ 3379      6973746F 
+ 3379      727900
+ 3380              	.LASF211:
+ 3381 0eff 43617053 		.ascii	"CapSense_RAM_WD_BUTTON_STRUCT\000"
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 77
+
+
+ 3381      656E7365 
+ 3381      5F52414D 
+ 3381      5F57445F 
+ 3381      42555454 
+ 3382              	.LASF184:
+ 3383 0f1d 5354436C 		.ascii	"STClickTimeoutMax\000"
+ 3383      69636B54 
+ 3383      696D656F 
+ 3383      75744D61 
+ 3383      7800
+ 3384              	.LASF1:
+ 3385 0f2f 756E7369 		.ascii	"unsigned char\000"
+ 3385      676E6564 
+ 3385      20636861 
+ 3385      7200
+ 3386              	.LASF9:
+ 3387 0f3d 5F5F7569 		.ascii	"__uint32_t\000"
+ 3387      6E743332 
+ 3387      5F7400
+ 3388              	.LASF106:
+ 3389 0f48 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 3389      6F636B53 
+ 3389      74617475 
+ 3389      734F6666 
+ 3389      73657400 
+ 3390              	.LASF239:
+ 3391 0f5c 67657374 		.ascii	"gestures\000"
+ 3391      75726573 
+ 3391      00
+ 3392              	.LASF252:
+ 3393 0f65 73746174 		.ascii	"staticConfig\000"
+ 3393      6963436F 
+ 3393      6E666967 
+ 3393      00
+ 3394              	.LASF236:
+ 3395 0f72 6D6F6443 		.ascii	"modCsxClk\000"
+ 3395      7378436C 
+ 3395      6B00
+ 3396              	.LASF186:
+ 3397 0f7c 5354446F 		.ascii	"STDoubleClickTimeoutMax\000"
+ 3397      75626C65 
+ 3397      436C6963 
+ 3397      6B54696D 
+ 3397      656F7574 
+ 3398              	.LASF248:
+ 3399 0f94 70747232 		.ascii	"ptr2WdgtRam\000"
+ 3399      57646774 
+ 3399      52616D00 
+ 3400              	.LASF114:
+ 3401 0fa0 43617053 		.ascii	"CapSense_THRESHOLD_TYPE\000"
+ 3401      656E7365 
+ 3401      5F544852 
+ 3401      4553484F 
+ 3401      4C445F54 
+ 3402              	.LASF62:
+ 3403 0fb8 666C6173 		.ascii	"flashEraseDelay\000"
+ 3403      68457261 
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 78
+
+
+ 3403      73654465 
+ 3403      6C617900 
+ 3404              	.LASF292:
+ 3405 0fc8 433A5C55 		.ascii	"C:\\Users\\Lauriane\\Desktop\\Poly\\H2021\\GBM2100\\"
+ 3405      73657273 
+ 3405      5C4C6175 
+ 3405      7269616E 
+ 3405      655C4465 
+ 3406 0ff5 50726F6A 		.ascii	"Projet2\\Laboratoire3(nouvelleVersion)\\Laboratoire"
+ 3406      6574325C 
+ 3406      4C61626F 
+ 3406      7261746F 
+ 3406      69726533 
+ 3407 1026 332E6379 		.ascii	"3.cydsn\000"
+ 3407      64736E00 
+ 3408              	.LASF257:
+ 3409 102e 6E756D52 		.ascii	"numRows\000"
+ 3409      6F777300 
+ 3410              	.LASF279:
+ 3411 1036 74756E65 		.ascii	"tunerStatus\000"
+ 3411      72537461 
+ 3411      74757300 
+ 3412              	.LASF216:
+ 3413 1042 6C696E65 		.ascii	"linearslider0\000"
+ 3413      6172736C 
+ 3413      69646572 
+ 3413      3000
+ 3414              	.LASF241:
+ 3415 1050 74696D65 		.ascii	"timestamp\000"
+ 3415      7374616D 
+ 3415      7000
+ 3416              	.LASF293:
+ 3417 105a 43617053 		.ascii	"CapSense_TuInitialize\000"
+ 3417      656E7365 
+ 3417      5F547549 
+ 3417      6E697469 
+ 3417      616C697A 
+ 3418              	.LASF58:
+ 3419 1070 666C6173 		.ascii	"flashRwwRequired\000"
+ 3419      68527777 
+ 3419      52657175 
+ 3419      69726564 
+ 3419      00
+ 3420              	.LASF206:
+ 3421 1081 736E7343 		.ascii	"snsClk\000"
+ 3421      6C6B00
+ 3422              	.LASF87:
+ 3423 1088 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 3423      50727443 
+ 3423      66674F66 
+ 3423      66736574 
+ 3423      00
+ 3424              	.LASF53:
+ 3425 1099 65704D6F 		.ascii	"epMonitorNr\000"
+ 3425      6E69746F 
+ 3425      724E7200 
+ 3426              	.LASF0:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 79
+
+
+ 3427 10a5 7369676E 		.ascii	"signed char\000"
+ 3427      65642063 
+ 3427      68617200 
+ 3428              	.LASF164:
+ 3429 10b1 65646765 		.ascii	"edgeSwipeActiveDistance\000"
+ 3429      53776970 
+ 3429      65416374 
+ 3429      69766544 
+ 3429      69737461 
+ 3430              	.LASF68:
+ 3431 10c9 64774368 		.ascii	"dwChOffset\000"
+ 3431      4F666673 
+ 3431      657400
+ 3432              	.LASF165:
+ 3433 10d4 746F7041 		.ascii	"topAngleThreshold\000"
+ 3433      6E676C65 
+ 3433      54687265 
+ 3433      73686F6C 
+ 3433      6400
+ 3434              	.LASF41:
+ 3435 10e6 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 3435      73497063 
+ 3435      4972714E 
+ 3435      7200
+ 3436              	.LASF71:
+ 3437 10f4 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 3437      43746C50 
+ 3437      7265656D 
+ 3437      70746162 
+ 3437      6C65506F 
+ 3438              	.LASF170:
+ 3439 110a 44545A6F 		.ascii	"DTZoomDebounce\000"
+ 3439      6F6D4465 
+ 3439      626F756E 
+ 3439      636500
+ 3440              	.LASF167:
+ 3441 1119 77696474 		.ascii	"widthOfDisambiguation\000"
+ 3441      684F6644 
+ 3441      6973616D 
+ 3441      62696775 
+ 3441      6174696F 
+ 3442              	.LASF247:
+ 3443 112f 70747232 		.ascii	"ptr2SnsFlash\000"
+ 3443      536E7346 
+ 3443      6C617368 
+ 3443      00
+ 3444              	.LASF135:
+ 3445 113c 73745363 		.ascii	"stScrollThreshold1Y\000"
+ 3445      726F6C6C 
+ 3445      54687265 
+ 3445      73686F6C 
+ 3445      64315900 
+ 3446              	.LASF38:
+ 3447 1150 70657269 		.ascii	"periVersion\000"
+ 3447      56657273 
+ 3447      696F6E00 
+ 3448              	.LASF111:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 80
+
+
+ 3449 115c 75696E74 		.ascii	"uint8\000"
+ 3449      3800
+ 3450              	.LASF110:
+ 3451 1162 646F7562 		.ascii	"double\000"
+ 3451      6C6500
+ 3452              	.LASF28:
+ 3453 1169 70617373 		.ascii	"passBase\000"
+ 3453      42617365 
+ 3453      00
+ 3454              	.LASF172:
+ 3455 1172 726F7461 		.ascii	"rotateDebounce\000"
+ 3455      74654465 
+ 3455      626F756E 
+ 3455      636500
+ 3456              	.LASF221:
+ 3457 1181 6E656742 		.ascii	"negBslnRstCnt\000"
+ 3457      736C6E52 
+ 3457      7374436E 
+ 3457      7400
+ 3458              	.LASF116:
+ 3459 118f 70617261 		.ascii	"param0\000"
+ 3459      6D3000
+ 3460              	.LASF117:
+ 3461 1196 70617261 		.ascii	"param1\000"
+ 3461      6D3100
+ 3462              	.LASF118:
+ 3463 119d 70617261 		.ascii	"param2\000"
+ 3463      6D3200
+ 3464              	.LASF119:
+ 3465 11a4 70617261 		.ascii	"param3\000"
+ 3465      6D3300
+ 3466              	.LASF120:
+ 3467 11ab 70617261 		.ascii	"param4\000"
+ 3467      6D3400
+ 3468              	.LASF121:
+ 3469 11b2 70617261 		.ascii	"param5\000"
+ 3469      6D3500
+ 3470              	.LASF122:
+ 3471 11b9 70617261 		.ascii	"param6\000"
+ 3471      6D3600
+ 3472              	.LASF226:
+ 3473 11c0 64657669 		.ascii	"deviceId\000"
+ 3473      63654964 
+ 3473      00
+ 3474              	.LASF270:
+ 3475 11c9 43617053 		.ascii	"CapSense_TU_CMD_RUN_SNR_TEST_E\000"
+ 3475      656E7365 
+ 3475      5F54555F 
+ 3475      434D445F 
+ 3475      52554E5F 
+ 3476              	.LASF94:
+ 3477 11e8 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 3477      73436D30 
+ 3477      53746174 
+ 3477      75734F66 
+ 3477      66736574 
+ 3478              	.LASF267:
+ARM GAS  C:\Users\Lauriane\AppData\Local\Temp\ccectnp7.s 			page 81
+
+
+ 3479 11fd 43617053 		.ascii	"CapSense_TU_CMD_SUSPEND_E\000"
+ 3479      656E7365 
+ 3479      5F54555F 
+ 3479      434D445F 
+ 3479      53555350 
+ 3480              	.LASF148:
+ 3481 1217 64745363 		.ascii	"dtScrollThreshold1Y\000"
+ 3481      726F6C6C 
+ 3481      54687265 
+ 3481      73686F6C 
+ 3481      64315900 
+ 3482              	.LASF212:
+ 3483 122b 706F7369 		.ascii	"position\000"
+ 3483      74696F6E 
+ 3483      00
+ 3484              	.LASF224:
+ 3485 1234 43617053 		.ascii	"CapSense_RAM_SNS_LIST_STRUCT\000"
+ 3485      656E7365 
+ 3485      5F52414D 
+ 3485      5F534E53 
+ 3485      5F4C4953 
+ 3486              	.LASF132:
+ 3487 1251 73745363 		.ascii	"stScrollThreshold2X\000"
+ 3487      726F6C6C 
+ 3487      54687265 
+ 3487      73686F6C 
+ 3487      64325800 
+ 3488              	.LASF136:
+ 3489 1265 73745363 		.ascii	"stScrollThreshold2Y\000"
+ 3489      726F6C6C 
+ 3489      54687265 
+ 3489      73686F6C 
+ 3489      64325900 
+ 3490              	.LASF264:
+ 3491 1279 77646774 		.ascii	"wdgtArray\000"
+ 3491      41727261 
+ 3491      7900
+ 3492              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

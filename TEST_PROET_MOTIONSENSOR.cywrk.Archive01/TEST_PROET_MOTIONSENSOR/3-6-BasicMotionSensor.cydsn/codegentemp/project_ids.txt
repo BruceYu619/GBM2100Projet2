@@ -1,6 +1,0 @@
-C:\Users\Bruce\Documents\GBM2100Projet2\TEST_PROET_MOTIONSENSOR.cywrk.Archive01\TEST_PROET_MOTIONSENSOR\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cyprj|874dddd1-cc35-4a88-baa9-dfdbaa5487c2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|db6ab5fb-fc46-4c53-a8fd-d4d78f9948e6
-C:\Users\Bruce\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|64312de8-1762-469f-816d-303fde814481
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|709cdf8a-4941-466d-8c7c-c4da106a0531
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|70b04dd2-5782-42bf-aeee-08dea79bb964
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e1d49bae-101a-47a3-8cc1-a990d8e635bd
