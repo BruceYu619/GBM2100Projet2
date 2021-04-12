@@ -49,46 +49,62 @@ const float32_t firCoeffs32[NUM_TAPS]= {
   -0.0013930798983935906,  -0.0021206768776838745, -0.0026582996982429997,  -0.0030059549911707804,  -0.0031718611490409022, -0.003173529940827935, -0.003033314895885208,-0.0027781905680449846,-0.0024371287606626195, -0.00607483793096646
 };
 
-extern float32_t testInput_f32_1kHz_15kHz[TEST_LENGTH_SAMPLES];
-extern float32_t refOutput[TEST_LENGTH_SAMPLES];
-
-
 
 uint32_t blockSize = BLOCK_SIZE;
 uint32_t numBlocks = TEST_LENGTH_SAMPLES/BLOCK_SIZE;
 arm_fir_instance_f32 S; 
 volatile float R =0;
 volatile float SpO2 =0;
+volatile float bpm =0;
 
 volatile int NbreMax =0;
 volatile int flag =0;
 volatile int NbreSec =0;
-volatile float Circulaire[60] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+//volatile float Circulaire[60] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+volatile float Circulaire[60]={0};
+volatile int borneSup = 130; // Peuvent etre modifiees par l'utilisateur
+volatile int borneInf = 40;
+
+
+void AlarmeFC(){
+    for(;;){
+        if((bpm > borneSup)|| (bpm < borneInf)){
+            Cy_GPIO_Write(Pin_1_0_PORT, Pin_1_0_NUM,1);
+            vTaskDelay(pdMS_TO_TICKS(500));
+            Cy_GPIO_Write(Pin_1_0_PORT, Pin_1_0_NUM,0);
+            vTaskDelay(pdMS_TO_TICKS(500));
+        }
+    }
+}
+
 
 float BPM(float* maximum){
     float BPM =0;
 		if(flag ==1){
 			flag =0;
-			float moyenneMax =0;
-			arm_mean_f32(maximum, 30, &moyenneMax);
-			int Vrai =0;
-				for(int i =0; i> 30;i++){
-					if(maximum[i] > 0.5*moyenneMax)
-						Vrai = Vrai + 1;
-				}
-			 BPM = 60*Vrai/10;
+			int nombreMax =0;
+    for(int i =0; i>30; i++){
+        if(maximum[i] != 0){
+            nombreMax = nombreMax +1;
+        }}
+        BPM = nombreMax*6;
+        for(int i =0; i>30; i++){ // Reinitialiser le vecteur a des 0.
+            maximum[i] = 0;
+         }    
 		}	
 		if(flag ==2){
 			flag =0;
-			float moyenneMax =0;
-			arm_mean_f32(maximum, 30, &moyenneMax);
-			int Vrai =0;
-				for(int i =30; i> 60;i++){
-					if(maximum[i] > 0.5*moyenneMax)
-						Vrai = Vrai + 1;
-				}
-			BPM = Vrai*6;
-		}
+			 int nombreMax =0;
+    for(int i =30; i>60; i++){
+        if(maximum[i] != 0){
+            nombreMax = nombreMax +1;
+        }}
+        BPM = nombreMax*6;
+        for(int i =30; i>60; i++){ // Reinitialiser le vecteur a des 0.
+            maximum[i] = 0;
+        }
+}
 	return(BPM);
 }
 
@@ -159,9 +175,14 @@ int main(void)
 {
     SystemInit();
 //    SystemCoreClockUpdate();
+    
+    xTaskCreate(AlarmeFC,"alarmeFC",80,NULL,1,NULL);
+     
+    vTaskStartScheduler();
   
     __enable_irq(); /* Enable global interrupts. */
 
+    
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     for(;;)

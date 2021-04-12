@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Traitement de signal-exploration">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Traitement de signal-exploration</v>
 <v>Traitement de signal-exploration\Design01</v>
@@ -236,6 +236,7 @@
 <v>Traitement de signal-exploration\Design01\PSoC 63 Family Datasheet</v>
 <v>Traitement de signal-exploration\Design01\Peripheral Driver Library</v>
 <v>Traitement de signal-exploration\Design01\System Reference Guides</v>
+<v>Traitement de signal-exploration\Design01\GPIO_PDL_v1_0.pdf</v>
 <v>Traitement de signal-exploration\Design01\SCB_UART_PDL_v2_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -245,6 +246,7 @@
 <v>Traitement de signal-exploration\Design01\PSoC 63 Family Datasheet</v>
 <v>Traitement de signal-exploration\Design01\Peripheral Driver Library</v>
 <v>Traitement de signal-exploration\Design01\System Reference Guides</v>
+<v>Traitement de signal-exploration\Design01\GPIO_PDL_v1_0.pdf</v>
 <v>Traitement de signal-exploration\Design01\SCB_UART_PDL_v2_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -255,9 +257,7 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Design01.cydsn\main_cm4.c" />
-<name v=".\Design01.cydsn\Design01.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -265,7 +265,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="823, 411" SelectedTabbedMdiWindow="34733c34-8466-4234-ac50-c6895408e9e9"><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\PSoC Creator\Traitement de signal-exploration\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="77b70eb3-f8f9-42fb-bcb5-9c81595c5dbf" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\PSoC Creator\Traitement de signal-exploration\Design01.cydsn\main_cm4.c" Guid="34733c34-8466-4234-ac50-c6895408e9e9" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\PSoC Creator\Traitement de signal-exploration\Design01.cydsn\Design01.cydwr" Guid="6ef5e4a9-43fc-4f5e-828b-19b674ffdcf6" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="11c95ec7-0604-4ada-8f56-17537d5291df" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="a61a5c51-2418-44f1-98e7-11513cd49d92" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="823, 411" SelectedTabbedMdiWindow="b019e1c2-a7a3-4b95-8891-b61eb5f9c42c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="11c95ec7-0604-4ada-8f56-17537d5291df" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="a61a5c51-2418-44f1-98e7-11513cd49d92" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\main_cm4.c" Guid="b019e1c2-a7a3-4b95-8891-b61eb5f9c42c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

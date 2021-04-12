@@ -1,0 +1,6 @@
+C:\Users\jmori\OneDrive\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\Design01.cyprj|6b83d621-d3f6-4116-8023-668d096aae0b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|730d3f63-721b-45ef-ab27-d05326099608
+C:\Users\jmori\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|f1018455-3f57-4320-8e2c-6a73dc579e0a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e43eef89-c79c-4b3c-bf81-9606b36e5ce7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|0010f19b-f166-4c86-b640-d539616cdd31
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f0efaeff-9ce7-47df-ac3a-c1944c97c906
