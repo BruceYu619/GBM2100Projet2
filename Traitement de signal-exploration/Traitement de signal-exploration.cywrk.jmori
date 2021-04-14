@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Traitement de signal-exploration\Design01\Generated_Source\PSoC6">
 <ExpandedNodeIds>
 <v>Traitement de signal-exploration</v>
 <v>Traitement de signal-exploration\Design01</v>
@@ -67,7 +67,6 @@
 <v>Traitement de signal-exploration\Design01\Shared Files\cyapicallbacks.h</v>
 <v>Traitement de signal-exploration\Design01\Shared Files\system_psoc6.h</v>
 <v>Traitement de signal-exploration\Design01\Generated_Source</v>
-<v>Traitement de signal-exploration\Design01\Generated_Source\PSoC6</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Traitement de signal-exploration</v>
@@ -92,7 +91,7 @@
 <v>Traitement de signal-exploration\Design01\CM0p (Core 0)\Source Files</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Traitement de signal-exploration">
 <ExpandedNodeIds>
 <v>Traitement de signal-exploration</v>
 <v>Traitement de signal-exploration\Design01</v>
@@ -125,11 +124,6 @@
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
@@ -145,7 +139,6 @@
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\main_cm0p.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\startup_psoc6_01_cm0plus.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm0plus.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.elf</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.hex</v>
 <v>Traitement de signal-exploration\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.map</v>
@@ -165,11 +158,6 @@
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_lvd.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_profile.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_prot.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_common.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_ezi2c.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_i2c.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_spi.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_scb_uart.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysanalog.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysclk.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\cy_sysint.lst</v>
@@ -192,7 +180,6 @@
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\system_psoc6_cm4.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\tasks.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\timers.lst</v>
-<v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Design01.elf</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Design01.hex</v>
 <v>Traitement de signal-exploration\Design01\CortexM4\ARM_GCC_541\Debug\Design01.map</v>
@@ -237,7 +224,6 @@
 <v>Traitement de signal-exploration\Design01\Peripheral Driver Library</v>
 <v>Traitement de signal-exploration\Design01\System Reference Guides</v>
 <v>Traitement de signal-exploration\Design01\GPIO_PDL_v1_0.pdf</v>
-<v>Traitement de signal-exploration\Design01\SCB_UART_PDL_v2_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Traitement de signal-exploration</v>
@@ -247,7 +233,6 @@
 <v>Traitement de signal-exploration\Design01\Peripheral Driver Library</v>
 <v>Traitement de signal-exploration\Design01\System Reference Guides</v>
 <v>Traitement de signal-exploration\Design01\GPIO_PDL_v1_0.pdf</v>
-<v>Traitement de signal-exploration\Design01\SCB_UART_PDL_v2_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -258,6 +243,8 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Design01.cydsn\main_cm4.c" />
+<name v=".\Design01.cydsn\Design01.cydwr" />
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -265,7 +252,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="823, 411" SelectedTabbedMdiWindow="b019e1c2-a7a3-4b95-8891-b61eb5f9c42c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="11c95ec7-0604-4ada-8f56-17537d5291df" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="a61a5c51-2418-44f1-98e7-11513cd49d92" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\main_cm4.c" Guid="b019e1c2-a7a3-4b95-8891-b61eb5f9c42c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1139, 411" SelectedTabbedMdiWindow="a61a5c51-2418-44f1-98e7-11513cd49d92"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="11c95ec7-0604-4ada-8f56-17537d5291df" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="a61a5c51-2418-44f1-98e7-11513cd49d92" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\main_cm4.c" Guid="b019e1c2-a7a3-4b95-8891-b61eb5f9c42c" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\Design01.cydwr" Guid="6b7ee450-d685-4275-b520-4c7205a6349d" /><DocumentWindow Key="C:\Users\jmori\OneDrive\Documents\GBM2100Projet2\Traitement de signal-exploration\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="722f18fd-7a2d-42cc-b1e2-b088528f5d1b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
