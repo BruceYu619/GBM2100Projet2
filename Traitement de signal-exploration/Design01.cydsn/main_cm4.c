@@ -892,7 +892,6 @@ static double firCoeffs32[FILTER_TAP_NUM] = {
 uint32_t blockSize = BLOCK_SIZE;
 uint32_t numBlocks = TEST_LENGTH_SAMPLES/BLOCK_SIZE;
 arm_fir_instance_f32 S; 
-volatile float R =0;
 volatile float SpO2 =0;
 volatile float bpm =0;
 
@@ -918,69 +917,76 @@ void AlarmeFC(){
 }
 
 
-float BPM(float* maximum){
-    float BPM =0;
-		if(flag ==1){
-			flag =0;
-			int nombreMax =0;
-    for(int i =0; i>30; i++){
-        if(maximum[i] != 0){
-            nombreMax = nombreMax +1;
-        }}
-        BPM = nombreMax*6;
-        for(int i =0; i>30; i++){ // Reinitialiser le vecteur a des 0.
-            maximum[i] = 0;
-         }    
-		}	
-		if(flag ==2){
-			flag =0;
-			 int nombreMax =0;
-    for(int i =30; i>60; i++){
-        if(maximum[i] != 0){
-            nombreMax = nombreMax +1;
-        }}
-        BPM = nombreMax*6;
-        for(int i =30; i>60; i++){ // Reinitialiser le vecteur a des 0.
-            maximum[i] = 0;
-        }
-}
-	return(BPM);
-}
+//float BPM(float* maximum){
+//    float BPM =0;
+//		if(flag ==1){
+//			flag =0;
+//			int nombreMax =0;
+//    for(int i =0; i>30; i++){
+//        if(maximum[i] != 0){
+//            nombreMax = nombreMax +1;
+//        }}
+//        BPM = nombreMax*6;
+//        for(int i =0; i>30; i++){ // Reinitialiser le vecteur a des 0.
+//            maximum[i] = 0;
+//         }    
+//		}	
+//		if(flag ==2){
+//			flag =0;
+//			 int nombreMax =0;
+//    for(int i =30; i>60; i++){
+//        if(maximum[i] != 0){
+//            nombreMax = nombreMax +1;
+//        }}
+//        BPM = nombreMax*6;
+//        for(int i =30; i>60; i++){ // Reinitialiser le vecteur a des 0.
+//            maximum[i] = 0;
+//        }
+//}
+//	return(BPM);
+//}
 
 volatile int Interface =0; 
+
 
 volatile float dataIrBrut[1000];
 volatile float* dataIRInterface;
 volatile float dataRedBrut[1000];
 volatile float* dataRedInterface;
 
-float Saturation(float* dataIR, float* dataRed){
+void Saturation(float* dataIR, float* dataRed){
      NbreSec = NbreSec +1;
+    
+    // Générer un vecteur de 1000 éléments servant à l'affichage des courbes.
      for(int i = NbreSec*BLOCK_SIZE; i > (Interface*BLOCK_SIZE);i++){
         dataIrBrut[i] = dataIR[i];
         dataRedBrut[i] = dataRed[i];
     }
     Interface = Interface + 1; 
     if(Interface == 5){
+        // Cela nous permettera de remplir le buffer depuis le début pour
+        // les prochaines 5 secondes.
         Interface =0;
+        // Mettre les variables qui changent dans une autre variable qui
+        // restera la même jusqu'au prochain 5 secondes.
         dataIRInterface = dataIrBrut;
         dataRedInterface = dataRedBrut;
     }
    
-// Trouver les composantes DC
+// Trouver les composantes DC sur le signal non-traité
 	float DCIR =0;
 	float DCRED =0;
 	arm_mean_f32(dataIR, BLOCK_SIZE,&DCIR);
 	arm_mean_f32(dataRed, BLOCK_SIZE, &DCRED);
 
-// Filtrage 
-	float IrFiltre[250];
-    float RedFiltre[250];
+// Filtrage des signaux AC et DC 
+	float IrFiltre[200];
+    float RedFiltre[200];
 	arm_fir_init_f32(&S, FILTER_TAP_NUM, (float32_t *)&firCoeffs32[0], &firStateF32[0], blockSize);
     arm_fir_f32(&S, dataIR, IrFiltre,BLOCK_SIZE);
     arm_fir_f32(&S, dataRed, RedFiltre,BLOCK_SIZE);
 
-// Trouver les composantes AC
+// Trouver les composantes AC à partir du signal filtré
 	float maxIR =0;
 	float maxRed =0;
 	float minIR =0;
@@ -996,10 +1002,10 @@ float Saturation(float* dataIR, float* dataRed){
 	float ACRed = maxRed - minRed;
 
 // Trouver la saturation dans l'intervale:
-	 R = (ACRed/DCRED)/(ACIr/DCIR);
-	 SpO2 = -16.67*(R*R) + 8.33*R + 100;
+	float R = (ACRed/DCRED)/(ACIr/DCIR);
+	SpO2 = -16.67*(R*R) + 8.33*R + 100;
 
-// Trouver les maximums dans l'intervale
+// Trouver les maximums dans l'intervale afin de pouvoir calculer la FC.
 	for(int i=1; i>BLOCK_SIZE-1; i++){
 		if((IrFiltre[i] > IrFiltre[i-1]) && (IrFiltre[i] > IrFiltre[i+1]) && (IrFiltre[i] >0)){
 			Circulaire[NbreMax] = IrFiltre[i];
@@ -1008,16 +1014,21 @@ float Saturation(float* dataIR, float* dataRed){
 	}
 
 // Allumer les flags
-	if(NbreSec % 20 == 0){
-		NbreMax = 0;
-		flag = 2;
-	}
-	if((NbreSec %10 == 0) && (NbreSec %20 !=0)){
-		NbreMax = 30;
-		flag = 1;
-	}
-    return(SpO2);
+    if(NbreSec %10 ==0){
+        bpm = 6*NbreMax;
+        NbreMax =0;
+    }
+//	if(NbreSec % 20 == 0){
+//		NbreMax = 0;
+//		flag = 2;
+//	}
+//	if((NbreSec %10 == 0) && (NbreSec %20 !=0)){
+//		NbreMax = 30;
+//		flag = 1;
+//	}
+ 
 }
+
 volatile bool Index = false;
 
 // Valeurs a enlevees
@@ -1043,11 +1054,11 @@ int main(void)
     {
         if(Index == true){
             Index = false;
-            float SpO2 = Saturation(dataIR, dataRed);
+            Saturation(dataIR, dataRed);
         }
-        if(NbreSec %10 == 0){           
-            float bpm = BPM(maximum);
-        }
+//        if(NbreSec %10 == 0){           
+//            float bpm = BPM(maximum);
+//        }
         /* Place your application code here. */
         
 
